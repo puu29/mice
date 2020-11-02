@@ -12,7 +12,7 @@
                     <h2 class="font-semibold no-margin-top pull-left">โปรไฟล์บัญชีผู้ใช้ทั่วไป</h2>
                     <a href="member-profile-edit.php" class="btn btn-gray btn-md pull-right mt-5">
                         <div class="text-icon">
-                            <i class="m-icon m-icon-edit"></i>
+                            <i class="m-icon m-icon-edit m-icon-black"></i>
                             <span>แก้ไขโปรไฟล์ของฉัน</span>
                         </div>
                     </a>
@@ -25,12 +25,14 @@
                                         <label class="font-semibold">ชื่อจริง</label>
                                         <p>พัชรศรี</p>
                                     </div>
+                                    <br/>
                                 </div>
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
                                         <label class="font-semibold">นามสกุล</label>
                                         <p>นามสกุลไทย</p>
                                     </div>
+                                    <br/>
                                 </div>
                             </div>
                             <div class="row">
@@ -39,12 +41,14 @@
                                         <label class="font-semibold no-margin">อีเมล</label>
                                         <p>your@email.com</p>
                                     </div>
+                                    <br/>
                                 </div>
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
                                         <label class="font-semibold no-margin">เบอร์โทรศัพท์ติดต่อ</label>
                                         <p>0850228426</p>
                                     </div>
+                                    <br/>
                                 </div>
                             </div>
                             <div class="row">
@@ -53,18 +57,21 @@
                                         <label class="font-semibold no-margin">รหัสผ่าน</label>
                                         <p>•••••••</p>
                                     </div>
+                                    <br/>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label class="font-semibold no-margin">ที่อยู่</label>
                                         <p>450/222 ม.1 หมู่บ้านวิลล่า ซ.เทพารักษ์ 116 ต.แพรกษาใหม่ อ.เมือง จ.สมุทรปราการ 10280</p>
                                     </div>
+                                    <br/>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label class="font-semibold no-margin">ชื่อหน่วยงาน องค์กรหรือบริษัท</label>
                                         <p>Beeative</p>
                                     </div>
+                                    <br/>
                                 </div>
                             </div>
                         </div>

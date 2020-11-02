@@ -82,6 +82,10 @@ body {
     font-size: 16px;
     line-height: 24px;
 }
+.font-22 {
+    font-size: 22px;
+    line-height: 33px;
+}
 .border-5{
     border-radius: 5px !important;
 }
@@ -1125,6 +1129,12 @@ img {
     cursor: pointer;
     z-index: 1;
 }
+.datepicker td{
+    position: relative;
+}
+.datepicker td.today{
+    background: transparent !important;
+}
 .datepicker-inline td.highlight:before{
     content: '';
     position: absolute;
@@ -1583,6 +1593,14 @@ img {
 .card .desc{
     height: 96px;
     overflow: hidden;
+}
+.card .type{
+    background: transparent;
+    font-weight: 600;
+    color: #FBAD26;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px;
 }
 .form-select .select{
     margin-left: 10px;
@@ -2078,9 +2096,9 @@ hr{
     background: #fff;
     border: 1px solid #707070;
     position: absolute;
-    top: 0px;
+    top: 2px;
     left: 0px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .checkbox > input:checked + label::before, .radio > input:checked + label::before {
     background: #2170B8;
@@ -2094,7 +2112,7 @@ hr{
     width: 12px;
     height: 6px;
     position: absolute;
-    top: 4px;
+    top: 6px;
     left: 3px;
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
@@ -2845,10 +2863,16 @@ textarea{
     filter: brightness(0) invert(1);
 }
 .member .panel .panel-body{
-    padding: 25px 30px 40px 30px;
+    padding: 25px 30px;
 }
 .member .panel{
     margin: 10px 0px 0px;
+}
+.member .btn-md {
+    padding: 9.5px 20px;
+}
+.member .btn-minwidth {
+    min-width: 200px;
 }
 .upload-photo {
     width: 102px;
@@ -2960,4 +2984,179 @@ textarea{
 }
 .mb15{
     margin-bottom: 15px;
+}
+.plan-type{
+    padding: 20px 0px;
+}
+.plan-type .box .desc{
+    width: 300px;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 85px;
+}
+.plan-type .box .btn{
+    width: 200px;
+    max-width: 100%;
+}
+.plan-type .col:nth-child(odd){
+    border-right: 1px solid #2170B8;
+}
+.input-time{
+    width: 100%;
+    position: relative;
+}
+.input-time .select{
+    float: left;
+    width: calc(50% - 15px);
+    display: inline-block;
+}
+.input-time .symbol{
+    float: left;
+    font-size: 16px;
+    width: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+.col-1{
+    column-count: 1;
+}
+.col-2{
+    column-count: 2;
+}
+.col-3{
+    column-count: 3;
+}
+.member .checkbox{
+    margin: 0px 0px 15px;
+}
+.member .form-control{
+    padding: 9px 15px;
+}
+.member .select span {
+    right: 12px;
+    font-size: 12px;
+    margin-top: -8px;
+}
+.select-service{
+    width: 100%;
+    position: relative;
+    height: 662px;
+    margin-top: 10px;
+}
+.select-service .service-type, .select-service .service-list{
+    width: 262px;
+    height: 100%;
+    float: left;
+    overflow-y: auto;
+    box-shadow: 0px 0px 15px rgba(166, 188, 209, 0.42);
+    background: #fff;
+    z-index: 2;
+    position: relative;
+}
+.select-service .service-list{
+    width: calc(100% - 262px);
+    z-index: 1;
+}
+.select-service .service-type{
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+}
+.select-service .service-type li{
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.select-service .service-type li.active{
+    background: #2170B8;
+    color: #fff;
+}
+.select-service .post .head{
+    min-height: auto;
+}
+.select-service .post {
+    padding: 20px 30px;
+}
+.select-service .post .bg{
+    left: 30px;
+    top: 20px;
+}
+.select-service .post .star span, .select-service .post h3{
+    color: #000000;
+}
+.select-service .post .btn:not(.btn-trans){
+    min-width: 140px;
+}
+.select-service .post .btn-cancel, .select-service .post.active .btn-add{
+    float: right;
+    display: none;
+}
+.select-service .post.active .btn-cancel{
+    display: block;
+}
+.selected-service{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    height: calc(662px - 62px);
+    overflow: auto;
+    padding-right: 15px;
+    margin-top: 15px;
+}
+.selected-service .panel:first-child{
+    margin-top: 0px;
+}
+.selected-service .user{
+    float: left;
+    padding-left: 78px;
+    position: relative;
+    width: calc(100% - 40px);
+    min-height: 65px;
+}
+.selected-service .user .bg{
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+}
+.selected-service .action{
+    float: right;
+    cursor: pointer;
+}
+.selected-service .action span{
+    font-size: 38px;
+    line-height: 2px;
+}
+.selected-service .list{
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #D1D1D1;
+    display: inline-block;
+}
+.selected-service .list:last-child{
+    border: 0px;
+}
+.selected-service .panel .panel-body{
+    padding: 0px;
+}
+.selected-service .h3{
+    font-size: 18px;
+    line-height: 21px;
+}
+.selected-service .panel, .selected-service .panel .panel-heading{
+    border-radius: 0px;
+}
+.selected-service .panel, .select-service{
+    margin-top: 15px;
+}
+.btn-request{
+    width: calc(100% - 15px);
+}
+.panel.panel-info .panel-heading{
+    background: #2170B8;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 15px;
 }

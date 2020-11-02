@@ -1,5 +1,6 @@
 (function() {
 
+    // slide
     $('.banner').owlCarousel({
         items: 5,
         slideBy: 5,
@@ -12,7 +13,6 @@
         autoplayTimeout: 6000,
         autoplayHoverPause: false
     });
-
     $('.slide-mice').owlCarousel({
         items: 6,
         navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
@@ -21,7 +21,6 @@
         dots: true,
         margin: 15
     });
-
     $('.slide-location').owlCarousel({
         items: 2,
         slideBy: 2,
@@ -30,7 +29,6 @@
         loop: false,
         dots: true
     });
-
     $('.post-related-slide').owlCarousel({
         items: 3,
         slideBy: 1,
@@ -41,18 +39,22 @@
         margin: 0
     });
 
-    setTimeout(() => {
-        $('.datepicker2').datepicker({
-            autoclose: true,
-            todayHighlight: true
-        });
-    }, 500);
 
+    // datepicker
+    $('.datepicker2').datepicker({
+        autoclose: true,
+        todayHighlight: true
+    });
+
+    // input-textarea count
     $('body').on('keyup', '.limit-char .form-control', function(e){
         var parent = $(this).parents('.limit-char');
         var cnt = $(this).val().length;
         parent.find('.char .cnt').html(cnt);
-    }).on('click', '.input-score .star span', function(){
+    });
+
+    // input-star
+    $('body').on('click', '.input-score .star span', function(){
         var index = $(this).index();
         var parent = $(this).parents('.input-score');
         parent.find('span').removeClass('glyphicon-star-empty');
@@ -62,10 +64,7 @@
         parent.find('input').val(index+1);
     });
 
-    $('.short-search .m-icon').click(function(){
-        $(this).parents('.short-search').slideUp(300);
-    });
-
+    // input-password
     $('.action-showpass .m-icon').click(function(){
         var parent = $(this).parents('.action-showpass');
         if(parent.hasClass('open'))
@@ -78,6 +77,15 @@
             parent.addClass('open');
             parent.find('input[type="password"]').attr('type', 'text');
         }
+    });
+
+    // input-slider
+    $(".slider input").slider();
+    $('.slider input').change(function(){
+        var data = $(this).val().split(',');
+        var parent = $(this).parents('.slider-box');
+        parent.find('.slider-start').val(data[0]);
+        parent.find('.slider-end').val(data[1]);
     });
 
     // upload
@@ -114,22 +122,6 @@
         }
     });
 
-    // search
-    $('.form-search input').keyup(function(){
-        $('.autocomplete').show();
-    });
-    $('.form-search .btn-close').click(function(){
-        $('.autocomplete').hide();
-        $('.autocomplete .auto-text').show();
-        $('.form-search input').val('');
-    });
-    $('.autocomplete .auto-text p').click(function(){
-        var text = $(this).html().split('<b>').join('');
-        text = text.split('</b>').join('');
-        $('.form-search input').val(text);
-        $('.autocomplete .auto-text').hide();
-    });
-
     // copy link
     $('.btn-copylink').tooltip();
     $('.btn-copylink').click(function(e){
@@ -155,13 +147,23 @@
         });
     }
 
-    // slider
-    $(".slider input").slider();
-    $('.slider input').change(function(){
-        var data = $(this).val().split(',');
-        var parent = $(this).parents('.slider-box');
-        parent.find('.slider-start').val(data[0]);
-        parent.find('.slider-end').val(data[1]);
+    // search
+    $('.form-search input').keyup(function(){
+        $('.autocomplete').show();
+    });
+    $('.form-search .btn-close').click(function(){
+        $('.autocomplete').hide();
+        $('.autocomplete .auto-text').show();
+        $('.form-search input').val('');
+    });
+    $('.autocomplete .auto-text p').click(function(){
+        var text = $(this).html().split('<b>').join('');
+        text = text.split('</b>').join('');
+        $('.form-search input').val(text);
+        $('.autocomplete .auto-text').hide();
+    });
+    $('.short-search .m-icon').click(function(){
+        $(this).parents('.short-search').slideUp(300);
     });
 
 })();
