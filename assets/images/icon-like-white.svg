@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37.734" height="35.152" viewBox="0 0 37.734 35.152">
+  <defs>
+    <filter id="Path_18152" x="0" y="10.065" width="14.755" height="24.064" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.361"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_18153" x="7.953" y="0" width="29.78" height="35.152" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+      <feFlood flood-opacity="0.557"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="like-6" transform="translate(5 5)">
+    <g id="Group_7501" data-name="Group 7501" transform="translate(0 10.065)">
+      <g id="Group_7500" data-name="Group 7500">
+        <g transform="matrix(1, 0, 0, 1, -5, -15.07)" filter="url(#Path_18152)">
+          <path id="Path_18152-2" data-name="Path 18152" d="M34.518,241.468h-3.17a.787.787,0,0,0-.792.781v12.5a.787.787,0,0,0,.792.781h3.17a.787.787,0,0,0,.792-.781v-12.5A.787.787,0,0,0,34.518,241.468Z" transform="translate(-25.56 -226.4)" fill="none" stroke="#fff" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_7503" data-name="Group 7503" transform="translate(7.953)">
+      <g id="Group_7502" data-name="Group 7502">
+        <g transform="matrix(1, 0, 0, 1, -12.95, -5)" filter="url(#Path_18153)">
+          <path id="Path_18153-2" data-name="Path 18153" d="M170.539,102.536a2.825,2.825,0,0,0-2.863-2.381h-7a15.511,15.511,0,0,0,.9-5.311,3.741,3.741,0,0,0-3.75-3.672h-.741a.9.9,0,0,0-.9.9c0,2.077-.809,5.827-2.334,7.352a9.951,9.951,0,0,1-3.055,1.974v13.479a20.984,20.984,0,0,0,7.41,1.449h5.876a2.731,2.731,0,0,0,2.694-3.688,2.7,2.7,0,0,0,1.8-3.593,2.7,2.7,0,0,0,1.3-4.4A2.689,2.689,0,0,0,170.539,102.536Z" transform="translate(-137.84 -86.17)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
