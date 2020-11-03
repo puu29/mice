@@ -313,4 +313,5 @@
 <script src="assets/js/masonry.pkgd.min.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 <script src="assets/js/bootstrap-slider.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
 <script src="assets/js/main.js"></script>

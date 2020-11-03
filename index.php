@@ -296,7 +296,7 @@
                 <div class="container">
                     <h2 class="pull-left font-gray">สถานที่ยอดนิยมสำหรับกิจกรรมไมซ์</h2>
                     <div class="select border-under pull-right">
-                        <select class="form-control">
+                        <select class="form-control bg-trans">
                             <option value="">ทั้งหมด</option>
                             <option value="">สถานที่ 1</option>
                             <option value="">สถานที่ 2</option>

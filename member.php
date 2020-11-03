@@ -19,8 +19,8 @@
                             <a href="member-quotation-normal.php">ขอใบเสนอราคาทั่วไป</a>
                         </div>
                     </div>
-                    <div class="select border-under pull-right ">
-                        <select class="form-control font-14">
+                    <div class="select border-under pull-right">
+                        <select class="form-control font-14 bg-trans">
                             <option value="">ล่าสุด</option>
                         </select>
                         <span class="glyphicon glyphicon-triangle-bottom"></span>

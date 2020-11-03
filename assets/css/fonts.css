@@ -300,3 +300,15 @@
 .m-icon-check-blue {
      background-image: url('../images/icon-check-blue.png');
 }
+.m-icon-upload-photo {
+     background-image: url('../images/icon-upload-photo.png');
+}
+.m-icon-upload-file {
+     background-image: url('../images/icon-upload-file.png');
+}
+.m-icon-vdo-sound {
+     background-image: url('../images/icon-vdo-sound.svg');
+}
+.m-icon-vdo-photo {
+     background-image: url('../images/icon-vdo-photo.svg');
+}

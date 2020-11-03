@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+  <g id="Group_10739" data-name="Group 10739" transform="translate(-906 -724)">
+    <g id="microphone" transform="translate(844.664 736.401)">
+      <g id="Group_2976" data-name="Group 2976" transform="translate(81.336)">
+        <g id="Group_2975" data-name="Group 2975" transform="translate(0)">
+          <path id="Path_16931" data-name="Path 16931" d="M137.282,0A5.2,5.2,0,0,0,132.1,5.186V13.6a5.186,5.186,0,1,0,10.373.031V5.186A5.2,5.2,0,0,0,137.282,0Z" transform="translate(-132.096)" fill="none" stroke="#fff" stroke-width="1"/>
+        </g>
+      </g>
+      <path id="Path_17464" data-name="Path 17464" d="M428.779,291.03a.575.575,0,0,0-.544.567,7.147,7.147,0,0,1-6.956,7.305h0a7.152,7.152,0,0,1-6.961-7.314.589.589,0,0,0-.175-.4.473.473,0,0,0-.391-.159.575.575,0,0,0-.547.567,8.327,8.327,0,0,0,7.182,8.444l.334.038v3.359h-3.761a.557.557,0,0,0-.411.158.609.609,0,0,0-.026.827.541.541,0,0,0,.389.184h8.682a.527.527,0,0,0,.374-.182.606.606,0,0,0,.151-.423.572.572,0,0,0-.537-.565h-3.749v-3.359l.334-.038a8.335,8.335,0,0,0,7.183-8.451.569.569,0,0,0-.556-.559V290.9Z" transform="translate(-334.868 -278.3)" fill="#fff"/>
+    </g>
+    <g id="Ellipse_147" data-name="Ellipse 147" transform="translate(906 724)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="25.5" cy="25.5" r="25.5" stroke="none"/>
+      <circle cx="25.5" cy="25.5" r="25" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -17,8 +17,8 @@
                     </a>
                     <h2 class="font-semibold">งานสัมมนา Creator ครั้งที่ 30</h2>
                     <div class="tab">
-                        <div class="select border-under pull-right ">
-                            <select class="form-control font-14">
+                        <div class="select border-under pull-right">
+                            <select class="form-control font-14 bg-trans">
                                 <option value="">ล่าสุด</option>
                             </select>
                             <span class="glyphicon glyphicon-triangle-bottom"></span>
