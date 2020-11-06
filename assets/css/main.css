@@ -2989,7 +2989,7 @@ textarea{
     padding-left: 30px;
     font-weight: 600;
 }
-.member .member-menu ul li.active a{
+.member .member-menu ul.no-icon li.active a{
     background: transparent;
     color: #2170B8;
 }

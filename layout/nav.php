@@ -69,7 +69,7 @@
                         </li>
                         <li><a href="news.php">ข่าวสารจากธุรกิจ</a></li>
                         <li><a href="calendar.php">ปฏิทินงานไมซ์</a></li>
-                        <li><a href="plan.php">วางแผนการจัดงาน</a></li>
+                        <li><a href="member-plan.php">วางแผนการจัดงาน</a></li>
                     </ul>
                 </div>
             </div>
