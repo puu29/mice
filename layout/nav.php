@@ -30,6 +30,7 @@
                         </a>
                     <?php } else { ?>
                         <div class="no-user">
+                            <a href="login.php"><img src="assets/images/icon-user-default.png"></a>
                             <a href="login.php" class="inner no-border">เข้าสู่ระบบ</a>
                             <a href="register.php" class="inner">สมัครสมาชิก</a>
                         </div>
@@ -50,7 +51,15 @@
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="menu">
+                    <div class="menu-bg" data-toggle="collapse" data-target="#menu"></div>
                     <ul class="nav navbar-right">
+                        <li class="action-top">
+                            <i class="m-icon m-icon-close-blue m-icon-20" data-toggle="collapse" data-target="#menu"></i>
+                            <ul class="nav navbar-right lang pull-right">
+                                <li><a href="#">EN</a></li>
+                                <li class="active"><a href="#">ไทย</a></li>
+                            </ul>
+                        </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ประเภทธุรกิจไมซ์ทั้งหมด <span class="glyphicon glyphicon-menu-down"></span></a>
                             <ul class="dropdown-menu">

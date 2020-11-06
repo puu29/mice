@@ -17,6 +17,7 @@ a:hover {
 }
 
 body {
+    float: left;
     width: 100%;
     background: #fff;
     position: relative;
@@ -30,6 +31,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     word-wrap: break-word;
+    overflow-x: hidden;
 }
 
 .font-blue {
@@ -425,6 +427,9 @@ header {
     left: 0px;
     z-index: 2000;
 }
+header #menu .menu-bg, header #menu .action-top {
+    display: none;
+}
 header .navbar{
     border: 0px;
     margin: 0px;
@@ -512,7 +517,7 @@ header .navbar-user .no-user .inner {
     padding: 0px 10px;
     position: relative;
 }
-header .navbar-user .no-user .inner:not(:first-child):before {
+header .navbar-user .no-user .inner:last-child:before {
     content: '';
     position: absolute;
     left: -2px;
@@ -550,6 +555,13 @@ header .user .img .m-icon{
 }
 header .user .text{
     float: left;
+}
+header .no-user a{
+    float: left;
+    display: block;
+}
+header .no-user a:first-child{
+    display: none;
 }
 
 .text-icon {
@@ -612,6 +624,7 @@ footer {
     color: #fff;
     display: inline-block;
     background: linear-gradient(0deg, rgba(33,112,184,1) 0%, rgba(0,55,160,1) 100%);
+    overflow-x: hidden;
 }
 footer .footer-detail .logo {
     width: 105px;
@@ -3980,6 +3993,7 @@ hr.in-panel{
     margin-top: 40px;
 }
 .step-heart .step{
+    width: 100%;
     position: relative;
     z-index: 1;
 }
@@ -4000,15 +4014,21 @@ hr.in-panel{
     position: relative;
     float: left;
 }
-.step-heart .step .icon:not(.active) i{
-    filter: grayscale(100%) brightness(2.3);
-}
 .step-heart .progress{
     top: 18px;
     left: 0px;
     width: 75%;
     margin-left: calc(17.5% - 45px);
     position: absolute;
+}
+.step-heart.for-score .progress-bar{
+    background: #916C2C;
+}
+.step-heart.for-score{
+    margin: 50px 0px 80px;
+    display: inline-block;
+    margin-left: -40px;
+    width: calc(100% + 80px);
 }
 .member label{
     font-weight: 600;
@@ -4038,4 +4058,13 @@ hr.in-panel{
 }
 .table > tbody > tr > td{
     padding: 20px 15px;
+}
+.table.no-padding-td > tbody > tr > td{
+    padding: 12px 0px;
+}
+.hidden-desktop{
+    display: none;
+}
+.hidden-mobile{
+    display: block;
 }

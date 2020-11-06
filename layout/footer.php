@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-sm-5">
+            <div class="col-md-5 col-sm-4">
                 <div class="footer-detail">
                     <img class="logo" src="assets/images/logo-white.svg">
                     <div class="social">
@@ -11,7 +11,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-7">
+            <div class="col-md-7 col-sm-8">
                 <ul class="footer-menu">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">กิจกรรมไมซ์ <span class="glyphicon glyphicon-menu-down"></span></a>
@@ -37,7 +37,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-12">
+            <div class="col-md-12">
                 <div class="copyright">Copyright © THAI MICE CONNECT by Thailand Convention & Exhibition Bureau. All Rights Reserved.</div>
             </div>
         </div>

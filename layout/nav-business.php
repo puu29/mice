@@ -17,7 +17,7 @@
                 </a>
             </li>
             <li class="<?= strpos($page, 'business-manage') > -1 ? 'active' : ''; ?>">
-                <a href="#">
+                <a href="business-manage.php">
                     <span>จัดการธุรกิจ</span>
                 </a>
             </li>
@@ -27,12 +27,12 @@
                 </a>
             </li>
             <li class="<?= strpos($page, 'business-score') > -1 ? 'active' : ''; ?>">
-                <a href="#">
+                <a href="business-score.php">
                     <span>การสะสมคะแนน</span>
                 </a>
             </li>
             <li class="<?= strpos($page, 'business-friend') > -1 ? 'active' : ''; ?>">
-                <a href="#">
+                <a href="business-friend.php">
                     <span>ชวนเพื่อน</span>
                 </a>
             </li>

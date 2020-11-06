@@ -70,6 +70,10 @@
      width: 20px !important;
      height: 20px !important;
 }
+.m-icon-45 {
+     width: 45px !important;
+     height: 45px !important;
+}
 .m-icon-white {
      filter: brightness(0) invert(1);
 }
@@ -327,4 +331,16 @@
 }
 .m-icon-info {
      background-image: url('../images/icon-info.png');
+}
+.m-icon-mice {
+     background-image: url('../images/icon-mice.png');
+}
+.m-icon-mice-silver {
+     background-image: url('../images/icon-mice-silver.png');
+}
+.m-icon-mice-gold {
+     background-image: url('../images/icon-mice-gold.png');
+}
+.m-icon-mice-platinum {
+     background-image: url('../images/icon-mice-platinum.png');
 }

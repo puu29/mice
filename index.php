@@ -110,6 +110,7 @@
                     </div>
                 </div>
             </section>
+            <?php if($_GET['login'] == 1) { ?>
             <section class="short-search">
                 <div class="container">
                     <div class="head">
@@ -159,6 +160,7 @@
                     </div>
                 </div>
             </section>
+            <?php } ?>
             <section>
                 <div class="container">
                     <h2 class="no-margin-top text-center">ธุรกิจไมซ์อื่นๆ</h2>
@@ -217,7 +219,7 @@
             </section>
             <section>
                 <div class="container">
-                    <h2 class="no-margin-top text-center">ทำไมผู้จัดงานต้องเลือก <span class="font-blue">Thai MICE Connect<span></h2>
+                    <h2 class="no-margin-top text-center">ทำไมผู้จัดงานต้องเลือก <br class="hidden-desktop" /><span class="font-blue">Thai MICE Connect<span></h2>
                     <div class="how">
                         <div class="row">
                             <div class="col-md-3 col-sm-6">
@@ -255,8 +257,17 @@
             <section>
                 <div class="method">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
+                        <div class="row is-reverse">
+                            <div class="col col-sm-6">
+                                <div class="vdo">
+                                    <div class="img">
+                                        <img src="assets/images/vdo.png">
+                                        <i class="m-icon m-icon-vdo"></i>
+                                    </div>
+                                    <iframe src="https://www.youtube.com/embed/SFmRQBsIPE8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col col-sm-6">
                                 <div class="text">
                                     <h2>ขั้นตอนการใช้งานสำหรับผู้จัดงาน</h2>
                                     <div class="method-list">
@@ -277,15 +288,6 @@
                                             <span>ส่งใบเสนอราคาผ่านทางระบบ</span>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="vdo">
-                                    <div class="img">
-                                        <img src="assets/images/vdo.png">
-                                        <i class="m-icon m-icon-vdo"></i>
-                                    </div>
-                                    <iframe src="https://www.youtube.com/embed/SFmRQBsIPE8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -371,8 +373,8 @@
                     <a href="#" class="pull-right btn btn-default btn-all">ดูทั้งหมด</a>
                     <div class="clearfix"></div>
                     <div class="promotion">
-                        <div class="row is-small">
-                            <div class="col col-md-3 col-sm-6">
+                        <div class="row is-small mobile-slide">
+                            <div class="item col col-md-3 col-sm-6">
                                 <div class="promotion-box">
                                     <div class="head clearfix">
                                         <div class="bg" style="background-image: url('assets/images/pro-user1.png')"></div>
@@ -389,7 +391,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-md-3 col-sm-6">
+                            <div class="item col col-md-3 col-sm-6">
                                 <div class="promotion-box">
                                     <div class="head clearfix">
                                         <div class="bg" style="background-image: url('assets/images/pro-user2.png')"></div>
@@ -406,7 +408,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-md-3 col-sm-6">
+                            <div class="clearfix"></div>
+                            <div class="item col col-md-3 col-sm-6">
                                 <div class="promotion-box">
                                     <div class="head clearfix">
                                         <div class="bg" style="background-image: url('assets/images/pro-user3.png')"></div>
@@ -423,7 +426,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-md-3 col-sm-6">
+                            <div class="item col col-md-3 col-sm-6">
                                 <div class="promotion-box">
                                     <div class="head clearfix">
                                         <div class="bg" style="background-image: url('assets/images/pro-user4.png')"></div>
@@ -512,14 +515,14 @@
             <section class="home-calendar">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-md-4 col-sm-5">
                             <div class="calendar-box">
                                 <div class="datepicker inline"></div>   
                             </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-md-8 col-sm-7">
                             <h2 class="pull-left">ปฏิทินกิจกรรม</h2>
-                            <a href="#" class="pull-right btn btn-default btn-all">ดูทั้งหมด</a>
+                            <a href="#" class="pull-right btn btn-default btn-all hidden-mobile">ดูทั้งหมด</a>
                             <div class="clearfix"></div>
                             <div class="calendar-detail scroll-custom">
                                 <div class="inner" data-date="2020-11-08">
@@ -570,6 +573,10 @@
                                         </div>  
                                     </div>
                                 </div>
+                            </div>
+                            <div class="text-center hidden-desktop">
+                                <br/><br/>
+                                <a href="#" class="bg-trans btn btn-default btn-all">ดูทั้งหมด</a>
                             </div>
                         </div>
                     </div>

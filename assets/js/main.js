@@ -2,8 +2,6 @@
 
     // slide
     $('.banner').owlCarousel({
-        items: 5,
-        slideBy: 5,
         navText: ['', ''],
         nav: false,
         loop: false,
@@ -11,23 +9,53 @@
         animateOut: 'fadeOut',
         autoplay: true,
         autoplayTimeout: 6000,
-        autoplayHoverPause: false
+        autoplayHoverPause: false,
+        responsive : {
+            0 : {
+                items: 1,
+                slideBy: 1,
+            },
+            767 : {
+                items: 3,
+                slideBy: 3,
+            },
+            991 : {
+                items: 5,
+                slideBy: 5,
+            }
+        }
     });
     $('.slide-mice').owlCarousel({
-        items: 6,
         navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
         nav: true,
-        loop: true,
         dots: true,
-        margin: 15
+        margin: 15,
+        responsive : {
+            0 : {
+                items: 2,
+                stagePadding: 0,
+            },
+            767 : {
+                items: 6,
+                stagePadding: 0,
+            }
+        }
     });
     $('.slide-location').owlCarousel({
-        items: 2,
-        slideBy: 2,
         navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
         nav: true,
         loop: false,
-        dots: true
+        dots: true,
+        responsive : {
+            0 : {
+                items: 1,
+                slideBy: 1,
+            },
+            767 : {
+                items: 2,
+                slideBy: 2,
+            }
+        }
     });
     $('.post-related-slide').owlCarousel({
         items: 3,
@@ -38,6 +66,20 @@
         dots: false,
         margin: 0
     });
+
+    if($(window).width() < 768)
+    {
+        $('.mobile-slide').addClass('owl-carousel');
+        $('.mobile-slide').owlCarousel({
+            items: 1,
+            slideBy: 1,
+            navText: ['', ''],
+            nav: false,
+            loop: false,
+            dots: true,
+            margin: 15
+        });
+    }
 
     // totop
     $('.to-top').click(function(){
