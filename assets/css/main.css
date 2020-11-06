@@ -4063,11 +4063,39 @@ hr.in-panel{
     padding: 12px 0px;
 }
 .hidden-desktop{
-    display: none;
+    display: none !important;
 }
 .hidden-mobile{
-    display: block;
+    display: block !important;
 }
 .faq-title{
     display: none;
+}
+.member-menu-page{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.member-menu-page .member-menu{
+    position: relative;
+    width: 100%;
+}
+.member-menu-page .member-menu .btn-logout{
+    margin: 20px auto;
+}
+.member-menu-page .member-menu li{
+    position: relative;
+}
+.member-menu-page .member-menu li > span{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    margin-top: -7px;
+    color: #282828;
+}
+.member-menu-page .member-menu ul li a{
+    padding-right: 45px;
+}
+.member-menu-page .to-back{
+    margin-bottom: 20px;
 }

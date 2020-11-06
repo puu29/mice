@@ -6,7 +6,7 @@
     <body>
         <?php include "layout/nav.php" ?>
         <div id="wrapper">
-            <section class="regis-box">
+            <section class="regis-box is-forget">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-5">

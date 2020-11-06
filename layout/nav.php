@@ -18,7 +18,7 @@
             <div class="container-fluid">
                 <div class="navbar-user">
                     <?php if($_GET['login'] == 1 || strpos($page, 'member') > -1) { ?>
-                        <a href="member.php" class="user">
+                        <a href="member.php" class="user hidden-mobile">
                             <div class="img">
                                 <div class="bg" style="background-image: url('assets/images/user.png')"></div>
                                 <i class="m-icon m-icon-noti"></i>
@@ -26,6 +26,12 @@
                             <div class="text">
                                 <span class="name">พัชรศรี</span>
                                 <span class="msg">, (9) ข้อความ</span>
+                            </div>
+                        </a>
+                        <a href="member-menu.php" class="user hidden-desktop">
+                            <div class="img">
+                                <div class="bg" style="background-image: url('assets/images/user.png')"></div>
+                                <i class="m-icon m-icon-noti"></i>
                             </div>
                         </a>
                     <?php } else { ?>
@@ -79,6 +85,8 @@
                         <li><a href="news.php">ข่าวสารจากธุรกิจ</a></li>
                         <li><a href="calendar.php">ปฏิทินงานไมซ์</a></li>
                         <li><a href="member-plan.php">วางแผนการจัดงาน</a></li>
+                        <li class="hidden-desktop"><a href="about.php">เกี่ยวกับ Thai MICE Connect</a></li>
+                        <li class="hidden-desktop"><a href="faq.php">คำถามที่พบบ่อย</a></li>
                     </ul>
                 </div>
             </div>

@@ -9,8 +9,16 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <div class="clearfix">
+                        <a href="javascript:history.back()" class="to-back font-blue pull-left">
+                            <div class="text-icon is-middle">
+                                <i class="glyphicon glyphicon-menu-left"></i>
+                                <span>กลับไปเมนูบัญชีทั่วไป</span>
+                            </div>
+                        </a>
+                    </div>
                     <h2 class="font-semibold no-margin-top">ประวัติการขอใบเสนอราคา</h2>
-                    <br/>
+                    <br class="hidden-mobile" />
                     <div class="btn-toolbar pull-elft" role="toolbar">
                         <div class="btn-group active">
                             <a href="member.php">การวางแผนการจัดงาน</a>
@@ -19,12 +27,14 @@
                             <a href="member-quotation-normal.php">ขอใบเสนอราคาทั่วไป</a>
                         </div>
                     </div>
+                    <h3 class="font-18 font-bold pull-left hidden-desktop">กิจกรรม</h3>
                     <div class="select border-under pull-right">
                         <select class="form-control font-14 bg-trans">
                             <option value="">ล่าสุด</option>
                         </select>
                         <span class="glyphicon glyphicon-triangle-bottom"></span>
                     </div>
+                    <div class="clearfix"></div>
                     <div class="panel-list">
                         <div class="head">
                             <div class="row">
