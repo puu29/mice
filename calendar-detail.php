@@ -33,7 +33,7 @@
                                 <div class="col-sm-4">
                                     <img class="img" src="assets/images/calendar-detail.png">
                                 </div>
-                                <div class="col-md-6 colsm-8">
+                                <div class="col-md-6 col-sm-8">
                                     <div class="calendar-info">
                                         <p class="font-semibold">รายละเอียดกิจกรรม</p>
                                         <p>The Thai cabinet has extended the enforcement of the emergency decree for one month, effective from May 1 until May 31, 2020. The extension results in several measures remaining in effect, such as night curfew between 10.00 pm – 04.00 am, closure of point of entry into the Kingdom, banning of large public gatherings, practice of social distancing, prohibition of entry into the areas prone to infection. The extension, despite much slower rate of infection, aims to ensure public health safety and the situation is under control while preventing the re-emergence of high infection. In addition, the government keeps monitoring the situation to ensure the suitability of control measures during each period of time.</p>

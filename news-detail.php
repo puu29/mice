@@ -6,7 +6,7 @@
     <body>
         <?php include "layout/nav.php" ?>
         <div id="wrapper">
-            <section>
+            <section class="news-detail-page">
                 <div class="container">
                     <ol class="breadcrumb">
                         <li><a href="index.php">Homepage</a></li>

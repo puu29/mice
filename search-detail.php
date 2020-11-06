@@ -43,7 +43,7 @@
                                     <span class="glyphicon glyphicon-star-empty"></span>
                                     <label>(40 รีวิว)</label>
                                 </div>
-                                <button type="button" class="btn btn-round btn-green2 pull-right">
+                                <button type="button" class="btn btn-round btn-green2 pull-right btn-chat">
                                     <div class="text-icon is-middle">
                                         <i class="m-icon m-icon-chat-green"></i>
                                         <span class="font-semibold font-green">ตอบกลับภายใน 1 ชม.</span>
@@ -80,7 +80,7 @@
                                 </ul>
                             </div>
                             <div class="col-sm-4">
-                                <div class="btn-box">
+                                <div class="btn-box btn-post-option">
                                     <button type="button" class="btn btn-lg btn-blue-linear" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
                                         <div class="text-icon">
                                             <i class="m-icon m-icon-docs"></i>
@@ -120,7 +120,7 @@
                                     <div class="tab-content no-padding-bottom">
                                         <div role="tabpanel" class="tab-pane active" id="tab-info1">
                                             <div class="panel panel-default">
-                                                <div class="panel-heading">
+                                                <div class="panel-heading has-option">
                                                     <h3 class="font-semibold no-margin pull-left">ข้อมูลห้องประชุมภายในสถานประกอบการ</h3>
                                                     <div class="logo pull-right">
                                                         <img src="assets/images/logo-guarantee.png">
@@ -210,11 +210,11 @@
                                                 <div class="panel-body">
                                                     <div class="form-group">
                                                         <div class="row">
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-4 col-xs-6">
                                                                 <p class="no-margin"><big>จำนวนโต๊ะ</big></p>
                                                                 <p>120 ตัว</p>
                                                             </div>
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-4 col-xs-6">
                                                                 <p class="no-margin"><big>จำนวนเก้าอี้ </big></p>
                                                                 <p>300 ตัว</p>
                                                             </div>
@@ -222,11 +222,11 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="row">
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-4 col-xs-6">
                                                                 <p class="no-margin"><big>จำนวนโซฟา</big></p>
                                                                 <p>1 ตัว</p>
                                                             </div>
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-4 col-xs-6">
                                                                 <p></p>
                                                                 <div class="text-icon for-list is-middle">
                                                                     <i class="m-icon m-icon-wifi"></i>
@@ -275,7 +275,7 @@
                                                 <div class="panel-heading">
                                                     <h3 class="font-semibold no-margin">สิ่งอำนวยความสะดวกสถานที่ </h3>
                                                 </div>
-                                                <div class="panel-body">
+                                                <div class="panel-body mobile-list">
                                                     <div class="form-group">
                                                         <div class="row">
                                                             <div class="col-sm-4">
@@ -373,7 +373,7 @@
                                                 <div class="panel-heading">
                                                     <h3 class="font-semibold no-margin">ข้อมูลเฉพาะด้านธุรกิจบริการอาหารและเครื่องดื่ม </h3>
                                                 </div>
-                                                <div class="panel-body">
+                                                <div class="panel-body mobile-list">
                                                     <div class="form-group">
                                                         <div class="row">
                                                             <div class="col-sm-12">
@@ -571,11 +571,11 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="row">
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-3 col-xs-6">
                                                                 <p class="no-margin">รถยนต์ (คัน)</p>
                                                                 <p class="font-blue"><big>250</big></p>
                                                             </div>
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-3 col-xs-6">
                                                                 <p class="no-margin">รถบัส (คัน)</p>
                                                                 <p class="font-blue"><big>50</big></p>
                                                             </div>
@@ -610,6 +610,66 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="font-semibold no-margin"><big>รายละเอียดอื่นๆ</big></h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <p><b>เบอร์โทรศัพท์</b></p>
+                                            <a href="#" class="text-icon is-middle for-list no-margin">
+                                                <i class="m-icon m-icon-call"></i>
+                                                <span class="font-link">โทรหาสถานที่</span>
+                                            </a>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="no-margin"><b>เว็บไซต์</b></p>
+                                            <p><a href="www.vilaahotelresort.com" target="_blank">www.vilaahotelresort.com</a></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="no-margin"><b>ชื่่อบัญชี Facebook/Page</b></p>
+                                            <p>VillaHotelandresort</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="no-margin"><b>ชื่อบัญชีผู้ใช้ Line</b></p>
+                                            <p>@VillaHotelandresort</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="no-margin"><b>วันทำการ</b></p>
+                                            <p>จันทร์ - เสาร์</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="no-margin"><b>เวลาเปิด-ปิดโดยประมาณ</b></p>
+                                            <p>09.00 - 19.00 น.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-map">
+                                    <h3 class="font-medium">แผนที่ตั้งสถานที่</h3>
+                                    <img src="assets/images/map.png" class="img-responsive">
+                                </div>
+                                <div class="post-action">
+                                    <div class="share">
+                                        <span class="font-medium">Share</span>
+                                        <br/>
+                                        <div class="social">
+                                            <a href="#" target="_blank" class="inner"><i class="m-icon m-icon-fb"></i></a>
+                                            <a href="#" target="_blank" class="inner"><i class="m-icon m-icon-tw"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="tags">
+                                        <span class="font-medium">Tag</span>
+                                        <br/>
+                                        <div class="tag">
+                                            <a href="#" class="inner">จัดงาน</a>
+                                            <a href="#" class="inner">ที่พักกรุงเทพ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
                                 <div class="panel panel-default">
                                     <div class="panel-body no-padding">
                                         <div class="review">
@@ -700,64 +760,6 @@
                                             </div>
                                         </div>
                                         <br/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="font-semibold no-margin"><big>รายละเอียดอื่นๆ</big></h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <p><b>เบอร์โทรศัพท์</b></p>
-                                            <a href="#" class="text-icon is-middle for-list no-margin">
-                                                <i class="m-icon m-icon-call"></i>
-                                                <span class="font-link">โทรหาสถานที่</span>
-                                            </a>
-                                        </div>
-                                        <div class="form-group">
-                                            <p class="no-margin"><b>เว็บไซต์</b></p>
-                                            <p><a href="www.vilaahotelresort.com" target="_blank">www.vilaahotelresort.com</a></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <p class="no-margin"><b>ชื่่อบัญชี Facebook/Page</b></p>
-                                            <p>VillaHotelandresort</p>
-                                        </div>
-                                        <div class="form-group">
-                                            <p class="no-margin"><b>ชื่อบัญชีผู้ใช้ Line</b></p>
-                                            <p>@VillaHotelandresort</p>
-                                        </div>
-                                        <div class="form-group">
-                                            <p class="no-margin"><b>วันทำการ</b></p>
-                                            <p>จันทร์ - เสาร์</p>
-                                        </div>
-                                        <div class="form-group">
-                                            <p class="no-margin"><b>เวลาเปิด-ปิดโดยประมาณ</b></p>
-                                            <p>09.00 - 19.00 น.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-map">
-                                    <h3 class="font-medium">แผนที่ตั้งสถานที่</h3>
-                                    <img src="assets/images/map.png" class="img-responsive">
-                                </div>
-                                <div class="post-action">
-                                    <div class="share">
-                                        <span class="font-medium">Share</span>
-                                        <br/>
-                                        <div class="social">
-                                            <a href="#" target="_blank" class="inner"><i class="m-icon m-icon-fb"></i></a>
-                                            <a href="#" target="_blank" class="inner"><i class="m-icon m-icon-tw"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="tags">
-                                        <span class="font-medium">Tag</span>
-                                        <br/>
-                                        <div class="tag">
-                                            <a href="#" class="inner">จัดงาน</a>
-                                            <a href="#" class="inner">ที่พักกรุงเทพ</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1536,6 +1538,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="clearfix"></div>
                                 <div class="col-sm-12">
                                     <br/>
                                     <div class="form-group">
@@ -1564,6 +1567,18 @@
                     todayHighlight: true,
                     datesDisabled: ['2020-11-08','2020-11-13','2020-11-14']
                 });
+
+                if($(window).width() < 768)
+                {
+                    $('.post-slide').addClass('owl-carousel');
+                    $('.post-slide').owlCarousel({
+                        items: 1,
+                        navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
+                        nav: true,
+                        loop: false,
+                        dots: true
+                    });
+                }
             })();
         </script>
     </body>

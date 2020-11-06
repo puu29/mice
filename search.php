@@ -20,6 +20,12 @@
                                 </div>
                                 <div class="col-sm-6 text-center">
                                     <div class="btn-toolbar" role="toolbar">
+                                        <div class="btn-group btn-blue hidden-desktop" onclick="filter_open()">
+                                            <div class="text-icon is-middle">
+                                                <i class="m-icon m-icon-filter"></i>
+                                                <span>ค้นหาละเอียด</span>
+                                            </div>
+                                        </div>
                                         <div class="btn-group active">
                                             <a href="search.php" class="text-icon is-middle">
                                                 <i class="m-icon m-icon-list"></i>
@@ -49,7 +55,12 @@
                 <div class="body">
                     <div class="container">
                         <div class="filter">
+                            <div class="bg-filter" onclick="filter_close()"></div>
                             <form action="" id="form-filter" method="post">
+                                <div class="action-top">
+                                    <h3 class="no-margin pull-left">ค้นหาละเอียด</h3>
+                                    <i class="m-icon m-icon-close-blue m-icon-20 pull-right" onclick="filter_close()"></i>
+                                </div>
                                 <div class="form-group">
                                     <div class="input-icon">
                                         <i class="m-icon m-icon-search"></i>
@@ -653,6 +664,18 @@
                 $('#form-filter input[type="checkbox"]').change(function(){
                     set_selected();
                 });
+
+                if($(window).width() < 768)
+                {
+                    $('.post').addClass('style-3');
+                }
+
+                $(window).resize(function(){
+                    if($(window).width() < 768)
+                    {
+                        $('.post').addClass('style-3');
+                    }
+                });
             })();
 
             function set_selected()
@@ -685,6 +708,16 @@
                 {
                     $('#selected').show();
                 }
+            }
+
+            function filter_open()
+            {
+                $('.filter').addClass('open');
+            }
+
+            function filter_close()
+            {
+                $('.filter').removeClass('open');
             }
         </script>
     </body>

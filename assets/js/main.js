@@ -58,26 +58,43 @@
         }
     });
     $('.post-related-slide').owlCarousel({
-        items: 3,
-        slideBy: 1,
         navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
         nav: true,
         loop: false,
-        dots: false,
-        margin: 0
+        margin: 0,
+        responsive : {
+            0 : {
+                items: 1,
+                dots: true,
+            },
+            767 : {
+                items: 2,
+                dots: false,
+            },
+            920 : {
+                items: 3,
+                dots: false,
+            }
+        }
     });
 
-    if($(window).width() < 768)
+    if($(window).width() < 992)
     {
         $('.mobile-slide').addClass('owl-carousel');
         $('.mobile-slide').owlCarousel({
-            items: 1,
-            slideBy: 1,
             navText: ['', ''],
-            nav: false,
+            nav: true,
             loop: false,
-            dots: true,
-            margin: 15
+            dots: false,
+            margin: 15,
+            responsive : {
+                0 : {
+                    items: 1,
+                },
+                767 : {
+                    items: 2,
+                }
+            }
         });
     }
 

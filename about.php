@@ -26,10 +26,10 @@
                     </section>
                     <section>
                         <div class="row">
-                            <div class="col-md-6 text-center">
+                            <div class="col-sm-6 text-center">
                                 <img src="assets/images/about-img1.png">
                             </div>
-                            <div class="col-md-5 col-md-offset-1 text-right">
+                            <div class="col-md-5 col-sm-6 col-md-offset-1 text-right">
                                 <div class="text-left" style="width: 415px; max-width: 100%">
                                     <h3>ประโยชน์ทางด้านธุรกิจที่คาดว่าจะได้รับจาก<br/>โครงการ Thai MICE Connect</h3>
                                     <p>• เพิ่มช่องทางในการโปรโมทธุรกิจไมซ์ในจังหวัดไปสู่ตลาดทั่วไทย และทั่วโลก</p>
@@ -44,11 +44,11 @@
                     </section>
                     <section>
                         <div class="row is-reverse">
-                            <div class="col col-md-6 text-center">
+                            <div class="col col-sm-6 text-center">
                                 <br/><br/><br/>
                                 <img src="assets/images/about-img2.png">
                             </div>
-                            <div class="col col-md-6 text-center">
+                            <div class="col col-sm-6 text-center">
                                 <div class="text-left" style="width: 415px; max-width: 100%;margin: 0 auto;">
                                     <h3>ประโยชน์ด้านผลกระทบทางสังคมที่คาดว่าจะได้รับ<br/>จากโครงการ Thai MICE Connect</h3>
                                     <p>• เป็นภาพลักษณ์อันดีของจังหวัดที่จะได้รับการเผยแพร่ไปสู่ทั่วโลกในเชิงความพร้อมในการรองรับการจัดงานไมซ์</p>
@@ -64,7 +64,7 @@
                     </section>
                     <section>
                         <div class="row">
-                            <div class="col-md-12 text-center">
+                            <div class="col-sm-12 text-center">
                                 <h3><big>พันธมิตรโครงการ</big></h3>
                                 <div class="partner-box">
                                     <div class="inner">

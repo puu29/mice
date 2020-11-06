@@ -8,6 +8,286 @@
     .hidden-mobile{
         display: none;
     }
+    .search-page .filter{
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2000;
+        border-radius: 0px;
+        box-shadow: none;
+        padding-right: 60px;
+        background: transparent;
+        padding: 0px;
+    }
+    .search-page .filter form{
+        background: #fff;
+        position: relative;
+        width: 360px;
+        max-width: 90%;
+        padding: 20px;
+        overflow-y: auto;
+        height: 100%;
+        position: relative;
+        z-index: 3;
+        padding-bottom: 60px;
+        margin-left: -100%;
+        transition: .3s ease 0s;
+    }
+    .search-page .filter.open form{
+        margin-left: 0px;
+    }
+    .search-page .filter .action-top{
+        display: inline-block;
+        width: 100%;
+        margin-top: -20px;
+        margin-left: -20px;
+        width: calc(100% + 40px);
+        padding: 20px;
+        background: #fff;
+        position: sticky;
+        top: -20px;
+        left: 0px;
+        z-index: 5;
+    }
+    .search-page .filter.open{
+        display: block;
+    }
+    .search-from h2 {
+        margin: 0px;
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: -5px;
+    }
+    .search-page > .head{
+        padding-bottom: 0px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    .search-page > .body{
+        margin-top: 0px;
+    }
+    .search-page > .body .result{
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .search-page > .head .search-action{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .search-page > .head .search-action .btn-toolbar{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        padding: 20px 10px;
+        z-index: 200;
+        background: #fff;
+        border: 0px;
+        box-shadow: 0px -3px 6px rgba(0,0,0,0.16);
+        margin: 0px;
+        border-radius: 0px;
+    }
+    .search-page > .head .search-action .btn-toolbar .btn-group{
+        border: 1px solid #2170B8;
+        border-radius: 5px;
+        margin: 0px 8px;
+        min-width: calc(50% - 16px);
+        float: left;
+    }
+    .search-page > .head .search-action .btn-toolbar .btn-group.active{
+        display: none;
+    }
+    .post.style-3, .post.style-2{
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.16) !important;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .post.style-3 .body .info{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        min-height: auto;
+    }
+    .post.style-3 .body .btn-box .btn{
+        min-width: 50%;
+        width: 50%;
+    }
+    .post.style-3 h3{
+        height: auto;
+    }
+    .post.style-3 .body .info{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .post.style-3 .head p{
+        margin-bottom: 0px;
+    }
+    .post.style-3 .head{
+        min-height: initial;
+    }
+    .post.style-2 .head, .post.style-3 .head, .post.style-3 .body .info{
+        padding-left: 110px;
+    }
+    .post.style-3 .body .info .col-xs-6{
+        padding-right: 0px;
+    }
+    .search-action .select.border-under{
+        float: right !important;
+    }
+    .search-page .total{
+        display: inline-block;
+        float: left;
+    }
+    .search-page.for-map .search-map{
+        margin-left: -15px;
+        width: calc(100% + 30px);
+        float: left;
+        margin-top: 20px;
+        height: auto;
+    }
+    .search-page.for-map .search-map img{
+        width: 100%;
+        height: auto;
+    }
+    .search-page.for-map .search-result{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        overflow-x: auto;
+        box-shadow: none;
+        background: transparent;
+        border-radius: 0px;
+        margin-top: -100px;
+        margin-left: -15px;
+        width: calc(100% + 30px);
+        padding-left: 5px;
+    }
+    .search-page.for-map .search-result .owl-stage{
+        padding-left: 10px !important;
+    }
+    .search-page.for-map .post.style-2 .bg, .search-page.for-map .post.style-3 .bg{
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+        height: 140px;
+    }
+    .search-filter big{
+        font-size: 14px;
+    }
+    .post .body .info{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .post-cover{
+        margin: 0px;
+        width: 100%;
+    }
+    .post-page{
+        padding: 20px 0px;
+    }
+    .post-page .post-title{
+        margin-top: 20px;
+    }
+    .btn .text-icon {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .btn .text-icon i{
+        background-size: contain;
+    }
+    .post-page .post-title .btn-box .btn .text-icon{
+        padding-left: 32px;
+        padding: 2px 0px 0px 32px;
+        min-height: 25px;
+    }
+    .post-page .post-title .btn-box{
+        margin-top: 40px;
+    }
+    .post-page .post-title .btn-box .btn{
+        margin-top: 7px;
+    }
+    .tab.style-2 .nav-tabs{
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+        white-space: nowrap;
+        overflow-y: hidden;
+        padding-bottom: 10px;
+    }
+    .tab.style-2 .tab-content {
+        padding: 5px 0px;
+    }
+    .panel .panel-heading, .panel .panel-body{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .panel .panel-heading .logo{
+        right: 15px;
+    }
+    .owl-carousel .item{
+        width: 100%;
+    }
+    .mobile-slide.owl-carousel .owl-stage-outer{
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+    .news-detail-page{
+        padding-top: 20px;
+    }
+    .news-detail > .text {
+        padding: 20px 90px 20px 0px;
+    }
+    .news-detail .share.is-vertical{
+        right: 0px;
+    }
+    .other-card > .text {
+        height: 90px;
+        overflow: hidden;
+    }
+    .cards.col-5 .card{
+        width: calc(33.33% - 20px);
+    }
+    .faq-page .tab{
+        position: relative;
+        padding-left: 220px;
+    }
+    .faq-page .tab .nav-tabs{
+        width: 200px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        margin-top: 20px;
+        border: 0px;
+    }
+    .faq-page .tab .nav-tabs li{
+        width: 100%;
+        padding: 0px;
+    }
+    .faq-page .tab .tab-content .panel:first-child{
+        margin-top: 0px;
+    }
+    .faq-page .tab .nav-tabs li.active a{
+        border: 0px !important;
+    }
+    .panel-group .panel-heading a{
+        padding: 0px 30px 0px 0px;
+    }
+    .panel-group .panel-heading span{
+        top: 22px;
+    }
+    .partner-box .inner{
+        width: 120px;
+    }
+    .content-page section{
+        padding: 20px 0px;
+    }
+    .content-page{
+        padding-bottom: 40px;
+    }
 }
 
 @media (max-width: 767px){
@@ -28,7 +308,7 @@
         margin-left: 0px;
         display: block !important;
     }
-    header #menu.in .menu-bg {
+    header #menu.in .menu-bg, .bg-filter {
         display: block;
         position: absolute;
         top: 0px;
@@ -194,6 +474,13 @@
     .btn-all{
         padding: 8px 20px;
     }
+    .tab .nav-tabs{
+        text-align: center;
+    }
+    .tab .nav-tabs li{
+        float: initial;
+        display: inline-block;
+    }
     .tab .nav-tabs a{
         font-size: 16px;
         line-height: 24px;
@@ -259,6 +546,347 @@
     }
     .home-calendar{
         margin-bottom: 60px;
+    }
+    .post-cover .post-slide {
+        position: relative;
+        height: 390px;
+        margin-left: -15px;
+        width: calc(100% + 30px);
+        height: auto;
+    }
+    .post-cover .post-slide .item{
+        width: 100% !important;
+        height: 220px !important;
+    }
+    .post-cover .post-slide.owl-carousel .owl-dots{
+        margin-top: -30px;
+    }
+    .post-cover .post-slide.owl-carousel .owl-nav button.owl-prev{
+        left: 10px;
+        top: 28%;
+        filter: brightness(0) invert(1);
+    }
+    .post-cover .post-slide.owl-carousel .owl-nav button.owl-next{
+        right: 10px;
+        top: 28%;
+        filter: brightness(0) invert(1);
+    }
+    .post-cover .post-like{
+        z-index: 2;
+        left: -5px;
+    }
+    .post-cover .post-logo{
+        z-index: 2;
+        right: 0px;
+        width: 100px;
+        height: 100px;
+        bottom: -50px;
+    }
+    .breadcrumb{
+        margin-bottom: 10px;
+    }
+    .post-page .post-title {
+        margin-top: 10px;
+    }
+    .post-page .post-title .star{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .post-page .btn-chat{
+        float: initial !important;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+    .post-page .btn-post-option{
+        margin: 0px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100vw !important;
+        background: #fff;
+        z-index: 1000;
+        padding: 10px 15px 20px;
+        box-shadow: 0px -3px 6px rgba(0,0,0,0.16);
+    }
+    .post-page .btn-post-option .btn{
+        padding: 11px 12px 7px;
+    }
+    .post-page .btn-post-option .btn:not(:first-child){
+        width: 50px;
+    }
+    .post-page .btn-post-option .btn:not(:first-child) span{
+        display: none;
+    }
+    .post-page .btn-post-option .btn:first-child{
+        width: calc(100% - 108px);
+    }
+    .panel-heading.has-option{
+        padding-right: 100px;
+        position: relative;
+    }
+    .panel-heading.has-option .pull-right{
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .room-card{
+        padding: 12px;
+    }
+    .room-card .img, .room-card .text{
+        width: 100%;
+    }
+    .room-card .text{
+        padding: 15px 0px;
+    }
+    .room-card hr{
+        border-color: #fff;
+        margin-top: 0px;
+    }
+    .room-table .tr{
+        width: 33.33%;
+        margin-top: -1px;
+    }
+    .room-table{
+        display: inline-block;
+        margin-top: 5px;
+    }
+    .mobile-list br{
+        display: none;
+    }
+    .post-action .tags{
+        margin-bottom: 30px;
+    }
+    .review-list{
+        padding: 25px 20px;
+    }
+    .btn-review{
+        position: relative;
+        right: auto;
+        top: 0px;
+        transform: none;
+        margin-top: 15px;
+    }
+    .review-list p{
+        margin-top: 8px;
+    }
+    .post .guarantee{
+        margin: 5px 0px 0px;
+    }
+    .post-related-slide{
+        margin-bottom: 25px;
+    }
+    .post-related-slide .post{
+        margin-bottom: 5px;
+    }
+    .modal .modal-body.pd-40 {
+        padding: 25px 25px;
+    }
+    .modal .modal-body.pd-40 .close {
+        margin-top: -8px;
+        margin-right: -10px;
+    }
+    .status-box img{
+        width: 120px;
+    }
+    .status-box h2{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .status-box .btn-box{
+        font-size: 14px !important;
+    }
+    .datepicker.is-appointment{
+        padding: 0px;
+    }
+    .date-status{
+        margin-top: -20px;
+    }
+    .date-status > div{
+        margin-right: 10px;
+    }
+    .date-status > div:last-child{
+        margin-right: 0px;
+    }
+    .radio-select .radio > label{
+        min-width: 92px;
+    }
+    .form-select .select{
+        margin: 15px 0px 0px;
+        min-width: 100%;
+        width: 100%;
+    }
+    .form-select h2{
+        font-size: 22px;
+        line-height: 33px;
+        margin: 0px;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .promotion-box.is-medium{
+        padding: 20px 15px;
+        margin-bottom: 15px;
+    }
+    .news-detail > .img{
+        margin-left: -15px;
+        width: calc(100% + 30px);
+        max-width: initial;
+    }
+    .news-detail > .text{
+        padding-top: 10px;
+        padding-right: 0px;
+    }
+    .news-detail .head h2{
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 10px !important;
+    }
+    .news-detail .head .date{
+        font-size: 14px;
+    }
+    hr {
+        border-color: #D9D9D9;
+        margin: 18px 0px;
+    }
+    .news-detail .share.is-vertical{
+        display: none;
+    }
+    .news-detail .footer{
+        margin-top: 0px;
+    }
+    .news-detail .footer .share{
+        margin-bottom: 30px;
+    }
+    .news-detail .other{
+        margin-top: 30px;
+    }
+    .news-detail .other .col:nth-child(even){
+        text-align: left;
+    }
+    .news-detail .other .col:nth-child(even) .other-card .img{
+        float: left;
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .other-card > .text p.font-light{
+        color: #282828;
+        font-weight: 400 !important;
+    }
+    .tab .tab-content .pull-right {
+        width: 100%;
+    }
+    .tab .tab-content .pull-right .select{
+        width: calc(50% - 2px);
+        min-width: initial;
+    }
+    .cards.col-5 .card{
+        max-width: 100%;
+        width: 315px;
+        margin: 40px auto 0px;
+        text-align: center;
+        display: block;
+        float: initial;
+    }
+    .card .desc{
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .card .img{
+        max-width: 100%;
+        width: 260px;
+        margin: 0 auto 15px;
+    }
+    .calendar-page .body .img{
+        top: 0px;
+        position: relative;
+        margin-top: -100px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .calendar-page .head{
+        padding: 15px 0px 85px;
+    }
+    .calendar-page .head h2{
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+    .faq-page .tab{
+        padding-left: 0px;
+        margin-bottom: 50px;
+    }
+    .faq-page .tab .nav-tabs{
+        position: relative;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .faq-page .tab .tab-content{
+        display: none;
+    }
+    .faq-page .tab .nav-tabs li a, .faq-page .tab .nav-tabs li.active a{
+        text-align: left;
+        font-weight: 400;
+        border-bottom: 1px solid #DBDBDB !important;
+        padding: 18px 30px 18px 10px;
+        position: relative;
+    }
+    .faq-page .tab .nav-tabs li a:after{
+        content: '\e258';
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        margin-top: -6px;
+    }
+    .cover {
+        padding: 35px 15px;
+    }
+    .cover .text h2 {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .content-page h2 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #2170B8;
+        margin: 10px 0px 40px;
+    }
+    .content-page h3 br, .content-page h2 br{
+        display: none;
+    }
+    .content-page img{
+        margin-bottom: 20px;
+    }
+    .content-page .is-reverse > div{
+        width: 100% !important;
+    }
+    .partner-box .inner {
+        display: inline-block;
+        padding: 15px 20px 0px;
+        width: 100px;
+    }
+    .contact-list .text-icon{
+        margin: 30px 0px;
+    }
+    .contact-list .text-icon > *{
+        width: calc(100% - 80px);
+    }
+    .contact-list .text-icon img{
+        width: 60px;
+        margin-right: 20px;
+        margin-bottom: 0px;
+    }
+    .contact-list .text-icon br{
+        display: none;
     }
 }
 

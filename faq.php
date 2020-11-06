@@ -21,6 +21,15 @@
                             <li><a href="#tab-faq3" aria-controls="tab-faq3" role="tab" data-toggle="tab">ปัญหาเกี่ยวกับการบันทึกข้อมูลธุรกิจของผู้ให้บริการ</a></li>
                             <li><a href="#tab-faq4" aria-controls="tab-faq4" role="tab" data-toggle="tab">ปัญหาเกี่ยวกับแคมเปญคลิกติดใจ</a></li>
                         </ul>
+                        <div class="faq-title">
+                            <div class="to-back font-blue">
+                                <div class="text-icon is-middle">
+                                    <i class="glyphicon glyphicon-menu-left"></i>
+                                    <span>ย้อนกลับ</span>
+                                </div>
+                            </div>
+                            <h3 class="font-semibold text-center no-margin-bottom">ปัญหาทั่วไป</h3>
+                        </div>
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="tab-faq1">
                                 <div class="panel-group" id="group-faq1" role="tablist" aria-multiselectable="true">
@@ -102,7 +111,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane active" id="tab-faq2">
+                            <div role="tabpanel" class="tab-pane" id="tab-faq2">
                                 <div class="panel-group" id="group-faq2" role="tablist" aria-multiselectable="true">
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="panel-head21">
@@ -125,7 +134,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane active" id="tab-faq3">
+                            <div role="tabpanel" class="tab-pane" id="tab-faq3">
                                 <div class="panel-group" id="group-faq3" role="tablist" aria-multiselectable="true">
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="panel-head31">
@@ -148,7 +157,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane active" id="tab-faq4">
+                            <div role="tabpanel" class="tab-pane" id="tab-faq4">
                                 <div class="panel-group" id="group-faq4" role="tablist" aria-multiselectable="true">
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="panel-head41">
@@ -177,5 +186,18 @@
             </section>
         </div>
         <?php include "layout/footer.php" ?>
+        <script>
+            (function(){
+                $('.faq-page .nav-tabs li').click(function(){
+                    $('.faq-page .nav-tabs').hide();
+                    $('.faq-page .tab-content, .faq-title').fadeIn(300);
+                });
+
+                $('.faq-title .to-back').click(function(){
+                    $('.faq-page .tab-content, .faq-title').hide();
+                    $('.faq-page .nav-tabs').fadeIn(300);
+                });
+            })();
+        </script>
     </body>
 </html>

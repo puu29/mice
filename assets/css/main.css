@@ -427,7 +427,7 @@ header {
     left: 0px;
     z-index: 2000;
 }
-header #menu .menu-bg, header #menu .action-top {
+header #menu .menu-bg, header #menu .action-top, .bg-filter, .filter .action-top {
     display: none;
 }
 header .navbar{
@@ -4067,4 +4067,7 @@ hr.in-panel{
 }
 .hidden-mobile{
     display: block;
+}
+.faq-title{
+    display: none;
 }
