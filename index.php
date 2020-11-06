@@ -408,7 +408,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="clearfix"></div>
                             <div class="item col col-md-3 col-sm-6">
                                 <div class="promotion-box">
                                     <div class="head clearfix">
