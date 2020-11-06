@@ -39,6 +39,13 @@
         margin: 0
     });
 
+    // totop
+    $('.to-top').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 'slow');
+    });
+
+    // tooltip
+    $('[data-toggle="tooltip"]').tooltip()
 
     // datepicker
     $('.datepicker2').datepicker({
@@ -99,6 +106,20 @@
             }
             reader.readAsDataURL(input.files[0]);
         }
+    });
+    $('.upload-file input').change(function(e){
+        var parent = $(this).parents('.upload-file');
+        var input = e.target;
+        for (var i = 0; i < input.files.length; i++) {
+            parent.find('.text').append(`<div class="inner">
+                                            <span>${input.files[i].name}</span>
+                                            <i class="m-icon m-icon-close remove-file"></i>
+                                        </div>`);
+        }
+    });
+
+    $('.upload-file').on('click', '.remove-file', function(){
+        $(this).parents('.inner').remove();
     });
 
     // like

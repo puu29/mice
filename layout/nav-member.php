@@ -53,14 +53,20 @@
                 </a>
             </li>
             <hr/>
-            <li>
-                <a href="#">
+            <li class="<?= strpos($page, 'member-business') > -1 ? 'active' : ''; ?>">
+                <a href="member-business.php">
                     <i class="m-icon m-icon-menu-account"></i>
                     <span>บัญชีธุรกิจ</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="business-profile.php">
+                    <i><img src="assets/images/villa.png"></i>
+                    <span>Villa Hotel and Resort</span>
+                </a>
+            </li>
+            <li>
+                <a href="business-account-add.php">
                     <i class="m-icon m-icon-plus"></i>
                     <span class="font-bold font-blue">เพิ่มธุรกิจ</span>
                 </a>

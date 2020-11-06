@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="215" height="213" viewBox="0 0 215 213">
+  <g id="Group_10749" data-name="Group 10749" transform="translate(-308 -4366)">
+    <text id="อัพโหลดรูปภาพใหม่" transform="translate(334 4571)" fill="#282828" font-size="13" font-family="Kanit-SemiBold, Kanit" font-weight="600"><tspan x="0" y="0">อัพโหลดรูปภาพใหม่</tspan></text>
+    <circle id="Ellipse_327" data-name="Ellipse 327" cx="9.5" cy="9.5" r="9.5" transform="translate(308 4556)" fill="#2170b8"/>
+    <text id="_" data-name="+" transform="translate(313 4571)" fill="#fff" font-size="19" font-family="Kanit-Regular, Kanit"><tspan x="0" y="0">+</tspan></text>
+    <g id="Rectangle_2305" data-name="Rectangle 2305" transform="translate(308 4366)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="5">
+      <rect width="215" height="178" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="214" height="177" rx="4.5" fill="none"/>
+    </g>
+  </g>
+</svg>

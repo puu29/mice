@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-slider.css">
 <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-tagsinput.css">
 <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
 <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">

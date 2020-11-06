@@ -50,6 +50,9 @@ body {
 .font-gray {
     color: #535353;
 }
+.font-gray-light {
+    color: #969696;
+}
 .font-link {
     color: #2170B8 !important;
     text-decoration: underline !important;
@@ -88,6 +91,10 @@ body {
     font-size: 16px;
     line-height: 24px;
 }
+.font-18 {
+    font-size: 18px;
+    line-height: 27px;
+}
 .font-22 {
     font-size: 22px;
     line-height: 33px;
@@ -105,7 +112,7 @@ h1, h2 {
 }
 h3 {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 22px;
     letter-spacing: 0px;
     font-weight: 700;
     margin-bottom: 15px;
@@ -277,7 +284,7 @@ h3 {
     border: 0px !important;
 }
 .fullwidth{
-    width: 100%;
+    width: 100% !important;
 }
 .select {
     position: relative;
@@ -2092,12 +2099,23 @@ hr{
     display: inline-block;
     width: 100%;
 }
+.checkbox.pull-right, .radio.pull-right, .checkbox.pull-left, .radio.pull-left{
+    width: auto;
+    display: inline-block;
+}
 .checkbox.is-inline, .radio.is-inline{
     width: auto;
-    margin-right: 20px;
+    margin-right: 20px !important;
 }
 .checkbox.is-inline:last-child, .radio.is-inline:last-child{
     margin-right: 0px;
+}
+.checkbox.is-middle > label::before, .checkbox.is-middle > label::after{
+    top: 50%;
+    margin-top: -12px;
+}
+.checkbox.is-middle > label::after{
+    margin-top: -8px;
 }
 .checkbox > input, .radio > input{
     margin-left: 0px !important; 
@@ -2144,13 +2162,14 @@ hr{
 }
 .radio > label::after{
     content: '';
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 4px solid #fff;
     position: absolute;
-    top: 1px !important;
+    top: 0px !important;
     left: 2px;
+    margin-left: 1px;
 }
 .radio > label::before{
     border-radius: 50%;
@@ -2185,6 +2204,83 @@ hr{
     width: auto;
     margin: 5px;
     display: inline-block;
+}
+.radio-box .radio, .radio-box .checkbox{
+    text-align: center;
+    position: relative;
+    margin: 15px 0px 0px !important;
+}
+.radio-box .radio label, .radio-box .checkbox label, .list-business .icon{
+    padding: 25px 10px 10px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    background: #fff;
+    border: 1px solid #C3C3C3;
+    /* overflow: hidden; */
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+.radio-box .radio label .name, .radio-box .checkbox label .name, .list-business .icon .name{
+    height: 32px;
+    overflow: hidden;
+}
+.radio-box .checkbox input:checked ~ label:before{
+    border-radius: 50%;
+}
+.radio-box .radio label:before, .radio-box .radio label:after, .radio-box .checkbox label:before, .radio-box .checkbox label:after{
+    display: none;
+}
+.radio-box .radio img, .radio-box .checkbox img, .list-business .icon img{
+    height: 45px;
+    margin-bottom: 10px;
+}
+.radio-box .radio .btn-info, .radio-box .checkbox .btn-info, .list-business .icon .btn-info{
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+}
+.radio-box .radio .btn-info i, .radio-box .checkbox .btn-info i, .list-business .icon .btn-info i{
+    width: 22px;
+    height: 22px;
+}
+.radio-box .radio input:checked ~ label, .radio-box .checkbox input:checked ~ label{
+    background: #F0F8FF;
+    border-color: #2170B8;
+}
+.radio-box .radio input:checked ~ label:before, .radio-box .radio input:checked ~ label:after, .radio-box .checkbox input:checked ~ label:before, .radio-box .checkbox input:checked ~ label:after{
+    display: block;
+    top: 3px;
+    right: 3px;
+    left: auto;
+}
+.radio-box .radio input:checked ~ label:after{
+    top: 3.5px !important;
+    right: 4px;
+}
+.radio-box .checkbox input:checked ~ label:before{
+    width: 28px;
+    height: 28px;
+    right: -10px;
+    top: -10px;
+}
+.radio-box .checkbox input:checked ~ label:after{
+    top: -1px;
+    right: -3px;
+    width: 14px;
+    height: 6px;
+}
+.radio-box .radio > input, .radio-box .checkbox > input{
+    position: absolute;
+}
+.radio-box .radio > input[disabled] ~ label, .radio-box .checkbox > input[disabled] ~ label{
+    background: #F2F2F2;
+    color: #C3C3C3;
+    border-color: #F2F2F2;
+}
+.radio-box .radio > input[disabled] ~ label img, .radio-box .checkbox > input[disabled] ~ label img{
+    filter: brightness(1.8) grayscale(100%);
 }
 .slider.slider-horizontal .slider-handle {
     border: 1px solid #2170B8;
@@ -2850,16 +2946,23 @@ textarea{
     position: relative;
     border-right: 1px solid #F5F7FC;
     background: #fff;
+    height: 100%;
+    overflow-y: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
 }
 .member .member-menu > .head {
     padding: 30px;
 }
 .member .member-body {
     float: left;
-    width: calc(100% - 240px);
+    width: 100%;
     display: inline-block;
     position: relative;
-    padding: 40px 50px 40px 30px;
+    padding: 40px 60px 40px 270px;
+    min-height: 80vh;
 }
 .member .member-menu ul li a{
     width: 100%;
@@ -2881,6 +2984,23 @@ textarea{
 }
 .member .member-menu ul li.active i{
     filter: brightness(0) invert(1);
+}
+.member .member-menu ul.no-icon li a{
+    padding-left: 30px;
+    font-weight: 600;
+}
+.member .member-menu ul li.active a{
+    background: transparent;
+    color: #2170B8;
+}
+.member .member-menu .name{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.member .member-menu .back-member{
+    margin-top: 15vh;
+    font-weight: 400;
 }
 .member .panel .panel-body{
     padding: 25px 30px;
@@ -2934,11 +3054,34 @@ textarea{
     width: 36px;
     height: 36px;
 }
+.upload-photo.is-normal{
+    margin-bottom: 10px;
+}
+.upload-photo.is-normal .preview{
+    border-radius: 0px;
+}
+.upload-photo.is-normal, .upload-photo.is-normal .input{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    bottom: auto;
+    right: auto;
+}
+.upload-photo.is-normal .input img{
+    width: 100%;
+}
+.upload-photo.is-edit .preview{
+    height: calc(100% - 40px);
+}
 .mt-5{
     margin-top: -5px;
 }
 .mt12{
     margin-top: 12px !important;
+}
+.mt25{
+    margin-top: 25px !important;
 }
 .bg-trans{
     background: transparent !important;
@@ -2955,6 +3098,10 @@ textarea{
 }
 .member .btn-toolbar .btn-group.active{
     font-weight: 600;
+}
+.member .to-back{
+    margin-bottom: 10px;
+    display: inline-block;
 }
 .panel-list{
     margin-top: 15px;
@@ -3558,4 +3705,337 @@ textarea{
 }
 .panel-list .list.pd25 .user{
     min-height: 53px;
+}
+.card-member{
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px 20px;
+    min-height: 350px;
+}
+.card-member .user .bg{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-member .user .text{
+    width: calc(100% - 100px);
+    padding-left: 15px;
+}
+.card-member .form-group{
+    margin-bottom: 20px;
+}
+.member .btn-box .btn{
+    margin-top: 10px;
+}
+.table-middle{
+    display: table;
+}
+.table-middle > *{
+    display: table-cell;
+    vertical-align: middle;
+}
+.add-box{
+    width: 215px;
+    height: 215px;
+    border-radius: 5px;
+    border: 2px dashed #2170B8;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: 65px auto;
+    cursor: pointer;
+}
+.add-box i{
+    width: 36px;
+    height: 36px;
+}
+.add-box .inner{
+    display: inline-block;
+    position: relative;
+}
+.add-box .text-icon{
+    padding-left: 46px;
+    padding-top: 6px;
+    margin-bottom: 30px;
+    font-weight: 700;
+} 
+.form-inline .btn-md{
+    padding: 8px 15px !important;
+}
+.form-tax .form-control{
+    width: 400px;
+    max-width: 100%;
+}
+.form-tax .btn-md, .card-select .btn-md{
+    min-width: 155px;
+}
+.card-select {
+    padding-left: 30px;
+    width: 400px;
+    max-width: 100%;
+}
+.card-select label{
+    border: 1px solid #2170B8;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.card-select label:before, .card-select label:after{
+    left: -30px;
+}
+.upload-file{
+    margin: 5px 0px;
+    position: relative;
+    display: inline-block;
+}
+.upload-file .input input{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+.upload-file .input{
+    float: left;
+    padding: 15px;
+    border: 1px dashed #707070;
+    font-weight: 500;
+    color: #A0A0A0;
+    width: 250px;
+    max-width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.upload-file .input .btn{
+    min-width: 145px;
+    margin-bottom: 5px;
+}
+.upload-file .text{
+    float: left;
+    width: 200px;
+    max-width: 100%;
+    padding: 10px 0px 10px 20px;
+}
+.upload-file .text .inner{
+    max-width: 100%;
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.upload-file .text .inner i{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -5px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.select-map{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.select-map .btn{
+    float: left;
+    width: 220px;
+    max-width: 100%;
+}
+.select-map .map{
+    float: left;
+    width: calc(100% - 220px);
+    padding-left: 30px;
+}
+.bootstrap-tagsinput{
+    width: 100%;
+    padding: 9px 15px;
+}
+.bootstrap-tagsinput .tag{
+    background: #2170B8;
+    font-weight: 400;
+    padding: 5px;
+    font-size: 13px;
+    line-height: 15px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]{
+    font-size: 16px;
+}
+hr.in-panel{
+    margin-left: -30px;
+    width: calc(100% + 60px);
+}
+.member-body form{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.step-footer{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: calc(100% - 240px);
+    background: #fff;
+    padding: 15px 30px;
+    z-index: 5;
+    box-shadow: 0px -2px 10px rgba(0,0,0,0.1);
+}
+.step-footer .text{
+    float: left;
+    width: calc(100% - 280px);
+    padding-left: 40px;
+    padding-right: 130px;
+    position: relative;
+    padding-top: 15px;
+}
+.step-footer .text .symbol{
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+.step-footer .text .step{
+    position: absolute;
+    right: 0px;
+    top: 8px;
+}
+.step-footer .text .step i:not(.active){
+    filter: grayscale(100%) brightness(1.8);
+}
+.step-footer .text i{
+    width: 24px;
+    height: 24px;
+}
+.step-footer .btn-save{
+    float: right;
+    width: 260px;
+}
+.progress{
+    width: 100%;
+    height: 10px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    background-color: #E3E3E3;
+    border-radius: 6px;
+    border: 0px;
+    box-shadow: none;
+}
+.progress .progress-bar{
+    border-radius: 6px;
+}
+.to-top{
+    border: 1px solid #2170B8;
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 700;
+    color: #2170B8;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 30px 0px;
+    float: right;
+}
+.to-top span{
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.to-top p{
+    margin: 0px;
+}
+.member-title{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.list-business .list{
+    width: 100%;
+    display: inline-block;
+    margin-top: 15px;
+}
+.list-business .list .icon{
+    width: 215px;
+}
+.list-business .list .text{
+    width: calc(100% - 235px);
+    padding-left: 20px;
+}
+.list-business p{
+    margin-bottom: 4px;
+}
+.step-heart{
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+.step-heart .step{
+    position: relative;
+    z-index: 1;
+}
+.step-heart .step i{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
+.step-heart .step .icon{
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    float: left;
+}
+.step-heart .step .icon:not(.active) i{
+    filter: grayscale(100%) brightness(2.3);
+}
+.step-heart .progress{
+    top: 18px;
+    left: 0px;
+    width: 75%;
+    margin-left: calc(17.5% - 45px);
+    position: absolute;
+}
+.member label{
+    font-weight: 600;
+}
+.member-body ul{
+    padding-left: 20px;
+}
+.row.is-border-right{
+    margin: 0px;
+    display: flex;
+}
+.row.is-border-right .col{
+    padding: 25px 30px;
+}
+.row.is-border-right .col:not(:last-child)
+{
+    border-right: 1px solid #C3C3C3;
+}
+.table{
+    background: #fff;
+}
+.table > thead > tr > th{
+    background: #2170B8;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+.table > tbody > tr > td{
+    padding: 20px 15px;
 }
