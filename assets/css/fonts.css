@@ -362,3 +362,18 @@
 .m-icon-food-action {
      background-image: url('../images/icon-food-action.png');
 }
+.m-icon-pin {
+     background-image: url('../images/icon-pin.png');
+}
+.m-icon-btn-call {
+     background-image: url('../images/icon-btn-call.svg');
+}
+.m-icon-pin-outline {
+     background-image: url('../images/icon-pin-outline.svg');
+}
+.m-icon-trash {
+     background-image: url('../images/icon-trash.svg');
+}
+.m-icon-email {
+     background-image: url('../images/icon-email.png');
+}

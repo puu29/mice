@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Group_10735" data-name="Group 10735" transform="translate(-874 -433)">
+    <g id="Group_10734" data-name="Group 10734">
+      <g id="Rectangle_3505" data-name="Rectangle 3505" transform="translate(874 433)" fill="none" stroke="#2170b8" stroke-width="1">
+        <rect width="45" height="45" rx="6" stroke="none"/>
+        <rect x="0.5" y="0.5" width="44" height="44" rx="5.5" fill="none"/>
+      </g>
+    </g>
+    <g id="phone-call_1_" data-name="phone-call (1)" transform="translate(884.473 445.024)">
+      <g id="Group_10163" data-name="Group 10163" transform="translate(0.539 0)">
+        <path id="Path_19118" data-name="Path 19118" d="M22.294,16.43,19.17,13.306a2.078,2.078,0,0,0-3.459.781,2.126,2.126,0,0,1-2.455,1.339c-2.232-.558-5.244-3.459-5.8-5.8A2.022,2.022,0,0,1,8.793,7.169,2.078,2.078,0,0,0,9.574,3.71L6.45.586a2.229,2.229,0,0,0-3.013,0l-2.12,2.12C-.8,4.937,1.54,10.851,6.784,16.1s11.158,7.7,13.39,5.467l2.12-2.12A2.228,2.228,0,0,0,22.294,16.43Z" transform="translate(-0.539 0)" fill="none" stroke="#2170b8" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

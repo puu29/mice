@@ -50,7 +50,7 @@
                                                         <a href="member-vdocall.php" class="btn btn-md text-overflow btn-block btn-blue">
                                                             <div class="text-icon for-list no-margin is-middle">
                                                                 <i class="m-icon m-icon-vdocall m-icon-white"></i>
-                                                                <span>วิดีโอคอลสนทนา</span>
+                                                                <span>เริ่มการสนทนา</span>
                                                             </div>
                                                         </a>
                                                     </div>
@@ -77,7 +77,7 @@
                                                         <a href="#" class="btn btn-md text-overflow btn-block btn-blue" disabled>
                                                             <div class="text-icon for-list no-margin is-middle">
                                                                 <i class="m-icon m-icon-vdocall m-icon-white"></i>
-                                                                <span>วิดีโอคอลสนทนา</span>
+                                                                <span>เริ่มการสนทนา</span>
                                                             </div>
                                                         </a>
                                                     </div>

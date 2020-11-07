@@ -7,125 +7,16 @@
         <?php include "layout/nav.php" ?>
         <div id="wrapper">
             <section class="member">
-                <?php include "layout/nav-member.php" ?>
-                <div class="member-body">
-                    <div class="title-highlight">
-                        <h2>แชทสนทนา</h2>
-                        <p>(9 ข้อความที่ไม่ได้อ่าน)</p>
-                    </div>
-                    <div class="chat">
-                        <div class="chat-list shadow-blue">
-                            <div class="inner no-read">
-                                <div class="user ">
-                                    <div class="img">
-                                        <div class="bg" style="background-image: url('assets/images/chat-user1.png')"></div>
-                                        <div class="no">5</div>
-                                        <div class="online"></div>
-                                    </div>
-                                    <div class="text">
-                                        <div class="type is-orange">ที่พัก</div>
-                                        <p class="name"><b>ทรู๊ปมีเดีย ออกาไนซ์เซอร์จัดงานอีเว็นท์</b></p>
-                                        <p>รบกวนขอรายละเอียดใบเสนอราคา</p>
-                                        <p class="date"><small>17/06/2020</small> <small>18.34 น.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inner no-read">
-                                <div class="user">
-                                    <div class="img">
-                                        <div class="bg" style="background-image: url('assets/images/chat-user2.png')"></div>
-                                        <div class="no">5</div>
-                                        <div class="online"></div>
-                                    </div>
-                                    <div class="text">
-                                        <div class="type is-orange">ที่พัก</div>
-                                        <p class="name"><b>คำแสด รีเวอร์แคว รีสอร์ท</b></p>
-                                        <p>ขอบคุณค่ะ</p>
-                                        <p class="date"><small>13/06/2020</small> <small>17.02 น.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inner no-read">
-                                <div class="user">
-                                    <div class="img">
-                                        <div class="bg" style="background-image: url('assets/images/chat-user3.png')"></div>
-                                        <div class="no">5</div>
-                                    </div>
-                                    <div class="text">
-                                        <div class="type is-orange">ที่พัก</div>
-                                        <p class="name"><b>บุษราคัม</b></p>
-                                        <p>ขอบคุณค่ะ</p>
-                                        <p class="date"><small>11/06/2020</small> <small>12.45 น.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inner no-read">
-                                <div class="user">
-                                    <div class="img">
-                                        <div class="bg" style="background-image: url('assets/images/chat-user4.png')"></div>
-                                        <div class="no">5</div>
-                                    </div>
-                                    <div class="text">
-                                        <div class="type is-orange">ที่พัก</div>
-                                        <p class="name"><b>นภาลัย</b></p>
-                                        <p>ขอบคุณค่ะ</p>
-                                        <p class="date"><small>23/05/2020</small> <small>12.45 น.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inner no-read">
-                                <div class="user">
-                                    <div class="img">
-                                        <div class="bg" style="background-image: url('assets/images/chat-user5.png')"></div>
-                                        <div class="no">5</div>
-                                    </div>
-                                    <div class="text">
-                                        <div class="type is-orange">ที่พัก</div>
-                                        <p class="name"><b>โรงแรมปริ๊นซ์ พาเลซ</b></p>
-                                        <p>ขอบคุณค่ะ</p>
-                                        <p class="date"><small>23/05/2020</small> <small>11.30 น.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inner active">
-                                <div class="user">
-                                    <div class="img">
-                                        <div class="bg" style="background-image: url('assets/images/chat-user6.png')"></div>
-                                        <div class="no">0</div>
-                                        <div class="online"></div>
-                                    </div>
-                                    <div class="text">
-                                        <div class="type is-blue">ออแกไนเซอร์</div>
-                                        <p class="name"><b>Villa Hotel and Resort</b></p>
-                                        <p>ต้องการอาหารและเครื่องดื่มพัก...</p>
-                                        <p class="date"><small>23/07/2020</small> <small>06.00 น.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inner">
-                                <div class="user">
-                                    <div class="img">
-                                        <div class="bg" style="background-image: url('assets/images/chat-user7.png')"></div>
-                                        <div class="no">0</div>
-                                    </div>
-                                    <div class="text">
-                                        <div class="type is-yellow">อาหารและเครื่องดื่ม</div>
-                                        <p class="name"><b>ดี อีเว้นท์ เมเนเม้นจ์</b></p>
-                                        <p>ขอสอบถามราคาการดำเนินงานค่ะ</p>
-                                        <p class="date"><small>23/07/2020</small> <small>07.48 น.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chat-dialog shadow-blue">
+                <div class="member-body no-menu">
+                    <div class="chat is-vdocall">
+                        <div class="chat-dialog">
                             <div class="head">
                                 <div class="user pull-left">
                                     <div class="img">
-                                        <div class="bg" style="background-image: url('assets/images/chat-user6.png')"></div>
+                                        <div class="bg" style="background-image: url('assets/images/vdocall-user3.png')"></div>
                                     </div>
                                     <div class="text">
-                                        <p class="name font-semibold font-16">Villa Hotel and Resort</p>
-                                        <p class="online font-green font-semibold">Online</p>
+                                        <p class="name font-semibold font-16">The Berkeley Hotel<br/>Pratunam</p>
                                     </div>
                                 </div>
                                 <button type="button" class="btn btn-md btn-blue-linear pull-right" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
@@ -163,6 +54,38 @@
                                 <div class="chat-msg">
                                     <textarea id="input-text" class="form-control" placeholder="พิมพ์ข้อความที่นี่"></textarea>
                                     <button type="button" class="btn btn-orange font-medium" onclick="send_msg_text()">ส่งข้อความ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-vdo">
+                            <div class="cv-call">
+                                <div class="you">
+                                    <div class="bg" style="background-image: url('assets/images/vdocall-you.png')"></div>
+                                </div>
+                                <div class="me">
+                                    <div class="bg" style="background-image: url('assets/images/vdocall-me.png')"></div>
+                                </div>
+                                <div class="alert" id="alert">
+                                    <div class="text">
+                                        <p class="no-margin font-orange font-medium">เวลาการสนทนาเหลือเพียง 5 นาที</p>
+                                        <p class="no-margin font-12">ระบบสามารถต่อเวลาในการสนทนาให้ท่านเพิ่มอีก 10 นาที</p>
+                                    </div>
+                                    <button type="button" onclick="add_time();" class="btn btn-md btn-default font-medium">เพิ่มเวลา 10 นาที</button>
+                                </div>
+                            </div>
+                            <div class="cv-action">
+                                <div class="inner">
+                                    <div class="to-chat">
+                                        <div class="on"></div>
+                                        <i class="m-icon m-icon-chat m-icon-white"></i>
+                                    </div>
+                                </div>
+                                <div class="inner text-center" id="vdocall-feature">
+                                    <i class="m-icon m-icon-vdo-sound m-icon-white active"></i>
+                                    <i class="m-icon m-icon-vdo-photo m-icon-white active"></i>
+                                </div>
+                                <div class="inner text-right">
+                                    <button type="button" class="btn btn-md btn-red font-semibold">วางสาย</button>
                                 </div>
                             </div>
                         </div>
@@ -298,8 +221,10 @@
                         <div class="status-box">
                             <br/><br/>
                             <img src="assets/images/status-success.png">
-                            <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคา<br/>เรียบร้อยแล้ว</h2>
-                            <p></p>
+                            <br/><br/>
+                            <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคาสำเร็จ</h2>
+                            <p>ท่านสามารถดูประวัติการขอใบเสนอราคาได้ภายหลังใน <a href="member.php" class="font-blue">เมนูประวัติการขอใบเสนอราคา</a></p>
+                            <br/>
                             <div class="btn-box">
                                 <a href="member.php" style="width:300px;" class="btn btn-lg btn-blue-linear">ดูประวัติการขอใบเสนอราคา</a>
                             </div>
@@ -311,6 +236,10 @@
         </div>
 
         <script>
+            function add_time()
+            {
+                $('#alert').fadeOut();
+            }
             
             function send_msg_text()
             {
@@ -360,6 +289,10 @@
                     {
                         send_msg_text();
                     }
+                });
+
+                $('#vdocall-feature .m-icon').click(function(){
+                    $(this).toggleClass('active');
                 });
             })();
         </script>

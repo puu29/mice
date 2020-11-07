@@ -198,6 +198,10 @@ h3 {
     text-decoration: underline !important;
     border: 0px !important;
 }
+.btn-trans.font-blue{
+    text-decoration: none !important;
+    color: #2170B8 !important;
+}
 .btn-more {
     min-width: 140px;
 }
@@ -213,7 +217,7 @@ h3 {
 }
 .btn:disabled, .btn[disabled]{
     color: #fff !important;
-    background-color: #C3C3C3 !important;
+    background: #C3C3C3 !important;
     border-color: #C3C3C3 !important;
     opacity: 1 !important;
 }
@@ -1147,7 +1151,7 @@ img {
     cursor: default;
 }
 .datepicker-inline table th.dow{
-    background: #0A48A7;
+    background: #2170B8;
     border-radius: 0px;
     color: #fff;
     line-height: 32px;
@@ -1901,6 +1905,20 @@ hr{
 .btn-toolbar .btn-group.active .m-icon{
     filter: brightness(0) invert(1);
 }
+.btn-toolbar.bg-white{
+    background: #fff;
+    border: 0px;
+    border-radius: 5px !important;
+    overflow: hidden;
+    color: #282828;
+}
+.btn-toolbar.bg-white .btn-group{
+    border-color: #C3C3C3;
+}
+.btn-toolbar h2{
+    font-size: 28px;
+    line-height: 32px;
+}
 .search-from h2{
     margin: 0px;
     font-size: 30px;
@@ -2217,8 +2235,10 @@ hr{
     min-width: 100px;
     text-align: center;
 }
-.radio-select .radio input:checked ~ label{
+.radio-select .radio input:checked ~ label, .b-schedule .radio-select .radio input:checked ~ label{
+    border: 1px solid #FEC526;
     background: #FEC526;
+    color: #282828;
 }
 .radio-select .radio {
     float: left;
@@ -3004,6 +3024,9 @@ textarea{
     padding: 40px 60px 40px 270px;
     min-height: 80vh;
 }
+.member .member-body.no-menu{
+    padding: 40px 60px;
+}
 .member .member-menu ul li a{
     width: 100%;
     position: relative;
@@ -3168,10 +3191,19 @@ textarea{
     position: relative;
     padding-left: 90px;
 }
+.panel-list .list .user.is-middle .bg{
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 .panel-list .list .bg{
     width: 72px;
     height: 72px;
     border-radius: 50%;
+    overflow: hidden;
 }
 .panel-list .list .btn-box .btn{
     margin-top: 8px;
@@ -3465,9 +3497,11 @@ textarea{
     float: left;
     width: calc(100% - 56px);
     padding-left: 15px;
+}
+.chat-list .user .text{
     padding-right: 120px;
 }
-.chat-list .user .type{
+.chat-list .user .type, .chat-list .user .pin{
     position: absolute;
     top: 15px;
     right: 12px;
@@ -3680,6 +3714,28 @@ textarea{
     width: 100%;
     height: 100%;
     position: relative;
+}
+.chat-vdo .cv-call .alert{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #2170B8;
+    border-radius: 5px;
+    width: 475px;
+    color: #fff;
+    padding: 12px 150px 12px 20px;
+    margin-bottom: 15px;
+}
+.chat-vdo .cv-call .alert .btn{
+    background: transparent !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -20px;
 }
 .chat-vdo .cv-action{
     width: 100%;
@@ -4479,4 +4535,134 @@ hr.in-panel{
     height: 3px;
     background: #fff;
     z-index: 0;
+}
+.b-chat .btn-toolbar, .b-chat .chat{
+    margin-top: 20px;
+}
+.b-chat .chat-dialog .head .user .text{
+    padding-right: 55px;
+    position: relative;
+}
+.b-chat .chat-dialog .head .user .text .btn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+}
+.b-chat .chat-dialog .head .user .text .btn i{
+    width: 40px;
+    height: 40px;
+}
+.b-chat .chat-dialog .head{
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+.b-chat .note, .b-schedule .note{
+    text-align: right;
+    margin: 30px 0px;
+}
+.btn-dots{
+    font-size: 24px;
+    letter-spacing: 0px;
+    line-height: 44px;
+    padding: 0px 0px 0px 10px;
+    position: relative;
+}
+.btn-dots ~ ul{
+    padding: 0px 15px;
+    min-width: 170px;
+    border: 0px;
+    margin-top: 20px;
+}
+.btn-dots ~ ul > li{
+    border-bottom: 1px solid #C3C3C3;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+.btn-dots ~ ul > li:last-child{
+    border: 0px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 32px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}  
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+} 
+.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+.switch input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+}
+.switch-box{
+    position: relative;
+    padding-left: 65px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.switch-box .switch{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.switch-box p{
+    margin: 0px;
+    padding: 5px;
+    font-weight: 600;
+}
+.chat-appointment .setting{
+    padding: 30px 0px;
+    border-bottom: 1px solid #C3C3C3;
+    margin-bottom: 15px;
+}
+.chat-appointment .setting.text-right{
+    border: 0px;
+    padding: 0px;
+    margin-top: -50px;
+    margin-bottom: 25px;
+}
+.b-schedule{
+    padding-top: 10px;
+}
+.b-schedule .radio-select .radio > label{
+    font-weight: 500;
+    font-size: 13px;
+    border-color: #C1C1C1;
+    color: #9B9B9B;
 }
