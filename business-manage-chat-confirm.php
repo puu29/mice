@@ -164,7 +164,7 @@
                                 </div>
                             </div>
                             <div class="btn-box text-center">
-                                <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation-success"  class="btn btn-md btn-blue-linear font-medium btn-minwidth">ยืนยันการยกเลิกคำขอ</button>
+                                <button type="button" data-dismiss="modal"  class="btn btn-md btn-blue-linear font-medium btn-minwidth">ยืนยันการยกเลิกคำขอ</button>
                             </div>
                             <br/>
                         </form>

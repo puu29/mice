@@ -2120,7 +2120,7 @@ hr{
     display: inline-block;
 }
 .input-icon .form-control {
-    padding-left: 38px;
+    padding-left: 38px !important;
 }
 .input-icon i {
     top: 50%;
@@ -3199,7 +3199,7 @@ textarea{
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.panel-list .list .bg{
+.panel-list .list .user .bg{
     width: 72px;
     height: 72px;
     border-radius: 50%;
@@ -4536,7 +4536,7 @@ hr.in-panel{
     background: #fff;
     z-index: 0;
 }
-.b-chat .btn-toolbar, .b-chat .chat{
+.b-chat .btn-toolbar, .b-chat .chat, .b-quotation .btn-toolbar{
     margin-top: 20px;
 }
 .b-chat .chat-dialog .head .user .text{
@@ -4557,7 +4557,7 @@ hr.in-panel{
     padding-bottom: 5px;
     padding-top: 20px;
 }
-.b-chat .note, .b-schedule .note{
+.b-chat .note, .b-schedule .note, .b-quotation .note, .b-news .note{
     text-align: right;
     margin: 30px 0px;
 }
@@ -4646,16 +4646,19 @@ hr.in-panel{
     padding: 5px;
     font-weight: 600;
 }
-.chat-appointment .setting{
+.member .tab-content .setting{
     padding: 30px 0px;
     border-bottom: 1px solid #C3C3C3;
     margin-bottom: 15px;
 }
-.chat-appointment .setting.text-right{
+.member .tab-content .setting.text-right{
     border: 0px;
     padding: 0px;
     margin-top: -50px;
     margin-bottom: 25px;
+}
+.member .tab-content .setting .select select{
+    min-width: 150px;
 }
 .b-schedule{
     padding-top: 10px;
@@ -4665,4 +4668,49 @@ hr.in-panel{
     font-size: 13px;
     border-color: #C1C1C1;
     color: #9B9B9B;
+}
+.inline-block{
+    width: auto;
+    display: inline-block;
+}
+.user.width-45{
+    padding-left: 60px;
+    position: relative;
+}
+.user.width-45 .bg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.cursor-default{
+    cursor: default;
+}
+.card-manage{
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.card-manage .img{
+    width: 100%;
+    height: 185px;
+    position: relative;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.card-manage .name{
+    margin: 12px 0px 5px;
+}
+.card-manage .desc{
+    margin-bottom: 15px;
+    height: 65px;
+    overflow: hidden;
+}
+.card-manage .action > a{
+    margin-left: 20px;
+}
+.b-card .add-box{
+    width: 200px;
+    height: 190px;
+    margin: 80px auto;
 }
