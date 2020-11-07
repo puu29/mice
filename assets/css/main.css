@@ -282,6 +282,10 @@ h3 {
 .form-control::placeholder {
     color: #C4C4C4;
 }
+.form-control.blue {
+    background: #F4F7FA;
+    border-color: #F4F7FA !important;
+}
 .no-border {
     border: 0px !important;
 }
@@ -3210,7 +3214,7 @@ textarea{
     margin: 0px 0px 15px;
 }
 .member .form-control{
-    padding: 9px 15px;
+    padding: 10px 15px;
 }
 .member select.form-control{
     padding-right: 30px;
@@ -4098,4 +4102,177 @@ hr.in-panel{
 }
 .member-menu-page .to-back{
     margin-bottom: 20px;
+}
+.table thead.bg-white th{
+    background: #fff;
+    color: #282828;
+    font-weight: 700;
+    padding: 10px 15px 20px;
+}
+.paging{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+}
+.paging .page{
+    font-size: 16px;
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: .3s ease 0s;
+}
+.paging .page:not(.active):hover{
+    opacity: 0.6;
+}
+.paging .page.active{
+    background: #2170B8;
+    color: #fff;
+    font-weight: 700;
+}
+.paging .is-next, .paging .is-prev{
+    width: auto;
+    padding-left: 20px;
+    position: relative;
+    margin: 0px 10px;
+}
+.paging .is-next span, .paging .is-prev span{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -7px;
+}
+.paging .is-next{
+    padding-right: 20px;
+    padding-left: 0px;
+}
+.paging .is-next span{
+    right: 0px;
+    left: auto;
+}
+.paging .disabled{
+    display: none;
+}
+.score-me h2{
+    font-size: 30px;
+    line-height: 32px;
+    margin: 0px;
+}
+.tab-filter{
+    margin-bottom: 20px;
+}
+.tab-filter > .body{
+    padding: 20px 0px;
+}
+.tab-filter, .tab-filter > .head, .tab-filter > .body {
+    width: 100%;
+    position: relative;
+}
+.tab-filter > .head{
+    margin-left: -8px;
+    width: calc(100% + 16px);
+}
+.tab-filter > .head > .inner{
+    background: #fff;
+    color: #282828;
+    padding: 7px 20px;
+    border-radius: 18px;
+    display: inline-block;
+    margin: 5px 8px;
+    cursor: pointer;
+}
+.tab-filter > .head > .inner.active{
+    font-weight: 600;
+    color: #fff;
+    background: #2170B8;
+}
+.card-score{
+    padding: 12px;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 15px;
+}
+.card-score .text{
+    width: 100%;
+    margin: 10px 0px;
+    height: 92px;
+    overflow: hidden;
+}
+.score-detail .text{
+    margin-bottom: 50px;
+}
+.card-score .btn{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.f-how .inner, .f-how .text, .f-how p{
+    text-align: center;
+    position: relative;
+}
+.f-how .inner{
+    width: 198px;
+    max-width: 100%;
+    margin: 35px auto 20px;
+}
+.f-how .no{
+    position: absolute;
+    color: #E1ECF7;
+    font-size: 100px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    z-index: 0;
+    bottom: 22px;
+    font-weight: 700;
+}
+.f-how .img{
+    height: 48px;
+    margin-bottom: 15px;
+}
+.bg-blue{
+    background: #2170B8;
+}
+.share-social .btn{
+    border-color: #C3C3C3 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+}
+.share-social .text-icon{
+    margin: 0px;
+    width: auto;
+}
+.copylink{
+    position: relative;
+}
+.copylink .form-control{
+    padding-right: 100px;
+}
+.copylink .btn{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #2170B8 !important;
+}
+.my-freind{
+    text-align: center;
+    padding: 25px 0px;
+}
+.my-freind .img{
+    width: 260px;
+    margin: 0 auto 30px;
+    max-width: 100%;
+}
+.my-freind h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
 }

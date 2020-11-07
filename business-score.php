@@ -48,10 +48,10 @@
                                     </div>
                                     <div class="row">
                                         <div class="col col-xs-6">
-                                            <a href="#" class="btn btn-md btn-block btn-blue">แลกคะแนน</a>
+                                            <a href="business-score-redeem.php" class="btn btn-md btn-block btn-blue">แลกคะแนน</a>
                                         </div>
                                         <div class="col col-xs-6">
-                                            <a href="#" class="btn btn-md btn-block btn-default">สิทธิที่แลกไว้</a>
+                                            <a href="business-score-redeemed.php" class="btn btn-md btn-block btn-default">สิทธิที่แลกไว้</a>
                                         </div>
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <h3 class="font-semibold no-margin pull-left">ประวัติคะแนนล่าสุด</h3>
-                                    <a href="#" class="btn btn-md btn-default pull-right">ประวัติการรับคะแนน</a>
+                                    <a href="business-score-history.php" class="btn btn-md btn-default pull-right">ประวัติการรับคะแนน</a>
                                     <div class="clearfix"></div>
                                     <br/>
                                     <table class="table no-padding-td no-margin">
