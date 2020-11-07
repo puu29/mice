@@ -350,3 +350,15 @@
 .m-icon-messenger {
      background-image: url('../images/icon-messenger.svg');
 }
+.m-icon-chat-orange {
+     background-image: url('../images/icon-chat-orange.png');
+}
+.m-icon-table {
+     background-image: url('../images/icon-table.svg');
+}
+.m-icon-award {
+     background-image: url('../images/icon-award.svg');
+}
+.m-icon-food-action {
+     background-image: url('../images/icon-food-action.png');
+}

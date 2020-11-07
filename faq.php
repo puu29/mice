@@ -190,6 +190,7 @@
             (function(){
                 $('.faq-page .nav-tabs li').click(function(){
                     $('.faq-page .nav-tabs').hide();
+                    $('.faq-title h3').html($(this).html());
                     $('.faq-page .tab-content, .faq-title').fadeIn(300);
                 });
 
