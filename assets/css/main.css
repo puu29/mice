@@ -3022,7 +3022,7 @@ textarea{
     display: inline-block;
     position: relative;
     padding: 40px 60px 40px 270px;
-    min-height: 80vh;
+    min-height: 90vh;
 }
 .member .member-body.no-menu{
     padding: 40px 60px;
