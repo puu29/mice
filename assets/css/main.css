@@ -4561,7 +4561,7 @@ hr.in-panel{
     padding-bottom: 5px;
     padding-top: 20px;
 }
-.b-chat .note, .b-schedule .note, .b-quotation .note, .b-news .note{
+.b-chat .note, .b-schedule .note, .b-quotation .note, .b-news .note, .b-dashboard .note{
     text-align: right;
     margin: 30px 0px;
 }
@@ -4710,7 +4710,7 @@ hr.in-panel{
     height: 65px;
     overflow: hidden;
 }
-.card-manage .action > a{
+.card-manage .action > a{.
     margin-left: 20px;
 }
 .card .action > a{
