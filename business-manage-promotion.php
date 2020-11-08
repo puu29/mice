@@ -47,7 +47,7 @@
 
                                         <div class="b-card">
                                             <div class="row is-small2">
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <a href="#" class="add-box" data-dismiss="modal" data-toggle="modal" data-target="#modal-promotion">
                                                         <div class="inner transform-middle">
                                                             <i class="m-icon m-icon-plus"></i><br/>
@@ -55,7 +55,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/pro1.png')"></div>
@@ -75,7 +75,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/pro2.png')"></div>
@@ -95,7 +95,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/pro3.png')"></div>
@@ -115,7 +115,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/pro4.png')"></div>
@@ -135,7 +135,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/pro5.png')"></div>
@@ -155,7 +155,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/pro6.png')"></div>
@@ -175,7 +175,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/pro7.png')"></div>
@@ -195,7 +195,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/pro8.png')"></div>

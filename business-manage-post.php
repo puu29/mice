@@ -47,15 +47,15 @@
 
                                         <div class="b-card">
                                             <div class="row is-small2">
-                                                <div class="col col-sm-4">
-                                                    <a href="#" class="add-box" data-dismiss="modal" data-toggle="modal" data-target="#modal-post">
+                                                <div class="col col-md-4 col-lg-3">
+                                                    <a href="#" class="add-box" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">
                                                         <div class="inner transform-middle">
                                                             <i class="m-icon m-icon-plus"></i><br/>
                                                             <span class="font-blue font-semibold">เพิ่มโพสต์</span>
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/post1.png')"></div>
@@ -68,14 +68,14 @@
                                                             </div>
                                                             <div class="col col-xs-6 text-right">
                                                                 <div class="action">
-                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-post">แก้ไขข้อมูล</a>
+                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">แก้ไขข้อมูล</a>
                                                                     <a href="" class="font-semibold font-blue">ลบ</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/post2.png')"></div>
@@ -88,14 +88,14 @@
                                                             </div>
                                                             <div class="col col-xs-6 text-right">
                                                                 <div class="action">
-                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-post">แก้ไขข้อมูล</a>
+                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">แก้ไขข้อมูล</a>
                                                                     <a href="" class="font-semibold font-blue">ลบ</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/post3.png')"></div>
@@ -108,14 +108,14 @@
                                                             </div>
                                                             <div class="col col-xs-6 text-right">
                                                                 <div class="action">
-                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-post">แก้ไขข้อมูล</a>
+                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">แก้ไขข้อมูล</a>
                                                                     <a href="" class="font-semibold font-blue">ลบ</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/post4.png')"></div>
@@ -128,14 +128,14 @@
                                                             </div>
                                                             <div class="col col-xs-6 text-right">
                                                                 <div class="action">
-                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-post">แก้ไขข้อมูล</a>
+                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">แก้ไขข้อมูล</a>
                                                                     <a href="" class="font-semibold font-blue">ลบ</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/post5.png')"></div>
@@ -148,14 +148,14 @@
                                                             </div>
                                                             <div class="col col-xs-6 text-right">
                                                                 <div class="action">
-                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-post">แก้ไขข้อมูล</a>
+                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">แก้ไขข้อมูล</a>
                                                                     <a href="" class="font-semibold font-blue">ลบ</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/post6.png')"></div>
@@ -168,14 +168,14 @@
                                                             </div>
                                                             <div class="col col-xs-6 text-right">
                                                                 <div class="action">
-                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-post">แก้ไขข้อมูล</a>
+                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">แก้ไขข้อมูล</a>
                                                                     <a href="" class="font-semibold font-blue">ลบ</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/post7.png')"></div>
@@ -188,14 +188,14 @@
                                                             </div>
                                                             <div class="col col-xs-6 text-right">
                                                                 <div class="action">
-                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-post">แก้ไขข้อมูล</a>
+                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">แก้ไขข้อมูล</a>
                                                                     <a href="" class="font-semibold font-blue">ลบ</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-sm-4">
+                                                <div class="col col-md-4 col-lg-3">
                                                     <div class="card-manage shadow-blue">
                                                         <div class="img">
                                                             <div class="bg" style="background-image: url('assets/images/post8.png')"></div>
@@ -208,7 +208,7 @@
                                                             </div>
                                                             <div class="col col-xs-6 text-right">
                                                                 <div class="action">
-                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-post">แก้ไขข้อมูล</a>
+                                                                    <a href="" class="font-semibold font-blue" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">แก้ไขข้อมูล</a>
                                                                     <a href="" class="font-semibold font-blue">ลบ</a>
                                                                 </div>
                                                             </div>
@@ -237,7 +237,7 @@
         </div>
         <?php include "layout/footer.php" ?>
 
-        <div class="modal fade" id="modal-post" tabindex="-1" role="dialog">
+        <div class="modal fade" id="modal-edit" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
                     <div class="modal-body pd-40">
