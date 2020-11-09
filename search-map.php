@@ -669,7 +669,7 @@
                 });
 
                 $(window).resize(function(){
-                    if($(window).width() < 768)
+                    if($(window).width() < 992)
                     {
                         $('.post').addClass('style-3');
                     }

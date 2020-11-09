@@ -9,9 +9,16 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                        <div class="text-icon is-middle">
+                            <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                            <span>กลับไปเมนูบัญชีทั่วไป</span>
+                        </div>
+                    </a>
                     <h2 class="font-semibold no-margin">ธุรกิจที่สนใจ</h2>
                     <p>รายการแสดงบันทึกธุรกิจที่ท่านได้กดสนใจไว้เพื่อเก็บข้อมูลให้สามารถย้อนกลับมาดูได้ภายหลังอย่างสะดวกมากขึ้น</p>
-                    <div class="select pull-right">
+                    <br class="hidden-desktop"/>
+                    <div class="select pull-right mobile-block">
                         <select class="form-control">
                             <option value="">ประเภททั้งหมด</option>
                             <option value="">ธุรกิจออแกไนเซอร์</option>
@@ -29,9 +36,9 @@
                         <span class="m-icon m-icon-dropdown"></span>
                     </div>
                     <div class="clearfix"></div>
-                    <br/>
+                    <br class="hidden-mobile"/>
                     <div class="row is-small2">
-                        <div class="col col-sm-4">
+                        <div class="col col-md-4 col-sm-6">
                             <div class="post border-5 style-2 font-12 shadow mt12">
                                 <div class="bg" style="background-image: url('assets/images/b1.png')"><i class="m-icon m-icon-like-white active"></i></div>
                                 <div class="text">
@@ -78,7 +85,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-sm-4">
+                        <div class="col col-md-4 col-sm-6">
                             <div class="post border-5 style-2 font-12 shadow mt12">
                                 <div class="bg" style="background-image: url('assets/images/b2.png')"><i class="m-icon m-icon-like-white active"></i></div>
                                 <div class="text">
@@ -124,7 +131,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-sm-4">
+                        <div class="col col-md-4 col-sm-6">
                             <div class="post border-5 style-2 font-12 shadow mt12">
                                 <div class="bg" style="background-image: url('assets/images/b3.png')"><i class="m-icon m-icon-like-white active"></i></div>
                                 <div class="text">
@@ -171,7 +178,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-sm-4">
+                        <div class="col col-md-4 col-sm-6">
                             <div class="post border-5 style-2 font-12 shadow mt12">
                                 <div class="bg" style="background-image: url('assets/images/b4.png')"><i class="m-icon m-icon-like-white active"></i></div>
                                 <div class="text">
@@ -217,7 +224,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-sm-4">
+                        <div class="col col-md-4 col-sm-6">
                             <div class="post border-5 style-2 font-12 shadow mt12">
                                 <div class="bg" style="background-image: url('assets/images/b5.png')"><i class="m-icon m-icon-like-white active"></i></div>
                                 <div class="text">
@@ -263,7 +270,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-sm-4">
+                        <div class="col col-md-4 col-sm-6">
                             <div class="post border-5 style-2 font-12 shadow mt12">
                                 <div class="bg" style="background-image: url('assets/images/b6.png')"><i class="m-icon m-icon-like-white active"></i></div>
                                 <div class="text">
@@ -314,5 +321,28 @@
             </section>
         </div>
         <?php include "layout/footer.php" ?>
+        <script>
+            (function(){
+                $(window).resize(function(){
+                    post_style();
+                });
+
+                post_style();
+            })();
+
+            function post_style()
+            {
+                if($(window).width() < 768)
+                {
+                    $('.post').removeClass('style-2');
+                    $('.post').addClass('style-3');
+                }
+                else
+                {
+                    $('.post').removeClass('style-3');
+                    $('.post').addClass('style-2');
+                }
+            }
+        </script>
     </body>
 </html>

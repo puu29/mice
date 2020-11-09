@@ -15,22 +15,25 @@
                             <span>ย้อนกลับ</span>
                         </div>
                     </a>
-                    <h2 class="font-semibold">งานสัมมนา Creator ครั้งที่ 30</h2>
+                    <h2 class="font-semibold no-margin-top">งานสัมมนา Creator ครั้งที่ 30</h2>
                     <div class="tab">
-                        <div class="select border-under pull-right">
-                            <select class="form-control font-14 bg-trans">
-                                <option value="">ล่าสุด</option>
-                            </select>
-                            <span class="glyphicon glyphicon-triangle-bottom"></span>
-                        </div>
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="member-quotation.php">รอการตอบกลับ</a></li>
                             <li><a href="member-quotation-history.php">ใบเสนอราคาที่ได้รับแล้ว</a></li>
-                            <li><a href="member-quotation-reject.php">ใบเสนอคาที่ไม่สำเร็จ</a></li>
+                            <li><a href="member-quotation-reject.php">ใบเสนอราคาที่ไม่สำเร็จ</a></li>
                         </ul>
+                        <div class="select-sorting">
+                            <label class="font-18 font-bold">รายชื่อ</label>
+                            <div class="select border-under pull-right">
+                                <select class="form-control font-14 bg-trans">
+                                    <option value="">ล่าสุด</option>
+                                </select>
+                                <span class="glyphicon glyphicon-triangle-bottom"></span>
+                            </div>
+                        </div>
                         <div class="tab-content no-padding-top">
                             <div role="tabpanel" class="tab-pane active">
-                                <div class="panel-list no-margin">
+                                <div class="panel-list no-margin quotation-list">
                                     <div class="head">
                                         <div class="row">
                                             <div class="col-sm-4">ชื่อกิจกรรม</div>
@@ -42,7 +45,7 @@
                                     <div class="body">
                                         <div class="list">
                                             <div class="row">
-                                                <div class="col-sm-4">
+                                                <div class="col col-sm-4">
                                                     <div class="user">
                                                         <div class="type is-purple">สถานที่จัดงาน</div>
                                                         <div class="bg" style="background-image: url('assets/images/user1.png')"></div>
@@ -50,22 +53,30 @@
                                                         <p>กรุงเทพมหานคร</p>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-3">
-                                                    <p class="no-margin">20/06/20</p>
-                                                    <p><a href="#" class="font-link" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">ดูรายละเอียดใบเสนอราคา</a></p>
+                                                <div class="col col-sm-3">
+                                                    <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>
+                                                    <div class="text-desc">
+                                                        <p class="no-margin">20/06/20</p>
+                                                        <p><a href="#" class="font-link" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">ดูรายละเอียดใบเสนอราคา</a></p>
+                                                    </div>
                                                 </div>
-                                                <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                                <div class="col-sm-2">
+                                                <div class="col col-sm-3">
+                                                    <label class="hidden-desktop">รูปแบบการขอ</label>
+                                                    <div class="text-desc">
+                                                        <p>ระบบจับคู่อัตโนมัติ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-sm-2">
                                                     <div class="btn-box">
-                                                        <a href="#" class="btn btn-md text-overflow btn-block btn-default">แชทกับผู้ประกอบการ</a>
-                                                        <a href="#" class="btn btn-md text-overflow btn-block btn-default">วิดีโอคอลสนทนา</a>
+                                                        <a href="member-chat.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">แชทกับผู้ประกอบการ</a>
+                                                        <a href="member-vdocall.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">วิดีโอคอลสนทนา</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="list">
                                             <div class="row">
-                                                <div class="col-sm-4">
+                                                <div class="col col-sm-4">
                                                     <div class="user">
                                                         <div class="type is-purple">สถานที่จัดงาน</div>
                                                         <div class="bg" style="background-image: url('assets/images/user2.png')"></div>
@@ -73,22 +84,30 @@
                                                         <p>กรุงเทพมหานคร</p>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-3">
-                                                    <p class="no-margin">20/06/20</p>
-                                                    <p><a href="#" class="font-link" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">ดูรายละเอียดใบเสนอราคา</a></p>
+                                                <div class="col col-sm-3">
+                                                    <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>
+                                                    <div class="text-desc">
+                                                        <p class="no-margin">20/06/20</p>
+                                                        <p><a href="#" class="font-link" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">ดูรายละเอียดใบเสนอราคา</a></p>
+                                                    </div>
                                                 </div>
-                                                <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                                <div class="col-sm-2">
+                                                <div class="col col-sm-3">
+                                                    <label class="hidden-desktop">รูปแบบการขอ</label>
+                                                    <div class="text-desc">
+                                                        <p>ระบบจับคู่อัตโนมัติ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-sm-2">
                                                     <div class="btn-box">
-                                                        <a href="#" class="btn btn-md text-overflow btn-block btn-default">แชทกับผู้ประกอบการ</a>
-                                                        <a href="#" class="btn btn-md text-overflow btn-block btn-default">วิดีโอคอลสนทนา</a>
+                                                        <a href="member-chat.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">แชทกับผู้ประกอบการ</a>
+                                                        <a href="member-vdocall.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">วิดีโอคอลสนทนา</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="list">
                                             <div class="row">
-                                                <div class="col-sm-4">
+                                                <div class="col col-sm-4">
                                                     <div class="user">
                                                         <div class="type is-purple">สถานที่จัดงาน</div>
                                                         <div class="bg" style="background-image: url('assets/images/user3.png')"></div>
@@ -96,15 +115,23 @@
                                                         <p>กรุงเทพมหานคร</p>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-3">
-                                                    <p class="no-margin">20/06/20</p>
-                                                    <p><a href="#" class="font-link" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">ดูรายละเอียดใบเสนอราคา</a></p>
+                                                <div class="col col-sm-3">
+                                                    <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>
+                                                    <div class="text-desc">
+                                                        <p class="no-margin">20/06/20</p>
+                                                        <p><a href="#" class="font-link" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">ดูรายละเอียดใบเสนอราคา</a></p>
+                                                    </div>
                                                 </div>
-                                                <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                                <div class="col-sm-2">
+                                                <div class="col col-sm-3">
+                                                    <label class="hidden-desktop">รูปแบบการขอ</label>
+                                                    <div class="text-desc">
+                                                        <p>ระบบจับคู่อัตโนมัติ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-sm-2">
                                                     <div class="btn-box">
-                                                        <a href="#" class="btn btn-md text-overflow btn-block btn-default">แชทกับผู้ประกอบการ</a>
-                                                        <a href="#" class="btn btn-md text-overflow btn-block btn-default">วิดีโอคอลสนทนา</a>
+                                                        <a href="member-chat.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">แชทกับผู้ประกอบการ</a>
+                                                        <a href="member-vdocall.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">วิดีโอคอลสนทนา</a>
                                                     </div>
                                                 </div>
                                             </div>

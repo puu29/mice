@@ -9,6 +9,12 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                        <div class="text-icon is-middle">
+                            <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                            <span>กลับไปเมนูบัญชีทั่วไป</span>
+                        </div>
+                    </a>
                     <h2 class="font-semibold no-margin-top">วางแผนการจัดงานไมซ์</h2>
                     <p class="no-margin">ท่านสามารถเลือกกลุ่มธุรกิจด้านล่างตามที่ต้องการ โดยกดจากแทบเมนูด้านซ้ายสุดเพื่อเลือกกลุ่ม หลังจากนั้นระบบจะแสดงรายการของแต่ละธุรกิจ เมื่อท่านเลือกโดยการกดเพิ่มเข้าแผนจัดงานแล้ว สามารถตรวจสอบและแก้ไขรายการที่เลือกได้ในส่วน <a href="member.php" class="font-blue font-bold">ผู้ให้บริการที่เลือกแล้ว</a></p>
                     <br/>
@@ -42,12 +48,12 @@
                                             <p>งานสัมมนา</p>
                                         </div>
                                         <div class="col-sm-3 text-right">
-                                            <button class="btn btn-sm btn-default" style="margin-top: 12px;">
+                                            <a href="member-plan-manual.php" class="btn btn-sm btn-default" style="margin-top: 12px;">
                                                 <div class="text-icon">
                                                     <i class="m-icon m-icon-edit"></i>
                                                     <span>แก้ไขข้อมูล</span>
                                                 </div>
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -56,14 +62,15 @@
                     </div>
                     <br/>
                     <div class="row">
-                        <div class="col-sm-8">
-                            <h3 class="font-semibold no-margin-bottom">เลือกผู้ให้บริการ</h3>
+                        <div class="col-md-8 col-sm-12">
+                            <h3 class="font-semibold no-margin-bottom hidden-mobile">เลือกผู้ให้บริการ</h3>
                             <div class="select-service">
                                 <ul class="service-type">
+                                    <h3 class="font-semibold no-margin-top hidden-desktop">เลือกผู้ให้บริการ</h3>
                                     <li data-type="1" onclick="switch_type(1)">ออร์แกไนเซอร์</li>
                                     <li class="active" data-type="2" onclick="switch_type(2)">Online Event</li>
                                 </ul>
-                                <div class="service-list">
+                                <div class="service-list scroll-custom">
                                     <div class="post style-2" data-type="2" data-id="1">
                                         <div class="bg" style="background-image: url('assets/images/plan-post1.png')"><i class="m-icon m-icon-like-white"></i></div>
                                         <div class="text">
@@ -217,9 +224,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <h3 class="font-semibold no-margin-bottom">ผู้ให้บริการที่เลือกแล้ว</h3>
-                            <div class="selected-service">
+                        <div class="col-md-4 col-sm-12 provider-select">
+                            <div class="hidden-desktop">
+                                <div class="provider-select-head">
+                                    <h3 class="font-semibold no-margin">ผู้ให้บริการที่เลือกแล้ว 6 รายการ</h3>
+                                    <div class="text-icon font-blue icon-right font-16 is-middle" onclick="$('.provider-select').addClass('open');">
+                                        <i><span class="glyphicon glyphicon-menu-up"></span></i>
+                                        <span><u>ตรวจสอบผู้ให้บริการที่เลือกแล้ว</u></span>
+                                    </div>
+                                    <div class="clearfix"><br/></div>
+                                    <button type="button" class="btn btn-block btn-md btn-blue-linear font-medium btn-request" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">ดำเนินการขอใบเสนอราคา</button>
+                                </div>  
+                                <div class="clearfix">
+                                    <br/>
+                                    <h3 class="font-semibold no-margin pull-left">ผู้ให้บริการที่เลือกแล้ว 6 รายการ</h3>
+                                    <span class="glyphicon glyphicon-menu-down font-blue pull-right font-16" onclick="$('.provider-select').removeClass('open');"></span>
+                                </div>
+                            </div>
+                            <div class="hidden-mobile">
+                                <h3 class="font-semibold no-margin-bottom">ผู้ให้บริการที่เลือกแล้ว</h3>
+                            </div>
+                            <div class="selected-service scroll-custom">
                                 <div class="panel panel-info" data-type="1">
                                     <div class="panel-heading">ออร์แกไนเซอร์</div>
                                     <div class="panel-body">

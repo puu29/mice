@@ -38,91 +38,201 @@
                     <div class="panel-list">
                         <div class="head">
                             <div class="row">
-                                <div class="col-sm-3">ชื่อกิจกรรม</div>
-                                <div class="col-sm-3">วันที่ขอใบเสนอราคา</div>
-                                <div class="col-sm-3">รูปแบบการขอ</div>
-                                <div class="col-sm-3"></div>
+                                <div class="col col-sm-3">ชื่อกิจกรรม</div>
+                                <div class="col col-sm-3">วันที่ขอใบเสนอราคา</div>
+                                <div class="col col-sm-3">รูปแบบการขอ</div>
+                                <div class="col col-sm-3"></div>
                             </div>
                         </div>
                         <div class="body">
                             <div class="list">
                                 <div class="row">
-                                    <div class="col-sm-3"><span class="font-semibold">งานสัมมนา Creator ครั้งที่ 30</span></div>
-                                    <div class="col-sm-3">20/09/20</div>
-                                    <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                    <div class="col-sm-3"><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">ชื่อกิจกรรม</label>
+                                        <div class="text-desc">
+                                            <span class="font-semibold">งานสัมมนา Creator ครั้งที่ 30</span>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>
+                                        <div class="text-desc">20/09/20</div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">รูปแบบการขอ</label>
+                                        <div class="text-desc">ระบบจับคู่อัตโนมัติ</div>
+                                    </div>
+                                    <div class="col col-sm-3 mobile-text-right"><br class="hidden-desktop"/><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
                                 </div>
                             </div>
                             <div class="list">
                                 <div class="row">
-                                    <div class="col-sm-3"><span class="font-semibold">จัดเลี้ยงงานบริษัทประจำปี 2020</span></div>
-                                    <div class="col-sm-3">20/09/20</div>
-                                    <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                    <div class="col-sm-3"><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">ชื่อกิจกรรม</label>
+                                        <div class="text-desc">
+                                            <span class="font-semibold">จัดเลี้ยงงานบริษัทประจำปี 2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>
+                                        <div class="text-desc">20/09/20</div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">รูปแบบการขอ</label>
+                                        <div class="text-desc">ระบบจับคู่อัตโนมัติ</div>
+                                    </div>
+                                    <div class="col col-sm-3 mobile-text-right"><br class="hidden-desktop"/><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
                                 </div>
                             </div>
                             <div class="list">
                                 <div class="row">
-                                    <div class="col-sm-3"><span class="font-semibold">งานจัดประชุมครึ่งปีประจำปี 2020</span></div>
-                                    <div class="col-sm-3">20/09/20</div>
-                                    <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                    <div class="col-sm-3"><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">ชื่อกิจกรรม</label>
+                                        <div class="text-desc">
+                                            <span class="font-semibold">งานจัดประชุมครึ่งปีประจำปี 2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>
+                                        <div class="text-desc">20/09/20</div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">รูปแบบการขอ</label>
+                                        <div class="text-desc">ระบบจับคู่อัตโนมัติ</div>
+                                    </div>
+                                    <div class="col col-sm-3 mobile-text-right"><br class="hidden-desktop"/><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
                                 </div>
                             </div>
                             <div class="list">
                                 <div class="row">
-                                    <div class="col-sm-3"><span class="font-semibold">จัดเลี้ยงงานบริษัทประจำปี 2020</span></div>
-                                    <div class="col-sm-3">20/09/20</div>
-                                    <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                    <div class="col-sm-3"><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">ชื่อกิจกรรม</label>
+                                        <div class="text-desc">
+                                            <span class="font-semibold">จัดเลี้ยงงานบริษัทประจำปี 2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>
+                                        <div class="text-desc">20/09/20</div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">รูปแบบการขอ</label>
+                                        <div class="text-desc">ระบบจับคู่อัตโนมัติ</div>
+                                    </div>
+                                    <div class="col col-sm-3 mobile-text-right"><br class="hidden-desktop"/><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
                                 </div>
                             </div>
                             <div class="list">
                                 <div class="row">
-                                    <div class="col-sm-3"><span class="font-semibold">งานจัดประชุมครึ่งปีประจำปี 2020</span></div>
-                                    <div class="col-sm-3">20/09/20</div>
-                                    <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                    <div class="col-sm-3"><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">ชื่อกิจกรรม</label>
+                                        <div class="text-desc">
+                                            <span class="font-semibold">งานจัดประชุมครึ่งปีประจำปี 2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>
+                                        <div class="text-desc">20/09/20</div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">รูปแบบการขอ</label>
+                                        <div class="text-desc">ระบบจับคู่อัตโนมัติ</div>
+                                    </div>
+                                    <div class="col col-sm-3 mobile-text-right"><br class="hidden-desktop"/><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
                                 </div>
                             </div>
                             <div class="list">
                                 <div class="row">
-                                    <div class="col-sm-3"><span class="font-semibold">งานสัมมนา Creator ครั้งที่ 30</span></div>
-                                    <div class="col-sm-3">20/09/20</div>
-                                    <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                    <div class="col-sm-3"><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">ชื่อกิจกรรม</label>
+                                        <div class="text-desc">
+                                            <span class="font-semibold">งานสัมมนา Creator ครั้งที่ 30</span>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>
+                                        <div class="text-desc">20/09/20</div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">รูปแบบการขอ</label>
+                                        <div class="text-desc">ระบบจับคู่อัตโนมัติ</div>
+                                    </div>
+                                    <div class="col col-sm-3 mobile-text-right"><br class="hidden-desktop"/><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
                                 </div>
                             </div>
                             <div class="list">
                                 <div class="row">
-                                    <div class="col-sm-3"><span class="font-semibold">จัดเลี้ยงงานบริษัทประจำปี 2020</span></div>
-                                    <div class="col-sm-3">20/09/20</div>
-                                    <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                    <div class="col-sm-3"><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">ชื่อกิจกรรม</label>
+                                        <div class="text-desc">
+                                            <span class="font-semibold">จัดเลี้ยงงานบริษัทประจำปี 2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>
+                                        <div class="text-desc">20/09/20</div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">รูปแบบการขอ</label>
+                                        <div class="text-desc">ระบบจับคู่อัตโนมัติ</div>
+                                    </div>
+                                    <div class="col col-sm-3 mobile-text-right"><br class="hidden-desktop"/><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
                                 </div>
                             </div>
                             <div class="list">
                                 <div class="row">
-                                    <div class="col-sm-3"><span class="font-semibold">งานจัดประชุมครึ่งปีประจำปี 2020</span></div>
-                                    <div class="col-sm-3">20/09/20</div>
-                                    <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                    <div class="col-sm-3"><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">ชื่อกิจกรรม</label>
+                                        <div class="text-desc">
+                                            <span class="font-semibold">งานจัดประชุมครึ่งปีประจำปี 2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>   
+                                        <div class="text-desc">20/09/20</div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">รูปแบบการขอ</label>
+                                        <div class="text-desc">ระบบจับคู่อัตโนมัติ</div>
+                                    </div>
+                                    <div class="col col-sm-3 mobile-text-right"><br class="hidden-desktop"/><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
                                 </div>
                             </div>
                             <div class="list">
                                 <div class="row">
-                                    <div class="col-sm-3"><span class="font-semibold">จัดเลี้ยงงานบริษัทประจำปี 2020</span></div>
-                                    <div class="col-sm-3">20/09/20</div>
-                                    <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                    <div class="col-sm-3"><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">ชื่อกิจกรรม</label>
+                                        <div class="text-desc">
+                                            <span class="font-semibold">จัดเลี้ยงงานบริษัทประจำปี 2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>   
+                                        <div class="text-desc">20/09/20</div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">รูปแบบการขอ</label>
+                                        <div class="text-desc">ระบบจับคู่อัตโนมัติ</div>
+                                    </div>
+                                    <div class="col col-sm-3 mobile-text-right"><br class="hidden-desktop"/><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
                                 </div>
                             </div>
                             <div class="list">
                                 <div class="row">
-                                    <div class="col-sm-3"><span class="font-semibold">งานจัดประชุมครึ่งปีประจำปี 2020</span></div>
-                                    <div class="col-sm-3">20/09/20</div>
-                                    <div class="col-sm-3">ระบบจับคู่อัตโนมัติ</div>
-                                    <div class="col-sm-3"><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">ชื่อกิจกรรม</label>
+                                        <div class="text-desc">
+                                            <span class="font-semibold">งานจัดประชุมครึ่งปีประจำปี 2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">วันที่ขอใบเสนอราคา</label>   
+                                        <div class="text-desc">20/09/20</div>
+                                    </div>
+                                    <div class="col col-sm-3">
+                                        <label class="hidden-desktop">รูปแบบการขอ</label>
+                                        <div class="text-desc">ระบบจับคู่อัตโนมัติ</div>
+                                    </div>
+                                    <div class="col col-sm-3 mobile-text-right"><br class="hidden-desktop"/><a href="member-quotation.php" class="font-link">ดูใบเสนอราคาของกิจกรรม</a></div>
                                 </div>
                             </div>
                         </div>

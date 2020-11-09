@@ -9,8 +9,14 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                        <div class="text-icon is-middle">
+                            <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                            <span>กลับไปเมนูบัญชีทั่วไป</span>
+                        </div>
+                    </a>
                     <h2 class="font-semibold no-margin-top pull-left">โปรไฟล์บัญชีผู้ใช้ทั่วไป</h2>
-                    <a href="member-profile-edit.php" class="btn btn-gray btn-md pull-right mt-5">
+                    <a href="member-profile-edit.php" class="btn btn-gray btn-md pull-right mt-5 btn-edit-profile">
                         <div class="text-icon">
                             <i class="m-icon m-icon-edit m-icon-black"></i>
                             <span>แก้ไขโปรไฟล์ของฉัน</span>

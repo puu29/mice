@@ -9,10 +9,17 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                        <div class="text-icon is-middle">
+                            <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                            <span>กลับไปเมนูบัญชีทั่วไป</span>
+                        </div>
+                    </a>
                     <h2 class="font-semibold no-margin">ข่าวสารจากธุรกิจที่สนใจ</h2>
                     <p>ท่านสามารถติดตามข่าวสารจากธุรกิจที่ท่านกดติดตามหรือกดสนใจไว้ได้ที่นี่</p>
-                    <div class="select pull-right">
-                        <select class="form-control">
+                    <br class="hidden-desktop"/>
+                    <div class="select pull-right mobile-block">
+                        <select class="form-control ">
                             <option value="">ประเภททั้งหมด</option>
                             <option value="">ประเภทข่าวสาร 1</option>
                             <option value="">ประเภทข่าวสาร 2</option>
@@ -20,8 +27,9 @@
                         </select>
                         <span class="m-icon m-icon-dropdown"></span>
                     </div>
+                    <br class="hidden-desktop"/>
                     <div class="clearfix"></div>
-                    <br/>
+                    <br class="hidden-mobile"/>
                     <div class="promotion">
                         <div class="row is-small grid">
                             <div class="col col-sm-4 grid-item">

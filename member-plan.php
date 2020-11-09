@@ -9,6 +9,12 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                        <div class="text-icon is-middle">
+                            <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                            <span>กลับไปเมนูบัญชีทั่วไป</span>
+                        </div>
+                    </a>
                     <h2 class="font-semibold no-margin-top">วางแผนการจัดงานไมซ์</h2>
                     <p>เริ่มการสร้างและวางแผนอีเว้นท์ของคุณเก็บมันไว้ คุณสามารถจัดการรายละเอียดและเลือกผู้ให้บริการสำหรับอีเว้นท์ของคุณได้ เช่น สถานที่จัดงาน อาหารและเครื่องดื่ม ผู้ผลิตของชำร่วย โดยข้อมูลทั่วไปจะเก็บอยู่ ภายในบัญชีของคุณ ซึ่งจะไม่ถูกเปิดเผยให้ผู้ใช้งานอื่นมองเห็น</p>
                     <br/>

@@ -280,3 +280,10 @@ function close_search()
     $('#search').fadeOut();
     $('#search .form-control').val('');
 }
+
+function set_panel_list()
+{
+    $('.panel_list').each(function(){
+        
+    });
+}

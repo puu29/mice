@@ -9,6 +9,12 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                        <div class="text-icon is-middle">
+                            <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                            <span>กลับไปเมนูบัญชีทั่วไป</span>
+                        </div>
+                    </a>
                     <div class="row">
                         <div class="col-md-8">
                             <form action="member-plan-manage.php" method="post">
@@ -111,55 +117,55 @@
                                         <br/>
                                         <h3>ส่วนที่ 2 : เลือกกลุ่มธุรกิจเฉพาะ</h3>
                                         <p class="no-margin">ท่านสามารถเลือกกลุ่มธุรกิจเฉพาะเพื่อการค้นหาที่่ตรงกับความต้องการของท่านให้เร็วยิ่งขึ้น โดยในหน้าถัดไประบบจะแสดงเฉพาะกลุ่มธุรกิจที่ท่านได้ทำการเลือกไว้เท่านั้น</p><br/>
-                                        <div class="col-3">
+                                        <div class="col-3 mobile-col-2">
                                             <div class="form-group no-margin">
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox1">
-                                                    <label for="checkbox1">ออร์แกไนเซอร์</label>
+                                                    <label class="mobile-font-regular" for="checkbox1">ออร์แกไนเซอร์</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox2">
-                                                    <label for="checkbox2">สถานที่จัดงาน</label>
+                                                    <label class="mobile-font-regular" for="checkbox2">สถานที่จัดงาน</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox3">
-                                                    <label for="checkbox3">บริการสำหรับผู้จัดงาน</label>
+                                                    <label class="mobile-font-regular" for="checkbox3">บริการสำหรับผู้จัดงาน</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox4">
-                                                    <label for="checkbox4">ที่พัก</label>
+                                                    <label class="mobile-font-regular" for="checkbox4">ที่พัก</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox5">
-                                                    <label for="checkbox5">Logistic</label>
+                                                    <label class="mobile-font-regular" for="checkbox5">Logistic</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox6">
-                                                    <label for="checkbox6">อาหารและเครื่องดื่ม</label>
+                                                    <label class="mobile-font-regular" for="checkbox6">อาหารและเครื่องดื่ม</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox7">
-                                                    <label for="checkbox7">ร้านค้า/สินค้า</label>
+                                                    <label class="mobile-font-regular" for="checkbox7">ร้านค้า/สินค้า</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox8">
-                                                    <label for="checkbox8">ท่องเที่ยว/นำเที่ยว</label>
+                                                    <label class="mobile-font-regular" for="checkbox8">ท่องเที่ยว/นำเที่ยว</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox9">
-                                                    <label for="checkbox9">โชว์/การแสดง</label>
+                                                    <label class="mobile-font-regular" for="checkbox9">โชว์/การแสดง</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox10">
-                                                    <label for="checkbox10">วิทยากร</label>
+                                                    <label class="mobile-font-regular" for="checkbox10">วิทยากร</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox11">
-                                                    <label for="checkbox11">หน่วยงานที่เกี่ยวข้อง</label>
+                                                    <label class="mobile-font-regular" for="checkbox11">หน่วยงานที่เกี่ยวข้อง</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox12">
-                                                    <label for="checkbox12">ธุรกิจบริการอื่นๆ</label>
+                                                    <label class="mobile-font-regular" for="checkbox12">ธุรกิจบริการอื่นๆ</label>
                                                 </div>
                                             </div>
                                         </div>

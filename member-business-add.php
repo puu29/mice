@@ -9,6 +9,12 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                        <div class="text-icon is-middle">
+                            <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                            <span>กลับไปเมนูบัญชีทั่วไป</span>
+                        </div>
+                    </a>
                     <form action="member-business.php" method="post" enctype="multipart/form-data">
                         <div class="step-footer">
                             <div class="text">
@@ -38,15 +44,15 @@
                             </div>
                             <div class="panel-body">
                                 <div class="form-group">
-                                    <label class="font-semibold font-18">
-                                        <div class="text-icon is-middle icon-right">
+                                    <label class="font-semibold font-18 mobile-font-16">
+                                        <div class="text-icon is-middle icon-right mobile-has-info">
                                             <i class="m-icon m-icon-help" data-toggle="tooltip" data-placement="right" title="Information"></i>
-                                            <span>ธุรกิจหลัก <span class="font-regular">(สามารถเลือกได้เพียง 1 ตัวเลือกเท่านั้น)</span></span>
+                                            <span>ธุรกิจหลัก <br class="hidden-desktop" /><span class="mobile-font-regular">(สามารถเลือกได้เพียง 1 ตัวเลือกเท่านั้น)</span></span>
                                         </div>    
                                     </label>
                                     <div class="radio-box">
                                         <div class="row is-small2">
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type1">
                                                     <label for="type1">
@@ -58,7 +64,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type2">
                                                     <label for="type2">
@@ -70,7 +76,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type3">
                                                     <label for="type3">
@@ -82,7 +88,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type4">
                                                     <label for="type4">
@@ -94,7 +100,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type5">
                                                     <label for="type5">
@@ -106,7 +112,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type6">
                                                     <label for="type6">
@@ -118,7 +124,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type7">
                                                     <label for="type7">
@@ -130,7 +136,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type8">
                                                     <label for="type8">
@@ -142,7 +148,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type10">
                                                     <label for="type10">
@@ -154,7 +160,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type11">
                                                     <label for="type11">
@@ -166,7 +172,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type12">
                                                     <label for="type12">
@@ -178,7 +184,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="radio" name="type" id="type13">
                                                     <label for="type13">
@@ -204,7 +210,7 @@
                                                 <input type="checkbox" id="location1">
                                                 <label for="location1">
                                                     <p class="font-16 font-semibold no-margin">โรงแรมและรีสอร์ทที่มีสถานที่จัดงาน</p>
-                                                    <p>ห้อง Boardroom ห้อง Meeting Room ห้อง Auditorium และสถานที่จัดงาน (Event Space)</p>
+                                                    <p class="mobile-font-regular">ห้อง Boardroom ห้อง Meeting Room ห้อง Auditorium และสถานที่จัดงาน (Event Space)</p>
                                                 </label>
                                             </div>
                                         </div>
@@ -213,7 +219,7 @@
                                                 <input type="checkbox" id="location2">
                                                 <label for="location2">
                                                     <p class="font-16 font-semibold no-margin">ศูนย์แสดงสินค้า</p>
-                                                    <p></p>
+                                                    <p class="mobile-font-regular"></p>
                                                 </label>
                                             </div>
                                         </div>
@@ -223,7 +229,7 @@
                                                 <input type="checkbox" id="location3">
                                                 <label for="location3">
                                                     <p class="font-16 font-semibold no-margin">ศูนย์ประชุม</p>
-                                                    <p>ครอบคลุมถึงศูนย์ประชุมโดยเฉพาะที่ไม่ได้รวมอยู่ในโรงแรม โดยจะเน้นกลุ่มเป้าหมายไปที่สถานที่จัดกิจกรรมประชุมวิชาการ</p>
+                                                    <p class="mobile-font-regular">ครอบคลุมถึงศูนย์ประชุมโดยเฉพาะที่ไม่ได้รวมอยู่ในโรงแรม โดยจะเน้นกลุ่มเป้าหมายไปที่สถานที่จัดกิจกรรมประชุมวิชาการ</p>
                                                 </label>
                                             </div>
                                         </div>
@@ -232,7 +238,7 @@
                                                 <input type="checkbox" id="location4">
                                                 <label for="location4">
                                                     <p class="font-16 font-semibold no-margin">สถานที่ราชการ</p>
-                                                    <p></p>
+                                                    <p class="mobile-font-regular"></p>
                                                 </label>
                                             </div>
                                         </div>
@@ -242,7 +248,7 @@
                                                 <input type="checkbox" id="location5">
                                                 <label for="location5">
                                                     <p class="font-16 font-semibold no-margin">สถาบันการศึกษา</p>
-                                                    <p>สถานที่จัดกิจกรรมประเภทไมซ์ที่เป็นสถาบันการศึกษา</p>
+                                                    <p class="mobile-font-regular">สถานที่จัดกิจกรรมประเภทไมซ์ที่เป็นสถาบันการศึกษา</p>
                                                 </label>
                                             </div>
                                         </div>
@@ -251,7 +257,7 @@
                                                 <input type="checkbox" id="location6">
                                                 <label for="location6">
                                                     <p class="font-16 font-semibold no-margin">สถานที่นั่งทำงานร่วมกัน</p>
-                                                    <p>สถานที่การจัดงานแนวใหม่ซึ่งสามารถแบ่งส่วนของห้องประชุม และสถานที่จัดงาน (Event Space)</p>
+                                                    <p class="mobile-font-regular">สถานที่การจัดงานแนวใหม่ซึ่งสามารถแบ่งส่วนของห้องประชุม และสถานที่จัดงาน (Event Space)</p>
                                                 </label>
                                             </div>
                                         </div>
@@ -261,7 +267,7 @@
                                                 <input type="checkbox" id="location7">
                                                 <label for="location7">
                                                     <p class="font-16 font-semibold no-margin">สถานที่จัดงานพิเศษ</p>
-                                                    <p>สนามกีฬา โรงละคร ห้องสมุด พิพิธภัณฑ์</p>
+                                                    <p class="mobile-font-regular">สนามกีฬา โรงละคร ห้องสมุด พิพิธภัณฑ์</p>
                                                 </label>
                                             </div>
                                         </div>
@@ -270,15 +276,15 @@
                                 </div>
                                 <hr class="in-panel"/>
                                 <div class="form-group">
-                                    <label class="font-semibold font-18">
-                                        <div class="text-icon is-middle icon-right">
+                                    <label class="font-semibold font-18 mobile-font-16">
+                                        <div class="text-icon is-middle icon-right mobile-has-info">
                                             <i class="m-icon m-icon-help" data-toggle="tooltip" data-placement="right" title="Information"></i>
-                                            <span>บริการรองของธุรกิจ <span class="font-regular">(เลือกได้สูงสุด 2 ตัวเลือก)</span></span>
+                                            <span>บริการรองของธุรกิจ <br class="hidden-desktop" /><span class="font-regular">(เลือกได้สูงสุด 2 ตัวเลือก)</span></span>
                                         </div>
                                     </label>
                                     <div class="radio-box">
                                         <div class="row is-small2">
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second1" disabled>
                                                     <label for="type_second1">
@@ -290,7 +296,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second2">
                                                     <label for="type_second2">
@@ -302,7 +308,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second3">
                                                     <label for="type_second3">
@@ -314,7 +320,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second4">
                                                     <label for="type_second4">
@@ -326,7 +332,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second5">
                                                     <label for="type_second5">
@@ -338,7 +344,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second6">
                                                     <label for="type_second6">
@@ -350,7 +356,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second7">
                                                     <label for="type_second7">
@@ -362,7 +368,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second8">
                                                     <label for="type_second8">
@@ -374,7 +380,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second10">
                                                     <label for="type_second10">
@@ -386,7 +392,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second11">
                                                     <label for="type_second11">
@@ -398,7 +404,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second12">
                                                     <label for="type_second12">
@@ -410,7 +416,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-3">
+                                            <div class="col col-sm-3 col-xs-6">
                                                 <div class="checkbox">
                                                     <input type="checkbox" name="type" id="type_second13">
                                                     <label for="type_second13">
@@ -476,14 +482,14 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="font-semibold fullwidth">ชื่อสถานประกอบการ (ภาษาไทย) <div class="checkbox pull-right no-margin"><input type="checkbox" id="same1"><label for="same1">ชื่อเดียวกับสถานประกอบการ</label></div></label>
+                                            <label class="font-semibold fullwidth">ชื่อสถานประกอบการ (ภาษาไทย) <div class="checkbox pull-right no-margin same-name"><input type="checkbox" id="same1"><label for="same1">ชื่อเดียวกับสถานประกอบการ</label></div></label>
                                             <input type="text" class="form-control" placeholder="ชื่อองค์กรหรือบริษัท (ภาษาไทย)" value="วิลล่า โฮเต็ลแอนด์รีสอร์ท">
                                             <p class="required">กรุณากรอกข้อมูล</p>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="font-semibold fullwidth">ชื่อองค์กรหรือบริษัท (ภาษาอังกฤษ) <div class="checkbox pull-right no-margin"><input type="checkbox" id="same2"><label for="same2">ชื่อเดียวกับสถานประกอบการ</label></div></label>
+                                            <label class="font-semibold fullwidth">ชื่อองค์กรหรือบริษัท (ภาษาอังกฤษ) <div class="checkbox pull-right no-margin same-name"><input type="checkbox" id="same2"><label for="same2">ชื่อเดียวกับสถานประกอบการ</label></div></label>
                                             <input type="text" class="form-control" placeholder="ชื่อองค์กรหรือบริษัท (ภาษาอังกฤษ)" value="Villa Hotel and Resort">
                                             <p class="required">กรุณากรอกข้อมูล</p>
                                         </div>
@@ -705,7 +711,7 @@
                             </div>
                             <div class="panel-body">
                                 <div class="row is-small2">
-                                    <div class="col col-sm-3">
+                                    <div class="col col-sm-3 col-xs-12">
                                         <div class="upload-photo is-normal">
                                             <div class="preview"></div>
                                             <div class="input">
@@ -718,7 +724,8 @@
                                     <div class="col col-sm-9">
                                         <p class="font-semibold no-margin">ตัวอย่าง</p>
                                         <p>ตำแหน่งการแสดงรูปภาพสำหรับในหน้าค้นหารายการ</p>
-                                        <img src="assets/images/ex.png" class="img-responsive">
+                                        <img src="assets/images/ex.png" class="img-responsive hidden-mobile">
+                                        <img src="assets/images/ex-mobile.png" class="img-responsive hidden-desktop">
                                     </div>
                                 </div>
                             </div>

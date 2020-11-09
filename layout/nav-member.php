@@ -10,7 +10,7 @@
     </div>
     <div class="body">
         <ul>
-            <li class="<?= $page == 'member' ? 'active' : ''; ?>">
+            <li class="<?= ($page == 'member' || strpos($page, 'member-quotation') > -1) ? 'active' : ''; ?>">
                 <a href="member.php">
                     <i class="m-icon m-icon-menu-docs"></i>
                     <span>การขอใบเสนอราคา</span>
@@ -66,7 +66,7 @@
                 </a>
             </li>
             <li>
-                <a href="business-account-add.php">
+                <a href="member-business-add.php">
                     <i class="m-icon m-icon-plus"></i>
                     <span class="font-bold font-blue">เพิ่มธุรกิจ</span>
                 </a>

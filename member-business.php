@@ -9,19 +9,25 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                        <div class="text-icon is-middle">
+                            <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                            <span>กลับไปเมนูบัญชีทั่วไป</span>
+                        </div>
+                    </a>
                     <h2 class="font-semibold no-margin-top pull-left">บัญชีธุรกิจ</h2>
                     <div class="clearfix"></div>
                     <?php if($_GET['empty'] == 1) { ?>
                         <div class="row">
                             <div class="col-md-12">
-                                <a href="member-business-add.php" class="add-box no-margin fullwidth">
+                                <a href="member-business-add.php" class="add-box no-margin fullwidth mobile-no-margin">
                                     <div class="inner transform-middle">
                                         <div class="text-icon">
                                             <i class="m-icon m-icon-plus"></i>
                                             <span class="font-blue">เพิ่มธุรกิจ</span>
                                         </div>
                                         <br/>
-                                        <div>ท่านสามารถเพิ่มข้อมูลธุรกิจของท่าน โดยกดที่ปุ่ม <b>”เพิ่มธุรกิจ”</b> ด้านบนนี้ เพื่อร่วมเป็นส่วนหนึ่งของ<br/>Thai MICE Connect  และเพื่อให้สามารถติดต่อกับผู้ใช้งานได้อย่างสะดวกมากขึ้น ร่วมเป็นส่วนหนึ่งกับเรา!</div>
+                                        <div>ท่านสามารถเพิ่มข้อมูลธุรกิจของท่าน โดยกดที่ปุ่ม <br class="hidden-desktop"/><b>”เพิ่มธุรกิจ”</b><br class="hidden-desktop"/> ด้านบนนี้ เพื่อร่วมเป็นส่วนหนึ่งของ<br/>Thai MICE Connect  และเพื่อให้สามารถติดต่อกับผู้ใช้งานได้อย่างสะดวกมากขึ้น ร่วมเป็นส่วนหนึ่งกับเรา!</div>
                                     </div>
                                 </a>
                             </div>
@@ -82,7 +88,7 @@
                                 <a href="member-business-add.php" class="add-box">
                                     <div class="inner transform-middle">
                                         <i class="m-icon m-icon-plus"></i><br/>
-                                        <span class="font-blue">เพิ่มธุรกิจ</span>
+                                        <span class="font-blue mobile-font-bold">เพิ่มธุรกิจ</span>
                                     </div>
                                 </a>
                             </div>

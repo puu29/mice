@@ -9,6 +9,28 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <div class="title-chat">
+                        <div class="to-back font-blue" onclick="hide_chat()">
+                            <div class="text-icon is-middle">
+                                <i class="glyphicon glyphicon-menu-left"></i>
+                                <span>กลับไปยังการ Video</span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-md btn-blue-linear pull-right" style="margin-top: -12px;margin-bottom: 20px;" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
+                            <div class="text-icon is-middle no-margin">
+                                <i class="m-icon m-icon-docs m-icon-white"></i>
+                                <span>ขอใบเสนอราคา</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="title-vdo">
+                        <a href="javascript:history.back()" class="to-back font-blue hidden-desktop">
+                            <div class="text-icon is-middle">
+                                <i class="glyphicon glyphicon-menu-left"></i>
+                                <span>ย้อนกลับ</span>
+                            </div>
+                        </a>
+                    </div>
                     <div class="chat is-vdocall">
                         <div class="chat-dialog">
                             <div class="head">
@@ -20,7 +42,7 @@
                                         <p class="name font-semibold font-16">The Berkeley Hotel<br/>Pratunam</p>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-md btn-blue-linear pull-right" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
+                                <button type="button" class="btn btn-md btn-blue-linear pull-right hidden-mobile" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
                                     <div class="text-icon is-middle for-list no-margin">
                                         <i class="m-icon m-icon-docs m-icon-white"></i>
                                         <span>ขอใบเสนอราคา</span>
@@ -69,7 +91,7 @@
                             </div>
                             <div class="cv-action">
                                 <div class="inner">
-                                    <div class="to-chat">
+                                    <div class="to-chat" onclick="show_chat()">
                                         <div class="on"></div>
                                         <i class="m-icon m-icon-chat m-icon-white"></i>
                                     </div>
@@ -158,7 +180,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-xs-6">
                                     <div class="form-group">
                                         <label class="font-medium">เวลา</label>
                                         <div class="select fullwidth">
@@ -170,9 +192,9 @@
                                         <p class="required">กรุณาเลือกข้อมูล</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-xs-6">
                                     <div class="form-group">
-                                        <label class="font-medium">เวลา</label>
+                                        <label class="font-medium"><br/></label>
                                         <div class="select fullwidth">
                                             <select class="form-control">
                                                 <option value="">19.00</option>
@@ -230,6 +252,18 @@
         </div>
 
         <script>
+
+            function show_chat()
+            {
+                $('.chat-vdo, .title-vdo').hide();
+                $('.chat-dialog, .title-chat').fadeIn(300);
+            }
+
+            function hide_chat()
+            {
+                $('.chat-dialog, .title-chat').hide();
+                $('.chat-vdo, .title-vdo').fadeIn(300);
+            }
             
             function send_msg_text()
             {

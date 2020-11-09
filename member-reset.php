@@ -9,6 +9,12 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <a href="javascript:history.back()" class="to-back font-blue hidden-desktop">
+                        <div class="text-icon is-middle">
+                            <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                            <span>ย้อนกลับ</span>
+                        </div>
+                    </a>
                     <h2 class="font-semibold no-margin-top pull-left">เปลี่ยนรหัสผ่าน</h2>
                     <div class="clearfix"></div>
                     <div class="row">

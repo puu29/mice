@@ -92,7 +92,7 @@
                                     <span class="glyphicon glyphicon-menu-right"></span>
                                 </li>
                                 <li>
-                                    <a href="business-account-add.php">
+                                    <a href="member-business-add.php">
                                         <i class="m-icon m-icon-plus"></i>
                                         <span class="font-bold font-blue">เพิ่มธุรกิจ</span>
                                     </a>

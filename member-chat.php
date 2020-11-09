@@ -13,6 +13,20 @@
                         <h2>แชทสนทนา</h2>
                         <p>(9 ข้อความที่ไม่ได้อ่าน)</p>
                     </div>
+                    <div class="title-dialog clearfix">
+                        <div class="to-back font-blue pull-left">
+                            <div class="text-icon is-middle">
+                                <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                                <span>ย้อนกลับ</span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-md btn-blue-linear pull-right" style="margin-top: -12px;margin-bottom: 20px;" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
+                            <div class="text-icon is-middle no-margin">
+                                <i class="m-icon m-icon-docs m-icon-white"></i>
+                                <span>ขอใบเสนอราคา</span>
+                            </div>
+                        </button>
+                    </div>
                     <div class="chat">
                         <div class="chat-list shadow-blue">
                             <div class="inner no-read">
@@ -128,7 +142,7 @@
                                         <p class="online font-green font-semibold">Online</p>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-md btn-blue-linear pull-right" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
+                                <button type="button" class="btn btn-md btn-blue-linear pull-right hidden-mobile" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
                                     <div class="text-icon is-middle for-list no-margin">
                                         <i class="m-icon m-icon-docs m-icon-white"></i>
                                         <span>ขอใบเสนอราคา</span>
@@ -241,7 +255,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-xs-6">
                                     <div class="form-group">
                                         <label class="font-medium">เวลา</label>
                                         <div class="select fullwidth">
@@ -253,9 +267,9 @@
                                         <p class="required">กรุณาเลือกข้อมูล</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-xs-6">
                                     <div class="form-group">
-                                        <label class="font-medium">เวลา</label>
+                                        <label class="font-medium"><br/></label>
                                         <div class="select fullwidth">
                                             <select class="form-control">
                                                 <option value="">19.00</option>
@@ -311,6 +325,20 @@
         </div>
 
         <script>
+            (function(){
+                if($(window).width() < 768)
+                {
+                    $('.chat-list .inner').click(function(){
+                        $('.chat-list, .title-highlight').hide();
+                        $('.chat-dialog, .title-dialog').fadeIn(300);
+                    });
+
+                    $('.title-dialog .to-back').click(function(){
+                        $('.chat-dialog, .title-dialog').hide();
+                        $('.chat-list, .title-highlight').fadeIn(300);
+                    });
+                }
+            })();
             
             function send_msg_text()
             {
