@@ -42,11 +42,19 @@
                                                     <h2 class="no-margin font-semibold">10</h2>
                                                     <p class="no-margin">คำขอใบเสนอราคา</p>
                                                 </div>
+                                                <div class="text-icon font-regular is-middle hidden-desktop">
+                                                    <i class="m-icon m-icon-search"></i>
+                                                    <span>ดูรายการ</span>
+                                                </div>
                                             </a>
                                             <a href="business-manage-quotation-history.php" class="btn-group" role="group">
                                                 <div class="chat-type">
                                                     <h2 class="no-margin font-semibold">3</h2>
                                                     <p class="no-margin">ใบเสนอราคาที่ส่งแล้ว</p>
+                                                </div>
+                                                <div class="text-icon font-regular is-middle hidden-desktop">
+                                                    <i class="m-icon m-icon-search"></i>
+                                                    <span>ดูรายการ</span>
                                                 </div>
                                             </a>
                                             <a href="business-manage-quotation-reject.php" class="btn-group" role="group">
@@ -54,23 +62,27 @@
                                                     <h2 class="no-margin font-semibold">1</h2>
                                                     <p class="no-margin">ใบเสนอราคาที่ยกเลิก</p>
                                                 </div>
+                                                <div class="text-icon font-regular is-middle hidden-desktop">
+                                                    <i class="m-icon m-icon-search"></i>
+                                                    <span>ดูรายการ</span>
+                                                </div>
                                             </a>
                                         </div>
-                                        <div class="panel panel-default mt25">
+                                        <div class="panel panel-default mt25 b-quotation-detail-panel">
                                             <div class="panel-body">
-                                                <a href="business-manage-quotation.php" class="to-back font-blue">
+                                                <a href="business-manage-quotation.php" class="to-back font-blue hidden-mobile">
                                                     <div class="text-icon is-middle">
                                                         <i class="glyphicon glyphicon-menu-left"></i>
                                                         <span>ย้อนกลับ</span>
                                                     </div>
                                                 </a>
-                                                <form action="" method="post" class="b-quotation-detail">
+                                                <form action="" method="post" class="b-quotation-detail mobile-font-16">
                                                     <div class="row">
                                                         <div class="col-sm-8">
                                                             <div class="user width-45">
                                                                 <div class="bg" style="background-image: url('assets/images/user-sh2.png')"></div>
                                                                 <div class="text">
-                                                                    <h2 class="font-medium font-20">คุณทวีสิทธิ์ นามสกุล</h2>
+                                                                    <h2 class="font-medium font-20 mobile-font-16 mobile-font-regular">คุณทวีสิทธิ์ นามสกุล</h2>
                                                                     <div class="row">
                                                                         <div class="col-sm-6">
                                                                             <label>ข้อมูลผู้ติดต่อ</label>
@@ -86,40 +98,41 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <hr class="in-panel" />
+                                                    <hr class="in-panel mobile-no-margin-top mobile-in-panel" />
                                                     <h3 class="font-20 font-semibold">งานสัมมนาประจำปีบริษัท 2020</h3>
                                                     <p class="font-semibold">ประเภทการจัดงาน : งานสัมมนา</p>
                                                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tellus elementum sagittis vitae et leo duis ut. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Nec nam aliquam sem </div>
                                                     <br/>
                                                     <div class="border-box">
-                                                        <h3 class="font-bold font-14 no-margin-top">ข้อมูลทั่วไป</h3>
-                                                        <div class="row font-12">
+                                                        <h3 class="font-bold font-14 no-margin-top mobile-font-18">ข้อมูลทั่วไป</h3>
+                                                        <div class="row font-12 mobile-font-16">
                                                             <div class="col-sm-3"><label class="font-semibold">สถานที่จัดงาน</label></div>
                                                             <div class="col-sm-3"><p class="no-margin">กรุงเทพมหานคร</p></div>
                                                             <div class="col-sm-3"><label class="font-semibold">วันที่จัดงาน</label></div>
                                                             <div class="col-sm-3"><p class="no-margin">24/04/20 - 25/04/20</p></div>
                                                         </div>
-                                                        <div class="row font-12">
+                                                        <div class="row font-12 mobile-font-16">
                                                             <div class="col-sm-3"><label class="font-semibold">จำนวนคน</label></div>
                                                             <div class="col-sm-3"><p class="no-margin">800 คน</p></div>
                                                             <div class="col-sm-3"><label class="font-semibold">เวลา</label></div>
                                                             <div class="col-sm-3"><p class="no-margin">09.00 - 18.00 น.</p></div>
                                                         </div>
-                                                        <h3 class="font-bold font-14">ข้อมูลเฉพาะ</h3>
-                                                        <div class="row font-12">
+                                                        <h3 class="font-bold font-14 mobile-font-18">ข้อมูลเฉพาะ</h3>
+                                                        <div class="row font-12 mobile-font-16">
                                                             <div class="col-sm-3"><label class="font-semibold">สิ่งอำนวยความสะดวกในการเดินทาง</label></div>
                                                             <div class="col-sm-3"><p class="no-margin">มีที่จอดรถ, ติดรถไฟฟ้า BTS</p></div>
                                                             <div class="col-sm-3"><label class="font-semibold">ประเภทห้อง</label></div>
                                                             <div class="col-sm-3"><p class="no-margin">Ballroom</p></div>
                                                         </div>
-                                                        <div class="row font-12">
-                                                            <div class="col-sm-3"><label class="font-semibold">ขนาดพื้นที่ที่ต้องการ (ตร.ม.)<</label></div>
+                                                        <div class="row font-12 mobile-font-16">
+                                                            <div class="col-sm-3"><label class="font-semibold">ขนาดพื้นที่ที่ต้องการ (ตร.ม.)</label></div>
                                                             <div class="col-sm-3"><p class="no-margin">250</p></div>
                                                             <div class="col-sm-3"><label class="font-semibold">สิ่งอำนวยความสะดวกอื่นๆ</label></div>
                                                             <div class="col-sm-3"><p class="no-margin">มีบริการรับส่งจากสนามบิน</p></div>
                                                         </div>
                                                     </div>
-                                                    <hr class="in-panel" />
+                                                    <hr class="in-panel hidden-mobile" />
+                                                    <br class="hidden-desktop" />
                                                     <div class="row">
                                                         <div class="col-sm-6">
                                                             <div class="form-group clearfix">
@@ -137,7 +150,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-12 mt25">
-                                                            <div class="form-group">
+                                                            <div class="form-group mobile-no-margin">
                                                                 <label class="font-semibold fullwidth">ไฟล์อัพโหลด (สามารถอัพโหลดได้สูงสุด 5 ไฟล์)</label>
                                                                 <div class="upload-file">
                                                                     <div class="input">
@@ -166,7 +179,7 @@
                                             </div>
                                         </div>
                                         <div class="note">
-                                            <p>หากมีปัญหาด้านการใช้งานหรือข้อสงสัยสามารถกดส่งอีเมลเพื่อติดต่อ TCEB<br/>โดยเจ้าหน้าที่จะดำเนินการติดต่อกลับภายใน 3-5 วันทำการ</p>
+                                            <p>หากมีปัญหาด้านการใช้งานหรือข้อสงสัยสามารถกดส่งอีเมลเพื่อติดต่อ TCEB <br/>โดยเจ้าหน้าที่จะดำเนินการติดต่อกลับภายใน 3-5 วันทำการ</p>
                                             <a href="mailto:info@tceb.or.th" class="btn-gray btn btn-md btn-minwidth">
                                                 <div class="text-icon is-middle">
                                                     <i class="m-icon m-icon-email m-icon-20"></i>
@@ -185,30 +198,52 @@
         <?php include "layout/footer.php" ?>
         <script>
             (function(){
-                $('.upload-file input').change(function(e){
+                $('.upload-file').on('change', 'input', function(e){
                     var parent = $(this).parents('.upload-file');
-                    if(parent.find('.inner').length == 0)
-                    {
-                        $('#btn-save').prop( 'disabled', true );
-                    }
-                    else
-                    {
-                        $('#btn-save').prop( 'disabled', false );
-                    }
+                    setTimeout(() => {
+                        if(parent.find('.inner').length == 0)
+                        {
+                            $('#btn-save').prop( 'disabled', true );
+                        }
+                        else
+                        {
+                            $('#btn-save').prop( 'disabled', false );
+                        }
+                    }, 100);
                 });
 
                 $('.upload-file').on('click', '.remove-file', function(){
                     var parent = $(this).parents('.upload-file');
-                    if(parent.find('.inner').length == 0)
-                    {
-                        $('#btn-save').prop( 'disabled', true );
-                    }
-                    else
-                    {
-                        $('#btn-save').prop( 'disabled', false );
-                    }
+                    setTimeout(() => {
+                        if(parent.find('.inner').length == 0)
+                        {
+                            $('#btn-save').prop( 'disabled', true );
+                        }
+                        else
+                        {
+                            $('#btn-save').prop( 'disabled', false );
+                        }
+                    }, 100);
                 });
+
+                $(window).resize(function(){
+                    set_layout();
+                });
+                
+                set_layout();
             })();
+
+            function set_layout()
+            {
+                if($(window).width() < 992)
+                {
+                    $('.member-menu .head, .member-menu .body, .tab .nav-tabs, .b-quotation .btn-toolbar').hide();
+                }
+                else
+                {
+                    $('.member-menu .head, .member-menu .body, .tab .nav-tabs, .b-quotation .btn-toolbar').show();
+                }
+            }
         </script>
     </body>
 </html>

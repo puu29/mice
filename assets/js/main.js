@@ -1,30 +1,40 @@
 (function() {
 
     // slide
-    $('.banner').owlCarousel({
-        navText: ['', ''],
-        nav: false,
+    var banner = $('.banner').owlCarousel({
         loop: false,
         dots: false,
-        animateOut: 'fadeOut',
-        autoplay: true,
-        autoplayTimeout: 6000,
-        autoplayHoverPause: false,
         responsive : {
             0 : {
                 items: 1,
                 slideBy: 1,
+                stagePadding: 15,
+                margin: 8,
+                navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
+                nav: true,
             },
             767 : {
                 items: 3,
                 slideBy: 3,
+                navText: ['', ''],
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 6000,
+                autoplayHoverPause: false
             },
             991 : {
                 items: 5,
                 slideBy: 5,
+                navText: ['', ''],
+                nav: false,
             }
         }
     });
+    if($(window).width() < 768)
+    {
+        $('.banner').trigger('remove.owl.carousel', [4, 9]).trigger('refresh.owl.carousel');
+    }
+
     $('.slide-mice').owlCarousel({
         navText: ['<span class="glyphicon glyphicon-menu-left"></span>', '<span class="glyphicon glyphicon-menu-right"></span>'],
         nav: true,
@@ -173,18 +183,20 @@
     });
 
     // upload
-    $('.upload-photo input').change(function(e){
+    $('body').on('change', '.upload-photo input', function(e){
         var parent = $(this).parents('.upload-photo');
         var input = e.target;
+        var ele = $(this);
         if (input.files && input.files[0]) {
             var reader = new FileReader();
             reader.onload = function(event) {
-                parent.find('.preview').css('background-image', 'url("'+event.target.result+'")');
+                parent.find('.preview').remove();
+                parent.prepend('<div class="preview" style="background-image: url('+event.target.result+')"></div>');
             }
             reader.readAsDataURL(input.files[0]);
         }
-    });
-    $('.upload-file input').change(function(e){
+
+    }).on('change', '.upload-file input', function(e){
         var parent = $(this).parents('.upload-file');
         var input = e.target;
         for (var i = 0; i < input.files.length; i++) {
@@ -193,9 +205,55 @@
                                             <i class="m-icon m-icon-close remove-file"></i>
                                         </div>`);
         }
-    });
+    }).on('click', '.remove-file', function(){
+        $(this).parents('.inner').remove();
 
-    $('.upload-file').on('click', '.remove-file', function(){
+    }).on('change', '.upload-photos .input input', function(e){
+        var ele = $(this).parents('.inner');
+        var input = e.target;
+        for (var i = 0; i < input.files.length; i++) {
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                ele.before(`<div class="inner">
+                                <div class="bg" style="background-image: url('${event.target.result}')"></div>
+                                <div class="action dropup">
+                                    <button class="btn btn-trans btn-default dropdown-toggle btn-dots" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <span class="glyphicon glyphicon-option-horizontal"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right shadow">
+                                        <li>
+                                            <div class="text-icon is-middle edit-photo">
+                                                <i class="m-icon m-icon-edit"></i>
+                                                <span>แก้ไขรูป</span>
+                                                <input type="file" accept="image/*">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text-icon is-middle remove-photo">
+                                                <i class="m-icon m-icon-trash"></i>
+                                                <span>ลบรูป</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>`);
+            }
+            reader.readAsDataURL(input.files[i]);
+        }
+
+    }).on('change', '.upload-photos .edit-photo input', function(e){
+        var ele = $(this).parents('.inner');
+        var input = e.target;
+        ele.find('.action').removeClass('open');
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                ele.find('.bg').css('background-image', 'url("'+event.target.result+'")');
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+
+    }).on('click', '.upload-photos .remove-photo', function(){
         $(this).parents('.inner').remove();
     });
 
@@ -219,7 +277,7 @@
             iframe.attr('src', src);
         }
     });
-
+    
     // copy link
     $('.btn-copylink').tooltip();
     $('.btn-copylink').click(function(e){
@@ -265,9 +323,23 @@
         $('.form-search input').val(text);
         $('.autocomplete .auto-text').hide();
     });
-    $('.short-search .m-icon').click(function(){
-        $(this).parents('.short-search').slideUp(300);
-    });
+
+    // menu
+    if($('.member-menu.for-business').length > 0)
+    {
+        var active = $('.member-menu.for-business .dropdown-item.active span').html();
+        $('#menu-active').html(active);
+
+        if($(window).width() < 768)
+        {
+            if($('.tab .nav-tabs .active').offset().left > ($(window).width() - 50))
+            {
+                $('.tab .nav-tabs').animate({
+                    scrollLeft: $('.tab .nav-tabs .active').offset().left
+                }, 'fast');
+            }
+        }
+    }
 
 })();
 

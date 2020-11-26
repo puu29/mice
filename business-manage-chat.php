@@ -42,11 +42,19 @@
                                                     <h2 class="no-margin font-semibold">15</h2>
                                                     <p class="no-margin">แชทสนทนา</p>
                                                 </div>
+                                                <div class="text-icon font-regular is-middle hidden-desktop">
+                                                    <i class="m-icon m-icon-search"></i>
+                                                    <span>ดูรายการ</span>
+                                                </div>
                                             </a>
                                             <a href="business-manage-chat-waiting.php" class="btn-group" role="group">
                                                 <div class="chat-type">
                                                     <h2 class="no-margin font-semibold">4</h2>
                                                     <p class="no-margin">รอการนัด Video Call</p>
+                                                </div>
+                                                <div class="text-icon font-regular is-middle hidden-desktop">
+                                                    <i class="m-icon m-icon-search"></i>
+                                                    <span>ดูรายการ</span>
                                                 </div>
                                             </a>
                                             <a href="business-manage-chat-confirm.php" class="btn-group" role="group">
@@ -54,7 +62,25 @@
                                                     <h2 class="no-margin font-semibold">2</h2>
                                                     <p class="no-margin">ยืนยันการนัด Video Call</p>
                                                 </div>
+                                                <div class="text-icon font-regular is-middle hidden-desktop">
+                                                    <i class="m-icon m-icon-search"></i>
+                                                    <span>ดูรายการ</span>
+                                                </div>
                                             </a>
+                                        </div>
+                                        <div class="title-dialog clearfix">
+                                            <div class="to-back font-blue pull-left">
+                                                <div class="text-icon is-middle">
+                                                    <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                                                    <span>ย้อนกลับ</span>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-md btn-blue-linear pull-right" style="margin-top: -12px;margin-bottom: 20px;" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
+                                                <div class="text-icon is-middle no-margin">
+                                                    <i class="m-icon m-icon-docs m-icon-white"></i>
+                                                    <span>ส่งใบเสนอราคา</span>
+                                                </div>
+                                            </button>
                                         </div>
                                         <div class="chat">
                                             <div class="chat-list shadow-blue">
@@ -182,7 +208,7 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <button type="button" class="btn btn-md btn-blue-linear pull-right" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
+                                                    <button type="button" class="btn btn-md btn-blue-linear pull-right hidden-mobile show-ipad" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
                                                         <div class="text-icon is-middle for-list no-margin">
                                                             <i class="m-icon m-icon-docs m-icon-white"></i>
                                                             <span>ส่งใบเสนอราคา</span>
@@ -222,7 +248,7 @@
                                             </div>
                                         </div>
                                         <div class="note">
-                                            <p>หากมีปัญหาด้านการใช้งานหรือข้อสงสัยสามารถกดส่งอีเมลเพื่อติดต่อ TCEB<br/>โดยเจ้าหน้าที่จะดำเนินการติดต่อกลับภายใน 3-5 วันทำการ</p>
+                                            <p>หากมีปัญหาด้านการใช้งานหรือข้อสงสัยสามารถกดส่งอีเมลเพื่อติดต่อ TCEB <br/>โดยเจ้าหน้าที่จะดำเนินการติดต่อกลับภายใน 3-5 วันทำการ</p>
                                             <a href="mailto:info@tceb.or.th" class="btn-gray btn btn-md btn-minwidth">
                                                 <div class="text-icon is-middle">
                                                     <i class="m-icon m-icon-email m-icon-20"></i>
@@ -309,7 +335,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-xs-6">
                                     <div class="form-group">
                                         <label class="font-semibold">เวลา</label>
                                         <div class="select fullwidth">
@@ -321,9 +347,9 @@
                                         <p class="required">กรุณาเลือกข้อมูล</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-xs-6">
                                     <div class="form-group">
-                                        <label class="font-semibold">เวลา</label>
+                                        <label class="font-semibold"><br/></label>
                                         <div class="select fullwidth">
                                             <select class="form-control">
                                                 <option value="">19.00</option>
@@ -333,6 +359,7 @@
                                         <p class="required">กรุณาเลือกข้อมูล</p>
                                     </div>
                                 </div>
+                                <div class="clearfix hidden-desktop"></div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label class="font-semibold">รายละเอียดอื่นๆ เพิ่มเติม</label>
@@ -378,7 +405,7 @@
                                 </div>
                             </div>
                             <div class="btn-box text-center">
-                                <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation-success"  class="btn btn-lg btn-blue-linear font-semibold" style="width: 300px;">ส่งใบเสนอราคา</button>
+                                <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation-success"  class="btn btn-lg btn-blue-linear font-semibold mobile-font-medium" style="width: 300px;">ส่งใบเสนอราคา</button>
                             </div>
                             <br/>
                         </form>
@@ -390,15 +417,37 @@
         <div class="modal fade" id="modal-quotation-success" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-body font-16 pd-40">
+                    <div class="modal-body font-16 mobile-font-16 pd-40">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
-                        <div class="status-box">
+                        <div class="status-box mobile-custom">
                             <br/><br/>
                             <img src="assets/images/status-success.png">
                             <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคาสำเร็จ</h2>
-                            <p class="font-medium">ท่านสามารถดูประวัติการขอใบเสนอราคาได้ภายหลังใน <a href="business-manage-quotation.php" class="font-blue">เมนูใบเสนอราคา</a></p>
+                            <br class="hidden-desktop"/>
+                            <p class="font-medium">ท่านสามารถดูประวัติการขอใบเสนอราคาได้ภายหลังใน <a href="business-manage-quotation-history.php" class="font-blue">เมนูใบเสนอราคา</a></p>
+                            <br class="hidden-desktop"/>
                             <div class="btn-box">
-                                <a href="business-manage-quotation.php" style="width:300px;" class="btn btn-lg btn-blue-linear">ดูใบเสนอราคา</a>
+                                <a href="business-manage-quotation-history.php" style="width:300px;" class="btn btn-lg btn-blue-linear">ดูใบเสนอราคา</a>
+                            </div>
+                            <br/><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-quotation-fail" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body font-16 mobile-font-16 pd-40">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
+                        <div class="status-box mobile-custom">
+                            <br/><br/>
+                            <img src="assets/images/status-fail.png">
+                            <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคา <b class="font-red font-semibold">ไม่สำเร็จ</b></h2>
+                            <p class="font-medium">กรุณาทำรายการใหม่อีกครั้ง</p>
+                            <div class="btn-box">
+                                <a href="#" style="width:300px;" data-dismiss="modal" class="btn btn-lg btn-red">ทำรายการอีกครั้ง</a>
                             </div>
                             <br/><br/>
                         </div>
@@ -408,6 +457,27 @@
         </div>
 
         <script>
+            (function(){
+                if($(window).width() < 768)
+                {
+                    $('.chat-list .inner').click(function(){
+                        $('.chat-list, .title-highlight').hide();
+                        $('.chat-dialog, .title-dialog').fadeIn(300);
+
+                        $('.member-menu').hide();
+                        $('.member-body .nav-tabs, .member-body .btn-toolbar').hide();
+                        $('html, body').animate({ scrollTop: 0 }, 'fast');
+                    });
+
+                    $('.title-dialog .to-back').click(function(){
+                        $('.chat-dialog, .title-dialog').hide();
+                        $('.chat-list, .title-highlight').fadeIn(300);
+
+                        $('.member-menu').show();
+                        $('.member-body .nav-tabs, .member-body .btn-toolbar').show();
+                    });
+                }
+            })();
             
             function send_msg_text()
             {

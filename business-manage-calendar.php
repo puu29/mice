@@ -36,7 +36,7 @@
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active">
                                     <div class="b-news">
-                                        <div class="setting text-right no-margin">
+                                        <div class="setting text-right no-margin mobile-text-right">
                                             <div class="select">
                                                 <select class="form-control">
                                                     <option value="">วันที่ล่าสุด</option>
@@ -47,7 +47,7 @@
 
                                         <div class="b-card">
                                             <div class="row is-small2">
-                                                <div class="col col-md-4 col-lg-3">
+                                                <div class="col col-md-3 col-sm-4">
                                                     <a href="#" class="add-box" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">
                                                         <div class="inner transform-middle">
                                                             <i class="m-icon m-icon-plus"></i><br/>
@@ -55,9 +55,12 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="col col-md-4 col-lg-3">
+                                                <div class="col col-md-3 col-sm-4">
                                                     <div class="card">
-                                                        <div class="img"><img src="assets/images/calendar1.png" class="img-responsive"></div>
+                                                        <div class="img">
+                                                            <div class="status is-warning">รอการอนุมัติ</div>
+                                                            <img src="assets/images/calendar1.png" class="img-responsive">
+                                                        </div>
                                                         <div class="text">
                                                             <p class="date font-blue">13 เม.ษ. 63 - 16 พ.ค. 63</p>
                                                             <p class="desc font-semibold">การประชุมวิชาการระดับชาติด้านการพัฒนาการดำเนินงานทางอุตสาหกรรม ครั้งที่ 11 ประจำปี 2563</p>
@@ -69,9 +72,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-md-4 col-lg-3">
+                                                <div class="col col-md-3 col-sm-4">
                                                     <div class="card">
-                                                        <div class="img"><img src="assets/images/calendar2.png" class="img-responsive"></div>
+                                                        <div class="img">
+                                                            <div class="status is-success">อนุมัติแล้ว</div>
+                                                            <img src="assets/images/calendar2.png" class="img-responsive">
+                                                        </div>
                                                         <div class="text">
                                                             <p class="date font-blue">13 เม.ษ. 63 - 16 พ.ค. 63</p>
                                                             <p class="desc font-semibold">อินดัสเทรียล ออโตเมชัน แอนด์ โรโบติกส์ อีเวนท์ (ไอเออาร์)</p>
@@ -83,9 +89,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col col-md-4 col-lg-3">
+                                                <div class="col col-md-3 col-sm-4">
                                                     <div class="card">
-                                                        <div class="img"><img src="assets/images/calendar3.png" class="img-responsive"></div>
+                                                        <div class="img">
+                                                            <div class="status is-danger">ไม่ผ่านอนุมัติ</div>
+                                                            <img src="assets/images/calendar3.png" class="img-responsive">
+                                                        </div>
                                                         <div class="text">
                                                             <p class="date font-blue">13 เม.ษ. 63 - 16 พ.ค. 63</p>
                                                             <p class="desc font-semibold">งานสัมมนาประจำปีของบริษัทในเครือปีที่ 28</p>
@@ -101,7 +110,7 @@
                                         </div>
 
                                         <div class="note">
-                                            <p>หากมีปัญหาด้านการใช้งานหรือข้อสงสัยสามารถกดส่งอีเมลเพื่อติดต่อ TCEB<br/>โดยเจ้าหน้าที่จะดำเนินการติดต่อกลับภายใน 3-5 วันทำการ</p>
+                                            <p>หากมีปัญหาด้านการใช้งานหรือข้อสงสัยสามารถกดส่งอีเมลเพื่อติดต่อ TCEB <br/>โดยเจ้าหน้าที่จะดำเนินการติดต่อกลับภายใน 3-5 วันทำการ</p>
                                             <a href="mailto:info@tceb.or.th" class="btn-gray btn btn-md btn-minwidth">
                                                 <div class="text-icon is-middle">
                                                     <i class="m-icon m-icon-email m-icon-20"></i>
@@ -121,7 +130,7 @@
 
         <div class="modal fade" id="modal-edit" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
+                <div class="modal-content mobile-font-16">
                     <div class="modal-body pd-40">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
                         <form action="" method="post">
@@ -212,24 +221,55 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group ">
+                                <br class="hidden-desktop" />
                                 <label class="font-semibold fullwidth no-margin">ใส่รูปภาพหน้าปก</label>
-                                <p>
+                                <p class="mobile-font-14">
                                     • แนะนำขนาดของรูปภาพกว้าง 1000 px และความสูง 1410 px<br/>
                                     • ใช้รูปภาพที่เป็นแนวนอนจึงจะได้การแสดงผลที่ดีที่สุด<br/>
                                     • ขนาดไฟล์ภาพไม่เกิน 3 MB
                                 </p>
-                                <div class="upload-photo is-normal" style="width: 200px;">
-                                    <div class="preview"></div>
-                                    <div class="input">
-                                        <input type="file" accept="image/*">
-                                        <img src="assets/images/upload.png">
+                                <br class="hidden-desktop" />
+                                <div class="upload-photos is-vertical is-shadow">
+                                    <div class="inner">
+                                        <div class="bg" style="background-image: url('assets/images/calendar1.png')"></div>
+                                        <div class="action dropup">
+                                            <button class="btn btn-trans btn-default dropdown-toggle btn-dots" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <span class="glyphicon glyphicon-option-horizontal"></span>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-right shadow">
+                                                <li>
+                                                    <div class="text-icon is-middle edit-photo">
+                                                        <i class="m-icon m-icon-edit"></i>
+                                                        <span>แก้ไขรูป</span>
+                                                        <input type="file" accept="image/*">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="text-icon is-middle remove-photo">
+                                                        <i class="m-icon m-icon-trash"></i>
+                                                        <span>ลบรูป</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="inner for-upload">
+                                        <div class="input">
+                                            <input type="file" accept="image/*" multiple>
+                                            <div class="text">
+                                                <div class="text-icon is-middle">
+                                                    <i class="m-icon m-icon-plus"></i>
+                                                    <span>อัพโหลดรูปใหม่</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <p class="required">กรุณาอัพโหลดข้อมูล</p>
                             </div>
                             <br/>
-                            <div class="btn-box text-right">
+                            <div class="btn-box text-right mobile-text-center">
                                 <button type="button" data-dismiss="modal" class="btn btn-md btn-blue-linear font-medium btn-minwidth no-margin" style="width:200px">ยืนยันข้อมูล</button>
                             </div>
                             <br/>

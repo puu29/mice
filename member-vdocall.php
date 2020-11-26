@@ -250,6 +250,26 @@
                 </div>
             </div>
         </div>
+        
+        <div class="modal fade" id="modal-quotation-fail" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body font-16 mobile-font-16 pd-40">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
+                        <div class="status-box mobile-custom">
+                            <br/><br/>
+                            <img src="assets/images/status-fail.png">
+                            <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคา <b class="font-red font-semibold">ไม่สำเร็จ</b></h2>
+                            <p class="font-medium">กรุณาทำรายการใหม่อีกครั้ง</p>
+                            <div class="btn-box">
+                                <a href="#" style="width:300px;" data-dismiss="modal" class="btn btn-lg btn-red">ทำรายการอีกครั้ง</a>
+                            </div>
+                            <br/><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script>
 

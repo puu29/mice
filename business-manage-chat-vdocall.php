@@ -8,6 +8,28 @@
         <div id="wrapper">
             <section class="member">
                 <div class="member-body no-menu">
+                    <div class="title-chat">
+                        <div class="to-back font-blue" onclick="hide_chat()">
+                            <div class="text-icon is-middle">
+                                <i class="glyphicon glyphicon-menu-left"></i>
+                                <span>กลับไปยังการ Video</span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-md btn-blue-linear pull-right" style="margin-top: -12px;margin-bottom: 20px;" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
+                            <div class="text-icon is-middle no-margin">
+                                <i class="m-icon m-icon-docs m-icon-white"></i>
+                                <span>ส่งใบเสนอราคา</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="title-vdo">
+                        <a href="javascript:history.back()" class="to-back font-blue hidden-desktop">
+                            <div class="text-icon is-middle">
+                                <i class="glyphicon glyphicon-menu-left"></i>
+                                <span>ย้อนกลับ</span>
+                            </div>
+                        </a>
+                    </div>
                     <div class="chat is-vdocall">
                         <div class="chat-dialog">
                             <div class="head">
@@ -19,10 +41,10 @@
                                         <p class="name font-semibold font-16">The Berkeley Hotel<br/>Pratunam</p>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-md btn-blue-linear pull-right" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
+                                <button type="button" class="btn btn-md btn-blue-linear pull-right hidden-mobile" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">
                                     <div class="text-icon is-middle for-list no-margin">
                                         <i class="m-icon m-icon-docs m-icon-white"></i>
-                                        <span>ขอใบเสนอราคา</span>
+                                        <span>ส่งใบเสนอราคา</span>
                                     </div>
                                 </button>
                             </div>
@@ -75,7 +97,7 @@
                             </div>
                             <div class="cv-action">
                                 <div class="inner">
-                                    <div class="to-chat">
+                                    <div class="to-chat"  onclick="show_chat()">
                                         <div class="on"></div>
                                         <i class="m-icon m-icon-chat m-icon-white"></i>
                                     </div>
@@ -101,7 +123,7 @@
                     <div class="modal-body font-16 pd-40">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
                         <form action="" method="post" class="form-quotation">
-                            <h2 class="title-yelloow">ขอใบเสนอราคา</h2>
+                            <h2 class="title-yelloow">ส่งใบเสนอราคา</h2>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -164,7 +186,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-xs-6">
                                     <div class="form-group">
                                         <label class="font-medium">เวลา</label>
                                         <div class="select fullwidth">
@@ -176,9 +198,9 @@
                                         <p class="required">กรุณาเลือกข้อมูล</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-xs-6">
                                     <div class="form-group">
-                                        <label class="font-medium">เวลา</label>
+                                        <label class="font-medium"><br/></label>
                                         <div class="select fullwidth">
                                             <select class="form-control">
                                                 <option value="">19.00</option>
@@ -188,6 +210,7 @@
                                         <p class="required">กรุณาเลือกข้อมูล</p>
                                     </div>
                                 </div>
+                                <div class="ckearfix hidden-desktop"></div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label class="font-medium">งบประมาณ</label>
@@ -216,17 +239,37 @@
         <div class="modal fade" id="modal-quotation-success" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-body font-16 pd-40">
+                    <div class="modal-body font-16 mobile-font-16 pd-40">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
-                        <div class="status-box">
+                        <div class="status-box mobile-custom">
                             <br/><br/>
                             <img src="assets/images/status-success.png">
-                            <br/><br/>
                             <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคาสำเร็จ</h2>
-                            <p>ท่านสามารถดูประวัติการขอใบเสนอราคาได้ภายหลังใน <a href="member.php" class="font-blue">เมนูประวัติการขอใบเสนอราคา</a></p>
-                            <br/>
+                            <br class="hidden-desktop"/>
+                            <p class="font-medium">ท่านสามารถดูประวัติการขอใบเสนอราคาได้ภายหลังใน <a href="business-manage-quotation-history.php" class="font-blue">เมนูใบเสนอราคา</a></p>
+                            <br class="hidden-desktop"/>
                             <div class="btn-box">
-                                <a href="member.php" style="width:300px;" class="btn btn-lg btn-blue-linear">ดูประวัติการขอใบเสนอราคา</a>
+                                <a href="business-manage-quotation-history.php" style="width:300px;" class="btn btn-lg btn-blue-linear">ดูใบเสนอราคา</a>
+                            </div>
+                            <br/><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-quotation-fail" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body font-16 mobile-font-16 pd-40">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
+                        <div class="status-box mobile-custom">
+                            <br/><br/>
+                            <img src="assets/images/status-fail.png">
+                            <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคา <b class="font-red font-semibold">ไม่สำเร็จ</b></h2>
+                            <p class="font-medium">กรุณาทำรายการใหม่อีกครั้ง</p>
+                            <div class="btn-box">
+                                <a href="#" style="width:300px;" data-dismiss="modal" class="btn btn-lg btn-red">ทำรายการอีกครั้ง</a>
                             </div>
                             <br/><br/>
                         </div>
@@ -236,6 +279,18 @@
         </div>
 
         <script>
+            function show_chat()
+            {
+                $('.chat-vdo, .title-vdo').hide();
+                $('.chat-dialog, .title-chat').fadeIn(300);
+            }
+
+            function hide_chat()
+            {
+                $('.chat-dialog, .title-chat').hide();
+                $('.chat-vdo, .title-vdo').fadeIn(300);
+            }
+
             function add_time()
             {
                 $('#alert').fadeOut();

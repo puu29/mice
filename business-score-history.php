@@ -9,7 +9,7 @@
             <section class="member">
                 <?php include "layout/nav-business.php" ?>
                 <div class="member-body">
-                    <a href="business-score.php" class="to-back font-blue">
+                    <a href="business-score.php" class="to-back font-blue hidden-mobile">
                         <div class="text-icon is-middle">
                             <i class="glyphicon glyphicon-menu-left"></i>
                             <span>ย้อนกลับ</span>
@@ -23,12 +23,12 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <div class="table-responsive">
+                            <div class="">
                                 <table class="table no-margin font-16">
-                                    <thead class="bg-white">
+                                    <thead class="bg-white mobile-font-14">
                                         <tr>
-                                            <th>รายการ</th>
-                                            <th width="150" class="text-right">คะแนน</th>
+                                            <th class="mobile-text-left mobile-no-padding-top">รายการ</th>
+                                            <th width="150" class="text-right mobile-no-padding-top">คะแนน</th>
                                         </tr>
                                     </thead>
                                     <tbody>

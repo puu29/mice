@@ -17,7 +17,7 @@
                                 </div>
                             </a>
                             <div class="clearfix"></div>
-                            <div class="upload-photo">
+                            <div class="upload-photo is-user">
                                 <div class="preview" style="background-image: url('assets/images/user.png')"></div>
                                 <div class="input">
                                     <input type="file" accept="image/*">

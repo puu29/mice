@@ -9,7 +9,7 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
-                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                    <a href="javascript:history.back()" class="to-back font-blue hidden-desktop">
                         <div class="text-icon is-middle">
                             <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
                             <span>กลับไปเมนูบัญชีทั่วไป</span>
@@ -78,7 +78,7 @@
                                         </div>
                                         <div class="col-xs-12">
                                             <div class="btn-box">
-                                                <a href="business-profile.php" class="btn-blue-linear btn-block btn btn-md font-bold">จัดการธุรกิจ</a>
+                                                <a href="business-manage.php" class="btn-blue-linear btn-block btn btn-md font-bold">จัดการธุรกิจ</a>
                                             </div>
                                         </div>
                                     </div>

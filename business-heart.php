@@ -9,7 +9,7 @@
             <section class="member">
                 <?php include "layout/nav-business.php" ?>
                 <div class="member-body">
-                    <a href="member-business.php" class="to-back font-blue">
+                    <a href="member-business.php" class="to-back font-blue hidden-mobile">
                         <div class="text-icon is-middle">
                             <i class="glyphicon glyphicon-menu-left"></i>
                             <span>กลับหน้าบัญชีธุรกิจ</span>
@@ -24,7 +24,7 @@
                     <div class="panel panel-default no-margin">
                         <div class="panel-body">
                             <h3 class="font-semibold no-margin">สะสมใจไมซ์เพื่อรับสิทธิพิเศษ</h3>
-                            <div class="step-heart">
+                            <div class="step-heart mobile-verticle">
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
                                         <span class="sr-only"></span>
@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="icon">
                                         <i class="m-icon m-icon-heart"></i>
-                                        <span>ชวนเพื่อน<br/>(ผู้จัดงาน/ผู้ประกอบการ)<br/><a href="business-friend.php" class="font-link">จัดการโพสต์</a></span>
+                                        <span>ชวนเพื่อน<br class="hidden-mobile" />(ผู้จัดงาน/ผู้ประกอบการ)<br/><a href="business-friend.php" class="font-link">ชวนเพื่อนเพิ่ม</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -84,30 +84,32 @@
                             </div>
                         </div>
                     </div>
-                    <div class="clearfix"><br/></div>
-                    <h2 class="font-semibold">รายละเอียดสิทธิพิเศษ</h2>
-                    <div class="table-responsive shadow-blue">
-                        <table class="table no-margin">
+                    <div class="clearfix hidden-mobile"><br/></div>
+                    <h2 class="font-semibold mobile-font-18">รายละเอียดสิทธิพิเศษ</h2>
+                    <div class="shadow-blue">
+                        <table class="table no-margin mobile-full">
                             <thead>
                                 <tr>
                                     <th>ระดับ</th>
-                                    <th>สัญลักษณ์</th>
-                                    <th>วิธีการได้รับสิทธิ</th>
-                                    <th>รายละเอียดสิทธิพิเศษ</th>
+                                    <th class="hidden-mobile">สัญลักษณ์</th>
+                                    <th class="hidden-mobile">วิธีการได้รับสิทธิ</th>
+                                    <th class="hidden-mobile">รายละเอียดสิทธิพิเศษ</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>ระดับเริ่มต้น</td>
-                                    <td>
+                                    <td class="mobile-font-semibold mobile-no-padding-bottom">ระดับเริ่มต้น</td>
+                                    <td class="mobile-no-padding-top">
                                         <i class="m-icon m-icon-heart m-icon-20"></i>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">วิธีการได้รับสิทธิ</label>
                                         <ul>
                                             <li>ได้รับตั้งแต่เริ่มต้นลงทะเบียน</li>
                                         </ul>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">รายละเอียดสิทธิพิเศษ</label>
                                         <ul>
                                             <li class="font-blue font-semibold">รับรู้ข้อมูลข่าวสารล่าสุดของวงการ</li>
                                             <li class="font-blue font-semibold">สร้างปฏิทินอีเว้นท์ไมซ์</li>
@@ -115,18 +117,20 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>ระดับปานกลาง</td>
-                                    <td>
+                                    <td class="mobile-font-semibold mobile-no-padding-bottom">ระดับปานกลาง</td>
+                                    <td class="mobile-no-padding-top">
                                         <i class="m-icon m-icon-heart m-icon-20"></i>
                                         <i class="m-icon m-icon-heart m-icon-20"></i>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">วิธีการได้รับสิทธิ</label>
                                         <ul>
                                             <li class="font-gray-light">ได้รับตั้งแต่เริ่มต้นลงทะเบียน</li>
                                             <li >จากการระบุข้อมูลครบตามที่กำหนด</li>
                                         </ul>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">รายละเอียดสิทธิพิเศษ</label>
                                         <ul>
                                             <li class="font-blue font-semibold">โอกาสในการสร้างพันธมิตรทางธุรกิจ</li>
                                             <li class="font-blue font-semibold">โอกาสได้รับสิทธิ์อยู่ระดับต้นๆ ในการค้นหาเมื่อมีการค้นหาข้อมูล</li>
@@ -136,13 +140,14 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>ระดับสูง</td>
-                                    <td>
+                                    <td class="mobile-font-semibold mobile-no-padding-bottom">ระดับสูง</td>
+                                    <td class="mobile-no-padding-top">
                                         <i class="m-icon m-icon-heart m-icon-20"></i>
                                         <i class="m-icon m-icon-heart m-icon-20"></i>
                                         <i class="m-icon m-icon-heart m-icon-20"></i>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">วิธีการได้รับสิทธิ</label>
                                         <ul>
                                             <li class="font-gray-light">ได้รับตั้งแต่เริ่มต้นลงทะเบียน</li>
                                             <li class="font-gray-light">จากการระบุข้อมูลครบตามที่กำหนด</li>
@@ -150,6 +155,7 @@
                                         </ul>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">รายละเอียดสิทธิพิเศษ</label>
                                         <ul>
                                             <li class="font-blue font-semibold">Performance Analytic</li>
                                             <li>โอกาสในการสร้างพันธมิตรทางธุรกิจ</li>
@@ -160,14 +166,15 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>ระดับสูงสุด</td>
-                                    <td>
+                                    <td class="mobile-font-semibold mobile-no-padding-bottom">ระดับสูงสุด</td>
+                                    <td class="mobile-no-padding-top">
                                         <i class="m-icon m-icon-heart m-icon-20"></i>
                                         <i class="m-icon m-icon-heart m-icon-20"></i>
                                         <i class="m-icon m-icon-heart m-icon-20"></i>
                                         <i class="m-icon m-icon-heart m-icon-20"></i>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">วิธีการได้รับสิทธิ</label>
                                         <ul>
                                             <li class="font-gray-light">ได้รับตั้งแต่เริ่มต้นลงทะเบียน</li>
                                             <li class="font-gray-light">จากการระบุข้อมูลครบตามที่กำหนด</li>
@@ -176,6 +183,7 @@
                                         </ul>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">รายละเอียดสิทธิพิเศษ</label>
                                         <ul>
                                             <li class="font-blue font-semibold">รับสิทธิได้โปรโมทลงเพจ Thai MICE Connect</li>
                                             <li>Performance Analytic</li>

@@ -9,7 +9,7 @@
             <section class="member">
                 <?php include "layout/nav-business.php" ?>
                 <div class="member-body">
-                    <a href="member-business.php" class="to-back font-blue">
+                    <a href="member-business.php" class="to-back font-blue hidden-mobile">
                         <div class="text-icon is-middle">
                             <i class="glyphicon glyphicon-menu-left"></i>
                             <span>กลับหน้าบัญชีธุรกิจ</span>
@@ -26,7 +26,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <h3 class="font-semibold no-margin">จำนวนคะแนน</h3>
-                                    <h2 class="font-semibold no-margin"><big>34,034</big></h2>
+                                    <h2 class="font-semibold no-margin mobile-font-bold"><big>34,034</big></h2>
                                     <div class="step-heart for-score">
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
@@ -36,6 +36,7 @@
                                         <div class="step">
                                             <div class="icon">
                                                 <i class="m-icon m-icon-mice"></i>
+                                                <span class="hidden-desktop show-ipad">Bronze</span>
                                             </div>
                                             <div class="icon">
                                             </div>
@@ -43,15 +44,16 @@
                                             </div>
                                             <div class="icon">
                                                 <i class="m-icon m-icon-mice-silver"></i>
+                                                <span class="hidden-desktop show-ipad">Silver</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row is-small2">
                                         <div class="col col-xs-6">
-                                            <a href="business-score-redeem.php" class="btn btn-md btn-block btn-blue">แลกคะแนน</a>
+                                            <a href="business-score-redeem.php" class="btn btn-md btn-block btn-blue font-semibold">แลกคะแนน</a>
                                         </div>
                                         <div class="col col-xs-6">
-                                            <a href="business-score-redeemed.php" class="btn btn-md btn-block btn-default">สิทธิที่แลกไว้</a>
+                                            <a href="business-score-redeemed.php" class="btn btn-md btn-block btn-default font-semibold">สิทธิที่แลกไว้</a>
                                         </div>
                                     </div>
                                 </div>
@@ -59,11 +61,11 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <h3 class="font-semibold no-margin pull-left">ประวัติคะแนนล่าสุด</h3>
-                                    <a href="business-score-history.php" class="btn btn-md btn-default pull-right">ประวัติการรับคะแนน</a>
-                                    <div class="clearfix"></div>
-                                    <br/>
+                                <div class="panel-heading has-option no-border">
+                                    <h3 class="font-semibold no-margin">ประวัติคะแนนล่าสุด</h3>
+                                    <a href="business-score-history.php" class="btn btn-md btn-default pull-right btn-option font-semibold">ประวัติการรับคะแนน</a>
+                                </div>
+                                <div class="panel-body no-padding-top">
                                     <table class="table no-padding-td no-margin">
                                         <tbody>
                                             <tr>
@@ -102,30 +104,32 @@
                             </div>
                         </div>
                     </div>
-                    <div class="clearfix"><br/></div>
-                    <h2 class="font-semibold">รายละเอียดการสะสมคะแนน</h2>
-                    <div class="table-responsive shadow-blue">
-                        <table class="table no-margin">
+                    <div class="clearfix hidden-mobile"><br/></div>
+                    <h2 class="font-semibold mobile-font-18">รายละเอียดการสะสมคะแนน</h2>
+                    <div class="shadow-blue">
+                        <table class="table no-margin mobile-full">
                             <thead>
                                 <tr>
                                     <th>ระดับ</th>
-                                    <th>สัญลักษณ์</th>
-                                    <th>วิธีการได้รับสิทธิ</th>
-                                    <th>รายละเอียดสิทธิพิเศษ</th>
+                                    <th class="hidden-mobile">สัญลักษณ์</th>
+                                    <th class="hidden-mobile">วิธีการได้รับสิทธิ</th>
+                                    <th class="hidden-mobile">รายละเอียดสิทธิพิเศษ</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td class="font-semibold">Bronze</td>
-                                    <td>
+                                    <td class="mobile-no-padding-top">
                                         <i class="m-icon m-icon-mice m-icon-45"></i>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">วิธีการได้รับสิทธิ</label>
                                         <ul>
                                             <li>สะสมคะแนนจากทำกิจกรรมในเว็บไซต์</li>
                                         </ul>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">รายละเอียดสิทธิพิเศษ</label>
                                         <ul>
                                             <li>ได้รับคะแนน x1 ในการทำกิจกรรมทุกครั้ง</li>
                                             <li>แลกรับสิทธิพิเศษตามคะแนน</li>
@@ -134,15 +138,17 @@
                                 </tr>
                                 <tr>
                                     <td class="font-semibold">Silver</td>
-                                    <td>
+                                    <td class="mobile-no-padding-top">
                                         <i class="m-icon m-icon-mice-silver m-icon-45"></i>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">วิธีการได้รับสิทธิ</label>
                                         <ul>
                                             <li>สะสมคะแนนจากทำกิจกรรมในเว็บไซต์</li>
                                         </ul>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">รายละเอียดสิทธิพิเศษ</label>
                                         <ul>
                                             <li>ได้รับคะแนน x2 ในการทำกิจกรรมทุกครั้ง</li>
                                             <li>แลกรับสิทธิพิเศษตามคะแนน</li>
@@ -151,15 +157,17 @@
                                 </tr>
                                 <tr>
                                     <td class="font-semibold">Gold</td>
-                                    <td>
+                                    <td class="mobile-no-padding-top">
                                         <i class="m-icon m-icon-mice-gold m-icon-45"></i>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">วิธีการได้รับสิทธิ</label>
                                         <ul>
                                             <li>สะสมคะแนนจากทำกิจกรรมในเว็บไซต์</li>
                                         </ul>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">รายละเอียดสิทธิพิเศษ</label>
                                         <ul>
                                             <li>ได้รับคะแนน x3 ในการทำกิจกรรมทุกครั้ง</li>
                                             <li>แลกรับสิทธิพิเศษตามคะแนน</li>
@@ -168,15 +176,17 @@
                                 </tr>
                                 <tr>
                                     <td class="font-semibold">Platinum</td>
-                                    <td>
+                                    <td class="mobile-no-padding-top">
                                         <i class="m-icon m-icon-mice-platinum m-icon-45"></i>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">วิธีการได้รับสิทธิ</label>
                                         <ul>
                                             <li>สะสมคะแนนจากทำกิจกรรมในเว็บไซต์</li>
                                         </ul>
                                     </td>
                                     <td>
+                                        <label class="hidden-desktop">รายละเอียดสิทธิพิเศษ</label>
                                         <ul>
                                             <li>ได้รับคะแนน x4 ในการทำกิจกรรมทุกครั้ง</li>
                                             <li>แลกรับสิทธิพิเศษตามคะแนน</li>

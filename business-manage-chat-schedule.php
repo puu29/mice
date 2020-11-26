@@ -10,7 +10,7 @@
                 <?php include "layout/nav-business.php" ?>
                 <div class="member-body">
                     <div class="top-white">
-                        <a href="member-business.php" class="to-back font-blue">
+                        <a href="member-business.php" class="to-back font-blue hidden-mobile">
                             <div class="text-icon is-middle">
                                 <i class="glyphicon glyphicon-menu-left"></i>
                                 <span>กลับหน้าบัญชีธุรกิจ</span>
@@ -33,16 +33,16 @@
                                 <li ><a href="business-manage-calendar.php">จัดการปฏิทินไมซ์</a></li>
                                 <li ><a href="business-manage-dashboard.php">สถิติผู้เข้าดู</a></li>
                             </ul>
-                            <div class="tab-content">
+                            <div class="tab-content mobile-no-padding-top">
                                 <div role="tabpanel" class="tab-pane active">
                                     <div class="b-schedule">
-                                        <a href="javascript:history.back()" class="to-back font-blue">
+                                        <a href="javascript:history.back()" class="to-back font-blue mobile-no-margin">
                                             <div class="text-icon is-middle">
                                                 <i class="glyphicon glyphicon-menu-left"></i>
                                                 <span>ย้อนกลับ</span>
                                             </div>
                                         </a>
-                                        <h2 class="font-medium font-22">ตั้งค่าช่วงเวลานัดหมาย</h2>
+                                        <h2 class="font-medium font-22 mobile-font-semibold">ตั้งค่าช่วงเวลานัดหมาย</h2>
                                         <div class="schedule-option">
                                             <div class="form-group pull-left">
                                                 <label class="fullwidth">เขตเวลา</label>
@@ -54,7 +54,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group pull-right">
-                                                <br/><br/>
+                                                <br class="hidden-mobile show-ipad" /><br/>
                                                 <label>กำหนดระยะเวลานัดหมาย&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                                                 <div class="checkbox is-inline">
                                                     <input type="radio" name="type" id="s-type1" onclick="set_type(1)" checked>
@@ -69,7 +69,7 @@
                                         <div class="panel panel-default">
                                             <div class="panel-body no-padding">
                                                 <form action="" method="post" class="form-type" data-type="1">
-                                                    <table class="table table-bordered">
+                                                    <table class="table table-bordered mobile-full">
                                                         <tbody>
                                                             <?php $day = array('วันจันทร์','วันอังคาร','วันพุธ','วันพฤหัสบดี','วันศุกร์','วันเสาร์','วันอาทิตย์') ?>
                                                             <?php foreach($day as $key => $value) { ?>
@@ -154,7 +154,7 @@
                                                     <br/><br/>
                                                 </form>
                                                 <form action="" method="post" class="form-type" data-type="2" style="display: none;">
-                                                    <table class="table table-bordered">
+                                                    <table class="table table-bordered mobile-full">
                                                         <tbody>
                                                             <?php $day = array('วันจันทร์','วันอังคาร','วันพุธ','วันพฤหัสบดี','วันศุกร์','วันเสาร์','วันอาทิตย์') ?>
                                                             <?php foreach($day as $key => $value) { ?>
@@ -217,7 +217,7 @@
                                             </div>
                                         </div>
                                         <div class="note">
-                                            <p>หากมีปัญหาด้านการใช้งานหรือข้อสงสัยสามารถกดส่งอีเมลเพื่อติดต่อ TCEB<br/>โดยเจ้าหน้าที่จะดำเนินการติดต่อกลับภายใน 3-5 วันทำการ</p>
+                                            <p>หากมีปัญหาด้านการใช้งานหรือข้อสงสัยสามารถกดส่งอีเมลเพื่อติดต่อ TCEB <br/>โดยเจ้าหน้าที่จะดำเนินการติดต่อกลับภายใน 3-5 วันทำการ</p>
                                             <a href="mailto:info@tceb.or.th" class="btn-gray btn btn-md btn-minwidth">
                                                 <div class="text-icon is-middle">
                                                     <i class="m-icon m-icon-email m-icon-20"></i>
@@ -238,10 +238,10 @@
         <div class="modal fade" id="modal-cancel" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-body font-16 pd-40">
+                    <div class="modal-body font-16 mobile-font-16 pd-40">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
                         <form action="" method="post">
-                            <h2 class="font-22 no-margin-top font-medium">ยกเลิกการนัดหมาย Video Call สนทนา</h2>
+                            <h2 class="font-22 no-margin-top font-medium mobile-font-18 mobile-font-bold">ยกเลิกการนัดหมาย Video Call สนทนา</h2>
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
@@ -254,25 +254,47 @@
                                             <label for="cancel2">ไม่สามารถ Video Call ได้ในวันและเวลาดังกล่าว</label>
                                         </div>
                                         <div class="checkbox">
-                                            <input type="checkbox" id="cancel3">
+                                            <input type="checkbox" id="cancel3" onchange="$('#cancel_desc').slideToggle()">
                                             <label for="cancel3">เหตุผลอื่นๆ</label>
                                         </div>
-                                        <br/><br/>
-                                        <textarea class="form-control" rows="5" placeholder="ระบุเหตุผลที่ต้องการยกเลิกการนัดหมาย Video Call สนทนา"></textarea>
                                         <p class="required">กรุณาเลือกข้อมูล</p>
+                                    </div>
+                                    <div class="form-group" style="display: none;" id="cancel_desc">
+                                        <textarea class="form-control" rows="5" placeholder="ระบุเหตุผลที่ต้องการยกเลิกการนัดหมาย Video Call สนทนา"></textarea>
+                                        <p class="required">กรุณากรอกข้อมูล</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn-box text-center">
-                                <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation-success"  class="btn btn-md btn-blue-linear font-medium btn-minwidth">ยืนยันการยกเลิกคำขอ</button>
+                            <div class="btn-box text-center mobile-no-margin-top">
+                                <button type="button" data-dismiss="modal"  class="btn btn-md btn-blue-linear font-medium btn-minwidth mobile-btn-block">ยืนยันการยกเลิกคำขอ</button>
                             </div>
-                            <br/>
+                            <br class="hidden-mobile"/>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
         <script>
+            (function(){
+                $(window).resize(function(){
+                    set_layout();
+                });
+                
+                set_layout();
+            })();
+
+            function set_layout()
+            {
+                if($(window).width() < 768)
+                {
+                    $('.member-menu, .tab .nav-tabs').hide();
+                }
+                else
+                {
+                    $('.member-menu, .tab .nav-tabs').show();
+                }
+            }
+
             function set_type(value)
             {
                 $('.form-type').hide();

@@ -1,6 +1,6 @@
 <div class="member-menu">
     <div class="head text-center">
-        <div class="upload-photo">
+        <div class="upload-photo is-user">
             <div class="preview" style="background-image: url('assets/images/user.png')"></div>
             <div class="input">
                 <input type="file" accept="image/*">
@@ -60,7 +60,7 @@
                 </a>
             </li>
             <li>
-                <a href="business-profile.php">
+                <a href="business-manage.php?new=1">
                     <i><img src="assets/images/villa.png"></i>
                     <span>Villa Hotel and Resort</span>
                 </a>

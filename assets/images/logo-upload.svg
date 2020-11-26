@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_8" data-name="Repeat Grid 8" clip-path="url(#clip-path)">
+    <g id="Group_6090" data-name="Group 6090" transform="translate(-284 -219)">
+      <circle id="Ellipse_310" data-name="Ellipse 310" cx="12" cy="12" r="12" transform="translate(284 219)" fill="#534b49"/>
+      <g id="photo-camera" transform="translate(290.707 226.519)">
+        <path id="Path_16913" data-name="Path 16913" d="M9.075,42.555H7.39l-.217-1.086A.585.585,0,0,0,6.6,41H3.348a.585.585,0,0,0-.572.469l-.217,1.086H.874A.875.875,0,0,0,0,43.429v5.053a.875.875,0,0,0,.874.874h8.2a.875.875,0,0,0,.874-.874V43.429A.875.875,0,0,0,9.075,42.555Zm-5.727-.972H6.6l.194.972H3.154Zm6.019,6.9a.292.292,0,0,1-.291.291H.874a.292.292,0,0,1-.291-.291V43.429a.292.292,0,0,1,.291-.291h8.2a.292.292,0,0,1,.291.291Z" transform="translate(0 -41)" fill="#fff"/>
+        <path id="Path_16914" data-name="Path 16914" d="M147.157,185a2.157,2.157,0,1,0,2.157,2.157A2.16,2.16,0,0,0,147.157,185Zm0,3.731a1.574,1.574,0,1,1,1.574-1.574A1.576,1.576,0,0,1,147.157,188.731Z" transform="translate(-142.182 -182.202)" fill="#fff"/>
+        <path id="Path_16915" data-name="Path 16915" d="M66.224,185h-.933a.291.291,0,1,0,0,.583h.933a.291.291,0,1,0,0-.583Z" transform="translate(-63.737 -182.202)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

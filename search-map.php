@@ -20,7 +20,7 @@
                                 </div>
                                 <div class="col-sm-6 text-center">
                                     <div class="btn-toolbar" role="toolbar">
-                                        <div class="btn-group btn-blue hidden-desktop" onclick="filter_open()">
+                                        <div class="btn-group btn-blue hidden-desktop show-ipad" onclick="filter_open()">
                                             <div class="text-icon is-middle">
                                                 <i class="m-icon m-icon-filter"></i>
                                                 <span>ค้นหาละเอียด</span>
@@ -195,7 +195,8 @@
                                 </div>
                             </div>
                             <div class="search-map">
-                                <img src="assets/images/map.png">
+                                <div id="map"></div>
+                                <!-- <img src="assets/images/map.png"> -->
                             </div>
                             <div class="search-result">
                                 <div class="item post style-2">
@@ -655,12 +656,70 @@
             </section>
         </div>
         <?php include "layout/footer.php" ?>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABK4plFcFDYfEr1XhsMZ89bkloa182UrQ&callback=initMap"></script>
         <script>
-            function reset()
+            function initMap()
             {
-                $('#form-filter')[0].reset();
-                $('#selected .inner').remove();
-                $('#selected').hide();
+                var data = [
+                    {
+                        position: new google.maps.LatLng(-33.91721, 151.2263)
+                    },
+                    {
+                        position: new google.maps.LatLng(-33.91539, 151.2282)
+                    },
+                    {
+                        position: new google.maps.LatLng(-33.91747, 151.22912)
+                    },
+                    {
+                        position: new google.maps.LatLng(-33.9191, 151.22907)
+                    },
+                    {
+                        position: new google.maps.LatLng(-33.91725, 151.23011)
+                    },
+                    {
+                        position: new google.maps.LatLng(-33.91872, 151.23089)
+                    },
+                    {
+                        position: new google.maps.LatLng(-33.91784, 151.23094)
+                    },
+                    {
+                        position: new google.maps.LatLng(-33.91682, 151.23149)
+                    },
+                    {
+                        position: new google.maps.LatLng(-33.9179, 151.23463)
+                    },
+                    {
+                        position: new google.maps.LatLng(-33.91666, 151.23468)
+                    }
+                ];
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: -33.91722, lng: 151.23064},
+                    zoom: 16
+                });
+
+                var infowindow = new google.maps.InfoWindow({}); 
+
+                for (var i = 0; i < data.length; i++) {
+                    var marker = new google.maps.Marker({
+                        position: data[i].position,
+                        icon: 'assets/images/mark.png',
+                        map: map,
+                    });
+                    
+                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                        return function () {
+                            infowindow.setContent('<div class="post style-3">'+$('.search-result .post').eq(i).html()+'</div>');
+                            infowindow.open(map, marker);
+                            marker.setIcon('assets/images/mark-active.png'); 
+                        }
+                    })(marker, i));
+                }
+            }
+
+            function open_info(i)
+            {
+                google.maps.event.trigger(marker[i], 'click');
             }
 
             (function(){
@@ -698,6 +757,13 @@
                 }
 
             })();
+
+            function reset()
+            {
+                $('#form-filter')[0].reset();
+                $('#selected .inner').remove();
+                $('#selected').hide();
+            }
 
             function set_selected()
             {

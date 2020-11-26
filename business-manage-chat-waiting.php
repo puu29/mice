@@ -42,17 +42,29 @@
                                                     <h2 class="no-margin font-semibold">15</h2>
                                                     <p class="no-margin">แชทสนทนา</p>
                                                 </div>
+                                                <div class="text-icon font-regular is-middle hidden-desktop">
+                                                    <i class="m-icon m-icon-search"></i>
+                                                    <span>ดูรายการ</span>
+                                                </div>
                                             </a>
                                             <a href="business-manage-chat-waiting.php" class="btn-group active" role="group">
                                                 <div class="chat-type">
                                                     <h2 class="no-margin font-semibold">4</h2>
                                                     <p class="no-margin">รอการนัด Video Call</p>
                                                 </div>
+                                                <div class="text-icon font-regular is-middle hidden-desktop">
+                                                    <i class="m-icon m-icon-search"></i>
+                                                    <span>ดูรายการ</span>
+                                                </div>
                                             </a>
                                             <a href="business-manage-chat-confirm.php" class="btn-group" role="group">
                                                 <div class="chat-type">
                                                     <h2 class="no-margin font-semibold">2</h2>
                                                     <p class="no-margin">ยืนยันการนัด Video Call</p>
+                                                </div>
+                                                <div class="text-icon font-regular is-middle hidden-desktop">
+                                                    <i class="m-icon m-icon-search"></i>
+                                                    <span>ดูรายการ</span>
                                                 </div>
                                             </a>
                                         </div>
@@ -65,7 +77,7 @@
                                                     </label>
                                                     <p>เปิดการนัดหมายแบบ Video Call</p>
                                                 </div>
-                                                <a href="business-manage-chat-schedule.php" class="pull-right btn btn-md btn-orange">ตั้งค่าช่วงเวลานัดหมาย</a>
+                                                <a href="business-manage-chat-schedule.php" class="pull-right btn btn-md btn-orange btn-schedule-toggle font-medium">ตั้งค่าช่วงเวลานัดหมาย</a>
                                             </div>
                                             <div class="panel-list no-margin">
                                                 <div class="head">
@@ -86,9 +98,11 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-2">
+                                                                <label class="hidden-desktop mobile-full">วันที่นัดหมาย</label>
                                                                 <p class="no-margin font-semibold font-blue">26/06/2020.<br/>10.00 - 13.00 น.</p>
                                                             </div>
                                                             <div class="col-sm-4">
+                                                                <label class="hidden-desktop mobile-full">รายละเอียด</label>
                                                                 <p class="no-margin font-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tellus elementum sagittis vitae et leo duis ut. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Nec nam aliquam sem</p>
                                                             </div>
                                                             <div class="col-sm-3">
@@ -181,10 +195,10 @@
         <div class="modal fade" id="modal-cancel" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-body font-16 pd-40">
+                    <div class="modal-body font-16 mobile-font-16 pd-40">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
                         <form action="" method="post">
-                            <h2 class="font-22 no-margin-top font-medium">ยกเลิกการนัดหมาย Video Call สนทนา</h2>
+                            <h2 class="font-22 no-margin-top font-medium mobile-font-18 mobile-font-bold">ยกเลิกการนัดหมาย Video Call สนทนา</h2>
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
@@ -197,19 +211,21 @@
                                             <label for="cancel2">ไม่สามารถ Video Call ได้ในวันและเวลาดังกล่าว</label>
                                         </div>
                                         <div class="checkbox">
-                                            <input type="checkbox" id="cancel3">
+                                            <input type="checkbox" id="cancel3" onchange="$('#cancel_desc').slideToggle()">
                                             <label for="cancel3">เหตุผลอื่นๆ</label>
                                         </div>
-                                        <br/><br/>
-                                        <textarea class="form-control" rows="5" placeholder="ระบุเหตุผลที่ต้องการยกเลิกการนัดหมาย Video Call สนทนา"></textarea>
                                         <p class="required">กรุณาเลือกข้อมูล</p>
+                                    </div>
+                                    <div class="form-group" style="display: none;" id="cancel_desc">
+                                        <textarea class="form-control" rows="5" placeholder="ระบุเหตุผลที่ต้องการยกเลิกการนัดหมาย Video Call สนทนา"></textarea>
+                                        <p class="required">กรุณากรอกข้อมูล</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn-box text-center">
-                                <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation-success"  class="btn btn-md btn-blue-linear font-medium btn-minwidth">ยืนยันการยกเลิกคำขอ</button>
+                            <div class="btn-box text-center mobile-no-margin-top">
+                                <button type="button" data-dismiss="modal"  class="btn btn-md btn-blue-linear font-medium btn-minwidth mobile-btn-block">ยืนยันการยกเลิกคำขอ</button>
                             </div>
-                            <br/>
+                            <br class="hidden-mobile"/>
                         </form>
                     </div>
                 </div>

@@ -83,6 +83,9 @@
 .m-icon-bed {
      background-image: url('../images/icon-bed.png');
 }
+.m-icon-bed2 {
+     background-image: url('../images/icon-bed2.png');
+}
 .m-icon-build {
      background-image: url('../images/icon-build.svg');
 }
@@ -376,4 +379,58 @@
 }
 .m-icon-email {
      background-image: url('../images/icon-email.png');
+}
+.m-icon-hotel {
+     background-image: url('../images/icon-hotel.png');
+}
+.m-icon-star {
+     background-image: url('../images/icon-star.png');
+}
+.m-icon-laundry {
+     background-image: url('../images/icon-laundry.png');
+}
+.m-icon-operator {
+     background-image: url('../images/icon-operator.png');
+}
+.m-icon-room-service {
+     background-image: url('../images/icon-room-service.png');
+}
+.m-icon-baby-sister {
+     background-image: url('../images/icon-baby-sister.png');
+}
+.m-icon-exchange {
+     background-image: url('../images/icon-exchange.png');
+}
+.m-icon-shiping {
+     background-image: url('../images/icon-shiping.png');
+}
+.m-icon-smoke {
+     background-image: url('../images/icon-smoke.png');
+}
+.m-icon-victim {
+     background-image: url('../images/icon-victim.png');
+}
+.m-icon-atm {
+     background-image: url('../images/icon-atm.png');
+}
+.m-icon-business-center {
+     background-image: url('../images/icon-business-center.png');
+}
+.m-icon-business-level {
+     background-image: url('../images/icon-business-level.png');
+}
+.m-icon-doctor {
+     background-image: url('../images/icon-doctor.png');
+}
+.m-icon-limousine {
+     background-image: url('../images/icon-limousine.png');
+}
+.m-icon-security {
+     background-image: url('../images/icon-security.png');
+}
+.m-icon-snack {
+     background-image: url('../images/icon-snack.png');
+}
+.m-icon-travel {
+     background-image: url('../images/icon-travel.png');
 }

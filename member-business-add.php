@@ -9,7 +9,7 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
-                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                    <a href="javascript:history.back()" class="to-back font-blue hidden-desktop">
                         <div class="text-icon is-middle">
                             <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
                             <span>กลับไปเมนูบัญชีทั่วไป</span>
@@ -658,8 +658,10 @@
                                         <div class="form-group">
                                             <label class="font-semibold">ยืนยันตำแหน่งของสถานประกอบการ</label>
                                             <div class="select-map">
-                                                <button type="button" class="btn btn-sm btn-blue font-semibold">เลือกจากพิกัด Google Map</button>
-                                                <img src="assets/images/input-location.png" class="map">
+                                                <button type="button" onclick="get_location();" class="btn btn-sm btn-blue font-semibold">เลือกจากพิกัด Google Map</button>
+                                                <div class="map-box">
+                                                    <div id="map"></div>
+                                                </div>
                                             </div>
                                             <p class="required">กรุณาระบุพิกัด</p>
                                         </div>
@@ -712,11 +714,16 @@
                             <div class="panel-body">
                                 <div class="row is-small2">
                                     <div class="col col-sm-3 col-xs-12">
-                                        <div class="upload-photo is-normal">
-                                            <div class="preview"></div>
+                                        <div class="upload-photo">
+                                            <!-- <div class="preview" style="background-image: url('assets/images/ex-img.png')"></div> -->
                                             <div class="input">
                                                 <input type="file" accept="image/*">
-                                                <img src="assets/images/upload.png">
+                                                <div class="text">
+                                                    <div class="text-icon">
+                                                        <i class="m-icon m-icon-plus"></i>
+                                                        <p>อัพโหลดรูปภาพ</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <p>ขนาดที่แนะนำ :<br/>500 x 550 px ไม่เกิน 3 MB</p>
@@ -741,7 +748,74 @@
             </section>
         </div>
         <?php include "layout/footer.php" ?>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABK4plFcFDYfEr1XhsMZ89bkloa182UrQ&callback=initMap"></script>
+        <style>
+            .gm-style .gm-style-iw-d{
+                overflow: hidden !important;
+            }
+            .gm-style .gm-style-iw {
+                background: #fbad26 !important;
+                font-family: 'Kanit';
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                color: #fff;
+                padding: 10px !important;
+                width: 120px;
+                max-width: 80%;
+                text-align: center;
+            }
+            .gm-style-iw button, .gm-style .gm-style-iw-t::after {
+                display: none !important;
+            }
+
+            @media (max-width: 767px){
+                .gmnoprint, .gm-fullscreen-control{
+                    zoom: 0.45;
+                }
+            }
+        </style>
         <script>
+            var map, marker, infowindow;
+            function initMap()
+            {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: -33.91722, lng: 151.23064},
+                    zoom: 16
+                });
+
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(-33.91722, 151.23064),
+                    icon: 'assets/images/mark-orange.png',
+                    map: map,
+                    draggable: true,
+                });
+
+                infowindow = new google.maps.InfoWindow({
+                    content: 'Your Location'
+                });
+
+                infowindow.open(map, marker);
+            }
+
+            function get_location()
+            {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function(position) {
+                        var pos = {
+                            lat: position.coords.latitude,
+                            lng: position.coords.longitude
+                        };  
+
+                        marker.setPosition(pos);
+                        map.setCenter(pos);
+                       
+                    }, function() {
+                        console.log('not point location current');
+                    });
+                } 
+            }
+
             function search_tax_id()
             {
                 $('.card-select').fadeIn(300);

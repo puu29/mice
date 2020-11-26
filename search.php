@@ -20,7 +20,7 @@
                                 </div>
                                 <div class="col-sm-6 text-center">
                                     <div class="btn-toolbar" role="toolbar">
-                                        <div class="btn-group btn-blue hidden-desktop" onclick="filter_open()">
+                                        <div class="btn-group btn-blue hidden-desktop show-ipad" onclick="filter_open()">
                                             <div class="text-icon is-middle">
                                                 <i class="m-icon m-icon-filter"></i>
                                                 <span>ค้นหาละเอียด</span>

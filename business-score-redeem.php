@@ -9,7 +9,7 @@
             <section class="member">
                 <?php include "layout/nav-business.php" ?>
                 <div class="member-body">
-                    <a href="business-score.php" class="to-back font-blue">
+                    <a href="business-score.php" class="to-back font-blue hidden-mobile">
                         <div class="text-icon is-middle">
                             <i class="glyphicon glyphicon-menu-left"></i>
                             <span>ย้อนกลับ</span>
@@ -167,7 +167,7 @@
                             <br/>
                             <h2 class="font-semibold">Rank 1-3/week</h2>
                             <p class="text-left no-margin">สปาโรแมนติคสหัสวรรษ อวอร์ดตะหงิด สะบึมโค้กสโรชาปัจเจกชน วิภัชภาคพรีเมียร์ซาดิสม์ ชินบัญชรเซาท์แรงดูดแทงโก้ฮองเฮา เลิฟโฮสเตสรามเทพบุ๋น ไวอากร้ามอนสเตอร์แคชเชียร์มัฟฟิน รูบิกโชห่วยบัตเตอร์ฮ่องเต้ หลินจือมาม่าซ้อม้ง แคร็กเกอร์อาร์ติสต์ปาร์ตี้ มอนสเตอร์ โจ๋ห่วยละอ่อนเคลื่อนย้ายป๋อหลอ ไนท์เฮียสไลด์ มาร์จินแพทเทิร์นผลไม้ร็อค โทรแรงใจ ศิลปวัฒนธรรม</p>
-                            <br/>
+                            <br class="hidden-mobile" />
                             <h2 class="font-blue"><big>800 คะแนน</big></h2>
                             <div class="btn-box no-margin">
                                 <button type="button" data-dismiss="modal" style="width:300px;" class="btn btn-lg btn-blue-linear font-16 font-medium">ยืนยันการแลกคะแนน</button>

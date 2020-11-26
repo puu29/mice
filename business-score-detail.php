@@ -9,23 +9,23 @@
             <section class="member">
                 <?php include "layout/nav-business.php" ?>
                 <div class="member-body">
-                    <a href="business-score.php" class="to-back font-blue">
+                    <a href="business-score.php" class="to-back font-blue hidden-mobile">
                         <div class="text-icon is-middle">
                             <i class="glyphicon glyphicon-menu-left"></i>
                             <span>ย้อนกลับ</span>
                         </div>
                     </a>
-                    <div class="member-title"></div>
+                    <div class="member-title hidden-mobile"></div>
                     <div class="row score-detail">
-                        <div class="col-sm-3">
+                        <div class="col-md-3">
                             <img src="assets/images/mice-logo.png" class="img">
                         </div>
-                        <div class="col-sm-9">
+                        <div class="col-md-9">
                             <div class="text">
                                 <div class="topic">
-                                    <h3 class="font-semibold no-margin">Rank 1-3/week</h3>
-                                    <p class="text-left no-margin">รายละเอียดของรางวัล</p>
-                                    <h3 class="font-medium no-margin-bottom"><span class="font-orange">800</span> คะแนน</h3>
+                                    <h3 class="font-semibold no-margin mobile-font-16">Rank 1-3/week</h3>
+                                    <p class="text-left no-margin mobile-font-16">รายละเอียดของรางวัล</p>
+                                    <h3 class="font-medium no-margin-bottom text-score"><span class="font-orange">800</span> คะแนน</h3>
                                     <br/>
                                 </div>
                                 <div class="desc">
@@ -34,7 +34,7 @@
                                     <p>เวิร์คสามแยก ต้าอ่วย มาร์เก็ตมหาอุปราชาเพรส จูเนียร์ อุตสาหการแอปเปิ้ล ฮิปโปรัมลิสต์อันเดอร์ลีเมอร์ เธคมิวสิคแฟลชแอ๊บแบ๊ว บรา ออร์แกนิกชาร์จอันเดอร์ อิสรชนว่ะเยอร์บีราซื่อบื้อ ออโต้รีไซเคิลบลอนด์ ฉลุยคาราโอเกะ พาวเวอร์หยวน ไฮไลท์เทควันโดซิมธัมโม เทคโนแครต กีวี</p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-md btn-blue-linear btn-minwidth font-16 font-medium" data-dismiss="modal" data-toggle="modal" data-target="#modal-redeem">แลกคะแนน</button>
+                            <button type="button" class="btn btn-md btn-blue-linear btn-minwidth font-16 font-medium btn-redeem" data-dismiss="modal" data-toggle="modal" data-target="#modal-redeem">แลกคะแนน</button>
                         </div>
                     </div>
                 </div>

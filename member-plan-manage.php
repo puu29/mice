@@ -9,7 +9,7 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
-                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                    <a href="javascript:history.back()" class="to-back font-blue hidden-desktop">
                         <div class="text-icon is-middle">
                             <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
                             <span>กลับไปเมนูบัญชีทั่วไป</span>
@@ -254,8 +254,18 @@
                                                 <h3 class="no-margin font-semibold">ดี อีเว้นท์ เมเนเม้นจ์</h3>
                                                 <p>กรุงเทพมหานคร</p>
                                             </div>
-                                            <div class="action">
-                                                <span>&hellip;</span>
+                                            <div class="action dropdown">
+                                                <button class="btn btn-trans btn-default dropdown-toggle btn-dots" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    <span class="glyphicon glyphicon-option-horizontal"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right shadow">
+                                                    <li onclick="remove(this)">
+                                                        <div class="text-icon is-middle">
+                                                            <i class="m-icon m-icon-trash"></i>
+                                                            <span>ลบ</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -269,13 +279,23 @@
                                                 <h3 class="no-margin font-semibold">สัปดาห์หนังสือแห่งชาติ ครั้งที่ 28</h3>
                                                 <p>กรุงเทพมหานคร</p>
                                             </div>
-                                            <div class="action">
-                                                <span>&hellip;</span>
+                                            <div class="action dropdown">
+                                                <button class="btn btn-trans btn-default dropdown-toggle btn-dots" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    <span class="glyphicon glyphicon-option-horizontal"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right shadow">
+                                                    <li onclick="remove(this)">
+                                                        <div class="text-icon is-middle">
+                                                            <i class="m-icon m-icon-trash"></i>
+                                                            <span>ลบ</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-info">
+                                <div class="panel panel-info" data-type="3">
                                     <div class="panel-heading">อาหารและเครื่องดื่ม</div>
                                     <div class="panel-body">
                                         <div class="list" data-id="1">
@@ -284,8 +304,18 @@
                                                 <h3 class="no-margin font-semibold">Eatfood Company</h3>
                                                 <p>กรุงเทพมหานคร</p>
                                             </div>
-                                            <div class="action">
-                                                <span>&hellip;</span>
+                                            <div class="action dropdown">
+                                                <button class="btn btn-trans btn-default dropdown-toggle btn-dots" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    <span class="glyphicon glyphicon-option-horizontal"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right shadow">
+                                                    <li onclick="remove(this)">
+                                                        <div class="text-icon is-middle">
+                                                            <i class="m-icon m-icon-trash"></i>
+                                                            <span>ลบ</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                         <div class="list" data-id="3">
@@ -294,8 +324,18 @@
                                                 <h3 class="no-margin font-semibold">Cafe Amazon</h3>
                                                 <p>กรุงเทพมหานคร</p>
                                             </div>
-                                            <div class="action">
-                                                <span>&hellip;</span>
+                                            <div class="action dropdown">
+                                                <button class="btn btn-trans btn-default dropdown-toggle btn-dots" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    <span class="glyphicon glyphicon-option-horizontal"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right shadow">
+                                                    <li onclick="remove(this)">
+                                                        <div class="text-icon is-middle">
+                                                            <i class="m-icon m-icon-trash"></i>
+                                                            <span>ลบ</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -447,6 +487,26 @@
             </div>
         </div>
 
+        <div class="modal fade" id="modal-quotation-fail" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body font-16 mobile-font-16 pd-40">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
+                        <div class="status-box mobile-custom">
+                            <br/><br/>
+                            <img src="assets/images/status-fail.png">
+                            <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคา <b class="font-red font-semibold">ไม่สำเร็จ</b></h2>
+                            <p class="font-medium">กรุณาทำรายการใหม่อีกครั้ง</p>
+                            <div class="btn-box">
+                                <a href="#" style="width:300px;" data-dismiss="modal" class="btn btn-lg btn-red">ทำรายการอีกครั้ง</a>
+                            </div>
+                            <br/><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script>
             function add(e)
             {
@@ -463,8 +523,18 @@
                                                                                     <h3 class="no-margin font-semibold">${h3}</h3>
                                                                                     <p>${p}</p>
                                                                                 </div>
-                                                                                <div class="action">
-                                                                                    <span>&hellip;</span>
+                                                                                <div class="action dropdown">
+                                                                                    <button class="btn btn-trans btn-default dropdown-toggle btn-dots" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                                        <span class="glyphicon glyphicon-option-horizontal"></span>
+                                                                                    </button>
+                                                                                    <ul class="dropdown-menu dropdown-menu-right shadow">
+                                                                                        <li onclick="remove(this)">
+                                                                                            <div class="text-icon is-middle">
+                                                                                                <i class="m-icon m-icon-trash"></i>
+                                                                                                <span>ลบ</span>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
                                                                                 </div>
                                                                             </div>`);
             }
@@ -476,6 +546,14 @@
                 var id = parent.attr('data-id');
                 parent.removeClass('active');
                 $('.selected-service .panel[data-type="'+type+'"] .list[data-id="'+id+'"]').remove();
+            }
+
+            function remove(e)
+            {
+                var type = $(e).parents('.panel').attr('data-type');
+                var id = $(e).parents('.list').attr('data-id');
+                $(e).parents('.list').remove();
+                $('.service-list .post[data-type="'+type+'"][data-id="'+id+'"]').removeClass('active')
             }
 
             function switch_type(value)

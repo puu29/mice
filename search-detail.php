@@ -29,7 +29,7 @@
                                 <div class="bg" style="background-image: url('assets/images/post-img4.png')"></div>
                             </div>
                         </div>
-                        <i class="post-like m-icon m-icon-like"></i>
+                        <i class="post-like m-icon m-icon-like active" onclick="like(this)"></i>
                         <div class="post-logo" style="background-image: url('assets/images/post-logo.png')"></div>
                     </div>
                     <div class="post-title">
@@ -87,12 +87,12 @@
                                             <span>ขอใบเสนอราคา/เอกสารประกอบ</span>
                                         </div>
                                     </button>
-                                    <button type="button" class="btn btn-lg btn-default">
+                                    <a href="member-chat.php" class="btn btn-lg btn-default">
                                         <div class="text-icon">
                                             <i class="m-icon m-icon-chat"></i>
                                             <span>แชทกับผู้ให้บริการ</span>
                                         </div>
-                                    </button>
+                                    </a>
                                     <button type="button" class="btn btn-lg btn-default" data-dismiss="modal" data-toggle="modal" data-target="#modal-vdocall">
                                         <div class="text-icon">
                                             <i class="m-icon m-icon-vdocall"></i>
@@ -648,7 +648,7 @@
                                 </div>
                                 <div class="post-map">
                                     <h3 class="font-medium">แผนที่ตั้งสถานที่</h3>
-                                    <img src="assets/images/map.png" class="img-responsive">
+                                    <div id="map-detail"></div>
                                 </div>
                                 <div class="post-action">
                                     <div class="share">
@@ -1470,6 +1470,26 @@
             </div>
         </div>
 
+        <div class="modal fade" id="modal-quotation-fail" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body font-16 mobile-font-16 pd-40">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
+                        <div class="status-box mobile-custom">
+                            <br/><br/>
+                            <img src="assets/images/status-fail.png">
+                            <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคา <b class="font-red font-semibold">ไม่สำเร็จ</b></h2>
+                            <p class="font-medium">กรุณาทำรายการใหม่อีกครั้ง</p>
+                            <div class="btn-box">
+                                <a href="#" style="width:300px;" data-dismiss="modal" class="btn btn-lg btn-red">ทำรายการอีกครั้ง</a>
+                            </div>
+                            <br/><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="modal fade" id="modal-vdocall" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -1559,7 +1579,32 @@
                 </div>
             </div>
         </div>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABK4plFcFDYfEr1XhsMZ89bkloa182UrQ&callback=initMap"></script>
         <script>
+            function initMap()
+            {
+                var map = new google.maps.Map(document.getElementById('map-detail'), {
+                    center: {lat: -33.91722, lng: 151.23064},
+                    zoom: 16
+                });
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(-33.91722, 151.23064),
+                    icon: {
+                        url: "assets/images/mark-active.png",
+                        scaledSize: new google.maps.Size(45, 45),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(0, 0)
+                    },
+                    map: map,
+                });
+            }
+
+            function like(e)
+            {
+                $(e).toggleClass('active');
+            }
+
             (function(){
                 $('.datepicker.inline').datepicker({
                     multidate: true,

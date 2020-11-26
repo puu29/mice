@@ -9,7 +9,7 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
-                    <a href="member.php" class="to-back font-blue hidden-desktop">
+                    <a href="javascript:history.back()" class="to-back font-blue hidden-desktop">
                         <div class="text-icon is-middle">
                             <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
                             <span>กลับไปเมนูบัญชีทั่วไป</span>

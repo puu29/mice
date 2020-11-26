@@ -9,7 +9,7 @@
             <section class="member">
                 <?php include "layout/nav-business.php" ?>
                 <div class="member-body">
-                    <a href="business-score.php" class="to-back font-blue">
+                    <a href="business-score.php" class="to-back font-blue hidden-mobile">
                         <div class="text-icon is-middle">
                             <i class="glyphicon glyphicon-menu-left"></i>
                             <span>ย้อนกลับ</span>
@@ -30,7 +30,7 @@
                                     <p>รายละเอียดของรางวัล</p>
                                 </div>
                                 <div class="score">
-                                    <p>ใช้สิทธิก่อนวันที่ : 31 ตุลาคม 2563</p>
+                                    <p>ใช้สิทธิก่อนวันที่ : <br class="hidden-desktop" />31 ตุลาคม 2563</p>
                                     <a href="business-score-detail.php" class="btn btn-block btn-md btn-blue-linear">ใช้สิทธิ์</a>
                                 </div>
                             </div>
@@ -43,8 +43,8 @@
                                     <p>รายละเอียดของรางวัล</p>
                                 </div>
                                 <div class="score">
-                                    <p>ใช้สิทธิก่อนวันที่ : 31 ตุลาคม 2563</p>
-                                    <a href="business-score-detail.php" class="btn btn-block btn-md btn-blue-linear">ใช้สิทธิ์</a>
+                                    <p>ใช้สิทธิก่อนวันที่ : <br class="hidden-desktop" />31 ตุลาคม 2563</p>
+                                    <button type="button" class="btn btn-block btn-md btn-blue-linear" disabled>ใช้แล้ว</button>
                                 </div>
                             </div>
                         </div>

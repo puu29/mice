@@ -17,7 +17,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">กิจกรรมไมซ์ <span class="glyphicon glyphicon-menu-down"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="news.php">ข่าวสารจากธุรกิจ</a></li>
-                            <li><a href="plan.php">วางแผนการจัดงานไมซ์</a></li>
+                            <li><a href="member-plan.php">วางแผนการจัดงานไมซ์</a></li>
                             <li><a href="calendar.php">ปฎิทินไมซ์</a></li>
                         </ul>
                     </li>
@@ -298,7 +298,7 @@
                     </div>  
                 </div>
                 <div class="col-sm-3">
-                    <div class="history-search"><a href="#">ดูประวัติการค้นหาทั้งหมด</a></div>
+                    <div class="history-search"><a href="search-history.php">ดูประวัติการค้นหาทั้งหมด</a></div>
                 </div>
             </div>
         </div>
@@ -315,4 +315,5 @@
 <script src="assets/js/bootstrap-slider.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 <script src="assets/js/bootstrap-tagsinput.min.js"></script>
+<script src="assets/js/intro.js"></script>
 <script src="assets/js/main.js"></script>

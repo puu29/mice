@@ -9,7 +9,7 @@
             <section class="member">
                 <?php include "layout/nav-business.php" ?>
                 <div class="member-body">
-                    <a href="member-business.php" class="to-back font-blue">
+                    <a href="member-business.php" class="to-back font-blue hidden-mobile">
                         <div class="text-icon is-middle">
                             <i class="glyphicon glyphicon-menu-left"></i>
                             <span>กลับหน้าบัญชีธุรกิจ</span>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="panel-body">
                             <div class="form-group">
-                                <label class="font-semibold fullwidth no-margin">ธุรกิจหลัก</label>
+                                <label class="font-semibold fullwidth no-margin mobile-font-16 ">ธุรกิจหลัก</label>
                                 <div class="list-business">
                                     <div class="list table-middle">
                                         <div class="icon">
@@ -49,7 +49,7 @@
                                 </div>
                             </div>  
                             <div class="form-group">
-                                <label class="font-semibold fullwidth no-margin">ธุรกิจรอง</label>
+                                <label class="font-semibold fullwidth no-margin mobile-font-16 ">ธุรกิจรอง</label>
                                 <div class="list-business">
                                     <div class="list table-middle">
                                         <div class="icon">
@@ -142,7 +142,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="form-group">
+                                    <div class="form-group no-margin">
                                         <label class="font-semibold fullwidth">มาตรฐานที่ได้รับ</label>
                                         <div class="list-img">
                                             <img src="assets/images/standard1.png">
@@ -151,7 +151,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr class="in-panel"/>
+                            <hr class="in-panel mobile-in-panel"/>
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
@@ -168,7 +168,9 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label class="font-semibold">ตำแหน่ง Google Map</label>
-                                        <img src="assets/images/input-location.png" class="img-responsive">
+                                        <div class="map-box">
+                                            <div id="map"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +184,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label class="font-semibold">คำที่ช่วยในการค้นหา Keyword)</label>
+                                        <label class="font-semibold">คำที่ช่วยในการค้นหา Keyword</label>
                                         <div class="list-tag">
                                             <div class="list">จัดงาน</div>
                                             <div class="list">ที่พักกรุงเทพ</div>
@@ -232,5 +234,53 @@
             </section>
         </div>
         <?php include "layout/footer.php" ?>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABK4plFcFDYfEr1XhsMZ89bkloa182UrQ&callback=initMap"></script>
+        <style>
+            .gm-style .gm-style-iw-d{
+                overflow: hidden !important;
+            }
+            .gm-style .gm-style-iw {
+                background: #fbad26 !important;
+                font-family: 'Kanit';
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                color: #fff;
+                padding: 10px !important;
+                width: 120px;
+                max-width: 80%;
+                text-align: center;
+            }
+            .gm-style-iw button, .gm-style .gm-style-iw-t::after {
+                display: none !important;
+            }
+
+            @media (max-width: 767px){
+                .gmnoprint, .gm-fullscreen-control{
+                    zoom: 0.45;
+                }
+            }
+        </style>
+        <script>
+            function initMap()
+            {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: -33.91722, lng: 151.23064},
+                    zoom: 16
+                });
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(-33.91722, 151.23064),
+                    icon: 'assets/images/mark-orange.png',
+                    map: map,
+                });
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: 'Your Location'
+                });
+
+                infowindow.open(map, marker);
+            }
+        </script>
     </body>
 </html>

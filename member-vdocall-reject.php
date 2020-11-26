@@ -9,6 +9,12 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
+                    <a href="javascript:history.back()" class="to-back font-blue hidden-desktop">
+                        <div class="text-icon is-middle">
+                            <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
+                            <span>กลับไปเมนูบัญชีทั่วไป</span>
+                        </div>
+                    </a>
                     <h2 class="no-margin">วิดีโอคอลสนทนา</h2>
                     <p class="no-margin">ท่านสามารถเลือกรูปแบบการติดต่อหรือขอใบเสนอราคาผ่านการวิดีโอคอลสนทนากับผู้ประกอบการมากสุด 5 รายการคำขอ </p>
                     <br/>

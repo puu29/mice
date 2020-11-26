@@ -104,18 +104,33 @@
                             <div class="text transform-middle">
                                 <h3>มองหาสถานประกอบการ<br/>ในการจัดกิจกรรม</h3>
                                 <p>ระบบจะช่วยให้ท่านหาสถานประกอบการ<br/>ในแต่ละประเภทธุรกิจให้รวดเร็วยิ่งขึ้นด้วยการ<br/>ช่วยคัดกรองจากข้อมูลของท่าน</p>
-                                <a href="#" class="btn btn-block btn-md btn-blue">ค้นหาเลย</a>
+                                <button type="button" class="btn btn-block btn-md btn-blue" onclick="open_search_short()">ค้นหาเลย</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <?php if($_GET['login'] == 1) { ?>
+            <!-- <section class="under-banner">
+                <div class="bg is-blue" style="background-image: url('assets/images/home-banner5.png')"></div>
+                <div class="text">
+                    <h3 class="no-margin-top">ให้เราช่วยคุณวางแผน<br/>การจัดงานด้วยระบบอัตโนมัติ</h3>
+                    <p>ระบบการจับคู่อัตโนมัติจะช่วยให้ท่าน<br/>สามารถเจอกับสถานประกอบการที่ตรง<br/>กับความต้องการของท่านมากที่สุด </p>
+                    <a href="#" class="btn btn-minwidth btn-md btn-orange">จับคู่เลยตอนนี้</a>
+                </div>
+            </section> -->
+            <section class="under-banner" id="short-search-toggle">
+                <div class="bg is-orange" style="background-image: url('assets/images/home-banner10.png')"></div>
+                <div class="text">
+                    <h3 class="no-margin-top">มองหาสถานประกอบการ<br/>ในการจัดกิจกรรม</h3>
+                    <p>ระบบจะช่วยให้ท่านหาสถานประกอบการ<br/>ในแต่ละประเภทธุรกิจให้รวดเร็วยิ่งขึ้นด้วยการ<br/>ช่วยคัดกรองจากข้อมูลของท่าน</p>
+                    <button type="button" onclick="open_search_short()" class="btn btn-minwidth btn-md btn-blue">ค้นหาเลย</button>
+                </div>
+            </section>
             <section class="short-search">
                 <div class="container">
                     <div class="head">
                         <h3 class="no-margin">สถานที่จัดงาน</h3>
-                        <i class="m-icon m-icon-close-blue"></i>
+                        <i class="m-icon m-icon-close-blue" onclick="close_search_short()"></i>
                     </div>
                     <div class="body">
                         <form action="search.php" method="post">
@@ -160,7 +175,6 @@
                     </div>
                 </div>
             </section>
-            <?php } ?>
             <section>
                 <div class="container">
                     <h2 class="no-margin-top text-center">ธุรกิจไมซ์อื่นๆ</h2>
@@ -309,60 +323,60 @@
                     <div class="clearfix"></div>
                     <div class="slide-location owl-carousel">
                         <div class="item">
-                            <div class="inner">
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location1.png')"></div>
                                 <div class="text text-middle">เชียงใหม่</div>
-                            </div>
-                            <div class="inner">
+                            </a>
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location2.png')"></div>
                                 <div class="text text-middle">สุราษฎร์ธานี</div>
-                            </div>
-                            <div class="inner">
+                            </a>
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location3.png')"></div>
                                 <div class="text text-middle">ชลบุรี</div>
-                            </div>
+                            </a>
                         </div>
                         <div class="item">
-                            <div class="inner">
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location4.png')"></div>
                                 <div class="text text-middle">กรุงเทพมหานคร</div>
-                            </div>
-                            <div class="inner">
+                            </a>
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location5.png')"></div>
                                 <div class="text text-middle">นครศรีธรรมราช</div>
-                            </div>
-                            <div class="inner">
+                            </a>
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location6.png')"></div>
                                 <div class="text text-middle">ขอนแก่น</div>
-                            </div>
+                            </a>
                         </div>
                         <div class="item">
-                            <div class="inner">
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location1.png')"></div>
                                 <div class="text text-middle">เชียงใหม่</div>
-                            </div>
-                            <div class="inner">
+                            </a>
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location2.png')"></div>
                                 <div class="text text-middle">สุราษฎร์ธานี</div>
-                            </div>
-                            <div class="inner">
+                            </a>
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location3.png')"></div>
                                 <div class="text text-middle">ชลบุรี</div>
-                            </div>
+                            </a>
                         </div>
                         <div class="item">
-                            <div class="inner">
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location4.png')"></div>
                                 <div class="text text-middle">กรุงเทพมหานคร</div>
-                            </div>
-                            <div class="inner">
+                            </a>
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location5.png')"></div>
                                 <div class="text text-middle">นครศรีธรรมราช</div>
-                            </div>
-                            <div class="inner">
+                            </a>
+                            <a href="search.php" class="inner">
                                 <div class="bg" style="background-image: url('assets/images/home-location6.png')"></div>
                                 <div class="text text-middle">ขอนแก่น</div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -370,7 +384,7 @@
             <section>
                 <div class="container">
                     <h2 class="pull-left no-margin-top">โปรโมชั่นพิเศษ</h2>
-                    <a href="#" class="pull-right btn btn-default btn-all">ดูทั้งหมด</a>
+                    <a href="news-promotion.php" class="pull-right btn btn-default btn-all">ดูทั้งหมด</a>
                     <div class="clearfix"></div>
                     <div class="promotion">
                         <div class="row is-small mobile-slide">
@@ -387,7 +401,7 @@
                                         <img src="assets/images/home-pro1.png">
                                         <p><b>เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</b></p>
                                         <p>สนใจสอบถามทางบริษัท วีดู เอเจนซี จำกัดได้นะคะ ทางเรามีบริการจัดงาน จัดหาและวางแผนให้ตั้งแต่ต้นจนจบ</p>
-                                        <a href="#" class="btn btn-sm btn-default btn-more">ดูเพิ่มเติม</a>
+                                        <a href="news-detail.php" class="btn btn-sm btn-default btn-more">ดูเพิ่มเติม</a>
                                     </div>
                                 </div>
                             </div>
@@ -404,7 +418,7 @@
                                         <img src="assets/images/home-pro2.png">
                                         <p><b>เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</b></p>
                                         <p>สนใจสอบถามทางบริษัท วีดู เอเจนซี จำกัดได้นะคะ ทางเรามีบริการจัดงาน จัดหาและวางแผนให้ตั้งแต่ต้นจนจบ</p>
-                                        <a href="#" class="btn btn-sm btn-default btn-more">ดูเพิ่มเติม</a>
+                                        <a href="news-detail.php" class="btn btn-sm btn-default btn-more">ดูเพิ่มเติม</a>
                                     </div>
                                 </div>
                             </div>
@@ -421,7 +435,7 @@
                                         <img src="assets/images/home-pro3.png">
                                         <p><b>เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</b></p>
                                         <p>สนใจสอบถามทางบริษัท วีดู เอเจนซี จำกัดได้นะคะ ทางเรามีบริการจัดงาน จัดหาและวางแผนให้ตั้งแต่ต้นจนจบ</p>
-                                        <a href="#" class="btn btn-sm btn-default btn-more">ดูเพิ่มเติม</a>
+                                        <a href="news-detail.php" class="btn btn-sm btn-default btn-more">ดูเพิ่มเติม</a>
                                     </div>
                                 </div>
                             </div>
@@ -438,7 +452,7 @@
                                         <img src="assets/images/home-pro4.png">
                                         <p><b>เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</b></p>
                                         <p>สนใจสอบถามทางบริษัท วีดู เอเจนซี จำกัดได้นะคะ ทางเรามีบริการจัดงาน จัดหาและวางแผนให้ตั้งแต่ต้นจนจบ</p>
-                                        <a href="#" class="btn btn-sm btn-default btn-more">ดูเพิ่มเติม</a>
+                                        <a href="news-detail.php" class="btn btn-sm btn-default btn-more">ดูเพิ่มเติม</a>
                                     </div>
                                 </div>
                             </div>
@@ -449,7 +463,7 @@
             <section>
                 <div class="container">
                     <h2 class="pull-left no-margin-top">บทความไมซ์</h2>
-                    <a href="#" class="pull-right btn btn-default btn-all">ดูทั้งหมด</a>
+                    <a href="article.php" class="pull-right btn btn-default btn-all">ดูทั้งหมด</a>
                     <div class="clearfix"></div>
                     <div class="tab">
                         <ul class="nav nav-tabs">
@@ -460,50 +474,47 @@
                             <div role="tabpanel" class="tab-pane active" id="tab-article">
                                 <div class="row">
                                     <div class="col-sm-4">
-                                        <div class="article">
+                                        <a href="article-detail.php" class="article">
                                             <img class="img-responsive" src="assets/images/home-art1.png">
                                             <h3>Destinations International และ PATA กับการสนับสนุน จุดหมายปลายทาง ในสถานการณ์โควิด-19</h3>
                                             <div class="date">22/06/2020</div>
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="col-sm-4">
-                                        <div class="article">
+                                        <a href="article-detail.php" class="article">
                                             <img class="img-responsive" src="assets/images/home-art2.png">
                                             <h3>คำแนะนำจากสมาคม การประชุมนานาชาติ (ICCA) ในสถานการณ์ โควิด-19</h3>
                                             <div class="date">22/06/2020</div>
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="col-sm-4">
-                                        <div class="article">
+                                        <a href="article-detail.php" class="article">
                                             <img class="img-responsive" src="assets/images/home-art3.png">
                                             <h3>พาเที่ยวไปกับ Adely ทริปสำหรับวัยเก๋า ที่พร้อมดูแลทุกคนในทริป ราวกับคนในครอบครัว</h3>
                                             <div class="date">22/06/2020</div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div> 
                             </div>
                             <div role="tabpanel" class="tab-pane" id="tab-vdo">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="article">
-                                            <img class="img-responsive" src="assets/images/home-vdo1.png">
-                                            <h3>Destinations International และ PATA กับการสนับสนุน จุดหมายปลายทาง ในสถานการณ์โควิด-19</h3>
-                                            <div class="date">22/06/2020</div>
-                                        </div>
+                                <div class="row article-box no-margin-top">
+                                    <div class="col-sm-4 ">
+                                        <a href="https://www.youtube.com/watch?v=SFmRQBsIPE8" class="article">
+                                            <div class="img"><img class="img-responsive" src="assets/images/art-vdo1.png"><i class="m-icon m-icon-vdo"></i></div>
+                                            <div class="text"><h3>กิจกรรมการจัดงานประชุมนานาชาติประจำปี 2020 ณ อิมแพคเมืองทองธานี</h3></div>
+                                        </a>
                                     </div>
                                     <div class="col-sm-4">
-                                        <div class="article">
-                                            <img class="img-responsive" src="assets/images/home-vdo2.png">
-                                            <h3>คำแนะนำจากสมาคม การประชุมนานาชาติ (ICCA) ในสถานการณ์ โควิด-19</h3>
-                                            <div class="date">22/06/2020</div>
-                                        </div>
+                                        <a href="https://www.youtube.com/watch?v=SFmRQBsIPE8" class="article">
+                                            <div class="img"><img class="img-responsive" src="assets/images/art-vdo2.png"><i class="m-icon m-icon-vdo"></i></div>
+                                            <div class="text"><h3>กิจกรรมการจัดงานประชุมนานาชาติประจำปี 2020 ณ อิมแพคเมืองทองธานี</h3></div>
+                                        </a>
                                     </div>
                                     <div class="col-sm-4">
-                                        <div class="article">
-                                            <img class="img-responsive" src="assets/images/home-vdo3.png">
-                                            <h3>พาเที่ยวไปกับ Adely ทริปสำหรับวัยเก๋า ที่พร้อมดูแลทุกคนในทริป ราวกับคนในครอบครัว</h3>
-                                            <div class="date">22/06/2020</div>
-                                        </div>
+                                        <a href="https://www.youtube.com/watch?v=SFmRQBsIPE8" class="article">
+                                            <div class="img"><img class="img-responsive" src="assets/images/art-vdo3.png"><i class="m-icon m-icon-vdo"></i></div>
+                                            <div class="text"><h3>กิจกรรมการจัดงานประชุมนานาชาติประจำปี 2020 ณ อิมแพคเมืองทองธานี</h3></div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -521,7 +532,7 @@
                         </div>
                         <div class="col-md-8 col-sm-7">
                             <h2 class="pull-left">ปฏิทินกิจกรรม</h2>
-                            <a href="#" class="pull-right btn btn-default btn-all hidden-mobile">ดูทั้งหมด</a>
+                            <a href="calendar.php" class="pull-right btn btn-default btn-all hidden-mobile">ดูทั้งหมด</a>
                             <div class="clearfix"></div>
                             <div class="calendar-detail scroll-custom">
                                 <div class="inner" data-date="2020-11-08">
@@ -575,7 +586,7 @@
                             </div>
                             <div class="text-center hidden-desktop">
                                 <br/><br/>
-                                <a href="#" class="bg-trans btn btn-default btn-all">ดูทั้งหมด</a>
+                                <a href="calendar.php" class="bg-trans btn btn-default btn-all">ดูทั้งหมด</a>
                             </div>
                         </div>
                     </div>
@@ -633,7 +644,40 @@
                         scrollTop: position.top
                     }, 'fast');
                 });
+
+                $('.article-box').magnificPopup({
+                    delegate: 'a',
+                    disableOn: 700,
+                    type: 'iframe',
+                    mainClass: 'mfp-fade',
+                    removalDelay: 160,
+                    preloader: false,
+                    fixedContentPos: false
+                });
             })();
+
+            function open_search_short()
+            {
+                $('.short-search').slideDown();
+                if($(window).width() < 768)
+                {
+                    $('#short-search-toggle').hide();
+                }
+            }
+
+            function close_search_short()
+            {
+                $('.short-search').slideUp();
+                if($(window).width() < 768)
+                {
+                    $('#short-search-toggle').show();
+                }
+            }
+
+
+            $('.short-search .m-icon').click(function(){
+                $(this).parents('.short-search').slideUp(300);
+            });
         </script>
     </body>
 </html>

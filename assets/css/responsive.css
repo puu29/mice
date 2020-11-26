@@ -1,6 +1,23 @@
 @media (max-width: 991px){
     header #menu{
-        display: none !important;
+        width: calc(100% - 210px);
+        padding: 0px;
+    }
+    header #menu > ul{
+        margin-right: 0px;
+    }
+    header #menu > ul > li > a{
+        padding: 10px;
+    }
+    header .user .text{
+        display: none;
+    }
+    header .navbar-search{
+        margin: 24px 8px 0px;
+    }
+    header .navbar-brand{
+        height: 50px;
+        margin: 13px 0px;
     }
     .search-page .filter{
         display: none;
@@ -140,7 +157,7 @@
         width: calc(100% + 30px);
         float: left;
         margin-top: 20px;
-        height: auto;
+        height: 350px;
     }
     .search-page.for-map .search-map img{
         width: 100%;
@@ -154,7 +171,7 @@
         box-shadow: none;
         background: transparent;
         border-radius: 0px;
-        margin-top: -100px;
+        margin-top: -60px;
         margin-left: -15px;
         width: calc(100% + 30px);
         padding-left: 5px;
@@ -185,7 +202,7 @@
     .post-page .post-title{
         margin-top: 20px;
     }
-    .btn .text-icon {
+    .btn .text-icon, .btn .text-icon span {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -216,7 +233,7 @@
     .tab.style-2 .tab-content {
         padding: 5px 0px;
     }
-    .panel .panel-heading, .panel .panel-body{
+    .panel .panel-heading, .panel .panel-body, .member .panel .panel-body{
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -289,7 +306,7 @@
     #wrapper{
         min-height: calc(100vh - 245px);
     }
-    .member .member-menu{
+    .member .member-menu:not(.for-business){
         display: none;
     }
     .member .member-body{
@@ -332,15 +349,265 @@
     .step-footer{
         padding: 15px 20px;
     }
+
+    .member .member-menu.for-business{
+        position: relative;
+        width: 100%;
+        overflow: initial;
+        height: auto;
+        background: transparent;
+        padding: 0px 15px;
+    }
+    .member .member-menu.for-business > .head{
+        background: #fff;
+        padding: 18px 15px;
+        text-align: left;
+        display: table;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+    .member .member-menu.for-business .upload-photo{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .member .member-menu.for-business .name{
+        width: calc(100% - 110px);
+        text-align: left;
+        font-size: 20px;
+        line-height: 30px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 20px;
+    }
+    .member .member-menu.for-business .dropdown-toggle{
+        text-align: left;
+        padding-right: 40px;
+        position: relative;
+        padding: 13.5px 15px;
+        display: block;
+    }
+    .member .member-menu.for-business .dropdown-toggle .glyphicon{
+        position: absolute;
+        right: 15px;
+        font-size: 16px;
+        top: 50%;
+        margin-top: -8px;
+    }
+    .member .member-menu.for-business .body{
+        width: 100%;
+        margin: 20px 0px 0px;
+        position: relative;
+    }
+    .member .member-menu.for-business .dropdown-menu{
+        height: auto;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0,0,0,.15);
+        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        background: #fff;
+        position: absolute;
+        float: left;
+        display: none;
+    }
+    .member .member-menu.for-business .to-back{
+        margin: 20px 0px;
+    }
+    .member .member-menu.for-business .open .dropdown-menu{
+        display: block;
+        z-index: 1000;
+    }
+    .hidden-mobile{
+        display: none !important;
+    }
+    .show-ipad{
+        display: block !important;
+    }
+    .member .panel.b-detail-other{
+        margin-top: 10px;
+    }
+    .btn-add-option .text-icon {
+        overflow: initial;
+    }
+    .step-heart.for-score{
+        margin: 40px -20px;
+        width: calc(100% + 40px);
+    }
+    .step-heart.for-score .progress{
+        margin-left: calc(17.5% - 20px);
+    }
+    .member .member-menu ul li a{
+        padding: 12.5px 25px 12.5px 65px;
+    }
+    .member .member-menu ul li.dropdown-item a{
+        padding-left: 15px;
+    }
+    .score-detail .text{
+        padding: 0px 30px;
+    }
+    .score-detail .text .topic{
+        text-align: center;
+    }
+    .score-detail .text .topic p{
+        display: inline-block;
+    }
+    .score-detail .img{
+        margin: 0 auto 20px;
+        display: block;
+        width: 280px;
+        max-width: 100%;
+    }
+    .score-detail .btn-redeem{
+        margin: 0 auto;
+        display: block;
+    }
+    .tab-filter .head{
+        overflow-x: auto;
+        display: flex;
+        white-space: nowrap;
+        overflow-y: hidden;
+        padding-bottom: 10px;
+        margin-left: -15px;
+        width: calc(100% + 30px);
+        padding: 0px 10px 5px;
+    }
+    #modal-redeem .status-box{
+        padding: 60px 10px 50px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #modal-redeem .status-box h2{
+        font-size: 24px;
+        line-height: 35px;
+        margin: 25px 0px 15px;
+    }
+    .share-social .text-icon{
+        min-height: 24px;
+    }
+    .my-freind .img{
+        margin-bottom: 25px;
+    }
+    .member .top-white {
+        display: none;
+    }
+    .member .bottom .tab{
+        margin-top: -10px;
+    }
+    .member .bottom .tab .nav-tabs{
+        background: #fff;
+        margin-left: -15px;
+        width: calc(100% + 30px);
+        max-width: initial;
+        padding: 5px 20px 0px;
+    }
+    .b-chat .btn-toolbar{
+        margin: 0px;
+    }
+    .chat-list .user .text {
+        padding-right: 50px;
+    }
+    .chat-list{
+        width: 250px;
+    }
+    .chat-dialog {
+        width: calc(100% - 270px);
+    }
+    .member .btn-minwidth{
+        min-width: initial;
+    }
+    .schedule-option{
+        width: 100%;
+        display: inline-block;
+    }
+    .schedule-option .form-group{
+        float: left;
+        margin-bottom: 0px;
+    }
+    .schedule-option .form-group:nth-child(odd){
+        width: 40%;
+    }
+    .schedule-option .form-group:nth-child(even){
+        width: 60%;
+        text-align: right;
+    }
+    .schedule-option .checkbox.is-inline{
+        margin-right: 0px !important;
+    }
+    .member .member-body.no-menu{
+        padding: 40px 30px;
+    }
+    .b-quotation .btn-box:not(.no-half){
+        display: flex !important;
+        flex-flow: row-reverse;
+    }
+    .b-quotation .btn-box:not(.no-half) .btn{
+        width: 50%;
+    }
+    .b-quotation-detail-panel{
+        margin-top: -35px !important;
+    }
+    .ipad-text-left{
+        text-align: left;
+    }
+    .b-card .card .img img{
+        height: 302px;
+        overflow: hidden;
+    }
+    .b-card .card .desc{
+        height: 82px;
+    }
+    .b-card .row{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .b-card .row .col{
+        padding: 0px 15px;
+    }
+    table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after{
+        position: absolute !important;
+        top: 12px !important;
+        right: 15px !important;
+        display: block !important;
+    }
+    #menu li.active:after{
+        display: none;
+    }
+    header #menu .dropdown-menu{
+        width: 520px;
+        left: 0px;
+        transform: none;
+        padding: 15px 30px;
+    }
+    header #menu .dropdown-menu .bg{
+        display: none;
+    }
+    header .no-user a{
+        display: none;
+    }
+    header .no-user a:first-child{
+        display: block;
+        margin-top: -8px;
+    }
+    .banner .banner-box{
+        height: 70vw;
+    }
+    .banner.owl-carousel .owl-nav button.owl-prev{
+        left: 25px;
+        color: #fff;
+    }
+    .banner.owl-carousel .owl-nav button.owl-next{
+        right: 25px;
+        color: #fff;
+    }
 }
 
 @media (max-width: 767px){
     .hidden-desktop{
         display: block !important;
     }
-    .hidden-mobile{
+    .hidden-mobile, th.hidden-mobile, td.hidden-mobile{
         display: none !important;
     }
+    
     header #menu{
         position: fixed;
         width: 100%;
@@ -462,6 +729,7 @@
     }
     header .no-user a:first-child{
         display: block;
+        margin-top: 0px;
     }
     header .navbar-user {
         margin-top: 20px;
@@ -473,6 +741,9 @@
     }
     header .navbar-user .no-user{
         margin-right: 10px;
+    }
+    header .navbar-search {
+        margin: 24px 15px 0px;
     }
     .navbar-default .navbar-brand{
         width: 100%;
@@ -740,8 +1011,11 @@
         padding: 25px 25px;
     }
     .modal .modal-body.pd-40 .close {
-        margin-top: -8px;
-        margin-right: -10px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    .modal .modal-body.pd-40 h2{
+        padding-right: 30px;
     }
     .status-box img{
         width: 120px;
@@ -829,8 +1103,8 @@
         color: #282828;
         font-weight: 400 !important;
     }
-    .tab .tab-content .pull-right {
-        width: 100%;
+    .tab .tab-content .pull-right:not(.dropdown) {
+        /* width: 100%; */
     }
     .tab .tab-content .pull-right .select{
         width: calc(50% - 2px);
@@ -1040,9 +1314,6 @@
         text-decoration: underline;
         margin-top: 10px;
     }
-    header .user .text{
-        display: none;
-    }
     header .user .img{
         margin-top: 2px;
     }
@@ -1093,6 +1364,11 @@
         display: inline-block;
         float: left;
     }
+    .panel-list label.mobile-full{
+        width: 100%;
+        float: initial;
+        margin-bottom: 3px;
+    }
     .panel-list .text-desc{
         width: calc(100% - 120px);
         display: inline-block;
@@ -1109,7 +1385,7 @@
         text-align: left;
     }
     .mobile-text-right{
-        text-align: right;
+        text-align: right !important;
     }
     .mobile-text-center{
         text-align: center;
@@ -1149,22 +1425,19 @@
         width: calc(50% - 12px) !important;
         display: inline-block;
     }
-    .mobile-btn-block{
-        width: 100% !important;
-    }
-    .mobile-btn-block .text-icon{
-        width: auto;
-        display: inline;
-    }
     .modal .modal-header.pd-40, .modal .modal-body.pd-40{
         padding: 20px;
     }
     .modal .modal-header.pd-40 .close {
-        margin-top: 8px;
+        /* margin-top: 8px; */
         margin-right: 0px;
     }
-    .table:not(.table-bordered) > tbody > tr > td {
+    .table:not(.table-bordered) > tbody > tr > td, .table > thead > tr > th {
         padding: 17px 0px;
+    }
+    .table > thead > tr > th {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .mobile-font-12 {
         font-size: 12px !important;
@@ -1175,12 +1448,12 @@
         line-height: 21px !important;
     }
     .mobile-font-16 {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 16px !important;
+        line-height: 24px !important;
     }
     .mobile-font-18 {
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 18px !important;
+        line-height: 27px !important;
     }
     .mobile-font-22 {
         font-size: 22px;
@@ -1211,6 +1484,9 @@
     .mobile-no-padding-right {
         padding-right: 0px;
     }
+    .mobile-no-border{
+        border: 0px !important;
+    }
     .plan-type .box {
         margin-bottom: 20px;
     }
@@ -1233,7 +1509,7 @@
         height: 675px;
     }
     .select-service .service-type{
-        padding: 20px 20px 30px;
+        padding: 20px 20px 30px !important;
         width: 100%;
         height: auto;
     }
@@ -1297,8 +1573,8 @@
         padding: 10px 15px 60px 15px;
     }
     .chat-dialog .head .user .img{
-        width: 52px;
-        height: 52px;
+        width: 50px;
+        height: 50px;
     }
     .chat-dialog .head{
         padding: 20px 15px 10px 15px;
@@ -1429,6 +1705,10 @@
         margin: 25px 0px;
         width: 100%;
     }
+    hr.mobile-in-panel{
+        margin-left: -15px !important;
+        width: calc(100% + 30px);
+    }
     .form-tax{
         padding-right: 120px;
         position: relative;
@@ -1456,7 +1736,7 @@
     .upload-file .text{
         padding: 10px 0px 0px 0px;
     }
-    .select-map .map{
+    .select-map .map-box{
         width: 100%;
         padding: 0px;
         margin-top: 15px;
@@ -1464,8 +1744,719 @@
     .bootstrap-tagsinput{
         padding: 9px 10px;
     }
+    .member-title .btn.pull-right{
+        float: left !important;
+    }
+    .list-business .list .icon{
+        width: 165px;
+    }
+    .list-business .list .text{
+        width: 100%;
+        display: inline-block;
+        padding: 0px;
+        margin: 12px 0px;
+    }
+    .member .panel .panel-body{
+        padding: 20px 15px;
+    }
+    .radio-box .radio label .name, .radio-box .checkbox label .name, .list-business .icon .name{
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    .radio-box .checkbox input:checked ~ label:before {
+        width: 22px;
+        height: 22px;
+        right: -7px;
+        top: -8px;
+    }
+    .radio-box .radio .btn-info i, .radio-box .checkbox .btn-info i, .list-business .icon .btn-info i{
+        width: 18px;
+        height: 18px;
+    }
+    .row.is-border-right{
+        display: block;
+    }
+    .row.is-border-right .col:not(:last-child) {
+        border: 0px;
+        border-bottom: 1px solid #E3E3E3;
+    }
+    .row.is-border-right .pull-right{
+        width: auto;
+    }
+    .row.is-border-right .col{
+        padding: 20px 15px;
+        overflow: hidden;
+    }
+    .row.is-border-right p{
+        margin-bottom: 5px;
+    }
+    .b-manage .tab .nav-tabs{
+        margin-left: -23px !important;
+        width: calc(100% + 28px) !important;
+    }
+    .step-footer{
+        min-height: initial;
+    }
+    .b-manage .tab.style-2 .nav-tabs li a{
+        padding: 12px 20px;
+    }
+    .text-icon.is-middle.mobile-no-middle i{
+        top: initial;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .b-manage .btn-add-option{
+        font-size: 14px;
+    }
+    .b-manage .btn-add-option .text-icon i {
+        width: 32px;
+        height: 32px;
+    }
+    .b-manage .btn-add-option .text-icon{
+        padding-left: 38px;
+    }
+    .business-days > .checkbox, .business-hrs > .checkbox{
+        margin: 5px 0px 12px !important;
+    }
+    .business-days  .radio-select .radio > label{
+        min-width: calc(33.33vw - 28px) !important
+    }
+    .radio-select.is-blue .radio > label{
+        border-color: #D6D5D5;
+    }
+    .modal .btn-box{
+        margin: 20px 0px;
+    }
+    .mobile-width-200, .member .mobile-width-200{
+        min-width: 200px;
+    }
+    .btn-minwidth{
+        min-width: 200px;
+    }
+    .room-plan .inner{
+        width: calc(50% - 10px);
+        margin-top: 10px;
+    }
+    .upload-right-detail{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .upload-right-detail .upload-photo{
+        width: 100%;
+        margin: 0px 0px 20px;
+    }
+    .modal.modal-checkbox .form-group > label{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .modal.modal-checkbox .checkbox{
+        margin: 8px 0px;
+    }
+    .radio-select.is-round .radio > label{
+        min-width: 70px !important;
+    }
+    .modal .limit-char .char{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .radio-select .radio input:checked ~ label, .b-schedule .radio-select .radio input:checked ~ label{
+        border-color: transparent !important;
+    }
+    .b-manage .room-card hr{
+        border-color: #E3E3E3;
+        margin: 20px 0px 12px;
+    }
+    .b-manage .room-card .btn-edit {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0px 0px 10px;
+    }
+    .border-box{
+        padding: 10px 15px;
+    }
+    .alert-custom{
+        padding: 10px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .step-heart.mobile-verticle .progress{
+        left: 43px;
+        top: 2px;
+        width: calc(100% - 18px);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        transform-origin: left top;
+    }
+    .step-heart.mobile-verticle .step .icon{
+        width: 100%;
+        text-align: left;
+        padding: 0px;
+        padding-left: 95px;
+        margin: 20px 0px;
+        height: 46px;
+        overflow: hidden;
+    }
+    .step-heart.mobile-verticle .step .icon:first-child{
+        margin-top: 0px;
+    }
+    .step-heart.mobile-verticle .step i{
+        margin: 0px;
+        top: 50%;
+        left: 25px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .table.mobile-full tbody > tr > td{
+        display: block;
+        width: 100%;
+        padding: 15px 15px 5px;
+    }
+    .table.mobile-full tbody > tr{
+        border-bottom: 1px solid #E3E3E3;
+    }
+    .table.mobile-full tbody > tr > td{
+        border: 0px !important;
+    }
+    .table .m-icon-heart{
+        margin-top: 5px;
+    }
+    .panel{
+        border-radius: 10px;
+    }
+    .card-score{
+        position: relative;
+        padding-left: 180px;
+        margin-bottom: 20px;
+    }
+    .card-score > img{
+        width: 160px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .card-score h3{
+        font-weight: 600;
+        margin: 0px;
+    }
+    .card-score .text{
+        height: auto;
+        margin: 5px 0px;
+    }
+    .card-score .score .btn{
+        margin: 22px 0px 8px;
+        font-size: 14px;
+    }
+    .btn:disabled, .btn[disabled]{
+        background: #9B9B9B !important;
+        border-color: #9B9B9B !important;
+    }
+    .score-detail{
+        margin-bottom: 30px;
+    }
+    .score-detail .img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .score-detail .text{
+        padding: 0px 20px;
+    }
+    .score-detail .desc{
+        margin-top: 10px;
+    }
+    .score-detail .text-score{
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: 15px;
+    }
+    .score-me h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .tab-filter > .head > .inner{
+        margin: 5px;
+    }
+    .f-how .inner{
+        width: 100%;
+        position: relative;
+        text-align: left;
+    }
+    .f-how .text{
+        width: 100%;
+        padding-left: 85px;
+        text-align: left;
+    }
+    .f-how .img{
+        position: absolute;
+        left: 15px;
+        top: 0px;
+        z-index: 2;
+        height: 50px;
+        max-width: 58px;
+    }
+    .f-how p{
+        font-size: 16px !important;
+        line-height: 24px !important;
+        text-align: left;
+        margin-bottom: 5px !important;
+    }
+    .f-how .no{
+        font-size: 90px;
+        bottom: auto;
+        top: 12px;
+        color: #E1ECF7;
+    }
+    .mt25 {
+        margin-top: 15px !important;
+    }
+    .btn-invite{
+        width: 150px;
+        margin: 10px auto 5px;
+        display: block;
+    }
+    .copylink .form-control{
+        padding-right: 15px;
+    }
+    .copylink .btn{
+        position: relative;
+        margin: 5px auto 0px;
+        display: block;
+    }
+    .my-friend h2{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .table-friend tbody tr{
+        position: relative;
+        width: 100%;
+        display: block;
+        padding: 10px 0px 10px 35px;
+    }
+    .table-friend tbody td:first-child{
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        font-size: 16px;
+        padding: 0px !important;
+        width: 30px !important;
+    }
+    .table-friend tbody td{
+        padding: 0px 0px 0px !important;
+    }
+    .paging{
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+    .b-chat .btn-toolbar .btn-group, .b-quotation .btn-toolbar .btn-group{
+        width: 100%;
+        padding: 20px 15px;
+        font-size: 14px;
+        line-height: 21px;
+        position: relative;
+        border: 0px;
+    }
+    .b-chat .btn-toolbar .btn-group:not(:last-child), .b-quotation .btn-toolbar .btn-group:not(:last-child){
+        border-bottom: 1px solid #C3C3C3;
+    }
+    .chat-type{
+        position: relative;
+        padding-left: 50px;
+        text-align: left;
+        padding-right: 80px;
+    }
+    .chat-type h2{
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        font-size: 28px;
+        line-height: 42px;
+        margin-top: -22px !important;
+    }
+    .b-chat .btn-toolbar .text-icon, .b-quotation .btn-toolbar .text-icon{
+        text-decoration: underline;
+        padding-left: 22px;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+    }
+    .b-chat .btn-toolbar .text-icon i, .b-quotation .btn-toolbar .text-icon i{
+        width: 16px;
+        height: 16px;
+    }
+    .b-chat .btn-toolbar .btn-group.active .text-icon, .b-quotation .btn-toolbar .btn-group.active .text-icon{
+        color: #fff;
+    }
+    .chat-list .user .name b, .chat-list .user .name{
+       font-weight: 600;
+       color: #2145B5;
+    }
+    .b-chat .chat-dialog{
+        margin-top: -20px;
+    }
+    .b-chat .title-dialog .btn{
+        width: auto;
+    }
+    .status-box.mobile-custom{
+        padding: 0px 30px;
+    }
+    .mobile-no-float{
+        float: initial !important;
+    }
+    .btn-schedule-toggle{
+        float: initial !important;
+        margin-top: 25px;
+    }
+    .panel-list .list.pd25 .user, .b-quotation .user{
+        min-height: initial;
+        margin: 20px 0px 35px;
+    }
+    .panel-list .list.pd25 .user p{
+        margin-bottom: 0px !important;
+    }
+    .chat-appointment .list p{
+        margin-bottom: 20px !important;
+    }
+    .chat-appointment .btn-box:not(.no-half), .b-quotation .btn-box:not(.no-half){
+        display: flex !important;
+        flex-flow: row-reverse;
+    }
+    .chat-appointment .btn-box:not(.no-half) .btn, .b-quotation .btn-box:not(.no-half) .btn{
+        width: 50%;
+    }
+    .chat-appointment .list .user br, .b-quotation .user br{
+        display: none;
+    }
+    #modal-cancel .checkbox{
+        margin-bottom: 18px;
+    }
+    .schedule-option .form-group{
+        text-align: left !important;
+        width: 100% !important;
+    }
+    .schedule-option .form-group label{
+        width: 100%;
+        display: inline-block;
+    }
+    .schedule-option .checkbox, .schedule-option .checkbox.is-inline{
+        margin-top: -15px;
+        margin-right: 30px !important;
+    }
+    .form-type .table .checkbox{
+        padding-left: 0px;
+        margin-bottom: 10px;
+    }
+    .form-type .table.mobile-full tbody > tr{
+        border: 0px;
+    }
+    .form-type .table.mobile-full tbody > tr > td{
+        border-bottom: 1px solid #E3E3E3 !important;
+    }
+    .form-type .table, .form-type .table.mobile-full tbody > tr:last-child > td:last-child{
+        border-bottom: 0px !important;
+    }
+    .form-type .radio-select .radio{
+        width: calc(50% - 10px);
+    }
+    .form-type .radio-select .radio > label{
+        width: 100%;
+        font-size: 14px;
+        padding: 12px 5px;
+    }
+    .form-type .btn-box{
+        padding: 0px 15px;
+        text-align: center;
+        margin-bottom: 20px !important;
+    }
+    .form-type .btn-box .btn{
+        width: 280px;
+        max-width: 100%;
+    }
+    .member .member-body.no-menu {
+        padding: 30px 15px;
+    }
+    .member .tab-content .setting.text-right{
+        margin-top: 20px;
+        text-align: left;
+    }
+    .member .tab-content .setting.text-right .input-icon{
+        width: 100%;
+    }
+    .member .tab-content .setting .form-control:not(select){
+        border-color: #534B49 !important;
+        background: transparent;
+    }
+    .b-quotation .form-group {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .b-quotation .border-box{
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+    .b-quotation .border-box label{
+        margin: 0px;
+    }
+    .b-quotation .border-box p{
+        margin-bottom: 15px !important;
+    }
+    .b-quotation-detail-panel {
+        margin-top: -35px !important;
+        border-radius: 5px;
+    }
+    .b-quotation-detail .user{
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+    .b-quotation-detail .user .bg{
+        top: -8px;
+    }
+    .b-quotation-detail .text h2{
+        padding-left: 60px;
+        margin-bottom: 40px;
+    }
+    .b-quotation-detail .user p{
+        margin-bottom: 20px;
+    }
+    .b-quotation-detail .btn-box:not(.no-half){
+        display: inline-block !important;
+        flex-flow: initial;
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .b-quotation-detail .btn-box:not(.no-half) .btn{
+        width: 225px;
+        max-width: 100%;
+    }
+    .upload-file .input{
+        font-size: 13px;
+        font-weight: 500 !important;
+    }
+    .b-card .add-box{
+        width: 100%;
+        height: auto;
+    }
+    .card-manage{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .card-manage .desc {
+        margin-bottom: 20px;
+        height: 72px;
+        overflow: hidden;
+        font-weight: 500;
+    }
+    .card-manage .action{
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 18px;
+    }
+    .card-manage .date{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .b-card .card .img img {
+        height: 98vw;
+    }
+    .b-card .card{
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        margin: 20px 0px 50px;
+        display: inline-block;
+    }
+    .b-card .card .action{
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 15px;
+    }
+    .b-card .card .desc {
+        height: auto;
+        margin-bottom: 5px;
+    }
+    .table-title{
+        width: auto;
+        display: inline-block;
+        float: left;
+        width: calc(100% - 120px);
+    }
+    .table-all{
+        width: auto;
+        display: inline-block;
+        float: right;
+        margin: 0px;
+    }
+    .b-dashboard .table{
+        font-size: 16px;
+        line-height: 20px !important;
+        border-top: 1px solid #E3E3E3;
+        margin-top: 20px;
+        height: 500px;
+        overflow-y: auto;
+        display: inline-block;
+        width: 100%;
+        padding-right: 15px;
+        margin-bottom: 0px;
+    }
+    .b-dashboard .table thead{
+        display: none;
+    }
+    .b-dashboard .table tbody > tr > td{
+        padding: 10px 0px 5px;
+        font-size: 16px;
+        line-height: 18px !important;
+    }
+    .b-dashboard .table tbody > tr > td span{
+        display: inline-block !important;
+    }
+    .b-dashboard .table tbody > tr{
+        padding: 8px 0px 15px;
+        display: inline-block;
+        width: 100%;
+    }
+    .b-dashboard .table tbody > tr > td:nth-child(n + 3){
+        width: 65%;
+        display: inline-block;
+        float: left;
+    }
+    .b-dashboard .table tbody > tr > td:nth-child(n + 4){
+        width: 35%;
+        display: inline-block;
+        float: left;
+    }
+    .b-dashboard .panel .panel-body {
+        padding: 25px 20px;
+    }
+    .b-dashboard .table::-webkit-scrollbar {
+        width: 5px;
+    }
+    .b-dashboard .table::-webkit-scrollbar-track {
+        background: #E3E3E3;
+        border-radius: 3px;
+    }
+    .b-dashboard .table::-webkit-scrollbar-thumb { 
+        background: #2170B8;
+        border-radius: 3px;
+    }
+    .b-dashboard .form-inline .form-group{
+        margin-left: 0px;
+    }
+    .b-dashboard .input-group.is-calendar input {
+        width: 100%;
+    }
+    .b-dashboard .btn-toolbar .btn-group{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .b-dashboard .btn-toolbar{
+        margin-bottom: 15px;
+    }
+    .upload-photos.is-vertical .for-upload{
+        width: 100%;
+        height: 100px;
+        font-size: 14px;
+        margin: 30px 0px;
+    }
+    .upload-photos.is-mobile-half{
+        width: calc(100% + 10px);
+    }
+    .upload-photos.is-mobile-half .inner{
+        width: calc(50% - 10px);
+    }
+    .upload-photos.style-2 .inner{
+        height: 29vw;
+    }
+    .upload-photos.style-2 .inner.for-upload{
+        width: 203px;
+        height: 134px;
+    }
+    .modal .content{
+        margin: 30px 0px 20px;
+    }
+    header #menu .dropdown-menu{
+        column-count: 1;
+        margin-left: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    header #menu .dropdown .dropdown-backdrop{
+        display: none !important;
+    }
+    .banner{
+        margin: 20px 0px;
+    }
+    .under-banner{
+        display: block;
+    }
+    .room-card.is-hotel .row:first-child .col-sm-6:nth-child(2) {
+        padding-left: 15px;
+    }
+    .room-card.is-hotel .row:first-child .col-sm-6:nth-child(2) .form-group:first-child {
+        padding-right: 0px;
+    }
 }
 
 @media (max-width: 520px){
-    
+    #modal-food.modal.modal-checkbox .radio-select .radio{
+        margin-bottom: 0px;
+    }
+    #modal-food.modal.modal-checkbox .radio-select .radio > label {
+        min-width: initial;
+        width: calc(50vw - 36px);
+        padding: 12px 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-color: #C3C3C3;
+    }
+
+    .radio-select.mobile-half .radio > label {
+        min-width: initial;
+        width: calc(50vw - 36px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-color: #C3C3C3;
+    }
+    .radio-select.mobile-half .radio > label .text-icon{
+        width: auto;
+        display: inline-block;
+    }
+
+    .mobile-btn-block{
+        width: 100% !important;
+    }
+    .mobile-btn-block .text-icon{
+        width: auto;
+        display: inline;
+    }
+    .b-chat .note, .b-schedule .note, .b-quotation .note, .b-news .note, .b-dashboard .note{
+        text-align: right;
+    }
+    .b-chat .note p, .b-schedule .note p, .b-quotation .note p, .b-news .note p, .b-dashboard .note p{
+        width: 280px;
+        max-width: 100%;
+        display: inline-block;
+    }
+    .b-chat .note br, .b-schedule .note br, .b-quotation .note br, .b-news .note br, .b-dashboard .note br{
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal .modal-lg {
+        width: 1080px;
+    }
 }
