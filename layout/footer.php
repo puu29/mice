@@ -5,9 +5,9 @@
                 <div class="footer-detail">
                     <img class="logo" src="assets/images/logo-white.svg">
                     <div class="social">
-                        <a href="#" target="_blank" class="inner"><i class="m-icon m-icon-white m-icon-fb"></i></a>
-                        <a href="#" target="_blank" class="inner"><i class="m-icon m-icon-white m-icon-tw"></i></a>
-                        <a href="#" target="_blank" class="inner"><i class="m-icon m-icon-white m-icon-yt"></i></a>
+                        <a href="https://web.facebook.com/ThaiMICEConnect/" target="_blank" class="inner"><i class="m-icon m-icon-white m-icon-fb"></i></a>
+                        <a href="https://lin.ee/oWoHC6p" target="_blank" class="inner"><i class="m-icon m-icon-white m-icon-line"></i></a>
+                        <a href="https://www.youtube.com/channel/UCjCZwcGuxCjCMWWDKanglaQ" target="_blank" class="inner"><i class="m-icon m-icon-white m-icon-yt"></i></a>
                     </div>
                 </div>
             </div>
@@ -19,6 +19,8 @@
                             <li><a href="news.php">ข่าวสารจากธุรกิจ</a></li>
                             <li><a href="member-plan.php">วางแผนการจัดงานไมซ์</a></li>
                             <li><a href="calendar.php">ปฎิทินไมซ์</a></li>
+                            <li><a href="article.php">ไมซ์อัพเดท</a></li>
+                            <li><a href="news-promotion.php">โปรโมชั่น</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -26,6 +28,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="about.php">เกี่ยวกับ Thai MICE Connect</a></li>
                             <li><a href="article.php">บทความไมซ์</a></li>
+                            <li><a href="policy.php">นโยบายความเป็นส่วนตัว</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">

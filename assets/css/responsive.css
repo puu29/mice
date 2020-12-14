@@ -2406,6 +2406,19 @@
     .room-card.is-hotel .row:first-child .col-sm-6:nth-child(2) .form-group:first-child {
         padding-right: 0px;
     }
+    .home-news{
+        text-align: center;
+        padding: 60px 40px 50px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: -20px;
+    }
+    .home-news h2{
+        margin-bottom: 8px !important;
+    }
+    .home-news .btn{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 520px){

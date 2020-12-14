@@ -303,9 +303,11 @@
     // grid
     if($('.grid').length > 0)
     {
-        var msnry = new Masonry( '.grid', {
-            itemSelector: '.grid-item'
-        });
+        setTimeout(() => {
+            var msnry = new Masonry( '.grid', {
+                itemSelector: '.grid-item'
+            });
+        }, 200);
     }
 
     // search

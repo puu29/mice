@@ -8,7 +8,7 @@
                     <li class="active"><a href="#">ไทย</a></li>
                 </ul>
                 <ul class="nav navbar-right">
-                    <li><a href="contact.php"><div class="text-icon"><i class="m-icon m-icon-build"></i>เข้าร่วมธุรกิจกับเรา</div></a></li>
+                    <li><a href="member-business-add.php"><div class="text-icon"><i class="m-icon m-icon-build"></i>เข้าร่วมธุรกิจกับเรา</div></a></li>
                     <li><a href="about.php">เกี่ยวกับ Thai MICE Connect</a></li>
                     <li><a href="faq.php">คำถามที่พบบ่อย</a></li>
                 </ul>

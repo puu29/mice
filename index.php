@@ -460,9 +460,22 @@
                     </div>
                 </div>
             </section>
+            <section class="no-padding">
+                <div class="container">
+                    <div class="home-news">
+                        <div class="bg" style="background-image: url('assets/images/home-news-bg.png')"></div>
+                        <div class="text">
+                            <h2 class="no-margin">ข่าวสารจากธุรกิจ</h2>
+                            <p class="no-margin">ติดตามข่าวสารจากธุรกิจแต่ละประเภทเพื่อไม่ให้พลาดข่าวสารล่าสุด</p>
+                            <br/>
+                            <a href="news.php" class="btn btn-sm btn-default btn-more">ดูข่าวสาร</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section>
                 <div class="container">
-                    <h2 class="pull-left no-margin-top">บทความไมซ์</h2>
+                    <h2 class="pull-left no-margin-top">ไมซ์อัพเดท</h2>
                     <a href="article.php" class="pull-right btn btn-default btn-all">ดูทั้งหมด</a>
                     <div class="clearfix"></div>
                     <div class="tab">

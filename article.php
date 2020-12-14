@@ -9,7 +9,7 @@
             <div class="cover">
                 <div class="bg" style="background-image: url('assets/images/cover.png')"></div>
                 <div class="text">
-                    <h2 class="no-margin">บทความไมซ์</h2>
+                    <h2 class="no-margin">ไมซ์อัพเดท</h2>
                 </div>
             </div>
             <section class="news-page">

@@ -60,6 +60,7 @@
                                     </div>
                                     <div class="col-sm-12 text-center">
                                         <div class="form-group">
+                                            <div class="mask">การกด “สมัครสมาชิก” ถือเป็นการเข้าใจและยอมรับใน<a href="policy.php" class="font-link">นโยบายความเป็นส่วนตัว</a>แล้ว</div>
                                             <br/>
                                             <button type="submit" class="btn btn-md btn-blue-linear btn-minwidth">สมัครสมาชิก</button>
                                             <div class="mask">เคยเป็นสมาชิกอยู่แล้ว <a href="login.php" class="font-link">เข้าสู่ระบบ</a></div>

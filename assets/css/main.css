@@ -5334,3 +5334,31 @@ ul.has-padding{
     max-width: 100%;
     height: 280px;
 }
+
+.home-news{
+    width: 100%;
+    position: relative;
+}
+.home-news{
+    padding: 85px 65px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #fff;
+}
+.home-news .bg:after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(33,112,184,1) 0%, rgba(0,55,160,1) 50%);
+    opacity: 0.77;
+}
+.home-news .text{
+    position: relative;
+}
