@@ -112,86 +112,286 @@
                             <div class="col-sm-8">
                                 <div class="tab style-2 ">
                                     <ul class="nav nav-tabs">
-                                        <li class="active"><a href="#tab-info1" aria-controls="tab-info1" role="tab" data-toggle="tab">สถานที่จัดงาน</a></li>
-                                        <li><a href="#tab-info2" aria-controls="tab-info2" role="tab" data-toggle="tab">อาหารและเครื่องดื่ม</a></li>
-                                        <li><a href="#tab-info3" aria-controls="tab-info3" role="tab" data-toggle="tab">สถานที่พัก</a></li>
-                                        <li><a href="#tab-info4" aria-controls="tab-info4" role="tab" data-toggle="tab">โปรโมชั่น</a></li>
+                                        <li class="active"><a href="#tab-info1" aria-controls="tab-info1" role="tab" data-toggle="tab">สถานที่พัก</a></li>
+                                        <li><a href="#tab-info2" aria-controls="tab-info2" role="tab" data-toggle="tab">โปรโมชั่น</a></li>
                                     </ul>
                                     <div class="tab-content no-padding-bottom">
                                         <div role="tabpanel" class="tab-pane active" id="tab-info1">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading has-option">
-                                                    <h3 class="font-semibold no-margin pull-left">ข้อมูลห้องประชุมภายในสถานประกอบการ</h3>
+                                                    <h3 class="font-semibold no-margin pull-left">ข้อมูลโรงแรม</h3>
                                                     <div class="logo pull-right">
                                                         <img src="assets/images/standard1.png">
                                                         <img src="assets/images/standard2.png">
                                                     </div>
                                                 </div>
                                                 <div class="panel-body">
-                                                    <div class="room-card">
-                                                        <img class="img" src="assets/images/room-img1.png">
-                                                        <div class="text">
-                                                            <h3><b>ชื่อห้องประชุม 1</b></h3>
-                                                            <p><b>ขนาดห้องจัดประชุม (ตร.ม.)</b> : 1,500 ตร.ม.</p>
-                                                            <p><b>ชั้นของห้องจัดประชุม</b> : ชั้น 9</p>
-                                                            <p><b>น้ำหนักที่ห้องจัดประชุมรองรับ (กก.)</b> : 4,000 กก.</p>
-                                                            <p><b>ความสูงของเพดาน (ม.)</b> : 1,000 ม.</p>
-                                                            <hr/>
-                                                            <h3><small><b>การจัดรูปแบบห้องประชุม</b></small></h3>
-                                                            <div class="room-table">
-                                                                <div class="tr">
-                                                                    <div class="td"><img src="assets/images/icon-sit1.png"></div>
-                                                                    <div class="td text-overflow">120 ที่นั่ง</div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <p class="font-18 font-semibold mobile-font-16 mobile-no-margin">มาตรฐานโรงแรม</p>
+                                                                <div class="text-icon is-middle">
+                                                                    <i class="m-icon m-icon-star"></i>
+                                                                    <span>3 ดาว</span>
                                                                 </div>
-                                                                <div class="tr">
-                                                                    <div class="td"><img src="assets/images/icon-sit2.png"></div>
-                                                                    <div class="td text-overflow">220 ที่นั่ง</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <p class="font-18 font-semibold mobile-font-16 mobile-no-margin">จำนวนห้องพักทั้งหมด</p>
+                                                                <p>330 ห้อง</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h3 class="font-semibold no-margin pull-left">ข้อมูลจำนวนห้องพักและขนาดห้องพักภายในโรงแรม</h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="room-card is-hotel">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <img class="img" src="assets/images/hotel-room1.png">
                                                                 </div>
-                                                                <div class="tr">
-                                                                    <div class="td"><img src="assets/images/icon-sit3.png"></div>
-                                                                    <div class="td text-overflow">150 ที่นั่ง</div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label>ประเภทห้องพัก</label>
+                                                                    <p>Standard</p>
                                                                 </div>
-                                                                <div class="tr">
-                                                                    <div class="td"><img src="assets/images/icon-sit4.png"></div>
-                                                                    <div class="td text-overflow">80 ที่นั่ง</div>
+                                                                <div class="form-group">
+                                                                    <label>พื้นที่ห้อง (ตร.ม.)</label>
+                                                                    <p>23.8 ตร.ม.</p>
                                                                 </div>
-                                                                <div class="tr">
-                                                                    <div class="td"><img src="assets/images/icon-sit5.png"></div>
-                                                                    <div class="td text-overflow">30 ที่นั่ง</div>
+                                                                <div class="form-group">
+                                                                    <label>จำนวนผู้เข้าพักสูงสุด/ห้อง</label>
+                                                                    <p>4 ท่าน</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <label>สิ่งอำนวยความสะดวกในห้องพัก</label>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ระเบียง</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>เครื่องปรับอากาศ</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>วิวทะเล</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>วิวเมือง</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>วิวภูเขา</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ห้องน้ำในตัว</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>โทรทัศน์จอแบน</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ตู้นิรภัย</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ฟรีอินเตอร์เน็ตไร้สาย (Wifi)</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="room-card">
-                                                        <img class="img" src="assets/images/room-img2.png">
-                                                        <div class="text">
-                                                            <h3><b>ชื่อห้องประชุม 1</b></h3>
-                                                            <p><b>ขนาดห้องจัดประชุม (ตร.ม.)</b> : 1,500 ตร.ม.</p>
-                                                            <p><b>ชั้นของห้องจัดประชุม</b> : ชั้น 9</p>
-                                                            <p><b>น้ำหนักที่ห้องจัดประชุมรองรับ (กก.)</b> : 4,000 กก.</p>
-                                                            <p><b>ความสูงของเพดาน (ม.)</b> : 1,000 ม.</p>
-                                                            <hr/>
-                                                            <h3><small><b>การจัดรูปแบบห้องประชุม</b></small></h3>
-                                                            <div class="room-table">
-                                                                <div class="tr">
-                                                                    <div class="td"><img src="assets/images/icon-sit1.png"></div>
-                                                                    <div class="td text-overflow">120 ที่นั่ง</div>
+                                                    <div class="room-card is-hotel">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <img class="img" src="assets/images/hotel-room2.png">
                                                                 </div>
-                                                                <div class="tr">
-                                                                    <div class="td"><img src="assets/images/icon-sit2.png"></div>
-                                                                    <div class="td text-overflow">220 ที่นั่ง</div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label>ประเภทห้องพัก</label>
+                                                                    <p>Deluxe</p>
                                                                 </div>
-                                                                <div class="tr">
-                                                                    <div class="td"><img src="assets/images/icon-sit3.png"></div>
-                                                                    <div class="td text-overflow">150 ที่นั่ง</div>
+                                                                <div class="form-group">
+                                                                    <label>พื้นที่ห้อง (ตร.ม.)</label>
+                                                                    <p>23.8 ตร.ม.</p>
                                                                 </div>
-                                                                <div class="tr">
-                                                                    <div class="td"><img src="assets/images/icon-sit4.png"></div>
-                                                                    <div class="td text-overflow">80 ที่นั่ง</div>
+                                                                <div class="form-group">
+                                                                    <label>จำนวนผู้เข้าพักสูงสุด/ห้อง</label>
+                                                                    <p>4 ท่าน</p>
                                                                 </div>
-                                                                <div class="tr">
-                                                                    <div class="td"><img src="assets/images/icon-sit5.png"></div>
-                                                                    <div class="td text-overflow">30 ที่นั่ง</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <label>สิ่งอำนวยความสะดวกในห้องพัก</label>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ระเบียง</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>เครื่องปรับอากาศ</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>วิวทะเล</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>วิวเมือง</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>วิวภูเขา</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ห้องน้ำในตัว</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>โทรทัศน์จอแบน</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ตู้นิรภัย</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ฟรีอินเตอร์เน็ตไร้สาย (Wifi)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="room-card is-hotel">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <img class="img" src="assets/images/hotel-room3.png">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label>ประเภทห้องพัก</label>
+                                                                    <p>Superior</p>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label>พื้นที่ห้อง (ตร.ม.)</label>
+                                                                    <p>30 ตร.ม.</p>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label>จำนวนผู้เข้าพักสูงสุด/ห้อง</label>
+                                                                    <p>5-6 ท่าน</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <label>สิ่งอำนวยความสะดวกในห้องพัก</label>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ระเบียง</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>เครื่องปรับอากาศ</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>วิวทะเล</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>วิวเมือง</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>วิวภูเขา</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ห้องน้ำในตัว</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>โทรทัศน์จอแบน</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ตู้นิรภัย</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ฟรีอินเตอร์เน็ตไร้สาย (Wifi)</span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -206,264 +406,231 @@
                                             </div>
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <h3 class="font-semibold no-margin">สิ่งอำนวยความสะดวกภายในห้องประชุม</h3>
+                                                    <h3 class="font-semibold no-margin pull-left">สิ่งอำนวยความสะดวกและบริการภายในสถานประกอบการ</h3>
                                                 </div>
                                                 <div class="panel-body">
                                                     <div class="form-group">
                                                         <div class="row">
-                                                            <div class="col-sm-4 col-xs-6">
-                                                                <p class="no-margin"><big>จำนวนโต๊ะ</big></p>
-                                                                <p>120 ตัว</p>
-                                                            </div>
-                                                            <div class="col-sm-4 col-xs-6">
-                                                                <p class="no-margin"><big>จำนวนเก้าอี้ </big></p>
-                                                                <p>300 ตัว</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-sm-4 col-xs-6">
-                                                                <p class="no-margin"><big>จำนวนโซฟา</big></p>
-                                                                <p>1 ตัว</p>
-                                                            </div>
-                                                            <div class="col-sm-4 col-xs-6">
-                                                                <p></p>
+                                                            <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-wifi"></i>
-                                                                    <span>Wifi ในห้องประชุม</span>
+                                                                    <i class="m-icon m-icon-operator"></i>
+                                                                    <span>แผนกต้อนรับ 24 ชม.</span>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-sm-12">
-                                                                <p class="no-margin"><big>ระบบเสียง</big></p>
+                                                            <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-sound1"></i>
-                                                                    <span>ไมโครโฟน (แบบขาตั้ง แบบตั้งโต๊ะ และไร้สาย)</span>
-                                                                </div>
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-sound2"></i>
-                                                                    <span>ศูนย์กลางควบคุมระบบเสียง</span>
+                                                                    <i class="m-icon m-icon-room-service"></i>
+                                                                    <span>รูมเซอร์วิส 24 ชม.</span>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-sm-12">
-                                                                <p class="no-margin"><big>ระบบภาพ</big></p>
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-photo1"></i>
-                                                                    <span>เครื่องฉายสไลด์และเครื่องฉายวิดีโอ</span>
-                                                                </div>
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-photo2"></i>
-                                                                    <span>จอภาพ</span>
-                                                                </div>
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-photo3"></i>
-                                                                    <span>จอทัชกรีน</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                    <h3 class="font-semibold no-margin">สิ่งอำนวยความสะดวกสถานที่ </h3>
-                                                </div>
-                                                <div class="panel-body mobile-list">
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-sm-4">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-car"></i>
-                                                                    <span>บริการรถรับส่ง</span>
-                                                                </div>
-                                                                <br/><br/>
-                                                            </div>
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
                                                                     <i class="m-icon m-icon-restaurant"></i>
                                                                     <span>ร้านอาหาร</span>
                                                                 </div>
-                                                                <br/><br/>
                                                             </div>
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
                                                                     <i class="m-icon m-icon-drink"></i>
                                                                     <span>ร้านกาแฟ</span>
                                                                 </div>
-                                                                <br/><br/>
                                                             </div>
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-info"></i>
+                                                                    <span>จุดแนะนำแหล่งท่องเที่ยว</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
                                                                     <i class="m-icon m-icon-bar"></i>
                                                                     <span>บาร์</span>
                                                                 </div>
-                                                                <br/><br/>
                                                             </div>
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
                                                                     <i class="m-icon m-icon-club"></i>
                                                                     <span>ไนท์คลับ</span>
                                                                 </div>
-                                                                <br/><br/>
                                                             </div>
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-park"></i>
-                                                                    <span>บริการจอดรถ</span>
+                                                                    <i class="m-icon m-icon-laundry"></i>
+                                                                    <span>บริการซักรีด</span>
                                                                 </div>
-                                                                <br/><br/>
                                                             </div>
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-service"></i>
-                                                                    <span>จุดแนะนำผู้เข้ารับบริการ</span>
+                                                                    <i class="m-icon m-icon-shiping"></i>
+                                                                    <span>บริการส่งไปรษณีย์</span>
                                                                 </div>
-                                                                <br/><br/>
                                                             </div>
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-change"></i>
-                                                                    <span>บริการแลกเปลี่ยนเงินตราต่างประเทศ</span>
+                                                                    <i class="m-icon m-icon-baby-sister"></i>
+                                                                    <span>บริการพี่เลี้ยงเด็ก</span>
                                                                 </div>
-                                                                <br/><br/>
                                                             </div>
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-disabled"></i>
-                                                                    <span>ส่งอำนวยความสะดวกสำหรับผู้พิการ</span>
+                                                                    <i class="m-icon m-icon-wifi"></i>
+                                                                    <span>Wifi ในห้องพัก</span>
                                                                 </div>
-                                                                <br/><br/>
                                                             </div>
-                                                            <div class="col-sm-4">
+                                                            <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
                                                                     <i class="m-icon m-icon-wifi"></i>
                                                                     <span>Wifi ส่วนกลาง</span>
                                                                 </div>
-                                                                <br/><br/>
-                                                            </div>
-                                                            <div class="col-sm-4">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-food"></i>
-                                                                    <span>บริการอาหารว่างและเครื่องดื่ม</span>
-                                                                </div>
-                                                                <br/><br/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-sm-12">
-                                                                <p><big>สิ่งอำนวยความสะดวกหรือบริการอื่นๆ</big></p>
-                                                                <p>มีบริการห้องนั่งเล่นสำหรับเด็กเล็ก</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane" id="tab-info2">
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                    <h3 class="font-semibold no-margin">ข้อมูลเฉพาะด้านธุรกิจบริการอาหารและเครื่องดื่ม </h3>
-                                                </div>
-                                                <div class="panel-body mobile-list">
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-sm-12">
-                                                                <p class="no-margin"><b>ระดับราคาอาหาร/คน</b></p>
-                                                                <p class="font-blue"><big>51 - 100</big></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-sm-12">
-                                                                <p class="no-margin"><b>ความสามารถในการรองรับ (ที่)</b></p>
-                                                                <p class="font-blue"><big>151 - 200</big></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <hr/>
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-beer"></i>
-                                                                    <span>จำหน่ายเครื่องดื่มมึนเมา</span>
-                                                                </div>
-                                                                <br/><br/>
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-reserved"></i>
-                                                                    <span>รับจองที่นั่ง</span>
+                                                                    <i class="m-icon m-icon-exchange"></i>
+                                                                    <span>บริการแลกเปลี่ยนเงินตราต่างประเทศ</span>
                                                                 </div>
-                                                                <br/><br/>
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-user-group"></i>
-                                                                    <span>รองรับการใช้บริการแบบกลุ่ม</span>
+                                                                    <i class="m-icon m-icon-victim"></i>
+                                                                    <span>สิ่งอำนวยความสะดวกสำหรับผู้พิการ</span>
                                                                 </div>
-                                                                <br/><br/>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-credit"></i>
-                                                                    <span>รองรับการจ่ายเงินด้วยบัตรเครดิต</span>
-                                                                </div>
-                                                                <br/><br/>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-wifi"></i>
-                                                                    <span>มีบริการ wifi</span>
-                                                                </div>
-                                                                <br/><br/>
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
                                                                     <i class="m-icon m-icon-park"></i>
-                                                                    <span>มีบริการที่จอดรถ</span>
+                                                                    <span>บริการจอดรถ</span>
                                                                 </div>
-                                                                <br/><br/>
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-road"></i>
-                                                                    <span>ที่จอดรถริมถนน</span>
+                                                                    <i class="m-icon m-icon-smoke"></i>
+                                                                    <span>พื้นที่สูบบุหรี่</span>
                                                                 </div>
-                                                                <br/><br/>
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-sea"></i>
+                                                                    <i class="m-icon m-icon-atm"></i>
+                                                                    <span>เอทีเอ็มในสถานที่</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-business-center"></i>
+                                                                    <span>ศูนย์ธุรกิจ</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-business-level"></i>
+                                                                    <span>ชั้นสำหรับผู้บริหาร</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-snack"></i>
+                                                                    <span>บริการอาหารว่าง</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-security"></i>
+                                                                    <span>มีระบบการจัดการด้านการรักษาความปลอดภัย</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-limousine"></i>
+                                                                    <span>บริการรถลีมูซีน</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-doctor"></i>
+                                                                    <span>บริการด้านการแพทย์</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h3 class="font-semibold no-margin pull-left">ข้อมูลสิ่งนันทนาการของสถานประกอบการ</h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ฟิตเนส</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>สระว่ายน้ำ</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ชายหาดส่วนตัว</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>กีฬาทางน้ำ</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>สโมสรสำหรับเด็ก</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>สปา</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ร้านเสริมสวย</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>จักรยานให้เช่า</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>สนามเทนนิส</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>ห้องอบไอน้ำ ซาวน่า</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
+                                                                    <span>สวนสำหรับพักผ่อน</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="text-icon for-list is-middle">
+                                                                    <i class="m-icon m-icon-check"></i>
                                                                     <span>ติดชายหาด</span>
                                                                 </div>
-                                                                <br/><br/>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-catering"></i>
-                                                                    <span>มีบริการ Catering</span>
-                                                                </div>
-                                                                <br/><br/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-sm-12">
-                                                                <p><b>บริการอื่นๆ</b></p>
-                                                                <p>บริการสั่งทำอาหารสำหรับมือพิเศษหรือจัดงานเลี้ยงได้ตามที่ต้องการ</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -471,66 +638,13 @@
                                             </div>
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <h3 class="font-semibold no-margin">ประเภทอาหารที่มีให้บริการ</h3>
-                                                </div>
-                                                <div class="panel-body">
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-food-type"></i>
-                                                                    <span>บุฟเฟ่ต์</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-food-type"></i>
-                                                                    <span>ก๋วยเตี๋ยว</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-food-type"></i>
-                                                                    <span>อาหารไทย</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-food-type"></i>
-                                                                    <span>อาหารเหนือ</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-food-type"></i>
-                                                                    <span>อาหารใต้</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-food-type"></i>
-                                                                    <span>อาหารจีน</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="text-icon for-list is-middle">
-                                                                    <i class="m-icon m-icon-food-type"></i>
-                                                                    <span>อาหารมุสลิม/อิสลาม</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                    <h3 class="font-semibold no-margin">การรองรับการเดินทางและที่จอดรถ</h3>
+                                                    <h3 class="font-semibold no-margin pull-left">การรองรับการเดินทางและที่จอดรถ</h3>
                                                 </div>
                                                 <div class="panel-body">
                                                     <div class="form-group">
                                                         <div class="row">
                                                             <div class="col-sm-12">
-                                                                <p><b>รองรับการเดินทางด้วย</b></p>
+                                                                <p class="font-semibold no-margin">รองรับการเดินทางด้วย</p>
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="text-icon for-list is-middle">
@@ -574,30 +688,67 @@
                                                         <div class="row">
                                                             <div class="col-sm-3 col-xs-6">
                                                                 <p class="no-margin">รถยนต์ (คัน)</p>
-                                                                <p class="font-blue"><big>250</big></p>
+                                                                <p class="font-blue font-bold"><big>250</big></p>
                                                             </div>
                                                             <div class="col-sm-3 col-xs-6">
                                                                 <p class="no-margin">รถบัส (คัน)</p>
-                                                                <p class="font-blue"><big>50</big></p>
+                                                                <p class="font-blue font-bold"><big>50</big></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane" id="tab-info3">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <h3 class="font-semibold no-margin">สถานที่พัก</h3>
+                                                    <h3 class="font-semibold no-margin pull-left">ข้อมูลมาตรฐาน/รางวัลที่ได้รับ</h3>
                                                 </div>
-                                                <div class="panel-body">
-                                                    <div class="form-group">
-                                                        -
+                                                <div class="panel-body mobile-list">
+                                                    <div class="border-box">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold no-margin">มาตรฐานที่ได้รับ (ภาษาไทย) </label>
+                                                            <p>ISO20101</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="font-semibold no-margin">มาตรฐานที่ได้รับ (ภาษาอังกฤษ)</label>
+                                                            <p>ISO20101</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="font-semibold no-margin">คำอธิบายมาตราฐานรางวัล (ภาษาไทย)</label>
+                                                            <p>Event Sustainability Management Systems</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="font-semibold no-margin">คำอธิบายมาตราฐานรางวัล (ภาษาอังกฤษ)</label>
+                                                            <p>Event Sustainability Management Systems</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="alert alert-info alert-custom">
+                                                                <div class="text-icon for-list no-margin">
+                                                                    <i class="m-icon m-icon-check-blue"></i>
+                                                                    <span>เป็นมาตรฐาน/รางวัล ที่เกี่ยวข้องกับการพัฒนาอย่างยั่งยืน (Sustainable related reward)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="font-semibold no-margin">หน่วยงานที่ให้การรับรอง (ภาษาไทย)</label>
+                                                            <p>บริษัท จำกัด</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="font-semibold no-margin">หน่วยงานที่ให้การรับรอง (ภาษาอังกฤษ)</label>
+                                                            <p>Lorem Ipsum Company</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="font-semibold no-margin">ปีที่ได้รับการรับรองมาตรฐาน</label>
+                                                            <p>2019</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="font-semibold no-margin">ปีที่ได้รับการรับรองมาตรฐาน</label>
+                                                            <p>2020</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane" id="tab-info4">
+                                        <div role="tabpanel" class="tab-pane" id="tab-info2">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
                                                     <h3 class="font-semibold no-margin">โปรโมชั่น</h3>

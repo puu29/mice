@@ -2419,6 +2419,10 @@
     .home-news .btn{
         margin-top: 20px;
     }
+    .panel .panel-heading .logo img{
+        height: 25px;
+        margin-left: 5px;
+    }
 }
 
 @media (max-width: 520px){

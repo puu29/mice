@@ -657,6 +657,9 @@
                         scrollTop: position.top
                     }, 'fast');
                 });
+                
+                // mockup focus month 11
+                $(".datepicker.inline").datepicker("setDate", '2020-11-01');
 
                 $('.article-box').magnificPopup({
                     delegate: 'a',

@@ -144,7 +144,6 @@
                 </div>
             </section>
         </div>
-        <?php include "layout/footer.php" ?>
 
         <div class="modal fade" id="modal-quotation" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-md" role="document">
@@ -157,16 +156,12 @@
                     <div class="modal-body pd-40 no-padding-top">
                         <table class="table">
                             <tr>
-                                <td>ประเภทการจัดงาน</td>
-                                <td>งานสัมมนา</td>
-                            </tr>
-                            <tr>
                                 <td>จำนวนคนที่เข้าร่วม</td>
                                 <td>200 คน</td>
                             </tr>
                             <tr>
-                                <td>สถานที่จัดงาน</td>
-                                <td>กรุงเทพมหานคร</td>
+                                <td>งบประมาณ</td>
+                                <td>100,000</td>
                             </tr>
                             <tr>
                                 <td>วันที่เริ่มงาน</td>
@@ -180,10 +175,6 @@
                                 <td>เวลา</td>
                                 <td>10.00 - 19.00</td>
                             </tr>
-                            <tr>
-                                <td>งบประมาณ</td>
-                                <td>100,000</td>
-                            </tr>
                         </table>
                         <h3>รายละเอียดอื่นๆ เพิ่มเติม</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tellus elementum sagittis vitae et leo duis ut. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Nec nam aliquam sem </p>
@@ -192,5 +183,6 @@
             </div>
         </div>
 
+        <?php include "layout/footer.php" ?>
     </body>
 </html>

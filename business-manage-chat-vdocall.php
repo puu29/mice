@@ -115,7 +115,6 @@
                 </div>
             </section>
         </div>
-        <?php include "layout/footer.php" ?>
 
         <div class="modal fade" id="modal-quotation" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -127,46 +126,23 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="font-medium">ประเภทการจัดงาน</label>
-                                        <div class="select fullwidth">
-                                            <select class="form-control">
-                                                <option value="">เลือกประเภทการจัดงาน</option>
-                                                <option value="1">ประเภท 1</option>
-                                                <option value="2">ประเภท 2</option>
-                                                <option value="3">ประเภท 3</option>
-                                            </select>
-                                            <span class="m-icon m-icon-dropdown"></span>
-                                        </div>
-                                        <p class="required">กรุณาเลือกข้อมูล</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label class="font-medium">จำนวนคนที่เข้าร่วม</label>
+                                        <label class="font-medium">จำนวนคนที่เข้าร่วม <span class="font-red">*</span></label>
                                         <input type="text" class="form-control" placeholder="ระบุจำนวนคน">
                                         <p class="required">กรุณากรอกข้อมูล</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="font-medium">สถานที่จัดงาน</label>
-                                        <div class="select fullwidth">
-                                            <select class="form-control">
-                                                <option value="">เลือกจังหวัด</option>
-                                                <option value="1">จังหวัด 1</option>
-                                                <option value="2">จังหวัด 2</option>
-                                                <option value="3">จังหวัด 3</option>
-                                            </select>
-                                            <span class="m-icon m-icon-dropdown"></span>
-                                        </div>
-                                        <p class="required">กรุณาเลือกข้อมูล</p>
+                                        <label class="font-medium">งบประมาณ (หากต้องการระบุ)</label>
+                                        <input type="text" class="form-control" placeholder="ระบุงบประมาณในการจัดงาน">
+                                        <p class="required">กรุณากรอกข้อมูล</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="font-medium">วันที่เริ่มงาน</label>
+                                        <label class="font-medium">วันที่เริ่มงาน <span class="font-red">*</span></label>
                                         <div class="input-group is-calendar">
                                             <input type="text" class="form-control datepicker2" placeholder="DD/MM/YYYY">
                                             <span class="input-group-addon bg-custom b-0"><i class="m-icon m-icon-calendar"></i></span>
@@ -176,7 +152,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="font-medium">วันที่สิ้นสุดงาน</label>
+                                        <label class="font-medium">วันที่สิ้นสุดงาน <span class="font-red">*</span></label>
                                         <div class="input-group is-calendar">
                                             <input type="text" class="form-control datepicker2" placeholder="DD/MM/YYYY">
                                             <span class="input-group-addon bg-custom b-0"><i class="m-icon m-icon-calendar"></i></span>
@@ -186,9 +162,11 @@
                                 </div>
                             </div>
                             <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="font-medium">เวลา <span class="font-red">*</span></label>
+                                </div>
                                 <div class="col-sm-3 col-xs-6">
                                     <div class="form-group">
-                                        <label class="font-medium">เวลา</label>
                                         <div class="select fullwidth">
                                             <select class="form-control">
                                                 <option value="">10.00</option>
@@ -200,7 +178,6 @@
                                 </div>
                                 <div class="col-sm-3 col-xs-6">
                                     <div class="form-group">
-                                        <label class="font-medium"><br/></label>
                                         <div class="select fullwidth">
                                             <select class="form-control">
                                                 <option value="">19.00</option>
@@ -210,24 +187,52 @@
                                         <p class="required">กรุณาเลือกข้อมูล</p>
                                     </div>
                                 </div>
-                                <div class="ckearfix hidden-desktop"></div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label class="font-medium">งบประมาณ</label>
-                                        <input type="text" class="form-control" placeholder="ระบุงบประมาณในการจัดงาน">
-                                        <p class="required">กรุณากรอกข้อมูล</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group mobile-no-margin">
+                                        <label class="font-medium fullwidth">ไฟล์อัพโหลด (สามารถอัพโหลดได้สูงสุด 5 ไฟล์) <span class="font-red">*</span></label>
+                                        <div class="upload-file">
+                                            <div class="input">
+                                                <input type="file" accept=".pdf" multiple maxlength="5" maxsize="25">
+                                                <button type="button" class="btn btn-sm btn-orange">อัพโหลด์ไฟล์</button>
+                                                <p class="no-margin">PDF Max file : 25 MB</p>
+                                            </div>
+                                            <div class="text"></div>
+                                        </div>
+                                        <p class="required">กรุณาอัพโหลดไฟล์</p>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="font-medium">ราคาของใบเสนอราคา <span class="font-red">*</span></label>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" value="10,000">
+                                        <p class="required">กรุณาเลือกข้อมูล</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <span class="symbol-range">-</span>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" value="50,000">
+                                        <p class="required">กรุณาเลือกข้อมูล</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label class="font-medium">รายละเอียดอื่นๆ เพิ่มเติม</label>
-                                        <textarea class="form-control" rows="5" placeholder="ระบุรายละเอียดที่ท่านต้องการเพื่อให้ผู้ประกอบการสามารถออกใบเสนอราคาได้อย่างครบถ้วน"></textarea>
+                                        <label class="font-medium">Note</label>
+                                        <textarea class="form-control" rows="5" placeholder="พิมพ์ข้อความที่ต้องการบอกเพิ่มเติม"></textarea>
                                         <p class="required">กรุณากรอกข้อมูล</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="btn-box text-center">
-                                <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation-success"  class="btn btn-lg btn-blue-linear font-medium">ขอใบเสนอราคา</button>
+                                <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation-success"  class="btn btn-lg btn-blue-linear font-medium">ส่งใบเสนอราคา</button>
                             </div>
                             <br/>
                         </form>
@@ -278,6 +283,7 @@
             </div>
         </div>
 
+        <?php include "layout/footer.php" ?>
         <script>
             function show_chat()
             {

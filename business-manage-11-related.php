@@ -96,7 +96,7 @@
                                             <h2 class="no-margin font-semibold">Villa Hotel and Resort</h2>
                                             <p class="no-margin">ปทุมวัน, กรุงเทพมหานคร</p>
                                             <br/>
-                                            <a href="business-manage-7-view.php" class="font-link font-blue" target="_blank">ดูตัวอย่างการแสดงโปรโฟล์ธุรกิจ</a>
+                                            <a href="business-manage-11-view.php" class="font-link font-blue" target="_blank">ดูตัวอย่างการแสดงโปรโฟล์ธุรกิจ</a>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
@@ -131,7 +131,7 @@
                                             <div class="col-md-8 col-sm-12">
                                                 <div class="tab style-2 ">
                                                     <ul class="nav nav-tabs">
-                                                        <li class="active"><a href="#tab-info1" aria-controls="tab-info1" role="tab" data-toggle="tab">ขายปลีก/แหล่งช้อปปิ้ง</a></li>
+                                                        <li class="active"><a href="#tab-info1" aria-controls="tab-info1" role="tab" data-toggle="tab">หน่วยงานที่เกี่ยวข้อง (ภาครัฐ/สมาคม)</a></li>
                                                     </ul>
                                                     <div class="tab-content no-padding-bottom">
                                                         <div role="tabpanel" class="tab-pane active" id="tab-info1">

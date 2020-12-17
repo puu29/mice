@@ -233,7 +233,6 @@
                 </div>
             </section>
         </div>
-        <?php include "layout/footer.php" ?>
 
         <div class="modal fade" id="modal-cancel" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -274,6 +273,8 @@
                 </div>
             </div>
         </div>
+        
+        <?php include "layout/footer.php" ?>
         <script>
             (function(){
                 $(window).resize(function(){

@@ -40,7 +40,6 @@
                 </div>
             </section>
         </div>
-        <?php include "layout/footer.php" ?>
 
         <div class="modal fade" id="modal-redeem" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -64,5 +63,6 @@
             </div>
         </div>
 
+        <?php include "layout/footer.php" ?>
     </body>
 </html>

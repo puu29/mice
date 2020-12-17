@@ -96,7 +96,7 @@
                                             <h2 class="no-margin font-semibold">Villa Hotel and Resort</h2>
                                             <p class="no-margin">ปทุมวัน, กรุงเทพมหานคร</p>
                                             <br/>
-                                            <a href="search-detail.php" class="font-link font-blue" target="_blank">ดูตัวอย่างการแสดงโปรโฟล์ธุรกิจ</a>
+                                            <a href="business-manage-5-view.php" class="font-link font-blue" target="_blank">ดูตัวอย่างการแสดงโปรโฟล์ธุรกิจ</a>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
@@ -456,25 +456,50 @@
                         <h3 class="no-margin font-semibold">ข้อมูลมาตรฐาน/รางวัลที่ได้รับ</h3>
                     </div>
                     <div class="modal-body pd-40">
+                        <script>
+                            function select_award(e)
+                            {
+                                var value = $(e).val();
+                                $('#award-other').hide();
+                                
+                                if(value == 'other') {
+                                    $('#award-other').show();
+                                }
+                            }
+                        </script>
                         <form action="?award=true" method="post">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>มาตรฐานที่ได้รับ ลำดับที่ 1 (ภาษาไทย)</label>
+                                        <label>มาตรฐานที่ได้รับ ลำดับที่ 1</label>
                                         <div class="select fullwidth">
-                                            <select class="form-control">
+                                            <select class="form-control" onchange="select_award(this)">
                                                 <option value="">เลือกหรือระบุมาตรฐานที่ได้รับ</option>
+                                                <option value="">มาตรฐาน 1 / Standard 1</option>
+                                                <option value="">มาตรฐาน 2 / Standard 2</option>
+                                                <option value="other">มาตรฐานอื่นๆ / Other</option>
                                             </select>
                                             <span class="m-icon m-icon-dropdown"></span>
                                         </div>
                                         <p class="required">กรุณาเลือกข้อมูล</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>มาตรฐานที่ได้รับ ลำดับที่ 1 (ภาษาอังกฤษ)</label>
-                                        <input type="text" class="form-control">
-                                        <p class="required">กรุณากรอกข้อมูล</p>
+                                <div class="col-sm-12" id="award-other" style="display: none;">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>มาตรฐานอื่นๆ (ภาษาไทย)</label>
+                                                <input type="text" class="form-control" placeholder="ระบุมาตรฐานอื่นๆ (ภาษาไทย)">
+                                                <p class="required">กรุณากรอกข้อมูล</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>มาตรฐานอื่นๆ (ภาษาอังกฤษ)</label>
+                                                <input type="text" class="form-control" placeholder="ระบุมาตรฐานอื่นๆ (ภาษาอังกฤษ)">
+                                                <p class="required">กรุณากรอกข้อมูล</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">

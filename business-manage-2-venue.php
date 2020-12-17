@@ -96,7 +96,7 @@
                                             <h2 class="no-margin font-semibold">Villa Hotel and Resort</h2>
                                             <p class="no-margin">ปทุมวัน, กรุงเทพมหานคร</p>
                                             <br/>
-                                            <a href="search-detail.php" class="font-link font-blue" target="_blank">ดูตัวอย่างการแสดงโปรโฟล์ธุรกิจ</a>
+                                            <a href="business-manage-2-view.php" class="font-link font-blue" target="_blank">ดูตัวอย่างการแสดงโปรโฟล์ธุรกิจ</a>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
@@ -2493,55 +2493,55 @@
                                         <label class="font-semibold">ระดับราคาอาหาร (คน)</label>
                                         <div class="radio-select is-orange">
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price1">
+                                                <input type="radio" name="price" id="mf-price1">
                                                 <label for="mf-price1">0 - 100</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price2">
+                                                <input type="radio" name="price" id="mf-price2">
                                                 <label for="mf-price2">101 - 250</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price3">
+                                                <input type="radio" name="price" id="mf-price3">
                                                 <label for="mf-price3">251 - 500</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price4">
+                                                <input type="radio" name="price" id="mf-price4">
                                                 <label for="mf-price4">501 - 1,000</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price5">
+                                                <input type="radio" name="price" id="mf-price5">
                                                 <label for="mf-price5">1,001 - 1,500</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price6">
+                                                <input type="radio" name="price" id="mf-price6">
                                                 <label for="mf-price6">1,501 - 2,000</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price7">
+                                                <input type="radio" name="price" id="mf-price7">
                                                 <label for="mf-price7">2,001 - 2,500</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price8">
+                                                <input type="radio" name="price" id="mf-price8">
                                                 <label for="mf-price8">2,501 - 3,000</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price9">
+                                                <input type="radio" name="price" id="mf-price9">
                                                 <label for="mf-price9">3,001 - 3,500</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price10">
+                                                <input type="radio" name="price" id="mf-price10">
                                                 <label for="mf-price10">3,501 - 4,000</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price11">
+                                                <input type="radio" name="price" id="mf-price11">
                                                 <label for="mf-price11">4,001 - 4,500</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price12">
+                                                <input type="radio" name="price" id="mf-price12">
                                                 <label for="mf-price12">4,501 - 5,000</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-price13">
+                                                <input type="radio" name="price" id="mf-price13">
                                                 <label for="mf-price13">5,000 ขึ้นไป</label>
                                             </div>
                                         </div>
@@ -2553,31 +2553,31 @@
                                         <label class="font-semibold">ความสามารถในการรองรับ (ที่)</label>
                                         <div class="radio-select is-orange">
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-sit1">
+                                                <input type="radio" name="sit" id="mf-sit1">
                                                 <label for="mf-sit1">0 - 50</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-sit2">
+                                                <input type="radio" name="sit" id="mf-sit2">
                                                 <label for="mf-sit2">51 - 100</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-sit3">
+                                                <input type="radio" name="sit" id="mf-sit3">
                                                 <label for="mf-sit3">101 - 150</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-sit4">
+                                                <input type="radio" name="sit" id="mf-sit4">
                                                 <label for="mf-sit4">151 - 200</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-sit5">
+                                                <input type="radio" name="sit" id="mf-sit5">
                                                 <label for="mf-sit5">201 - 300</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-sit6">
+                                                <input type="radio" name="sit" id="mf-sit6">
                                                 <label for="mf-sit6">301 - 500</label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="time" id="mf-sit7">
+                                                <input type="radio" name="sit" id="mf-sit7">
                                                 <label for="mf-sit7">500 ขึ้นไป</label>
                                             </div>
                                         </div>
@@ -2776,52 +2776,66 @@
                         <h3 class="no-margin font-semibold">การรองรับการเดินทางและที่จอดรถ</h3>
                     </div>
                     <div class="modal-body pd-40">
+                        <script>
+                            function select_car()
+                            {
+                                $('.input-mp-car').hide();
+                                $('#mp-car input').each(function(){
+                                    var checked = $(this).prop('checked');
+                                    var id = $(this).attr('id');
+                                    if(checked)
+                                    {
+                                        $('.input-mp-car[data-id="'+id+'"]').show();
+                                    }
+                                });
+                            }
+                        </script>
                         <form action="?food3=true&location4=true&stay5=true" method="post">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label class="font-semibold">รองรับการเดินทางด้วย</label>
-                                        <div class="row">
+                                        <div class="row " id="mp-car">
                                             <div class="col-sm-6">
                                                 <div class="checkbox">
-                                                    <input type="checkbox" id="mp-car1">
+                                                    <input type="checkbox" id="mp-car1" onclick="select_car()">
                                                     <label for="mp-car1">รถยนต์ส่วนตัว</label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="checkbox">
-                                                    <input type="checkbox" id="mp-car2">
+                                                    <input type="checkbox" id="mp-car2" onclick="select_car()">
                                                     <label for="mp-car2">รถบัส</label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="checkbox">
-                                                    <input type="checkbox" id="mp-car3">
+                                                    <input type="checkbox" id="mp-car3" onclick="select_car()">
                                                     <label for="mp-car3">รถไฟ</label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="checkbox">
-                                                    <input type="checkbox" id="mp-car4">
+                                                    <input type="checkbox" id="mp-car4" onclick="select_car()">
                                                     <label for="mp-car4">เครื่องบิน</label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="checkbox">
-                                                    <input type="checkbox" id="mp-car5">
+                                                    <input type="checkbox" id="mp-car5" onclick="select_car()">
                                                     <label for="mp-car5">รถไฟฟ้าบนดิน BTS</label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="checkbox">
-                                                    <input type="checkbox" id="mp-car6">
+                                                    <input type="checkbox" id="mp-car6" onclick="select_car()">
                                                     <label for="mp-car6">รถไฟฟ้าใต้ดิน MRT</label>
                                                 </div>
                                             </div>
                                             <div class="clearfix"></div>
                                             <div class="col-sm-6">
                                                 <div class="checkbox">
-                                                    <input type="checkbox" id="mp-car10">
+                                                    <input type="checkbox" id="mp-car7">
                                                     <label for="mp-car10">
                                                         <input type="text" class="form-control border-under no-padding" placeholder="การเดินทางอื่นๆ">
                                                     </label>
@@ -2831,36 +2845,22 @@
                                         <p class="required">กรุณาเลือกข้อมูล</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label class="font-semibold" >จำนวนที่จอดรถยนต์ (คัน)</label>
-                                        <input type="text" class="form-control" data-mask="0000">
-                                        <p class="required">กรุณากรอกข้อมูล</p>
-                                    </div>
-                                    <div class="form-group mt-5">
-                                        <div class="radio-select is-blue is-round">
-                                            <div class="radio">
-                                                <input type="radio" name="time" id="mp-plus1">
-                                                <label for="mp-plus1">+ 10</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input type="radio" name="time" id="mp-plus2">
-                                                <label for="mp-plus2">+ 50</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input type="radio" name="time" id="mp-plus3">
-                                                <label for="mp-plus3">+ 100</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input type="radio" name="time" id="mp-plus4">
-                                                <label for="mp-plus4">+ 200</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input type="radio" name="time" id="mp-plus5">
-                                                <label for="mp-plus5">+ 500</label>
+                                <div class="col-sm-12" >
+                                    <div class="row">
+                                        <div class="col-sm-6 input-mp-car" data-id="mp-car1" style="display: none;">
+                                            <div class="form-group">
+                                                <label class="font-semibold">จำนวนที่จอดรถยนต์ส่วนตัว (คัน)</label>
+                                                <input type="number" class="form-control" data-mask="0000">
+                                                <p class="required">กรุณากรอกข้อมูล</p>
                                             </div>
                                         </div>
-                                        <p class="required">กรุณาเลือกข้อมูล</p>
+                                        <div class="col-sm-6 input-mp-car" data-id="mp-car2" style="display: none;">
+                                            <div class="form-group">
+                                                <label class="font-semibold" >จำนวนที่จอดรถบัส (คัน)</label>
+                                                <input type="number" class="form-control" data-mask="0000">
+                                                <p class="required">กรุณากรอกข้อมูล</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2917,25 +2917,50 @@
                         <h3 class="no-margin font-semibold">ข้อมูลมาตรฐาน/รางวัลที่ได้รับ</h3>
                     </div>
                     <div class="modal-body pd-40">
-                        <form action="?food4=true&location5=true&stay6=true" method="post">
+                        <script>
+                            function select_award(e)
+                            {
+                                var value = $(e).val();
+                                $('#award-other').hide();
+                                
+                                if(value == 'other') {
+                                    $('#award-other').show();
+                                }
+                            }
+                        </script>
+                        <form action="?award=true" method="post">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>มาตรฐานที่ได้รับ ลำดับที่ 1 (ภาษาไทย)</label>
+                                        <label>มาตรฐานที่ได้รับ ลำดับที่ 1</label>
                                         <div class="select fullwidth">
-                                            <select class="form-control">
+                                            <select class="form-control" onchange="select_award(this)">
                                                 <option value="">เลือกหรือระบุมาตรฐานที่ได้รับ</option>
+                                                <option value="">มาตรฐาน 1 / Standard 1</option>
+                                                <option value="">มาตรฐาน 2 / Standard 2</option>
+                                                <option value="other">มาตรฐานอื่นๆ / Other</option>
                                             </select>
                                             <span class="m-icon m-icon-dropdown"></span>
                                         </div>
                                         <p class="required">กรุณาเลือกข้อมูล</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>มาตรฐานที่ได้รับ ลำดับที่ 1 (ภาษาอังกฤษ)</label>
-                                        <input type="text" class="form-control">
-                                        <p class="required">กรุณากรอกข้อมูล</p>
+                                <div class="col-sm-12" id="award-other" style="display: none;">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>มาตรฐานอื่นๆ (ภาษาไทย)</label>
+                                                <input type="text" class="form-control" placeholder="ระบุมาตรฐานอื่นๆ (ภาษาไทย)">
+                                                <p class="required">กรุณากรอกข้อมูล</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>มาตรฐานอื่นๆ (ภาษาอังกฤษ)</label>
+                                                <input type="text" class="form-control" placeholder="ระบุมาตรฐานอื่นๆ (ภาษาอังกฤษ)">
+                                                <p class="required">กรุณากรอกข้อมูล</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
