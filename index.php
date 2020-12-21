@@ -191,51 +191,51 @@
                     <div class="slide-mice owl-carousel">
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice1.png')"></div>
-                            <div class="text text-middle">บริการสนับสนุนการจัดงาน</div>
+                            <div class="text transform-middle">บริการสนับสนุนการจัดงาน</div>
                         </div>
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice2.png')"></div>
-                            <div class="text text-middle">วิทยากร</div>
+                            <div class="text transform-middle">วิทยากร</div>
                         </div>
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice3.png')"></div>
-                            <div class="text text-middle">ร้านค้า/สินค้า</div>
+                            <div class="text transform-middle">ร้านค้า/สินค้า</div>
                         </div>
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice4.png')"></div>
-                            <div class="text text-middle">โชว์/แสดง</div>
+                            <div class="text transform-middle">โชว์/แสดง</div>
                         </div>
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice5.png')"></div>
-                            <div class="text text-middle">อาหารและเครื่องดื่ม</div>
+                            <div class="text transform-middle">อาหารและเครื่องดื่ม</div>
                         </div>
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice6.png')"></div>
-                            <div class="text text-middle">การเดินทาง</div>
+                            <div class="text transform-middle">การเดินทาง</div>
                         </div>
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice1.png')"></div>
-                            <div class="text text-middle">บริการสนับสนุนการจัดงาน</div>
+                            <div class="text transform-middle">บริการสนับสนุนการจัดงาน</div>
                         </div>
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice2.png')"></div>
-                            <div class="text text-middle">วิทยากร</div>
+                            <div class="text transform-middle">วิทยากร</div>
                         </div>
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice3.png')"></div>
-                            <div class="text text-middle">ร้านค้า/สินค้า</div>
+                            <div class="text transform-middle">ร้านค้า/สินค้า</div>
                         </div>
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice4.png')"></div>
-                            <div class="text text-middle">โชว์/แสดง</div>
+                            <div class="text transform-middle">โชว์/แสดง</div>
                         </div>
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice5.png')"></div>
-                            <div class="text text-middle">อาหารและเครื่องดื่ม</div>
+                            <div class="text transform-middle">อาหารและเครื่องดื่ม</div>
                         </div>
                         <div class="item">
                             <div class="bg" style="background-image: url('assets/images/home-mice6.png')"></div>
-                            <div class="text text-middle">การเดินทาง</div>
+                            <div class="text transform-middle">การเดินทาง</div>
                         </div>
                     </div>
                 </div>
