@@ -367,7 +367,7 @@
         margin-left: -15px;
     }
     .member .member-menu.for-business .upload-photo{
-        display: table-cell;
+        display: inline-block;
         vertical-align: middle;
     }
     .member .member-menu.for-business .name{
@@ -588,7 +588,7 @@
         margin-top: -8px;
     }
     .banner .banner-box{
-        height: 70vw;
+        height: 45vw;
     }
     .banner.owl-carousel .owl-nav button.owl-prev{
         left: 25px;
@@ -597,6 +597,17 @@
     .banner.owl-carousel .owl-nav button.owl-next{
         right: 25px;
         color: #fff;
+    }
+
+    .form-profile{
+        position: relative;
+        padding-bottom: 50px !important;
+    }
+    .form-profile .btn-send{
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+        padding: 4.5px 13px;
     }
 }
 
@@ -2399,6 +2410,8 @@
     }
     .under-banner{
         display: block;
+        position: relative;
+        padding: 50px 0px;
     }
     .room-card.is-hotel .row:first-child .col-sm-6:nth-child(2) {
         padding-left: 15px;
@@ -2422,6 +2435,9 @@
     .panel .panel-heading .logo img{
         height: 25px;
         margin-left: 5px;
+    }
+    .banner .banner-box{
+        height: 70vw;
     }
 }
 

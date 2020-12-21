@@ -6,7 +6,7 @@
     <body>
         <?php include "layout/nav.php" ?>
         <div id="wrapper">
-            <section class="no-padding">
+            <section class="no-padding" id="banner-search">
                 <div class="banner owl-carousel">
                     <div class="item">
                         <div class="banner-box">
@@ -14,7 +14,7 @@
                             <div class="text">
                                 <i class="m-icon m-icon-building"></i>
                                 <h3>สถานที่จัดงาน</h3>
-                                <a href="#" class="btn btn-block btn-md btn-blue">ค้นหาสถานที่</a>
+                                <button type="button" onclick="open_search_short(this)" class="btn btn-block btn-md btn-blue">ค้นหาสถานที่</button>
                             </div>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                             <div class="text">
                                 <i class="m-icon m-icon-organizer"></i>
                                 <h3>ออแกไนเซอร์</h3>
-                                <a href="#" class="btn btn-block btn-md btn-blue">ค้นหาออแกไนเซอร์</a>
+                                <button type="button" onclick="open_search_short(this)" class="btn btn-block btn-md btn-blue">ค้นหาออแกไนเซอร์</button>
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                             <div class="text">
                                 <i class="m-icon m-icon-map"></i>
                                 <h3>ท่องเที่ยว/นำเที่ยว</h3>
-                                <a href="#" class="btn btn-block btn-md btn-blue">ค้นหาสถานที่ท่องเที่ยว</a>
+                                <button type="button" onclick="open_search_short(this)" class="btn btn-block btn-md btn-blue">ค้นหาสถานที่ท่องเที่ยว</button>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                             <div class="text">
                                 <i class="m-icon m-icon-bed"></i>
                                 <h3>ที่พัก</h3>
-                                <a href="#" class="btn btn-block btn-md btn-blue">ค้นหาที่พัก</a>
+                                <button type="button" onclick="open_search_short(this)" class="btn btn-block btn-md btn-blue">ค้นหาที่พัก</button>
                             </div>
                         </div>
                     </div>
@@ -54,17 +54,29 @@
                             <div class="text transform-middle">
                                 <h3>ให้เราช่วยคุณวางแผน<br/>การจัดงานด้วยระบบอัตโนมัติ</h3>
                                 <p>ระบบการจับคู่อัตโนมัติจะช่วยให้ท่าน<br/>สามารถเจอกับสถานประกอบการที่ตรง<br/>กับความต้องการของท่านมากที่สุด </p>
-                                <a href="#" class="btn btn-block btn-md btn-orange">จับคู่เลยตอนนี้</a>
+                                <button type="button" onclick="$('#banner-search, .short-search').hide();$('#banner-match').show();" class="btn btn-block btn-md btn-orange">จับคู่เลยตอนนี้</button>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="under-banner">
+                    <div class="bg is-blue" style="background-image: url('assets/images/home-banner5.png')"></div>
+                    <div class="text">
+                        <h3 class="no-margin-top">ให้เราช่วยคุณวางแผน<br/>การจัดงานด้วยระบบอัตโนมัติ</h3>
+                        <p>ระบบการจับคู่อัตโนมัติจะช่วยให้ท่าน<br/>สามารถเจอกับสถานประกอบการที่ตรง<br/>กับความต้องการของท่านมากที่สุด </p>
+                        <button type="button" onclick="$('#banner-search, .short-search').hide();$('#banner-match').show();" class="btn btn-minwidth btn-md btn-orange">จับคู่เลยตอนนี้</button>
+                    </div>
+                </div>
+            </section>
+            <section class="no-padding" id="banner-match" style="display: none;">
+                <div class="banner owl-carousel">
                     <div class="item">
                         <div class="banner-box">
                             <div class="bg" style="background-image: url('assets/images/home-banner6.png')"></div>
                             <div class="text">
                                 <i class="m-icon m-icon-building"></i>
                                 <h3>รูปแบบการจัดประชุม</h3>
-                                <a href="#" class="btn btn-block btn-md btn-blue">เลือกการจับคู่</a>
+                                <a href="member-plan-auto.php" class="btn btn-block btn-md btn-blue">เลือกการจับคู่</a>
                             </div>
                         </div>
                     </div>
@@ -74,7 +86,7 @@
                             <div class="text">
                                 <i class="m-icon m-icon-organizer"></i>
                                 <h3>รูปแบบกิจกรรม CSR </h3>
-                                <a href="#" class="btn btn-block btn-md btn-blue">เลือกการจับคู่</a>
+                                <a href="member-plan-auto.php" class="btn btn-block btn-md btn-blue">เลือกการจับคู่</a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +96,7 @@
                             <div class="text">
                                 <i class="m-icon m-icon-map"></i>
                                 <h3>รูปแบบจัดอบรม/ศึกษาดูงาน</h3>
-                                <a href="#" class="btn btn-block btn-md btn-blue">เลือกการจับคู่</a>
+                                <a href="member-plan-auto.php" class="btn btn-block btn-md btn-blue">เลือกการจับคู่</a>
                             </div>
                         </div>
                     </div>
@@ -94,7 +106,7 @@
                             <div class="text">
                                 <i class="m-icon m-icon-bed"></i>
                                 <h3>รูปแบบ Team Building</h3>
-                                <a href="#" class="btn btn-block btn-md btn-blue">เลือกการจับคู่</a>
+                                <a href="member-plan-auto.php" class="btn btn-block btn-md btn-blue">เลือกการจับคู่</a>
                             </div>
                         </div>
                     </div>
@@ -104,26 +116,18 @@
                             <div class="text transform-middle">
                                 <h3>มองหาสถานประกอบการ<br/>ในการจัดกิจกรรม</h3>
                                 <p>ระบบจะช่วยให้ท่านหาสถานประกอบการ<br/>ในแต่ละประเภทธุรกิจให้รวดเร็วยิ่งขึ้นด้วยการ<br/>ช่วยคัดกรองจากข้อมูลของท่าน</p>
-                                <button type="button" class="btn btn-block btn-md btn-blue" onclick="open_search_short()">ค้นหาเลย</button>
+                                <button type="button" onclick="$('#banner-search').show();$('#banner-match, .short-search').hide();" class="btn btn-block btn-md btn-blue">ค้นหาเลย</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- <section class="under-banner">
-                <div class="bg is-blue" style="background-image: url('assets/images/home-banner5.png')"></div>
-                <div class="text">
-                    <h3 class="no-margin-top">ให้เราช่วยคุณวางแผน<br/>การจัดงานด้วยระบบอัตโนมัติ</h3>
-                    <p>ระบบการจับคู่อัตโนมัติจะช่วยให้ท่าน<br/>สามารถเจอกับสถานประกอบการที่ตรง<br/>กับความต้องการของท่านมากที่สุด </p>
-                    <a href="#" class="btn btn-minwidth btn-md btn-orange">จับคู่เลยตอนนี้</a>
-                </div>
-            </section> -->
-            <section class="under-banner" id="short-search-toggle">
-                <div class="bg is-orange" style="background-image: url('assets/images/home-banner10.png')"></div>
-                <div class="text">
-                    <h3 class="no-margin-top">มองหาสถานประกอบการ<br/>ในการจัดกิจกรรม</h3>
-                    <p>ระบบจะช่วยให้ท่านหาสถานประกอบการ<br/>ในแต่ละประเภทธุรกิจให้รวดเร็วยิ่งขึ้นด้วยการ<br/>ช่วยคัดกรองจากข้อมูลของท่าน</p>
-                    <button type="button" onclick="open_search_short()" class="btn btn-minwidth btn-md btn-blue">ค้นหาเลย</button>
+                <div class="under-banner">
+                    <div class="bg is-orange" style="background-image: url('assets/images/home-banner10.png')"></div>
+                    <div class="text">
+                        <h3 class="no-margin-top">มองหาสถานประกอบการ<br/>ในการจัดกิจกรรม</h3>
+                        <p>ระบบจะช่วยให้ท่านหาสถานประกอบการ<br/>ในแต่ละประเภทธุรกิจให้รวดเร็วยิ่งขึ้นด้วยการ<br/>ช่วยคัดกรองจากข้อมูลของท่าน</p>
+                        <button type="button" onclick="$('#banner-search').show();$('#banner-match, .short-search').hide();" class="btn btn-minwidth btn-md btn-blue">ค้นหาเลย</button>
+                    </div>
                 </div>
             </section>
             <section class="short-search">
@@ -672,22 +676,16 @@
                 });
             })();
 
-            function open_search_short()
+            function open_search_short(e)
             {
-                $('.short-search').slideDown();
-                if($(window).width() < 768)
-                {
-                    $('#short-search-toggle').hide();
-                }
+                var title = $(e).parent().find('h3').html();
+                $('.short-search h3').html(title);
+                $('.short-search').hide().slideDown();
             }
 
-            function close_search_short()
+            function close_search_short(e)
             {
                 $('.short-search').slideUp();
-                if($(window).width() < 768)
-                {
-                    $('#short-search-toggle').show();
-                }
             }
 
 

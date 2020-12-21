@@ -17,13 +17,17 @@
                                 </div>
                             </a>
                             <div class="clearfix"></div>
-                            <div class="upload-photo is-user">
-                                <div class="preview" style="background-image: url('assets/images/user.png')"></div>
-                                <div class="input">
-                                    <input type="file" accept="image/*">
-                                    <i class="m-icon m-icon-upload"></i>
+                            <form action="" method="post">
+                                <div class="upload-photo is-user">
+                                    <div class="preview" style="background-image: url('assets/images/user.png')"></div>
+                                    <div class="input">
+                                        <input type="file" accept="image/*">
+                                        <i class="m-icon m-icon-upload"></i>
+                                    </div>
                                 </div>
-                            </div>
+                                <br/>
+                                <button type="submit" class="btn btn-blue">บันทึกรูปภาพ</button>
+                            </form>
                         </div>
                         <div class="body">
                             <ul>

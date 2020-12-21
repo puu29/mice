@@ -1,13 +1,14 @@
 <div class="member-menu">
-    <div class="head text-center">
-        <div class="upload-photo is-user">
+    <form action="" method="post" class="head text-center">
+        <div class="upload-photo is-user" id="form_profile">
             <div class="preview" style="background-image: url('assets/images/user.png')"></div>
             <div class="input">
                 <input type="file" accept="image/*">
                 <i class="m-icon m-icon-upload"></i>
             </div>
         </div>
-    </div>
+        <button type="submit" class="btn btn-blue">บันทึกรูปภาพ</button>
+    </form>
     <div class="body">
         <ul>
             <li class="<?= ($page == 'member' || strpos($page, 'member-quotation') > -1) ? 'active' : ''; ?>">
