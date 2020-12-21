@@ -17,7 +17,7 @@
                                 </div>
                             </a>
                             <div class="clearfix"></div>
-                            <form action="" method="post">
+                            <div action="" method="post">
                                 <div class="upload-photo is-user">
                                     <div class="preview" style="background-image: url('assets/images/user.png')"></div>
                                     <div class="input">
@@ -25,9 +25,7 @@
                                         <i class="m-icon m-icon-upload"></i>
                                     </div>
                                 </div>
-                                <br/>
-                                <button type="submit" class="btn btn-blue">บันทึกรูปภาพ</button>
-                            </form>
+                            </div>
                         </div>
                         <div class="body">
                             <ul>

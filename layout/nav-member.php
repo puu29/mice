@@ -1,5 +1,5 @@
 <div class="member-menu">
-    <form action="" method="post" class="head text-center">
+    <div class="head text-center">
         <div class="upload-photo is-user" id="form_profile">
             <div class="preview" style="background-image: url('assets/images/user.png')"></div>
             <div class="input">
@@ -7,8 +7,7 @@
                 <i class="m-icon m-icon-upload"></i>
             </div>
         </div>
-        <button type="submit" class="btn btn-blue">บันทึกรูปภาพ</button>
-    </form>
+    </div>
     <div class="body">
         <ul>
             <li class="<?= ($page == 'member' || strpos($page, 'member-quotation') > -1) ? 'active' : ''; ?>">

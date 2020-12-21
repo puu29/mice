@@ -6,7 +6,7 @@
     <body>
         <?php include "layout/nav.php" ?>
         <div id="wrapper">
-            <section class="no-padding" id="banner-search">
+            <section class="no-padding banner-search">
                 <div class="banner owl-carousel">
                     <div class="item">
                         <div class="banner-box">
@@ -54,21 +54,13 @@
                             <div class="text transform-middle">
                                 <h3>ให้เราช่วยคุณวางแผน<br/>การจัดงานด้วยระบบอัตโนมัติ</h3>
                                 <p>ระบบการจับคู่อัตโนมัติจะช่วยให้ท่าน<br/>สามารถเจอกับสถานประกอบการที่ตรง<br/>กับความต้องการของท่านมากที่สุด </p>
-                                <button type="button" onclick="$('#banner-search, .short-search').hide();$('#banner-match').show();" class="btn btn-block btn-md btn-orange">จับคู่เลยตอนนี้</button>
+                                <button type="button" onclick="banner_show('match')" class="btn btn-block btn-md btn-orange">จับคู่เลยตอนนี้</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="under-banner">
-                    <div class="bg is-blue" style="background-image: url('assets/images/home-banner5.png')"></div>
-                    <div class="text">
-                        <h3 class="no-margin-top">ให้เราช่วยคุณวางแผน<br/>การจัดงานด้วยระบบอัตโนมัติ</h3>
-                        <p>ระบบการจับคู่อัตโนมัติจะช่วยให้ท่าน<br/>สามารถเจอกับสถานประกอบการที่ตรง<br/>กับความต้องการของท่านมากที่สุด </p>
-                        <button type="button" onclick="$('#banner-search, .short-search').hide();$('#banner-match').show();" class="btn btn-minwidth btn-md btn-orange">จับคู่เลยตอนนี้</button>
-                    </div>
-                </div>
             </section>
-            <section class="no-padding" id="banner-match" style="display: none;">
+            <section class="no-padding banner-match" style="display: none;">
                 <div class="banner owl-carousel">
                     <div class="item">
                         <div class="banner-box">
@@ -116,20 +108,13 @@
                             <div class="text transform-middle">
                                 <h3>มองหาสถานประกอบการ<br/>ในการจัดกิจกรรม</h3>
                                 <p>ระบบจะช่วยให้ท่านหาสถานประกอบการ<br/>ในแต่ละประเภทธุรกิจให้รวดเร็วยิ่งขึ้นด้วยการ<br/>ช่วยคัดกรองจากข้อมูลของท่าน</p>
-                                <button type="button" onclick="$('#banner-search').show();$('#banner-match, .short-search').hide();" class="btn btn-block btn-md btn-blue">ค้นหาเลย</button>
+                                <button type="button" onclick="banner_show('search')" class="btn btn-block btn-md btn-blue">ค้นหาเลย</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="under-banner">
-                    <div class="bg is-orange" style="background-image: url('assets/images/home-banner10.png')"></div>
-                    <div class="text">
-                        <h3 class="no-margin-top">มองหาสถานประกอบการ<br/>ในการจัดกิจกรรม</h3>
-                        <p>ระบบจะช่วยให้ท่านหาสถานประกอบการ<br/>ในแต่ละประเภทธุรกิจให้รวดเร็วยิ่งขึ้นด้วยการ<br/>ช่วยคัดกรองจากข้อมูลของท่าน</p>
-                        <button type="button" onclick="$('#banner-search').show();$('#banner-match, .short-search').hide();" class="btn btn-minwidth btn-md btn-blue">ค้นหาเลย</button>
-                    </div>
-                </div>
             </section>
+
             <section class="short-search">
                 <div class="container">
                     <div class="head">
@@ -179,6 +164,26 @@
                     </div>
                 </div>
             </section>
+
+            <section class="hidden-desktop">
+                <div class="under-banner banner-search">
+                    <div class="bg is-blue" style="background-image: url('assets/images/home-banner5.png')"></div>
+                    <div class="text">
+                        <h3 class="no-margin-top">ให้เราช่วยคุณวางแผน<br/>การจัดงานด้วยระบบอัตโนมัติ</h3>
+                        <p>ระบบการจับคู่อัตโนมัติจะช่วยให้ท่าน<br/>สามารถเจอกับสถานประกอบการที่ตรง<br/>กับความต้องการของท่านมากที่สุด </p>
+                        <button type="button" onclick="$('.banner-search, .short-search').hide(); $('.banner-match').show();" class="btn btn-minwidth btn-md btn-orange">จับคู่เลยตอนนี้</button>
+                    </div>
+                </div>
+                <div class="under-banner banner-match" style="display: none;">
+                    <div class="bg is-orange" style="background-image: url('assets/images/home-banner10.png')"></div>
+                    <div class="text">
+                        <h3>มองหาสถานประกอบการ<br/>ในการจัดกิจกรรม</h3>
+                        <p>ระบบจะช่วยให้ท่านหาสถานประกอบการ<br/>ในแต่ละประเภทธุรกิจให้รวดเร็วยิ่งขึ้นด้วยการ<br/>ช่วยคัดกรองจากข้อมูลของท่าน</p>
+                        <button type="button" onclick="$('.banner-search').show(); $('.banner-match, .short-search').hide();" class="btn btn-minwidth btn-md btn-blue">ค้นหาเลย</button>
+                    </div>
+                </div>
+            </section>
+
             <section>
                 <div class="container">
                     <h2 class="no-margin-top text-center">ธุรกิจไมซ์อื่นๆ</h2>
@@ -686,6 +691,22 @@
             function close_search_short(e)
             {
                 $('.short-search').slideUp();
+            }
+
+            function banner_show(val)
+            {
+                if(val == 'match')
+                {
+                    $('.banner-search, .short-search').hide(); 
+                    $('.banner-match').show();
+                    window.scrollTo(0,0);
+                }
+                else
+                {
+                    $('.banner-match').hide(); 
+                    $('.banner-search').show();
+                    window.scrollTo(0,0);
+                }
             }
 
 

@@ -16,7 +16,7 @@
         </a>
     <?php } ?>
     
-    <form action="" method="post" class="head text-center form-profile">
+    <div class="head text-center">
         <div class="upload-photo is-user">
             <div class="preview" style="background-image: url('assets/images/villa.png')"></div>
             <div class="input">
@@ -24,9 +24,8 @@
                 <i class="m-icon m-icon-upload"></i>
             </div>
         </div>
-        <button type="submit" class="btn btn-blue btn-send">บันทึกรูปภาพ</button>
         <div class="name">Villa Hotel and Resort</div>
-    </form>
+    </div>
     <div class="body">
         <button class="btn btn-blue btn-md btn-block dropdown-toggle" type="button" id="menu-business" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span id="menu-active" class="font-semibold">ข้อมูลธุรกิจ</span> <span class="glyphicon glyphicon-menu-down"></span>
