@@ -699,13 +699,13 @@
                 {
                     $('.banner-search, .short-search').hide(); 
                     $('.banner-match').show();
-                    window.scrollTo(0,0);
+                    $('html,body').animate({ scrollTop: 0 }, 'slow');
                 }
                 else
                 {
                     $('.banner-match').hide(); 
                     $('.banner-search').show();
-                    window.scrollTo(0,0);
+                    $('html,body').animate({ scrollTop: 0 }, 'slow');
                 }
             }
 
