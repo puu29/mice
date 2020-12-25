@@ -107,7 +107,7 @@
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="btn-box text-center">
-                                                                    <a href="#" class="btn btn-md text-overflow btn-minwidth btn-blue-linear font-medium">ยืนยันเวลานัด</a>
+                                                                    <a href="business-manage-chat-confirm.php" class="btn btn-md text-overflow btn-minwidth btn-blue-linear font-medium">ยืนยันเวลานัด</a>
                                                                     <a href="#" class="btn btn-md text-overflow btn-minwidth btn-trans font-blue font-medium" data-dismiss="modal" data-toggle="modal" data-target="#modal-cancel">ยกเลิก</a>
                                                                 </div>
                                                             </div>
@@ -129,7 +129,7 @@
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="btn-box text-center">
-                                                                    <a href="#" class="btn btn-md text-overflow btn-minwidth btn-blue-linear font-medium">ยืนยันเวลานัด</a>
+                                                                    <a href="business-manage-chat-confirm.php" class="btn btn-md text-overflow btn-minwidth btn-blue-linear font-medium">ยืนยันเวลานัด</a>
                                                                     <a href="#" class="btn btn-md text-overflow btn-minwidth btn-trans font-blue font-medium" data-dismiss="modal" data-toggle="modal" data-target="#modal-cancel">ยกเลิก</a>
                                                                 </div>
                                                             </div>
@@ -151,7 +151,7 @@
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="btn-box text-center">
-                                                                    <a href="#" class="btn btn-md text-overflow btn-minwidth btn-blue-linear font-medium">ยืนยันเวลานัด</a>
+                                                                    <a href="business-manage-chat-confirm.php" class="btn btn-md text-overflow btn-minwidth btn-blue-linear font-medium">ยืนยันเวลานัด</a>
                                                                     <a href="#" class="btn btn-md text-overflow btn-minwidth btn-trans font-blue font-medium" data-dismiss="modal" data-toggle="modal" data-target="#modal-cancel">ยกเลิก</a>
                                                                 </div>
                                                             </div>
@@ -173,7 +173,7 @@
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="btn-box text-center">
-                                                                    <a href="#" class="btn btn-md text-overflow btn-minwidth btn-blue-linear font-medium">ยืนยันเวลานัด</a>
+                                                                    <a href="business-manage-chat-confirm.php" class="btn btn-md text-overflow btn-minwidth btn-blue-linear font-medium">ยืนยันเวลานัด</a>
                                                                     <a href="#" class="btn btn-md text-overflow btn-minwidth btn-trans font-blue font-medium" data-dismiss="modal" data-toggle="modal" data-target="#modal-cancel">ยกเลิก</a>
                                                                 </div>
                                                             </div>

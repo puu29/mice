@@ -18,16 +18,78 @@
             <div class="container-fluid">
                 <div class="navbar-user">
                     <?php if($_GET['login'] == 1 || strpos($page, 'member') > -1 || strpos($page, 'business') > -1) { ?>
-                        <a href="member.php" class="user hidden-mobile show-ipad">
-                            <div class="img">
-                                <div class="bg" style="background-image: url('assets/images/user.png')"></div>
-                                <i class="m-icon m-icon-noti"></i>
+                        <div class="user dropdown hidden-mobile show-ipad">
+                            <div class="dropdown-toggle" data-toggle="dropdown">
+                                <div class="img">
+                                    <div class="bg" style="background-image: url('assets/images/user.png')"></div>
+                                    <i class="m-icon m-icon-noti"></i>
+                                </div>
+                                <div class="text">
+                                    <span class="name">พัชรศรี</span>
+                                    <span class="msg">, (9) ข้อความ</span>
+                                </div>
                             </div>
-                            <div class="text">
-                                <span class="name">พัชรศรี</span>
-                                <span class="msg">, (9) ข้อความ</span>
-                            </div>
-                        </a>
+                            <ul class="dropdown-menu shadow">
+                                <li class="<?= ($page == 'member' || strpos($page, 'member-quotation') > -1) ? 'active' : ''; ?>">
+                                    <a href="member.php">
+                                        <i class="m-icon m-icon-menu-docs"></i>
+                                        <span>การขอใบเสนอราคา</span>
+                                    </a>
+                                </li>
+                                <li class="<?= strpos($page, 'member-profile') > -1 ? 'active' : ''; ?>">
+                                    <a href="member-profile.php">
+                                        <i class="m-icon m-icon-menu-profile"></i>
+                                        <span>โปรไฟล์บัญชีทั่วไป</span>
+                                    </a>
+                                </li>
+                                <li class="<?= strpos($page, 'member-plan') > -1 ? 'active' : ''; ?>">
+                                    <a href="member-plan.php">
+                                        <i class="m-icon m-icon-menu-plan"></i>
+                                        <span>วางแผนการจัดงานไมซ์</span>
+                                    </a>
+                                </li>
+                                <li class="<?= strpos($page, 'member-chat') > -1 ? 'active' : ''; ?>">
+                                    <a href="member-chat.php">
+                                        <i class="m-icon m-icon-menu-chat"></i>
+                                        <span>แชทสนทนา (9 ข้อความ)</span>
+                                    </a>
+                                </li>
+                                <li class="<?= strpos($page, 'member-vdocall') > -1 ? 'active' : ''; ?>">
+                                    <a href="member-vdocall-waiting.php">
+                                        <i class="m-icon m-icon-menu-vdo"></i>
+                                        <span>วิดีโอคอลสนทนา</span>
+                                    </a>
+                                </li>
+                                <li class="<?= strpos($page, 'member-like') > -1 ? 'active' : ''; ?>">
+                                    <a href="member-like.php">
+                                        <i class="m-icon m-icon-menu-like"></i>
+                                        <span>ธุรกิจที่สนใจ</span>
+                                    </a>
+                                </li>
+                                <li class="<?= strpos($page, 'member-news') > -1 ? 'active' : ''; ?>">
+                                    <a href="member-news.php">
+                                        <i class="m-icon m-icon-menu-news"></i>
+                                        <span>ข่าวสารจากธุรกิจที่สนใจ</span>
+                                    </a>
+                                </li>
+                                <hr/>
+                                <li class="<?= strpos($page, 'member-business') > -1 ? 'active' : ''; ?>">
+                                    <a href="member-business.php">
+                                        <i class="m-icon m-icon-menu-account"></i>
+                                        <span>บัญชีธุรกิจ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="business-manage.php?new=1">
+                                        <i><img src="assets/images/villa.png"></i>
+                                        <span>Villa Hotel and Resort</span>
+                                    </a>
+                                </li>
+                                <li class="logout">
+                                    <a href="index.php">ออกจากระบบ</a>
+                                </li>
+                            </ul>
+                        </div>
                         <a href="member-menu.php" class="user hidden-desktop">
                             <div class="img">
                                 <div class="bg" style="background-image: url('assets/images/user.png')"></div>
@@ -71,7 +133,7 @@
                             <ul class="dropdown-menu">
                                 <div class="bg" style="background-image: url('assets/images/menu-img.png')"></div>
                                 <li><a href="search.php">สถานที่จัดงาน</a></li>
-                                <li class="active"><a href="search.php">ออร์แกไนเซอร์</a></li>
+                                <li><a href="search.php">ออร์แกไนเซอร์</a></li>
                                 <li><a href="search.php">บริการสำหรับผู้จัดงาน</a></li>
                                 <li><a href="search.php">ท่องเที่ยว/นำเที่ยว</a></li>
                                 <li><a href="search.php">ที่พัก</a></li>

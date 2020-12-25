@@ -7,12 +7,12 @@
         <?php include "layout/nav.php" ?>
         <div id="wrapper">
             <section class="member">
-                <?php include "layout/nav-member.php" ?>
+                <?php include "layout/nav-business.php" ?>
                 <div class="member-body">
-                    <a href="javascript:history.back()" class="to-back font-blue hidden-desktop">
+                    <a href="javascript:history.back()" class="to-back font-blue hidden-mobile">
                         <div class="text-icon is-middle">
-                            <i class="glyphicon glyphicon-menu-left" style="top: 56%"></i>
-                            <span>กลับไปเมนูบัญชีทั่วไป</span>
+                            <i class="glyphicon glyphicon-menu-left"></i>
+                            <span>ย้อนกลับ</span>
                         </div>
                     </a>
                     <form action="member-business.php" method="post" enctype="multipart/form-data">
@@ -35,7 +35,7 @@
                             </div>
                             <button type="submit" class="btn btn-md btn-blue-linear btn-save">บันทึกและส่งข้อมูล</button>
                         </div>
-                        <h2 class="font-semibold no-margin">เพิ่มข้อมูลธุรกิจกลุ่มไมซ์</h2>
+                        <h2 class="font-semibold no-margin">แก้ไขข้อมูลธุรกิจกลุ่มไมซ์</h2>
                         <p>หากท่านมีธุรกิจที่ต้องการที่เกี่ยวข้องกับอุตสาหกรรมไมซ์ และต้องการจะเข้าร่วมธุรกิจกับเรา สามารถกรอกรายละเอียดข้อมูลของท่าน และรอการดำเนินการจากแอดมินระบบภายใน 3-5 วันทำการ โดยไม่มีค่าใช้จ่ายใดๆ เพิ่มเติม</p>
                         <br/>
                         <div class="panel panel-default">
@@ -620,7 +620,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <label class="font-semibold fullwidth">อัพโหลดเอกสารยืนยันมาตรฐานที่ได้รับ <span class="font-regular">(สามารถอัพโหลดสูงสุดได้ 5 ไฟล์)</span></label> 
+                                            <label class="font-semibold fullwidth">อัพโหลดเอกสารยืนยันมาตรฐานที่ได้รับหรือใบอนุญาตประกอบธุรกิจสำหรับ <span class="font-blue">สถานที่จัดงาน</span> <span class="font-regular">(สามารถอัพโหลดสูงสุดได้ 5 ไฟล์)</span></label> 
                                             <div class="upload-file">
                                                 <div class="input">
                                                     <input type="file" accept=".pdf" multiple maxlength="5" maxsize="25">
@@ -642,6 +642,24 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="font-semibold fullwidth">อัพโหลดเอกสารประกอบอื่นๆ <span class="font-regular">(สามารถอัพโหลดสูงสุดได้ 5 ไฟล์)</span></label> 
+                                            <div class="upload-file">
+                                                <div class="input">
+                                                    <input type="file" accept=".pdf" multiple maxlength="5" maxsize="25">
+                                                    <button type="button" class="btn btn-sm btn-orange">อัพโหลด์ไฟล์</button>
+                                                    <p class="no-margin">PDF Max file : 25 MB</p>
+                                                </div>
+                                                <div class="text">
+                                                    
+                                                </div>
+                                            </div>
+                                            <p class="required">กรุณาอัพโหลดไฟล์</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <hr class="in-panel"/>
                                 <div class="row">
                                     <div class="col-sm-12">
@@ -655,14 +673,14 @@
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label class="font-semibold">ที่อยู่สถานประกอบการ (ภาษาไทย)</label>
-                                            <input type="text" class="form-control" placeholder="เลขที่/อาคาร/ซอย">
+                                            <input type="text" class="form-control" placeholder="เลขที่/อาคาร/ซอย" id="b-name-th">
                                             <p class="required">กรุณากรอกข้อมูล</p>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label class="font-semibold">ที่อยู่สถานประกอบการ (ภาษาอังกฤษ)</label>
-                                            <input type="text" class="form-control" placeholder="Unit/Building/Valley">
+                                            <input type="text" class="form-control" placeholder="Unit/Building/Valley" id="b-name-en">
                                             <p class="required">กรุณากรอกข้อมูล</p>
                                         </div>
                                     </div>
@@ -671,7 +689,7 @@
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label class="font-semibold">รหัสไปรษณีย์</label>
-                                            <input type="text" class="form-control" placeholder="รหัสไปรษณีย์">
+                                            <input type="text" class="form-control" placeholder="รหัสไปรษณีย์" id="b-postcode">
                                             <p class="required">กรุณากรอกข้อมูล</p>
                                         </div>
                                     </div>
@@ -679,7 +697,7 @@
                                         <div class="form-group">
                                             <label class="font-semibold">จังหวัด</label>
                                             <div class="select fullwidth">
-                                                <select class="form-control">
+                                                <select class="form-control" id="b-province">
                                                     <option value="">เลือกจังหวัด</option>
                                                     <option value="">จังหวัด 1</option>
                                                     <option value="">จังหวัด 2</option>
@@ -696,7 +714,7 @@
                                         <div class="form-group">
                                             <label class="font-semibold">เขต/อำเภอ</label>
                                             <div class="select fullwidth">
-                                                <select class="form-control">
+                                                <select class="form-control" id="b-district">
                                                     <option value="">เลือกเขต/อำเภอ</option>
                                                     <option value="">อำเภอ 1</option>
                                                     <option value="">อำเภอ 2</option>
@@ -711,7 +729,7 @@
                                         <div class="form-group">
                                             <label class="font-semibold">แขวง/ตำบล</label>
                                             <div class="select fullwidth">
-                                                <select class="form-control">
+                                                <select class="form-control" id="b-sub-district">
                                                     <option value="">เลือกแขวง/ตำบล</option>
                                                     <option value="">ตำบล 1</option>
                                                     <option value="">ตำบล 2</option>
@@ -738,6 +756,7 @@
                                             <label class="font-semibold">ยืนยันตำแหน่งของสถานประกอบการ</label>
                                             <div class="select-map">
                                                 <button type="button" onclick="get_location();" class="btn btn-sm btn-blue font-semibold">เลือกจากพิกัด Google Map</button>
+                                                <input id="pac-input" type="hidden">
                                                 <div class="map-box">
                                                     <div id="map"></div>
                                                 </div>
@@ -827,7 +846,7 @@
             </section>
         </div>
         <?php include "layout/footer.php" ?>
-        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABK4plFcFDYfEr1XhsMZ89bkloa182UrQ&callback=initMap"></script>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABK4plFcFDYfEr1XhsMZ89bkloa182UrQ&callback=initMap&libraries=places"></script>
         <style>
             .gm-style .gm-style-iw-d{
                 overflow: hidden !important;
@@ -855,29 +874,9 @@
             }
         </style>
         <script>
-            var map, marker, infowindow;
+            var input = document.getElementById('pac-input');
+            var map, marker, infowindow, searchBox;
             function initMap()
-            {
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: {lat: -33.91722, lng: 151.23064},
-                    zoom: 16
-                });
-
-                marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(-33.91722, 151.23064),
-                    icon: 'assets/images/mark-orange.png',
-                    map: map,
-                    draggable: true,
-                });
-
-                infowindow = new google.maps.InfoWindow({
-                    content: 'Your Location'
-                });
-
-                infowindow.open(map, marker);
-            }
-
-            function get_location()
             {
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function(position) {
@@ -886,13 +885,76 @@
                             lng: position.coords.longitude
                         };  
 
-                        marker.setPosition(pos);
-                        map.setCenter(pos);
+                        map = new google.maps.Map(document.getElementById('map'), {
+                            center: pos,
+                            zoom: 16
+                        });
+                        
+                        marker = new google.maps.Marker({
+                            position: pos,
+                            icon: 'assets/images/mark-orange.png',
+                            map: map,
+                            draggable: true,
+                        });
+
+                        infowindow = new google.maps.InfoWindow({
+                            content: 'Your Location'
+                        });
+                        infowindow.open(map, marker);
+
+                        searchBox = new google.maps.places.SearchBox(input);
+                        google.maps.event.addListener(map, 'bounds_changed', function() 
+                        {
+                            searchBox.setBounds(map.getBounds());
+                        }); 
+                        google.maps.event.addListener(searchBox, 'places_changed', function() 
+                        {
+                            var places = searchBox.getPlaces();
+                            if (places.length == 0) {
+                                return;
+                            }
+                            var bounds = new google.maps.LatLngBounds();
+                            places.forEach(function(place) {
+                                if (!place.geometry) {
+                                    console.log("Returned place contains no geometry");
+                                    return;
+                                }
+
+                                marker.setPosition(place.geometry.location);
+                                console.log(place.geometry.location);
+
+                                if (place.geometry.viewport) {
+                                    bounds.union(place.geometry.viewport);
+                                } else {
+                                    bounds.extend(place.geometry.location);
+                                }
+                            });
+                            map.fitBounds(bounds);
+                        }); 
+                        // end event 
                        
                     }, function() {
-                        console.log('not point location current');
+                        alert('not point location current');
                     });
                 } 
+                else
+                {
+                    alert('open location');
+                }
+            }
+
+            function get_location()
+            {
+                var name = $('#b-name-th').val();
+                var province = $('#b-province').val();
+                var district = $('#b-district').val();
+                var sub_district = $('#b-sub-district').val();
+                var postcode = $('#b-postcode').val();
+                $(input).val('เซนทรัลพระราม 9');
+                // $(input).val(name+' '+sub_district+' '+district+' '+province+' '+postcode);
+                google.maps.event.trigger(input, 'focus', {});
+                google.maps.event.trigger(input, 'keydown', { keyCode: 13 });
+                google.maps.event.trigger(this, 'focus', {});
             }
 
             function search_tax_id()
@@ -924,11 +986,28 @@
 
             function select_type_second(ele)
             {
-                console.log($('#second-type input:checked').length);
                 if($('#second-type input:checked').length > 2)
                 {
                     $(ele).prop('checked', false);
                 }
+            }
+
+            function set_footer()
+            {
+                var addition = ($(window).width() < 768) ? 50 : ($(window).width() < 991) ? 500 : 280;
+                var footer = $('header').height() + ($('footer').height() + addition);
+                $(window).scroll(function() {    
+                    var body = $('#wrapper').height();           
+                    var scroll = $(window).scrollTop(); 
+                    var bottom = body - footer;
+                    if (scroll >= bottom) {           
+                        $('.step-footer').css({        
+                            bottom: scroll - bottom
+                        });
+                    } else {     
+                        $('.step-footer').attr('style', '');  
+                    }
+                });
             }
 
             (function(){
@@ -939,6 +1018,20 @@
 
                 $('.card-select .btn-select').click(function(){
                     $(this).parent().find('input').prop('checked', true);
+                    $(this).parent().find('input').trigger('change');
+                });
+
+                $('form input').keydown(function(e){
+                    if(e.keyCode == 13)
+                    {
+                        return false;
+                    }
+                });
+
+                set_footer();
+
+                $(window).resize(function(){
+                    set_footer();
                 });
                 
             })();

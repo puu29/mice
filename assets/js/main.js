@@ -343,7 +343,77 @@
         }
     }
 
+    // new & promotion box
+    $('.promotion-box').click(function(e){
+        if(!e.target.closest('a'))
+        {
+            var url =  $(e.target).parents('.promotion-box').find('a').attr('href');
+            window.location.href = url;
+        }
+    });
+
+    // share sticky
+    if($('.share.is-sticky').length > 0)
+    {
+        var share_top = $('.share.is-sticky').offset().top;  
+        var share_left = $('.share.is-sticky').offset().left; 
+        $(window).scroll(function() {                  
+            var currentScroll = $(window).scrollTop(); 
+            console.log(currentScroll, share_top, share_left);
+            if (currentScroll >= share_top) {           
+                $('.share.is-sticky').css({                      
+                    position: 'fixed',
+                    top: 100,
+                    left: share_left,
+                    right: 'auto'
+                });
+            } else {     
+                $('.share.is-sticky').attr('style', '');  
+            }
+        });
+    }
+
+    // post
+    $('.post .bg, .post .head h3, .post .head p').click(function(e){
+        var url =  $(e.target).parents('.post').find('.btn-info-toggle').attr('href');
+        if(!e.target.closest('i') && url != undefined)
+        {
+            window.location.href = url;
+        }
+    });
+    $('.input-group.is-calendar .input-group-addon').click(function(){
+        $(this).prev('input').focus();
+    });
+
+    // b-manage
+    set_footer_business();
+    $(window).resize(function(){
+        set_footer_business();
+    });
+
 })();
+
+function set_footer_business()
+{
+    if($('.b-manage').length > 0)
+    {
+        var b_addition = ($(window).width() < 768) ? 50 : ($(window).width() < 991) ? 550 : 280;
+        var b_footer = $('header').height() + ($('footer').height() + b_addition);
+        $(window).scroll(function() {    
+            var b_body = $('#wrapper').height();           
+            var b_scroll = $(window).scrollTop(); 
+            var b_bottom = b_body - b_footer;
+            console.log(b_scroll, b_bottom);
+            if (b_scroll >= b_bottom) {           
+                $('.step-footer').css({        
+                    bottom: b_scroll - b_bottom
+                });
+            } else {     
+                $('.step-footer').attr('style', '');  
+            }
+        });
+    }
+}
 
 function open_search()
 {

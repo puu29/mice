@@ -57,15 +57,17 @@
                                                 </div>
                                                 <div class="col col-md-3 col-sm-4">
                                                     <div class="card">
-                                                        <div class="img">
-                                                            <div class="status is-warning">รอการอนุมัติ</div>
-                                                            <img src="assets/images/calendar1.png" class="img-responsive">
-                                                        </div>
-                                                        <div class="text">
-                                                            <p class="date font-blue">13 เม.ษ. 63 - 16 พ.ค. 63</p>
-                                                            <p class="desc font-semibold">การประชุมวิชาการระดับชาติด้านการพัฒนาการดำเนินงานทางอุตสาหกรรม ครั้งที่ 11 ประจำปี 2563</p>
-                                                            <p class="type font-semibold font-orange">Conference</p>
-                                                        </div>  
+                                                        <a target="_blank" href="calendar-detail.php">
+                                                            <div class="img">
+                                                                <div class="status is-warning">รอการอนุมัติ</div>
+                                                                <img src="assets/images/calendar1.png" class="img-responsive">
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="date font-blue">13 เม.ษ. 63 - 16 พ.ค. 63</p>
+                                                                <p class="desc font-semibold">การประชุมวิชาการระดับชาติด้านการพัฒนาการดำเนินงานทางอุตสาหกรรม ครั้งที่ 11 ประจำปี 2563</p>
+                                                                <p class="type font-semibold font-orange">Conference</p>
+                                                            </div>  
+                                                        </a>
                                                         <div class="action">
                                                             <a href="" class="font-semibold font-blue font-link" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">แก้ไขข้อมูล</a>
                                                             <a href="" class="font-semibold font-blue font-link">ลบ</a>
@@ -74,15 +76,17 @@
                                                 </div>
                                                 <div class="col col-md-3 col-sm-4">
                                                     <div class="card">
-                                                        <div class="img">
-                                                            <div class="status is-success">อนุมัติแล้ว</div>
-                                                            <img src="assets/images/calendar2.png" class="img-responsive">
-                                                        </div>
-                                                        <div class="text">
-                                                            <p class="date font-blue">13 เม.ษ. 63 - 16 พ.ค. 63</p>
-                                                            <p class="desc font-semibold">อินดัสเทรียล ออโตเมชัน แอนด์ โรโบติกส์ อีเวนท์ (ไอเออาร์)</p>
-                                                            <p class="type font-semibold font-orange">Conference</p>
-                                                        </div>  
+                                                        <a target="_blank" href="calendar-detail.php">
+                                                            <div class="img">
+                                                                <div class="status is-success">อนุมัติแล้ว</div>
+                                                                <img src="assets/images/calendar2.png" class="img-responsive">
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="date font-blue">13 เม.ษ. 63 - 16 พ.ค. 63</p>
+                                                                <p class="desc font-semibold">อินดัสเทรียล ออโตเมชัน แอนด์ โรโบติกส์ อีเวนท์ (ไอเออาร์)</p>
+                                                                <p class="type font-semibold font-orange">Conference</p>
+                                                            </div>  
+                                                        </a>
                                                         <div class="action">
                                                             <a href="" class="font-semibold font-blue font-link" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">แก้ไขข้อมูล</a>
                                                             <a href="" class="font-semibold font-blue font-link">ลบ</a>
@@ -91,15 +95,17 @@
                                                 </div>
                                                 <div class="col col-md-3 col-sm-4">
                                                     <div class="card">
-                                                        <div class="img">
-                                                            <div class="status is-danger">ไม่ผ่านอนุมัติ</div>
-                                                            <img src="assets/images/calendar3.png" class="img-responsive">
-                                                        </div>
-                                                        <div class="text">
-                                                            <p class="date font-blue">13 เม.ษ. 63 - 16 พ.ค. 63</p>
-                                                            <p class="desc font-semibold">งานสัมมนาประจำปีของบริษัทในเครือปีที่ 28</p>
-                                                            <p class="type font-semibold font-orange">Conference</p>
-                                                        </div>  
+                                                        <a target="_blank" href="calendar-detail.php">
+                                                            <div class="img">
+                                                                <div class="status is-danger">ไม่ผ่านอนุมัติ</div>
+                                                                <img src="assets/images/calendar3.png" class="img-responsive">
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="date font-blue">13 เม.ษ. 63 - 16 พ.ค. 63</p>
+                                                                <p class="desc font-semibold">งานสัมมนาประจำปีของบริษัทในเครือปีที่ 28</p>
+                                                                <p class="type font-semibold font-orange">Conference</p>
+                                                            </div>  
+                                                        </a>
                                                         <div class="action">
                                                             <a href="" class="font-semibold font-blue font-link" data-dismiss="modal" data-toggle="modal" data-target="#modal-edit">แก้ไขข้อมูล</a>
                                                             <a href="" class="font-semibold font-blue font-link">ลบ</a>

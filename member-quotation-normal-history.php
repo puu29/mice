@@ -80,7 +80,7 @@
                                                     <div class="btn-box">
                                                         <a href="#" class="btn btn-md text-overflow btn-block btn-blue-linear"  data-dismiss="modal" data-toggle="modal" data-target="#modal-download">ดาวน์โหลดเอกสาร</a>
                                                         <a href="member-chat.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">แชทกับผู้ประกอบการ</a>
-                                                        <a href="member-vdocall.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">วิดีโอคอลสนทนา</a>
+                                                        <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-vdocall" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">วิดีโอคอลสนทนา</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -112,7 +112,7 @@
                                                     <div class="btn-box">
                                                         <a href="#" class="btn btn-md text-overflow btn-block btn-blue-linear"  data-dismiss="modal" data-toggle="modal" data-target="#modal-download">ดาวน์โหลดเอกสาร</a>
                                                         <a href="member-chat.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">แชทกับผู้ประกอบการ</a>
-                                                        <a href="member-vdocall.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">วิดีโอคอลสนทนา</a>
+                                                        <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-vdocall" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">วิดีโอคอลสนทนา</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -144,7 +144,7 @@
                                                     <div class="btn-box">
                                                         <a href="#" class="btn btn-md text-overflow btn-block btn-blue-linear"  data-dismiss="modal" data-toggle="modal" data-target="#modal-download">ดาวน์โหลดเอกสาร</a>
                                                         <a href="member-chat.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">แชทกับผู้ประกอบการ</a>
-                                                        <a href="member-vdocall.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">วิดีโอคอลสนทนา</a>
+                                                        <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-vdocall" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">วิดีโอคอลสนทนา</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -176,7 +176,7 @@
                                                     <div class="btn-box">
                                                         <a href="#" class="btn btn-md text-overflow btn-block btn-blue-linear"  data-dismiss="modal" data-toggle="modal" data-target="#modal-download">ดาวน์โหลดเอกสาร</a>
                                                         <a href="member-chat.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">แชทกับผู้ประกอบการ</a>
-                                                        <a href="member-vdocall.php" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">วิดีโอคอลสนทนา</a>
+                                                        <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-vdocall" class="btn btn-md text-overflow btn-block btn-default mobile-btn-half">วิดีโอคอลสนทนา</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -285,7 +285,108 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="modal-vdocall" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body pd-40">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
+                        <form action="">
+                            <h2 class="font-blue font-semibold no-margin">Video Call (นัดหมาย)</h2>
+                            <p>ท่านสามารถเลือกรูปแบบการติดต่อหรือขอใบเสนอราคาผ่านการวิดีโอคอลสนทนากับผู้ประกอบการมากสุด 5 รายการคำขอ </p>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <label>เขตเวลา</label>
+                                        <div class="select fullwidth">
+                                            <select class="form-control">
+                                                <option value="" selected>(UTC+07.00) Bangkok, Loas, Cambodia, Vietnam</option>
+                                            </select>
+                                            <span class="m-icon m-icon-dropdown"></span>
+                                        </div>
+                                        <p class="required">กรุณาเลือกข้อมูล</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>วันที่นัดหมาย</label>
+                                        <div class="calendar-box">
+                                            <div class="datepicker inline is-appointment"></div>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <br/>
+                                    <div class="form-group">
+                                        <div class="date-status">
+                                            <div><big style="color:#D3322F;">&#9679;</big> วันนี้</div>
+                                            <div><big style="color:#149D60;">&#9679;</big> วันที่สามารถนัดหมาย</div>
+                                            <div><big style="color:#2170B8;">&#9679;</big> เลือกวันนัดหมาย</div>
+                                        </div>
+                                    </div>
+                                    <hr/>
+                                    <div class="form-group">
+                                        <label>วันที่เลือกนัดหมาย</label>
+                                        <p class="font-blue font-16 font-medium">26 มิ.ย. 2020</p>
+                                    </div>
+                                    <br/>
+                                    <div class="form-group">
+                                        <label>เวลา</label>
+                                        <div class="radio-select">
+                                            <div class="radio">
+                                                <input type="radio" name="time" id="time-1">
+                                                <label for="time-1">08.00 - 09.00</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="time" id="time-2">
+                                                <label for="time-2">10.00 - 11.00</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="time" id="time-3">
+                                                <label for="time-3">15.00 - 16.00</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="time" id="time-4">
+                                                <label for="time-4">16.00 - 17.00</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-sm-12">
+                                    <br/>
+                                    <div class="form-group">
+                                        <label>รายละเอียดที่ต้องการสนทนากับผู้ประกอบการ</label>
+                                        <div class="limit-char">
+                                            <textarea class="form-control" rows="5" maxlength="1000" placeholder="ระบุรายละเอียดที่ท่านต้องการสนทนาเพื่อให้ผู้ประกอบการตัดสินใจตกลงนัดหมาย"></textarea>
+                                            <div class="char"><span class="cnt">0</span>/1000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-box text-center">
+                                <a href="member-vdocall-waiting.php" style="width:300px;" class="btn btn-lg btn-blue-linear font-medium">ยืนยันข้อมูลการนัดหมาย</a>
+                            </div>
+                            <br/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <?php include "layout/footer.php" ?>
+
+        <script>
+            (function(){
+                $('.datepicker.inline').datepicker({
+                    multidate: true,
+                    format: 'yyyy-mm-dd',
+                    todayHighlight: true,
+                    datesDisabled: ['2020-11-08','2020-11-13','2020-11-14']
+                });
+            })();
+        </script>
     </body>
 </html>

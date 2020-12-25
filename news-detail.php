@@ -16,8 +16,8 @@
                     <div class="news-detail">
                         <img class="img" src="assets/images/news-detail-cover.png">
                         <div class="text">
-                            <div class="share is-vertical">
-                                <span class="font-bold font-black">แชร์</span>
+                            <div class="share is-vertical is-sticky">
+                                <span class="font-bold font-black">Share</span>
                                 <br/>
                                 <div class="social">
                                     <a href="#" target="_blank" class="inner"><i class="m-icon m-icon-fb"></i></a><br/>

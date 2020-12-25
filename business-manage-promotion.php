@@ -57,11 +57,13 @@
                                                 </div>
                                                 <div class="col col-md-4 col-sm-6">
                                                     <div class="card-manage shadow-blue">
-                                                        <div class="img">
-                                                            <div class="bg" style="background-image: url('assets/images/pro1.png')"></div>
-                                                        </div>
-                                                        <div class="name font-bold"></div>
-                                                        <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        <a target="_blank" href="news-detail.php">
+                                                            <div class="img">
+                                                                <div class="bg" style="background-image: url('assets/images/pro1.png')"></div>
+                                                            </div>
+                                                            <div class="name font-bold"></div>
+                                                            <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        </a>
                                                         <div class="row is-small">
                                                             <div class="col col-xs-7">
                                                                 <div class="date">
@@ -80,11 +82,13 @@
                                                 </div>
                                                 <div class="col col-md-4 col-sm-6">
                                                     <div class="card-manage shadow-blue">
-                                                        <div class="img">
-                                                            <div class="bg" style="background-image: url('assets/images/pro2.png')"></div>
-                                                        </div>
-                                                        <div class="name font-bold"></div>
-                                                        <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        <a target="_blank" href="news-detail.php">
+                                                            <div class="img">
+                                                                <div class="bg" style="background-image: url('assets/images/pro2.png')"></div>
+                                                            </div>
+                                                            <div class="name font-bold"></div>
+                                                            <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        </a>
                                                         <div class="row is-small">
                                                             <div class="col col-xs-7">
                                                                 <div class="date">
@@ -103,11 +107,13 @@
                                                 </div>
                                                 <div class="col col-md-4 col-sm-6">
                                                     <div class="card-manage shadow-blue">
-                                                        <div class="img">
-                                                            <div class="bg" style="background-image: url('assets/images/pro3.png')"></div>
-                                                        </div>
-                                                        <div class="name font-bold"></div>
-                                                        <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        <a target="_blank" href="news-detail.php">
+                                                            <div class="img">
+                                                                <div class="bg" style="background-image: url('assets/images/pro3.png')"></div>
+                                                            </div>
+                                                            <div class="name font-bold"></div>
+                                                            <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        </a>
                                                         <div class="row is-small">
                                                             <div class="col col-xs-7">
                                                                 <div class="date">
@@ -126,11 +132,13 @@
                                                 </div>
                                                 <div class="col col-md-4 col-sm-6">
                                                     <div class="card-manage shadow-blue">
-                                                        <div class="img">
-                                                            <div class="bg" style="background-image: url('assets/images/pro4.png')"></div>
-                                                        </div>
-                                                        <div class="name font-bold"></div>
-                                                        <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        <a target="_blank" href="news-detail.php">    
+                                                            <div class="img">
+                                                                <div class="bg" style="background-image: url('assets/images/pro4.png')"></div>
+                                                            </div>
+                                                            <div class="name font-bold"></div>
+                                                            <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        </a>
                                                         <div class="row is-small">
                                                             <div class="col col-xs-7">
                                                                 <div class="date">
@@ -149,11 +157,13 @@
                                                 </div>
                                                 <div class="col col-md-4 col-sm-6">
                                                     <div class="card-manage shadow-blue">
-                                                        <div class="img">
-                                                            <div class="bg" style="background-image: url('assets/images/pro5.png')"></div>
-                                                        </div>
-                                                        <div class="name font-bold"></div>
-                                                        <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        <a target="_blank" href="news-detail.php">
+                                                            <div class="img">
+                                                                <div class="bg" style="background-image: url('assets/images/pro5.png')"></div>
+                                                            </div>
+                                                            <div class="name font-bold"></div>
+                                                            <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        </a>
                                                         <div class="row is-small">
                                                             <div class="col col-xs-7">
                                                                 <div class="date">
@@ -172,11 +182,13 @@
                                                 </div>
                                                 <div class="col col-md-4 col-sm-6">
                                                     <div class="card-manage shadow-blue">
-                                                        <div class="img">
-                                                            <div class="bg" style="background-image: url('assets/images/pro6.png')"></div>
-                                                        </div>
-                                                        <div class="name font-bold"></div>
-                                                        <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        <a target="_blank" href="news-detail.php">
+                                                            <div class="img">
+                                                                <div class="bg" style="background-image: url('assets/images/pro6.png')"></div>
+                                                            </div>
+                                                            <div class="name font-bold"></div>
+                                                            <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        </a>
                                                         <div class="row is-small">
                                                             <div class="col col-xs-7">
                                                                 <div class="date">
@@ -195,11 +207,13 @@
                                                 </div>
                                                 <div class="col col-md-4 col-sm-6">
                                                     <div class="card-manage shadow-blue">
-                                                        <div class="img">
-                                                            <div class="bg" style="background-image: url('assets/images/pro7.png')"></div>
-                                                        </div>
-                                                        <div class="name font-bold"></div>
-                                                        <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        <a target="_blank" href="news-detail.php">
+                                                            <div class="img">
+                                                                <div class="bg" style="background-image: url('assets/images/pro7.png')"></div>
+                                                            </div>
+                                                            <div class="name font-bold"></div>
+                                                            <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        </a>
                                                         <div class="row is-small">
                                                             <div class="col col-xs-7">
                                                                 <div class="date">
@@ -218,11 +232,13 @@
                                                 </div>
                                                 <div class="col col-md-4 col-sm-6">
                                                     <div class="card-manage shadow-blue">
-                                                        <div class="img">
-                                                            <div class="bg" style="background-image: url('assets/images/pro8.png')"></div>
-                                                        </div>
-                                                        <div class="name font-bold"></div>
-                                                        <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        <a target="_blank" href="news-detail.php">
+                                                            <div class="img">
+                                                                <div class="bg" style="background-image: url('assets/images/pro8.png')"></div>
+                                                            </div>
+                                                            <div class="name font-bold"></div>
+                                                            <div class="desc">เจอกัน ที่ งานไทยเที่ยวไทย ครั้งที่ 54 วันที่ 5 - 8 มีนาคม 2563 พิเศษ!! ลด แจก เพิ่ม จากราคาในโบรชัวร์</div>
+                                                        </a>
                                                         <div class="row is-small">
                                                             <div class="col col-xs-7">
                                                                 <div class="date">

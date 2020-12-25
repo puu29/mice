@@ -285,7 +285,7 @@
                             <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคา<br/>เรียบร้อยแล้ว</h2>
                             <p></p>
                             <div class="btn-box">
-                                <a href="member.php" style="width:300px;" class="btn btn-lg btn-blue-linear">ดูประวัติการขอใบเสนอราคา</a>
+                                <a href="member-quotation-normal.php" style="width:300px;" class="btn btn-lg btn-blue-linear">ดูประวัติการขอใบเสนอราคา</a>
                             </div>
                             <br/><br/>
                         </div>

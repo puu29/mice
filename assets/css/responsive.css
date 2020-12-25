@@ -1,6 +1,6 @@
 @media (max-width: 991px){
     header #menu{
-        width: calc(100% - 210px);
+        width: calc(100% - 215px);
         padding: 0px;
     }
     header #menu > ul{
@@ -274,6 +274,9 @@
         top: 0px;
         margin-top: 20px;
         border: 0px;
+        white-space: normal;
+        overflow-x: hidden;
+        display: inline-block;
     }
     .faq-page .tab .nav-tabs li{
         width: 100%;
@@ -608,6 +611,9 @@
         bottom: 10px;
         left: 15px;
         padding: 4.5px 13px;
+    }
+    .to-top{
+        margin-bottom: 60px;
     }
 }
 
@@ -2438,6 +2444,9 @@
     }
     .banner .banner-box{
         height: 70vw;
+    }
+    .to-top{
+        margin-bottom: 100px;
     }
 }
 

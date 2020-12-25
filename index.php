@@ -662,9 +662,12 @@
                     }
                 }).on('changeDate', function(e) {
                     var position = $('.calendar-detail .inner[data-date="'+e.format()+'"]').position();
-                    $('.calendar-detail').stop().animate({
-                        scrollTop: position.top
-                    }, 'fast');
+                    if(position !== undefined)
+                    {
+                        $('.calendar-detail').stop().animate({
+                            scrollTop: position.top
+                        }, 'fast');
+                    }
                 });
                 
                 // mockup focus month 11

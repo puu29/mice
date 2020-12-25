@@ -188,17 +188,35 @@
         <?php include "layout/footer.php" ?>
         <script>
             (function(){
-                $('.faq-page .nav-tabs li').click(function(){
-                    $('.faq-page .nav-tabs').hide();
-                    $('.faq-title h3').html($(this).html());
-                    $('.faq-page .tab-content, .faq-title').fadeIn(300);
-                });
+                faq_action();
 
-                $('.faq-title .to-back').click(function(){
-                    $('.faq-page .tab-content, .faq-title').hide();
-                    $('.faq-page .nav-tabs').fadeIn(300);
+                $(window).resize(function(){
+                    faq_action();
                 });
             })();
+
+            function faq_action()
+            {
+                if($(window).width() < 768)
+                {
+                    $('.faq-page .nav-tabs li').click(function(){
+                        $('.faq-page .nav-tabs').hide();
+                        $('.faq-title h3').html($(this).html());
+                        $('.faq-page .tab-content, .faq-title').fadeIn(300);
+                    });
+
+                    $('.faq-title .to-back').click(function(){
+                        $('.faq-page .tab-content, .faq-title').hide();
+                        $('.faq-page .nav-tabs').fadeIn(300);
+                    });
+                }
+                else
+                {
+                    $('.faq-page .nav-tabs').show();
+                    $('.faq-page .tab-content').show();
+                    $('.faq-title').hide();
+                }
+            }
         </script>
     </body>
 </html>

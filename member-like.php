@@ -79,7 +79,7 @@
                                         </div>
                                         <div class="btn-box ">
                                             <a href="search-map.php" class="btn btn-md btn-trans font-14">ดูตำแหน่งในแผนที่</a>
-                                            <a href="search-detail.php" class="btn btn-md btn-default font-14">ดูข้อมูลสถานที่</a>
+                                            <a href="search-detail.php" class="btn btn-md btn-default font-14 btn-info-toggle">ดูข้อมูลสถานที่</a>
                                         </div>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@
                                         </div>
                                         <div class="btn-box ">
                                             <a href="search-map.php" class="btn btn-md btn-trans font-14">ดูตำแหน่งในแผนที่</a>
-                                            <a href="search-detail.php" class="btn btn-md btn-default font-14">ดูข้อมูลสถานที่</a>
+                                            <a href="search-detail.php" class="btn btn-md btn-default font-14 btn-info-toggle">ดูข้อมูลสถานที่</a>
                                         </div>
                                     </div>
                                 </div>
@@ -172,7 +172,7 @@
                                         </div>
                                         <div class="btn-box ">
                                             <a href="search-map.php" class="btn btn-md btn-trans font-14">ดูตำแหน่งในแผนที่</a>
-                                            <a href="search-detail.php" class="btn btn-md btn-default font-14">ดูข้อมูลสถานที่</a>
+                                            <a href="search-detail.php" class="btn btn-md btn-default font-14 btn-info-toggle">ดูข้อมูลสถานที่</a>
                                         </div>
                                     </div>
                                 </div>
@@ -218,7 +218,7 @@
                                         </div>
                                         <div class="btn-box ">
                                             <a href="search-map.php" class="btn btn-md btn-trans font-14">ดูตำแหน่งในแผนที่</a>
-                                            <a href="search-detail.php" class="btn btn-md btn-default font-14">ดูข้อมูลสถานที่</a>
+                                            <a href="search-detail.php" class="btn btn-md btn-default font-14 btn-info-toggle">ดูข้อมูลสถานที่</a>
                                         </div>
                                     </div>
                                 </div>
@@ -264,7 +264,7 @@
                                         </div>
                                         <div class="btn-box ">
                                             <a href="search-map.php" class="btn btn-md btn-trans font-14">ดูตำแหน่งในแผนที่</a>
-                                            <a href="search-detail.php" class="btn btn-md btn-default font-14">ดูข้อมูลสถานที่</a>
+                                            <a href="search-detail.php" class="btn btn-md btn-default font-14 btn-info-toggle">ดูข้อมูลสถานที่</a>
                                         </div>
                                     </div>
                                 </div>
@@ -310,7 +310,7 @@
                                         </div>
                                         <div class="btn-box ">
                                             <a href="search-map.php" class="btn btn-md btn-trans font-14">ดูตำแหน่งในแผนที่</a>
-                                            <a href="search-detail.php" class="btn btn-md btn-default font-14">ดูข้อมูลสถานที่</a>
+                                            <a href="search-detail.php" class="btn btn-md btn-default font-14 btn-info-toggle">ดูข้อมูลสถานที่</a>
                                         </div>
                                     </div>
                                 </div>

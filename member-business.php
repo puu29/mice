@@ -78,7 +78,7 @@
                                         </div>
                                         <div class="col-xs-12">
                                             <div class="btn-box">
-                                                <a href="business-manage.php" class="btn-blue-linear btn-block btn btn-md font-bold">จัดการธุรกิจ</a>
+                                                <a href="business-manage.php?new=1" class="btn-blue-linear btn-block btn btn-md font-bold">จัดการธุรกิจ</a>
                                             </div>
                                         </div>
                                     </div>

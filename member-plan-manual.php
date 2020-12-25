@@ -118,10 +118,10 @@
                                         <h3>ส่วนที่ 2 : เลือกกลุ่มธุรกิจเฉพาะ</h3>
                                         <p class="no-margin">ท่านสามารถเลือกกลุ่มธุรกิจเฉพาะเพื่อการค้นหาที่่ตรงกับความต้องการของท่านให้เร็วยิ่งขึ้น โดยในหน้าถัดไประบบจะแสดงเฉพาะกลุ่มธุรกิจที่ท่านได้ทำการเลือกไว้เท่านั้น</p><br/>
                                         <div class="col-3 mobile-col-2">
-                                            <div class="form-group no-margin">
+                                            <div class="form-group no-margin" id="business-checkbox">
                                                 <div class="checkbox">
-                                                    <input type="checkbox" id="checkbox1">
-                                                    <label class="mobile-font-regular" for="checkbox1">ออร์แกไนเซอร์</label>
+                                                    <input type="checkbox" id="checkbox1" checked>
+                                                    <label class="mobile-font-regular" for="checkbox1" >ออร์แกไนเซอร์</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input type="checkbox" id="checkbox2">
@@ -169,81 +169,244 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <hr/>
-                                        <p class="font-blue"><b>ออร์แกไนเซอร์</b></p>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="font-semibold">สิ่งอำนวยความสะดวก</label>
-                                                    <div class="select fullwidth">
-                                                        <select class="form-control">
-                                                            <option value="">เลือกสิ่งอำนวยความสะดวกที่ต้องการ</option>
-                                                        </select>
-                                                        <span class="m-icon m-icon-dropdown"></span>
+                                        <div class="business-box" id="business-box">
+                                            <div class="inner" style="display: block">
+                                                <hr/>
+                                                <p>ข้อมูลสำหรับออร์แกไนเซอร์</p>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">สิ่งอำนวยความสะดวก</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกสิ่งอำนวยความสะดวกที่ต้องการ</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
                                                     </div>
-                                                    <p class="required">กรุณาเลือกข้อมูล</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="font-semibold">งบประมาณที่ประมาณไว้</label>
-                                                    <input type="text" data-mask="#,###" data-mask-reverse="true" class="form-control" placeholder="ระบุงบประมาณ">
-                                                    <p class="required">กรุณากรอกข้อมูล</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="font-semibold">จำนวนคนที่ต้องการ (ทีมงาน)</label>
-                                                    <input type="text" data-mask="00000" class="form-control" placeholder="ระบุจำนวนคน">
-                                                    <p class="required">กรุณากรอกข้อมูล</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr/>
-                                        <p class="font-blue"><b>สถานที่จัดงาน</b></p>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="font-semibold">สิ่งอำนวยความสะดวกในการเดินทาง</label>
-                                                    <div class="select fullwidth">
-                                                        <select class="form-control">
-                                                            <option value="">เลือกสิ่งอำนวยความสะดวกที่ต้องการ</option>
-                                                        </select>
-                                                        <span class="m-icon m-icon-dropdown"></span>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">งบประมาณที่ประมาณไว้</label>
+                                                            <input type="text" data-mask="#,###" data-mask-reverse="true" class="form-control" placeholder="ระบุงบประมาณ">
+                                                            <p class="required">กรุณากรอกข้อมูล</p>
+                                                        </div>
                                                     </div>
-                                                    <p class="required">กรุณาเลือกข้อมูล</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="font-semibold">ขนาดพื้นที่ที่ต้องการ (ตร.ม.)</label>
-                                                    <input type="text" data-mask="00000" class="form-control" placeholder="ระบุขนาดพื้นที่">
-                                                    <p class="required">ระบุขนาดพื้นที่</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="font-semibold">ประเภทห้อง</label>
-                                                    <div class="select fullwidth">
-                                                        <select class="form-control">
-                                                            <option value="">เลือกประเภทห้อง</option>
-                                                        </select>
-                                                        <span class="m-icon m-icon-dropdown"></span>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">จำนวนคนที่ต้องการ (ทีมงาน)</label>
+                                                            <input type="text" data-mask="00000" class="form-control" placeholder="ระบุจำนวนคน">
+                                                            <p class="required">กรุณากรอกข้อมูล</p>
+                                                        </div>
                                                     </div>
-                                                    <p class="required">กรุณาเลือกข้อมูล</p>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="font-semibold">สิ่งอำนวยความสะดวกอื่นๆ</label>
-                                                    <div class="select fullwidth">
-                                                        <select class="form-control">
-                                                            <option value="">เลือกสิ่งอำนวยความสะดวกอื่นๆ</option>
-                                                        </select>
-                                                        <span class="m-icon m-icon-dropdown"></span>
+                                            <div class="inner">
+                                                <hr/>
+                                                <p>ข้อมูลสำหรับสถานที่จัดงาน</p>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">สิ่งอำนวยความสะดวกในการเดินทาง</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกสิ่งอำนวยความสะดวกที่ต้องการ</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
                                                     </div>
-                                                    <p class="required">กรุณาเลือกข้อมูล</p>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">ขนาดพื้นที่ที่ต้องการ (ตร.ม.)</label>
+                                                            <input type="text" data-mask="00000" class="form-control" placeholder="ระบุขนาดพื้นที่">
+                                                            <p class="required">ระบุขนาดพื้นที่</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">ประเภทห้อง</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกประเภทห้อง</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">สิ่งอำนวยความสะดวกอื่นๆ</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกสิ่งอำนวยความสะดวกอื่นๆ</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <div class="inner">
+                                                <!-- ข้อมูลสำหรับบริการสำหรับผู้จัดงาน (ไม่มี) -->
+                                            </div>
+                                            <div class="inner">
+                                                <hr/>
+                                                <p>ข้อมูลสำหรับที่พัก</p>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">มาตรฐานดาวของโรงแรม</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกมาตรฐานดาวของโรงแรม</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">สิ่งอำนวนความสะดวก/บริการในสถานประกอบการ</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกสิ่งอำนวนความสะดวก/บริการในสถานประกอบการ</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">ข้อมูลสิ่งนันทนาการของสถานประกอบการ</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกข้อมูลสิ่งนันทนาการของสถานประกอบการ</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner">
+                                                <!-- ข้อมูลสำหรับ Logistic (ไม่มี) -->
+                                            </div>
+                                            <div class="inner">
+                                                <hr/>
+                                                <p>ข้อมูลสำหรับอาหารและเครื่องดื่ม</p>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">ระดับราคาอาหาร (คน)</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกระดับราคาอาหาร</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">ความสามารถในการรองรับ (ที่)</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกความสามารถในการรองรับ (ที่)</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">ประเภทอาหารที่มีให้บริการ</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">ระบุประเภทอาหาร</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner">
+                                                <!-- ข้อมูลสำหรับร้านค้า/สินค้า (ไม่มี) -->
+                                            </div>
+                                            <div class="inner">
+                                                <hr/>
+                                                <p>ข้อมูลสำหรับท่องเที่ยว/นำเที่ยว</p>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">ข้อมูลเฉพาะด้านการท่องเที่ยว</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกข้อมูลเฉพาะด้านการท่องเที่ยว</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner">
+                                                <!-- ข้อมูลสำหรับโชว์/การแสดง (ไม่มี) -->
+                                            </div>
+                                            <div class="inner">
+                                                <hr/>
+                                                <p>ข้อมูลสำหรับวิทยากร</p>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">ประเภทความถนัดของวิทยากร</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกประเภทความถนัดของวิทยากร</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">ประสบการณ์ (ปี)</label>
+                                                            <input type="text" data-mask="#,###" data-mask-reverse="true" class="form-control" placeholder="ระบุงบประมาณ">
+                                                            <p class="required">กรุณากรอกข้อมูล</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="font-semibold">ประเภทภาษา</label>
+                                                            <div class="select fullwidth">
+                                                                <select class="form-control">
+                                                                    <option value="">เลือกประเภทภาษา</option>
+                                                                </select>
+                                                                <span class="m-icon m-icon-dropdown"></span>
+                                                            </div>
+                                                            <p class="required">กรุณาเลือกข้อมูล</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner">
+                                                <!-- ข้อมูลสำหรับหน่วยงานที่เกี่ยวข้อง (ไม่มี) -->
+                                            </div>
+                                            <div class="inner">
+                                                <!-- ข้อมูลสำหรับธุรกิจบริการอื่นๆ (ไม่มี) -->
                                             </div>
                                         </div>
                                     </div>
@@ -260,5 +423,22 @@
             </section>
         </div>
         <?php include "layout/footer.php" ?>
+
+        <script>
+            (function(){
+                $('#business-checkbox .checkbox input').change(function(){
+                    var index = $(this).parents('.checkbox').index();
+                    var checked = $(this).prop('checked');
+                    if(checked)
+                    {
+                        $('#business-box .inner').eq(index).show();
+                    }
+                    else
+                    {
+                        $('#business-box .inner').eq(index).hide()
+                    } 
+                });
+            })();
+        </script>
     </body>
 </html>

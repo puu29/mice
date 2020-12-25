@@ -220,7 +220,7 @@
                                 </div>
                             </div>
                             <div class="btn-box text-center mobile-no-margin-top">
-                                <button type="button" data-dismiss="modal"  class="btn btn-md btn-blue-linear font-medium btn-minwidth mobile-btn-block">ยืนยันการยกเลิกคำขอ</button>
+                                <a href="business-manage-quotation-reject.php"  class="btn btn-md btn-blue-linear font-medium btn-minwidth mobile-btn-block">ยืนยันการยกเลิกคำขอ</a>
                             </div>
                             <br class="hidden-mobile"/>
                         </form>

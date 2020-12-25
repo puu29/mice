@@ -9,7 +9,7 @@
             <section class="member">
                 <?php include "layout/nav-member.php" ?>
                 <div class="member-body">
-                    <div class="clearfix">
+                    <div class="clearfix hidden-desktop">
                         <a href="javascript:history.back()" class="to-back font-blue pull-left">
                             <div class="text-icon is-middle">
                                 <i class="glyphicon glyphicon-menu-left"></i>

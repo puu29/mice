@@ -33,10 +33,30 @@
                                             <p class="required">กรุณากรอกข้อมูล</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="pull-left">เบอร์โทรศัพท์</label>
                                             <input type="text" class="form-control" data-mask="000-000-0000" placeholder="0__-___-____">
+                                            <p class="required">กรุณากรอกข้อมูล</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>รหัสผ่าน</label>
+                                            <div class="action-showpass">
+                                                <input type="password" class="form-control" placeholder="ใส่รหัสผ่านของท่าน">
+                                                <i class="m-icon m-icon-eye"></i>
+                                            </div>
+                                            <p class="required">กรุณากรอกข้อมูล</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>ยืนยันรหัสผ่าน</label>
+                                            <div class="action-showpass">
+                                                <input type="password" class="form-control" placeholder="ยืนยันรหัสผ่านอีกครั้ง">
+                                                <i class="m-icon m-icon-eye"></i>
+                                            </div>
                                             <p class="required">กรุณากรอกข้อมูล</p>
                                         </div>
                                     </div>

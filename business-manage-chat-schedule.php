@@ -277,6 +277,13 @@
         <?php include "layout/footer.php" ?>
         <script>
             (function(){
+                $('table .radio-select input').change(function(){
+                    var tr = $(this).parents('tr');
+                    var sum = tr.find('.radio-select input:checked').length;
+                    console.log(sum);
+                    tr.find('.checkbox input').prop('checked', sum > 0);
+                });
+
                 $(window).resize(function(){
                     set_layout();
                 });

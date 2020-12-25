@@ -57,7 +57,7 @@
                 </a>
             </li>
             <li class="back-member hidden-mobile">
-                <a href="member-business.php">
+                <a href="member-profile.php">
                     <span class="font-regular">กลับหน้าบัญชีทั่วไป</span>
                 </a>
             </li>

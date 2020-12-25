@@ -21,7 +21,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="panel panel-default">
-                                <div class="panel-body">
+                                <div class="panel-body" id="step1">
                                     <div class="row">
                                         <div class="col-sm-3">
                                             <h3 class="font-semibold no-margin-top"><big>กิจกรรมงานสัมมนาครั้งที่ 5</big></h3>
@@ -65,12 +65,12 @@
                         <div class="col-md-8 col-sm-12">
                             <h3 class="font-semibold no-margin-bottom hidden-mobile">เลือกผู้ให้บริการ</h3>
                             <div class="select-service">
-                                <ul class="service-type">
+                                <ul class="service-type" id="step2">
                                     <h3 class="font-semibold no-margin-top hidden-desktop">เลือกผู้ให้บริการ</h3>
                                     <li data-type="1" onclick="switch_type(1)">ออร์แกไนเซอร์</li>
                                     <li class="active" data-type="2" onclick="switch_type(2)">Online Event</li>
                                 </ul>
-                                <div class="service-list scroll-custom">
+                                <div class="service-list scroll-custom" id="step3">
                                     <div class="post style-2" data-type="2" data-id="1">
                                         <div class="bg" style="background-image: url('assets/images/plan-post1.png')"><i class="m-icon m-icon-like-white"></i></div>
                                         <div class="text">
@@ -233,7 +233,7 @@
                                         <span><u>ตรวจสอบผู้ให้บริการที่เลือกแล้ว</u></span>
                                     </div>
                                     <div class="clearfix"><br/></div>
-                                    <button type="button" class="btn btn-block btn-md btn-blue-linear font-medium btn-request" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">ดำเนินการขอใบเสนอราคา</button>
+                                    <a href="member-quotation.php" class="btn btn-block btn-md btn-blue-linear font-medium btn-request" >ดำเนินการขอใบเสนอราคา</a>
                                 </div>  
                                 <div class="clearfix">
                                     <br/>
@@ -245,7 +245,7 @@
                                 <h3 class="font-semibold no-margin-bottom">ผู้ให้บริการที่เลือกแล้ว</h3>
                             </div>
                             <div class="selected-service scroll-custom">
-                                <div class="panel panel-info" data-type="1">
+                                <div class="panel panel-info" data-type="1" id="step4">
                                     <div class="panel-heading">ออร์แกไนเซอร์</div>
                                     <div class="panel-body">
                                         <div class="list" data-id="2">
@@ -341,140 +341,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-block btn-md btn-blue-linear font-medium btn-request" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation">ดำเนินการขอใบเสนอราคา</button>
+                            <a href="member-quotation.php" id="step5" class="btn btn-block btn-md btn-blue-linear font-medium btn-request">ดำเนินการขอใบเสนอราคา</a>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
-
-        <div class="modal fade" id="modal-quotation" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body font-16 pd-40">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
-                        <form action="" method="post" class="form-quotation">
-                            <h2 class="title-yelloow">ขอใบเสนอราคา</h2>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label class="font-medium">จำนวนคนที่เข้าร่วม <span class="font-red">*</span></label>
-                                        <input type="text" class="form-control" placeholder="ระบุจำนวนคน">
-                                        <p class="required">กรุณากรอกข้อมูล</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label class="font-medium">งบประมาณ (หากต้องการระบุ)</label>
-                                        <input type="text" class="form-control" placeholder="ระบุงบประมาณในการจัดงาน">
-                                        <p class="required">กรุณากรอกข้อมูล</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label class="font-medium">วันที่เริ่มงาน <span class="font-red">*</span></label>
-                                        <div class="input-group is-calendar">
-                                            <input type="text" class="form-control datepicker2" placeholder="DD/MM/YYYY">
-                                            <span class="input-group-addon bg-custom b-0"><i class="m-icon m-icon-calendar"></i></span>
-                                        </div>
-                                        <p class="required">กรุณาเลือกข้อมูล</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label class="font-medium">วันที่สิ้นสุดงาน <span class="font-red">*</span></label>
-                                        <div class="input-group is-calendar">
-                                            <input type="text" class="form-control datepicker2" placeholder="DD/MM/YYYY">
-                                            <span class="input-group-addon bg-custom b-0"><i class="m-icon m-icon-calendar"></i></span>
-                                        </div>
-                                        <p class="required">กรุณาเลือกข้อมูล</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                        <label class="font-medium">เวลา <span class="font-red">*</span></label>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="form-group">
-                                        <div class="select fullwidth">
-                                            <select class="form-control">
-                                                <option value="">10.00</option>
-                                            </select>
-                                            <span class="m-icon m-icon-dropdown"></span>
-                                        </div>
-                                        <p class="required">กรุณาเลือกข้อมูล</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="form-group">
-                                        <div class="select fullwidth">
-                                            <select class="form-control">
-                                                <option value="">19.00</option>
-                                            </select>
-                                            <span class="m-icon m-icon-dropdown"></span>
-                                        </div>
-                                        <p class="required">กรุณาเลือกข้อมูล</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label class="font-medium">รายละเอียดอื่นๆ เพิ่มเติม</label>
-                                        <textarea class="form-control" rows="5" placeholder="ระบุรายละเอียดที่ท่านต้องการเพื่อให้ผู้ประกอบการสามารถออกใบเสนอราคาได้อย่างครบถ้วน"></textarea>
-                                        <p class="required">กรุณากรอกข้อมูล</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn-box text-center">
-                                <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-quotation-success"  class="btn btn-lg btn-blue-linear font-medium">ขอใบเสนอราคา</button>
-                            </div>
-                            <br/>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="modal-quotation-success" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body font-16 pd-40">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
-                        <div class="status-box">
-                            <br/><br/>
-                            <img src="assets/images/status-success.png">
-                            <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคา<br/>เรียบร้อยแล้ว</h2>
-                            <p></p>
-                            <div class="btn-box">
-                                <a href="member.php" style="width:300px;" class="btn btn-lg btn-blue-linear">ดูประวัติการขอใบเสนอราคา</a>
-                            </div>
-                            <br/><br/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="modal-quotation-fail" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body font-16 mobile-font-16 pd-40">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
-                        <div class="status-box mobile-custom">
-                            <br/><br/>
-                            <img src="assets/images/status-fail.png">
-                            <h2 class="font-medium">ระบบดำเนินการส่งคำขอใบเสนอราคา <b class="font-red font-semibold">ไม่สำเร็จ</b></h2>
-                            <p class="font-medium">กรุณาทำรายการใหม่อีกครั้ง</p>
-                            <div class="btn-box">
-                                <a href="#" style="width:300px;" data-dismiss="modal" class="btn btn-lg btn-red">ทำรายการอีกครั้ง</a>
-                            </div>
-                            <br/><br/>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <?php include "layout/footer.php" ?>
@@ -535,6 +406,70 @@
                 $('.service-list .post').attr('data-type', value);
                 $('.service-list').hide().fadeIn(300);
             }
+
+            function set_tour()
+            {
+                var arrHelp = [
+                    {
+                        element: '#step1',
+                        intro: '<h4>ขั้นตอนที่ 1/5</h4><p>ตรวจสอบความถูกต้องของข้อมูลที่ท่านได้กรอกรายละเอียดไปก่อนหน้านี้</p>',
+                        position: 'bottom'
+                    },
+                    {
+                        element: '#step2',
+                        intro: '<h4>ขั้นตอนที่ 2/5</h4><p>เลือกประเภทของกลุ่มธุรกิจที่ท่านต้องการดูรายชื่อสถานประกอบการที่ต้องการ</p>',
+                        position: 'right'
+                    },
+                    {
+                        element: '#step3',
+                        intro: '<h4>ขั้นตอนที่ 3/5</h4><p>เลือกสถานประกอบการที่ท่านต้องการขอใบเสนอราคาโดยกด <span class="font-blue">+เพิ่มเข้าแผนจัดงาน</span> หรือสามารถกดดูรายละเอียดข้อมูลได้ที่ปุ่ม <span class="font-blue">ดูข้อมูลสถานที่</span> </p>',
+                        position: 'right'
+                    },
+                    {
+                        element: '#step4',
+                        intro: '<h4>ขั้นตอนที่ 4/5</h4><p>เมื่อท่านทำการเพิ่มเข้าแผนจัดงาน ระบบจะแสดงข้อมูลที่ท่านเลือกไว้ด้านขวา และสามารถกดลบได้ที่ปุ่มขวาบนกล่อง ( ••• )</p>',
+                        position: 'bottom'
+                    },
+                    {
+                        element: '#step5',
+                        intro: '<h4>ขั้นตอนที่ 5/5</h4><p>เมื่อท่านได้เลือกรายการธุรกิจครบตามที่ต้องการสามารถกดปุ่ม ดำเนินการขอใบเสนอราคา และระบบจะทำการส่งคำขอทันที</p>',
+                        position: 'left'
+                    },
+                ];
+
+                var tour = introJs();
+                tour.setOptions({
+                    steps: arrHelp,
+                    showStepNumbers: false,
+                    showBullets: false,
+                    nextLabel: 'ดูขั้นตอนถัดไป',
+                    prevLabel: '<span class=\'glyphicon glyphicon-menu-left\'></span> ย้อนกลับ',
+                    doneLabel: 'เข้าใจและปิด',
+                    skipLabel: 'ข้าม',
+                    hidePrev: true,
+                    hideNext: false,
+                    scrollToElement: true,
+                    scrollTo: 'element',
+                    onbeforechange: function(val) {
+                        console.log(val);
+                    }
+                });
+                tour.onchange(function(){
+                    $('body').addClass('for-tour');
+                });
+                tour.onexit(function(){
+                    $('body').removeClass('for-tour');
+                });
+                tour.start();
+            }
+
+            (function(){
+                if($(window).width() >= 768)
+                {
+                    set_tour();
+                }
+            })();
+            
         </script>
     </body>
 </html>

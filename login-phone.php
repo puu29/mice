@@ -26,6 +26,16 @@
                                             <p class="required">กรุณากรอกข้อมูล</p>
                                         </div>
                                     </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="pull-left">รหัสผ่าน</label>
+                                            <div class="action-showpass">
+                                                <input type="password" class="form-control" placeholder="ใส่รหัสผ่านของท่าน">
+                                                <i class="m-icon m-icon-eye"></i>
+                                            </div>
+                                            <p class="required">กรุณากรอกข้อมูล</p>
+                                        </div>
+                                    </div>
                                     <div class="col-sm-12 text-center">
                                         <div class="form-group">
                                             <br/><br/>

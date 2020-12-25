@@ -76,7 +76,7 @@
                                                         <span>ย้อนกลับ</span>
                                                     </div>
                                                 </a>
-                                                <form action="" method="post" class="b-quotation-detail mobile-font-16">
+                                                <form action="business-manage-quotation-history.php" method="post" class="b-quotation-detail mobile-font-16">
                                                     <div class="row">
                                                         <div class="col-sm-8">
                                                             <div class="user width-45">

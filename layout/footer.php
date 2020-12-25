@@ -27,7 +27,6 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">เกี่ยวกับ Thai MICE <span class="glyphicon glyphicon-menu-down"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.php">เกี่ยวกับ Thai MICE Connect</a></li>
-                            <li><a href="article.php">บทความไมซ์</a></li>
                             <li><a href="policy.php">นโยบายความเป็นส่วนตัว</a></li>
                         </ul>
                     </li>

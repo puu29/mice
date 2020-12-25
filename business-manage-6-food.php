@@ -76,7 +76,7 @@
                                                             <span class="font-18 font-semibold"><big>34,034&nbsp;</big></span>
                                                         </div>
                                                     </div>
-                                                    <a href="business-score.php" style="width: 160px;margin-top: 5px;" class="btn btn-md btn-blue font-semibold pull-right">แลกคะแนน</a>
+                                                    <a href="business-score-redeem.php" style="width: 160px;margin-top: 5px;" class="btn btn-md btn-blue font-semibold pull-right">แลกคะแนน</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3118,6 +3118,26 @@
                         <h3 class="no-margin font-semibold">ข้อมูลจำนวนห้องพักและขนาดห้องพักภายในโรงแรม</h3>
                     </div>
                     <div class="modal-body pd-40">
+                        <script>
+                            function select_hotel_room(e)
+                            {
+                                $('#btn-hotel-room').prop('disabled', true);
+                                $('.hotel-other-box').hide();
+                                $('#hotel-room-other-name').hide();
+
+                                if($('input[name="hotel-room"]:checked').length > 0)
+                                {
+                                    $('#btn-hotel-room').prop('disabled', false);
+                                    $('.hotel-other-box').show();
+                                    $('#hotel-room-type').html($('input[name="hotel-room"]:checked').val());
+
+                                    if($('input[name="hotel-room"]:checked').val() == 'ระบุประเภทเอง')
+                                    {
+                                        $('#hotel-room-other-name').show();
+                                    }
+                                }
+                            }  
+                        </script>
                         <form action="?stay2=true" method="post">
                             <div class="row">
                                 <div class="col-sm-12">
@@ -3125,7 +3145,7 @@
                                         <label>เลือกประเภทห้อง</label>
                                         <div class="radio-select is-blue-outline is-border-light mobile-half">
                                             <div class="radio">
-                                                <input type="radio" name="hotel-room" value="Standard" id="hotel-room1">
+                                                <input type="radio" name="hotel-room" value="Standard" id="hotel-room1" onchange="select_hotel_room(this)">
                                                 <label for="hotel-room1" class="font-regular">
                                                     <div class="text-icon is-middle for-list no-margin">
                                                         <i class="m-icon m-icon-bed2"></i>
@@ -3134,7 +3154,7 @@
                                                 </label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="hotel-room" value="Deluxe" id="hotel-room2">
+                                                <input type="radio" name="hotel-room" value="Deluxe" id="hotel-room2" onchange="select_hotel_room(this)">
                                                 <label for="hotel-room2" class="font-regular">
                                                     <div class="text-icon is-middle for-list no-margin">
                                                         <i class="m-icon m-icon-bed2"></i>
@@ -3143,7 +3163,7 @@
                                                 </label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="hotel-room" value="Superior" id="hotel-room3">
+                                                <input type="radio" name="hotel-room" value="Superior" id="hotel-room3" onchange="select_hotel_room(this)">
                                                 <label for="hotel-room3" class="font-regular">
                                                     <div class="text-icon is-middle for-list no-margin">
                                                         <i class="m-icon m-icon-bed2"></i>
@@ -3152,7 +3172,7 @@
                                                 </label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" name="hotel-room" value="Suite" id="hotel-room4">
+                                                <input type="radio" name="hotel-room" value="Suite" id="hotel-room4" onchange="select_hotel_room(this)">
                                                 <label for="hotel-room4" class="font-regular">
                                                     <div class="text-icon is-middle for-list no-margin">
                                                         <i class="m-icon m-icon-bed2"></i>
@@ -3161,7 +3181,7 @@
                                                 </label>
                                             </div>
                                             <div class="radio">
-                                                <input type="radio" value="ระบุประเภทเอง" name="hotel-room" id="hotel-other">
+                                                <input type="radio" value="ระบุประเภทเอง" name="hotel-room" id="hotel-other" onchange="select_hotel_room(this)">
                                                 <label for="hotel-other" class="font-regular">
                                                     <div class="text-icon is-middle for-list no-margin">
                                                         <i class="m-icon m-icon-bed2"></i>
@@ -3304,27 +3324,6 @@
                                 <button id="btn-hotel-room" type="submit" class="btn btn-md btn-blue-linear font-semibold btn-minwidth" disabled>บันทึกข้อมูล</button>
                             </div>
                         </form>
-                        <script>
-                            (function(){
-                                $('input[name="hotel-room"]').change(function(){
-                                    $('#btn-hotel-room').prop('disabled', true);
-                                    $('.hotel-other-box').hide();
-                                    $('#hotel-room-other-name').hide();
-
-                                    if($('input[name="hotel-room"]:checked').length > 0)
-                                    {
-                                        $('#btn-hotel-room').prop('disabled', false);
-                                        $('.hotel-other-box').show();
-                                        $('#hotel-room-type').html($('input[name="hotel-room"]:checked').val());
-
-                                        if($('input[name="hotel-room"]:checked').val() == 'ระบุประเภทเอง')
-                                        {
-                                            $('#hotel-room-other-name').show();
-                                        }
-                                    }
-                                });
-                            })();   
-                        </script>
                     </div>
                 </div>
             </div>
@@ -3607,7 +3606,7 @@
                 <div class="modal-dialog modal-md" role="document">
                     <div class="modal-content">
                         <div class="modal-body pd-40">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
+                            <button type="button" class="close" data-dismiss="modal" onclick="set_tour()" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
                             <div class="content text-center">
                                 <div class="form-group">
                                     <img src="assets/images/popup-build.png" width="238">
@@ -3625,7 +3624,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="btn-box">
-                                        <button type="button" class="btn btn-md btn-blue-linear font-semibold btn-minwidth" style="width: 230px" data-dismiss="modal" data-toggle="modal" data-target="#modal-receive-heart">เริ่มใส่ข้อมูลรายละเอียด</button>
+                                        <button type="button" class="btn btn-md btn-blue-linear font-semibold btn-minwidth" style="width: 230px" data-dismiss="modal" onclick="set_tour()">เริ่มใส่ข้อมูลรายละเอียด</button>
                                     </div>
                                 </div>
                             </div>
@@ -3637,7 +3636,7 @@
                 <div class="modal-dialog modal-md" role="document">
                     <div class="modal-content">
                         <div class="modal-body pd-40">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
+                            <button type="button" class="close" data-dismiss="modal" data-toggle="modal" data-target="#modal-welcome" aria-label="Close"><i class="m-icon m-icon-close-blue"></i></button>
                             <div class="content text-center">
                                 <div class="form-group">
                                     <img src="assets/images/popup-heart.png" width="98">
@@ -3656,7 +3655,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="btn-box">
-                                        <button type="button" class="btn btn-md btn-blue-linear font-semibold btn-minwidth" style="width: 230px" data-dismiss="modal">เข้าใจและปิดหน้าต่าง</button>
+                                        <button type="button" class="btn btn-md btn-blue-linear font-semibold btn-minwidth" style="width: 230px" data-dismiss="modal" data-toggle="modal" data-target="#modal-welcome">เข้าใจและปิดหน้าต่าง</button>
                                     </div>
                                 </div>
                             </div>
@@ -3793,9 +3792,65 @@
             <script>
                 (function(){
                     setTimeout(() => {
-                        $('#modal-welcome').modal('show');
+                        $('#modal-receive-heart').modal('show');
                     }, 500);
                 })();
+
+                function set_tour()
+                {
+                    var arrHelp = [
+                        {
+                            element: '.member-menu .head',
+                            intro: '<h4>ขั้นตอนที่ 1/5</h4><p>ท่านสามารถแก้ไขรูปโปรไฟล์ธุรกิจได้โดยกดที่ปุ่ม <img src="assets/images/logo-upload.svg"> และอัพโหลดรูปภาพใหม่ที่ต้องการ</p>',
+                            position: 'right'
+                        },
+                        {
+                            element: '.member-menu .body',
+                            intro: '<h4>ขั้นตอนที่ 2/5</h4><p>ท่านสามารถเลือกดูข้อมูล, ดูการสะสมใจไมซ์, การสะสมคะแนน และชวนเพื่อน สำหรับธุรกิจของท่านได้จากเมนูหลักทางด้านซ้ายมือนี้</p>',
+                            position: 'right'
+                        },
+                        {
+                            element: '.member-body .nav-tabs',
+                            intro: '<h4>ขั้นตอนที่ 3/5</h4><p>ท่านสามารถจัดการธุรกิจของท่านได้ทั้งหมดบนเมนูนี้ ไม่ว่าจะเป็นการเพิ่มรายละเอียดโปรไฟล์ธุรกิจตามประเภทธุรกิจที่ท่านเลือก หรือการสนทนา และการส่งใบเสนอราคา เป็นต้น</p>',
+                            position: 'bottom'
+                        },
+                        {
+                            element: '.b-status',
+                            intro: '<h4>ขั้นตอนที่ 4/5</h4><p>ท่านสามารถติดตามสถานะการอนุมัติธุรกิจได้ในส่วนนี้ และตรวจสิทธิพิเศษ รวมถึงจำนวนคะแนน</p>',
+                            position: 'bottom'
+                        },
+                        {
+                            element: '.b-manage .tab',
+                            intro: '<h4>ขั้นตอนที่ 5/5</h4><p>กรอกรายละเอียดของประเภทธุรกิจที่ท่านเลือก โดยสามารถกดเลือกใส่รายละเอียดตามรายการที่จำเป็นต่อผู้จัดงานที่สนใจธุรกิจของท่าน</p>',
+                            position: 'right'
+                        },
+                    ];
+
+                    var tour = introJs();
+                    tour.setOptions({
+                        steps: arrHelp,
+                        showStepNumbers: false,
+                        showBullets: false,
+                        nextLabel: 'ดูขั้นตอนถัดไป',
+                        prevLabel: '<span class=\'glyphicon glyphicon-menu-left\'></span> ย้อนกลับ',
+                        doneLabel: 'เข้าใจและปิด',
+                        skipLabel: 'ข้าม',
+                        hidePrev: true,
+                        hideNext: false,
+                        scrollToElement: true,
+                        scrollTo: 'element',
+                        onbeforechange: function(val) {
+                            console.log(val);
+                        }
+                    });
+                    tour.onchange(function(){
+                        $('body').addClass('for-tour');
+                    });
+                    tour.onexit(function(){
+                        $('body').removeClass('for-tour');
+                    });
+                    tour.start();
+                }
             </script>
         <?php } ?>
 
